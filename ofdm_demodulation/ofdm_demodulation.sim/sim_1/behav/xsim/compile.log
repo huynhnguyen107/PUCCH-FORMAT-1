@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft.srcs/sources_1/new/ctr_pre_fft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr_pre_fft
+INFO: [VRFC 10-311] analyzing module extend_valid_4096
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/sim/ctr_pre_fft_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr_pre_fft_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/new/fft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_demodulation
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/new/fft.v:74]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

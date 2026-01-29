@@ -1,0 +1,2 @@
+xcorr_cmpy_0.vhd,vhdl,xil_defaultlib,../../../../xcorr_12.srcs/sources_1/ip/xcorr_cmpy_0/sim/xcorr_cmpy_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

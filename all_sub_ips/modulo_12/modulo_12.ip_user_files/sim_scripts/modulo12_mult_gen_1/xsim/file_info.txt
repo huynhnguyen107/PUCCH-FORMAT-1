@@ -1,0 +1,1 @@
+modulo12_mult_gen_1.vhd,vhdl,xil_defaultlib,../../../../modulo_12.srcs/sources_1/ip/modulo12_mult_gen_1/sim/modulo12_mult_gen_1.vhd,

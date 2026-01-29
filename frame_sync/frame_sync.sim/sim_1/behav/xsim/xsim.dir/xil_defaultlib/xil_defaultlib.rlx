@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sim_1/new/tb.v,1767035915,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sources_1/new/frame_sync.v,1767035813,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sim_1/new/tb.v,,delay_N;des_cnt;extend_valid;frame_sync,,,,,,,,

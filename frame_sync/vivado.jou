@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jan 28 14:13:51 2026
+# Process ID: 20552
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14576 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\frame_sync\frame_sync.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync/frame_sync.xpr}
+update_compile_order -fileset sources_1

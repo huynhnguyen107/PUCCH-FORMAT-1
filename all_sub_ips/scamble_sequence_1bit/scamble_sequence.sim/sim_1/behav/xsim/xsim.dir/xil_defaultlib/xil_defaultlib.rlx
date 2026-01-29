@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/scamble_sequence_1bit/scamble_sequence.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/scamble_sequence_1bit/scamble_sequence.srcs/sim_1/new/tb.v,1766635549,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/scamble_sequence_1bit/scamble_sequence.srcs/sources_1/new/scramble_sequence.v,1766635740,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/scamble_sequence_1bit/scamble_sequence.srcs/sim_1/new/tb.v,,scramble_sequence_1bit;x1_x2_init,,,,,,,,

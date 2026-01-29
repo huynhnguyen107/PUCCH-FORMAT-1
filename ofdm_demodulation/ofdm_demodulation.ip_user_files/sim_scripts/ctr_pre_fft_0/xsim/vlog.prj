@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft.srcs/sources_1/new/ctr_pre_fft.v" \
+"../../../../ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/sim/ctr_pre_fft_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

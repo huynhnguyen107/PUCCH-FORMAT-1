@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_fifo_generator_0/sim/xcorr_fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xcorr_fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/new/xcorr_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xcorr_12
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

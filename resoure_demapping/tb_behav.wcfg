@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="244600001fs"></ZoomEndTime>
+      <Cursor1Time time="4908500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/tb/frame_sync_0_1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/in_start_symbol" type="logic">
+      <obj_property name="ElementShortName">in_start_symbol</obj_property>
+      <obj_property name="ObjectShortName">in_start_symbol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/slot_idx" type="array">
+      <obj_property name="ElementShortName">slot_idx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_idx[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/start_slot" type="logic">
+      <obj_property name="ElementShortName">start_slot</obj_property>
+      <obj_property name="ObjectShortName">start_slot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/sub_idx" type="array">
+      <obj_property name="ElementShortName">sub_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/rb_idx" type="array">
+      <obj_property name="ElementShortName">rb_idx[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_idx[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/sym_idx" type="array">
+      <obj_property name="ElementShortName">sym_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/start_symbol" type="logic">
+      <obj_property name="ElementShortName">start_symbol</obj_property>
+      <obj_property name="ObjectShortName">start_symbol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/frame_idx" type="array">
+      <obj_property name="ElementShortName">frame_idx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_idx[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/start_frame" type="logic">
+      <obj_property name="ElementShortName">start_frame</obj_property>
+      <obj_property name="ObjectShortName">start_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frame_sync_0_1/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_instra_fre_hop" type="logic">
+      <obj_property name="ElementShortName">uci_instra_fre_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_instra_fre_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_first_symbol_idx" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_prbsoffset" type="array">
+      <obj_property name="ElementShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_secondhop_prb" type="array">
+      <obj_property name="ElementShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_slot" type="array">
+      <obj_property name="ElementShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_symbol" type="array">
+      <obj_property name="ElementShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_rb" type="array">
+      <obj_property name="ElementShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_instra_fre_hop" type="logic">
+      <obj_property name="ElementShortName">uci_instra_fre_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_instra_fre_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_first_symbol_idx" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_prbsoffset" type="array">
+      <obj_property name="ElementShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_secondhop_prb" type="array">
+      <obj_property name="ElementShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_slot" type="array">
+      <obj_property name="ElementShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_symbol" type="array">
+      <obj_property name="ElementShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_rb" type="array">
+      <obj_property name="ElementShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fr_data_valid" type="logic">
+      <obj_property name="ElementShortName">fr_data_valid</obj_property>
+      <obj_property name="ObjectShortName">fr_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/uci_ex_valid" type="logic">
+      <obj_property name="ElementShortName">uci_ex_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_ex_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/fre_hopping_valid" type="logic">
+      <obj_property name="ElementShortName">fre_hopping_valid</obj_property>
+      <obj_property name="ObjectShortName">fre_hopping_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/slot_valid" type="logic">
+      <obj_property name="ElementShortName">slot_valid</obj_property>
+      <obj_property name="ObjectShortName">slot_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/symbol_valid1" type="logic">
+      <obj_property name="ElementShortName">symbol_valid1</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/rb_valid1" type="logic">
+      <obj_property name="ElementShortName">rb_valid1</obj_property>
+      <obj_property name="ObjectShortName">rb_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/symbol_valid2" type="logic">
+      <obj_property name="ElementShortName">symbol_valid2</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/rb_valid2" type="logic">
+      <obj_property name="ElementShortName">rb_valid2</obj_property>
+      <obj_property name="ObjectShortName">rb_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/intra_valid" type="logic">
+      <obj_property name="ElementShortName">intra_valid</obj_property>
+      <obj_property name="ObjectShortName">intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/non_intra_valid" type="logic">
+      <obj_property name="ElementShortName">non_intra_valid</obj_property>
+      <obj_property name="ObjectShortName">non_intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/final_resource_set" type="logic">
+      <obj_property name="ElementShortName">final_resource_set</obj_property>
+      <obj_property name="ObjectShortName">final_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/edge_resource_set" type="logic">
+      <obj_property name="ElementShortName">edge_resource_set</obj_property>
+      <obj_property name="ObjectShortName">edge_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/d_resource_set" type="logic">
+      <obj_property name="ElementShortName">d_resource_set</obj_property>
+      <obj_property name="ObjectShortName">d_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/demapping_tb/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+</wave_config>

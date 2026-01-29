@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../dis_alpha_gen.srcs/sources_1/ip/mult_gen_dis_alpha/sim/mult_gen_dis_alpha.vhd" \
+
+nosort

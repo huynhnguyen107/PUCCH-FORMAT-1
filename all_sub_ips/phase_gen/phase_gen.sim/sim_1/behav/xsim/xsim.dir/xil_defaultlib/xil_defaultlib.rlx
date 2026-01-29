@@ -1,0 +1,17 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sim_1/new/tb.v,1767069956,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/alpha_modulo_12_0/sim/alpha_modulo_12_0.v,1766642514,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v,,alpha_modulo_12_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/dis_alpha_gen_0/ip/mult_gen_dis_alpha/sim/mult_gen_dis_alpha.vhd,1766614134,vhdl,,,,mult_gen_dis_alpha,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/dis_alpha_gen_0/new/dis_alpha_gen.v,1766614134,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/dis_alpha_gen_0/sim/dis_alpha_gen_0.v,,dis_alpha_gen,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/dis_alpha_gen_0/sim/dis_alpha_gen_0.v,1766614134,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/alpha_modulo_12_0/sim/alpha_modulo_12_0.v,,dis_alpha_gen_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/modulo_12_1_nomalize/ip/modulo12_mult_gen_1/sim/modulo12_mult_gen_1.vhd,1766642514,vhdl,,,,modulo12_mult_gen_1,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/modulo_12_1_nomalize/ip/modulo12_mult_gen_2/sim/modulo12_mult_gen_2.vhd,1766642515,vhdl,,,,modulo12_mult_gen_2,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/modulo_12_1_nomalize/new/modulo_12.v,1766642514,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/modulo_12_1_nomalize/sim/modulo_12_1_nomalize.v,,modulo_12,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/modulo_12_1_nomalize/sim/modulo_12_1_nomalize.v,1766642514,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/dis_alpha_gen_0/new/dis_alpha_gen.v,,modulo_12_1_nomalize,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v,1766548528,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v,,scramble_sequence_8bits;x1_x2_init,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v,1766548528,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/new/phase_gen.v,,scramble_sequence_8bits_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sources_1/new/phase_gen.v,1767069930,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/phase_gen/phase_gen.srcs/sim_1/new/tb.v,,ack_selection;phase_gen,,,,,,,,

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 30 22:52:57 2025
+# Process ID: 32428
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29864 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-0\ofdm_demodulation\ofdm_demodulation.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/ofdm_demodulation0/clk}} {{/tb/ofdm_demodulation0/rst}} {{/tb/ofdm_demodulation0/scale_factor}} {{/tb/ofdm_demodulation0/i_trigger_cp}} {{/tb/ofdm_demodulation0/i_start_symbol}} {{/tb/ofdm_demodulation0/ant_input}} {{/tb/ofdm_demodulation0/pucch_ofdm}} {{/tb/ofdm_demodulation0/o_valid}} {{/tb/ofdm_demodulation0/start_symbol}} {{/tb/ofdm_demodulation0/i_imag_pucch_ofdm}} {{/tb/ofdm_demodulation0/i_real_pucch_ofdm}} {{/tb/ofdm_demodulation0/imag_pucch_ofdm}} {{/tb/ofdm_demodulation0/real_pucch_ofdm}} {{/tb/ofdm_demodulation0/s_axis_data_tdata}} {{/tb/ofdm_demodulation0/m_axis_data_tdata}} {{/tb/ofdm_demodulation0/o_data_valid}} {{/tb/ofdm_demodulation0/imag_pucch_ofdm_scale}} {{/tb/ofdm_demodulation0/real_pucch_ofdm_scale}} {{/tb/ofdm_demodulation0/d_o_valid}} {{/tb/ofdm_demodulation0/m_axis_data_tvalid}} {{/tb/ofdm_demodulation0/DATA_WIDTH}} 
+relaunch_sim
+run 300000 ns
+run 300000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/tb_behav.wcfg}
+close_sim

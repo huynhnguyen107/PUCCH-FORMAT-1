@@ -1,0 +1,71 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 0791f47ca6bf4805b79c89bd1c639691 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L cmpy_v6_0_18 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_pkg
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.xcorr_fifo_generator_0
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=17,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,amultsel="...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.input_negation [\input_negation(c_xdevicefamily=...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="v...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_synth [\cmpy_v6_0_18_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_viv [\cmpy_v6_0_18_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18 [\cmpy_v6_0_18(c_xdevicefamily="v...]
+Compiling architecture xcorr_cmpy_0_arch of entity xil_defaultlib.xcorr_cmpy_0 [xcorr_cmpy_0_default]
+Compiling architecture xcorr_cmpy_1_arch of entity xil_defaultlib.xcorr_cmpy_1 [xcorr_cmpy_1_default]
+Compiling architecture xcorr_cmpy_2_arch of entity xil_defaultlib.xcorr_cmpy_2 [xcorr_cmpy_2_default]
+Compiling architecture xcorr_cmpy_3_arch of entity xil_defaultlib.xcorr_cmpy_3 [xcorr_cmpy_3_default]
+Compiling architecture xcorr_cmpy_4_arch of entity xil_defaultlib.xcorr_cmpy_4 [xcorr_cmpy_4_default]
+Compiling architecture xcorr_cmpy_5_arch of entity xil_defaultlib.xcorr_cmpy_5 [xcorr_cmpy_5_default]
+Compiling architecture xcorr_cmpy_6_arch of entity xil_defaultlib.xcorr_cmpy_6 [xcorr_cmpy_6_default]
+Compiling architecture xcorr_cmpy_7_arch of entity xil_defaultlib.xcorr_cmpy_7 [xcorr_cmpy_7_default]
+Compiling architecture xcorr_cmpy_8_arch of entity xil_defaultlib.xcorr_cmpy_8 [xcorr_cmpy_8_default]
+Compiling architecture xcorr_cmpy_9_arch of entity xil_defaultlib.xcorr_cmpy_9 [xcorr_cmpy_9_default]
+Compiling architecture xcorr_cmpy_10_arch of entity xil_defaultlib.xcorr_cmpy_10 [xcorr_cmpy_10_default]
+Compiling architecture xcorr_cmpy_11_arch of entity xil_defaultlib.xcorr_cmpy_11 [xcorr_cmpy_11_default]
+Compiling module xil_defaultlib.xcorr_12
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

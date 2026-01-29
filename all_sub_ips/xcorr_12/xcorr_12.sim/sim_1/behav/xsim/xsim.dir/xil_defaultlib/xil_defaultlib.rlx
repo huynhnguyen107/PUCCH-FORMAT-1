@@ -1,0 +1,20 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sim_1/new/tb.v,1766890623,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_0/sim/xcorr_cmpy_0.vhd,1766878068,vhdl,,,,xcorr_cmpy_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_1/sim/xcorr_cmpy_1.vhd,1766878097,vhdl,,,,xcorr_cmpy_1,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_10/sim/xcorr_cmpy_10.vhd,1766877837,vhdl,,,,xcorr_cmpy_10,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_11/sim/xcorr_cmpy_11.vhd,1766877695,vhdl,,,,xcorr_cmpy_11,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_2/sim/xcorr_cmpy_2.vhd,1766878109,vhdl,,,,xcorr_cmpy_2,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_3/sim/xcorr_cmpy_3.vhd,1766878130,vhdl,,,,xcorr_cmpy_3,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_4/sim/xcorr_cmpy_4.vhd,1766878149,vhdl,,,,xcorr_cmpy_4,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_5/sim/xcorr_cmpy_5.vhd,1766878166,vhdl,,,,xcorr_cmpy_5,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_6/sim/xcorr_cmpy_6.vhd,1766878181,vhdl,,,,xcorr_cmpy_6,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_7/sim/xcorr_cmpy_7.vhd,1766878193,vhdl,,,,xcorr_cmpy_7,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_8/sim/xcorr_cmpy_8.vhd,1766878217,vhdl,,,,xcorr_cmpy_8,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_cmpy_9/sim/xcorr_cmpy_9.vhd,1766877848,vhdl,,,,xcorr_cmpy_9,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/ip/xcorr_fifo_generator_0/sim/xcorr_fifo_generator_0.v,1766890460,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/new/xcorr_12.v,,xcorr_fifo_generator_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sources_1/new/xcorr_12.v,1766889129,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Correlation/xcorr_12/xcorr_12/xcorr_12.srcs/sim_1/new/tb.v,,xcorr_12,,,,,,,,

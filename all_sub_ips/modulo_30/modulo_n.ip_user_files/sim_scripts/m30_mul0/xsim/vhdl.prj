@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../modulo_n.srcs/sources_1/ip/m30_mul0/sim/m30_mul0.vhd" \
+
+nosort

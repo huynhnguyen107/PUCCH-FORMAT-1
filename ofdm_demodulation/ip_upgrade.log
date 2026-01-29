@@ -1,0 +1,58 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Jan  1 02:46:46 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu095-ffva2104-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctr_pre_fft_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctr_pre_fft_0 (xilinx.com:user:ctr_pre_fft:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 30 01:54:34 2025
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu095-ffva2104-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctr_fft_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctr_fft_0 (xilinx.com:user:ctr_fft:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 30 01:51:50 2025
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu095-ffva2104-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctr_fft_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctr_fft_0 (xilinx.com:user:ctr_fft:1.0) from (Rev. 16) to (Rev. 2)
+
