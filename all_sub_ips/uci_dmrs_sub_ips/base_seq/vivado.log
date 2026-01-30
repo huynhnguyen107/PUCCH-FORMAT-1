@@ -1,0 +1,279 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jan 29 17:57:08 2026
+# Process ID: 10136
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27016 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\base_seq\base_seq.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/base_seq' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'D:/FPGA/Vivaldo Project/all_sub_ips'; using path 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'phi_matrix_0' is locked:
+* IP definition 'phi_matrix_v1_0 (1.0)' for IP 'phi_matrix_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'modulo_30_2' is locked:
+* IP definition 'modulo_30_v1_0 (1.0)' for IP 'modulo_30_2' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'modulo_30_1' is locked:
+* IP definition 'modulo_30_v1_0 (1.0)' for IP 'modulo_30_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'scramble_sequence_8bits_0' is locked:
+* IP definition 'scramble_sequence_8bits_v1_0 (1.0)' for IP 'scramble_sequence_8bits_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'modulo_30_0' is locked:
+* IP definition 'modulo_30_v1_0 (1.0)' for IP 'modulo_30_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 905.711 ; gain = 195.605
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips'.
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {modulo_30_0 modulo_30_1 modulo_30_2 phi_matrix_0 scramble_sequence_8bits_0}] -log ip_upgrade.log
+Upgrading 'modulo_30_0'
+INFO: [IP_Flow 19-3422] Upgraded modulo_30_0 (modulo_30_v1_0 1.0) from revision 2 to revision 3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'modulo_30_0'...
+Upgrading 'modulo_30_1'
+INFO: [IP_Flow 19-3422] Upgraded modulo_30_1 (modulo_30_v1_0 1.0) from revision 2 to revision 3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'modulo_30_1'...
+Upgrading 'modulo_30_2'
+INFO: [IP_Flow 19-3422] Upgraded modulo_30_2 (modulo_30_v1_0 1.0) from revision 2 to revision 3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'modulo_30_2'...
+Upgrading 'phi_matrix_0'
+INFO: [IP_Flow 19-3422] Upgraded phi_matrix_0 (phi_matrix_v1_0 1.0) from revision 3 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'phi_matrix_0'...
+Upgrading 'scramble_sequence_8bits_0'
+INFO: [IP_Flow 19-3422] Upgraded scramble_sequence_8bits_0 (scramble_sequence_8bits_v1_0 1.0) from revision 4 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'scramble_sequence_8bits_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {modulo_30_0 modulo_30_1 modulo_30_2 phi_matrix_0 scramble_sequence_8bits_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_0/modulo_30_0.xci} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_1/modulo_30_1.xci} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_30_2.xci} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix_0.xci} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scramble_sequence_8bits_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'modulo_30_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'modulo_30_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'modulo_30_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'modulo_30_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'modulo_30_1'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'modulo_30_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'modulo_30_2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'modulo_30_2'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'modulo_30_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'phi_matrix_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'phi_matrix_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'phi_matrix_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'scramble_sequence_8bits_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'scramble_sequence_8bits_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'scramble_sequence_8bits_0'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.961 ; gain = 13.457
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_0/modulo_30_0.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_1/modulo_30_1.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_30_2.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix_0.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scramble_sequence_8bits_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_0/modulo_30_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_1/modulo_30_1.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_30_2.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scramble_sequence_8bits_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim/phi.coe'
+INFO: [SIM-utils-43] Exported 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phi_matrix
+INFO: [VRFC 10-311] analyzing module extend_valid_new
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/phi_matrix_0/sim/phi_matrix_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phi_matrix_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/new/modulo_n.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modulo_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/sim/modulo_30_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modulo_30_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_1bit_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scramble_sequence_1bit
+INFO: [VRFC 10-311] analyzing module x1_x2_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_1bit_0/sim/scramble_sequence_1bit_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scramble_sequence_1bit_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_1/sim/modulo_30_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modulo_30_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scramble_sequence_8bits
+INFO: [VRFC 10-311] analyzing module x1_x2_init
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'x1_x2_init' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:114]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scramble_sequence_8bits_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_0/sim/modulo_30_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modulo_30_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/new/base_sequence.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module base_sequence
+WARNING: [VRFC 10-986] literal value truncated to fit in 16 bits [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/new/base_sequence.v:178]
+WARNING: [VRFC 10-986] literal value truncated to fit in 16 bits [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/new/base_sequence.v:181]
+WARNING: [VRFC 10-986] literal value truncated to fit in 16 bits [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/new/base_sequence.v:185]
+WARNING: [VRFC 10-986] literal value truncated to fit in 16 bits [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/new/base_sequence.v:186]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/m30_mul1/sim/m30_mul1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm30_mul1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/m30_mul0/sim/m30_mul0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm30_mul0'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim'
+"xelab -wto 70eb194ddc414ddf8f7f5ccc0c0cce1d --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 70eb194ddc414ddf8f7f5ccc0c0cce1d --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:126]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:127]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:128]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:129]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:130]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:131]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:132]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:133]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:134]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:135]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:136]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:137]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:138]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:139]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:140]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:141]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:142]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:143]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:144]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:145]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:146]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:147]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:148]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:149]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:150]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:151]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:152]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:153]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:154]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:155]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:156]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=11,ai_type=1...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture m30_mul0_arch of entity xil_defaultlib.m30_mul0 [m30_mul0_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=6,bi_width=5...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture m30_mul1_arch of entity xil_defaultlib.m30_mul1 [m30_mul1_default]
+Compiling module xil_defaultlib.modulo_30
+Compiling module xil_defaultlib.modulo_30_0
+Compiling module xil_defaultlib.x1_x2_init
+Compiling module xil_defaultlib.scramble_sequence_8bits
+Compiling module xil_defaultlib.scramble_sequence_8bits_0
+Compiling module xil_defaultlib.modulo_30_1
+Compiling module xil_defaultlib.scramble_sequence_1bit
+Compiling module xil_defaultlib.scramble_sequence_1bit_0
+Compiling module xil_defaultlib.modulo_30_2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.extend_valid_new(number_cycles=9...
+Compiling module xil_defaultlib.phi_matrix
+Compiling module xil_defaultlib.phi_matrix_0
+Compiling module xil_defaultlib.base_sequence
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivaldo -notrace
+couldn't read file "D:/FPGA/Vivaldo": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan 29 18:10:41 2026...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1019.324 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/tb_behav.wcfg}
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.base_sequence_0.phi_matrix_0.inst.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1030.078 ; gain = 8.430
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1030.078 ; gain = 10.754
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 18:18:22 2026...

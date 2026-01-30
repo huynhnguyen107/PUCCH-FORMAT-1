@@ -1,0 +1,37 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Jan 29 18:26:34 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ba_se_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ba_se_0 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 30 00:42:50 2025
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'base_sequence_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of base_sequence_0 (xilinx.com:user:base_sequence:1.0) from (Rev. 4) to (Rev. 2)
+

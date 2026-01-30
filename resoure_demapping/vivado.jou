@@ -2,37 +2,24 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Jan 28 15:17:41 2026
-# Process ID: 33412
+# Start of session at: Thu Jan 29 17:41:27 2026
+# Process ID: 16828
 # Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30152 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\resoure_demapping\demapping.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30224 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\resoure_demapping\demapping.xpr
 # Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/vivado.log
 # Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.xpr}
 update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips}} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync}} [current_project]
+update_ip_catalog
 launch_simulation
 open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/tb_behav.wcfg}
 source tb.tcl
-relaunch_sim
-relaunch_sim
-current_wave_config {tb_behav.wcfg}
-add_wave {{/tb/demapping_tb/clk}} {{/tb/demapping_tb/rst}} {{/tb/demapping_tb/uci_instra_fre_hop}} {{/tb/demapping_tb/uci_slot}} {{/tb/demapping_tb/uci_nsymbols}} {{/tb/demapping_tb/uci_first_symbol_idx}} {{/tb/demapping_tb/uci_prbsoffset}} {{/tb/demapping_tb/uci_secondhop_prb}} {{/tb/demapping_tb/uci_valid}} {{/tb/demapping_tb/fr_slot}} {{/tb/demapping_tb/fr_symbol}} {{/tb/demapping_tb/fr_rb}} {{/tb/demapping_tb/fr_data_valid}} {{/tb/demapping_tb/resoureset_valid}} {{/tb/demapping_tb/fre_hopping_valid}} {{/tb/demapping_tb/uci_ex_valid}} {{/tb/demapping_tb/valid}} {{/tb/demapping_tb/slot_valid}} {{/tb/demapping_tb/symbol_valid1}} {{/tb/demapping_tb/rb_valid1}} {{/tb/demapping_tb/symbol_valid2}} {{/tb/demapping_tb/rb_valid2}} {{/tb/demapping_tb/intra_valid}} {{/tb/demapping_tb/non_intra_valid}} {{/tb/demapping_tb/final_resource_set}} {{/tb/demapping_tb/edge_resource_set}} {{/tb/demapping_tb/d_resource_set}} 
-relaunch_sim
-run 600000 ns
-relaunch_sim
-run 200000 ns
-relaunch_sim
-run 200000 ns
-ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\resoure_demapping\component.xml}
-ipx::merge_project_changes ports [ipx::current_core]
-ipx::remove_bus_interface rst [ipx::current_core]
-ipx::remove_bus_interface clk [ipx::current_core]
-set_property core_revision 5 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/resoure_demapping}
-save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/tb_behav.wcfg}
+ipx::open_ipxact_file {D:/fpga/vivaldo project/pucch-format-0/resoure_demapping/component.xml}
 close_sim

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>phi_matrix_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>phi_matrix</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Dec 25 05:00:26 UTC 2025</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d0934d73</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d0934d73</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>phi_matrix_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Dec 25 05:00:26 UTC 2025</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d0934d73</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>phi_matrix</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Dec 25 05:00:26 UTC 2025</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:9f8b2d26</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>phi_matrix_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Dec 25 05:00:26 UTC 2025</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:9f8b2d26</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>in_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>u</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>out_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>phi</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/new/phi_matrix.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/phi_matrix_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>phi_matrix.srcs/sources_1/new/phi_matrix.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/phi_matrix_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>phi_matrix_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">phi_matrix_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>phi_matrix_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10d1776c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49b97710_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@414b7da5_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a3c492_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7585fd52_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a246561_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18029115_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1df9fcf3_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b79ef89_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a1894c9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b55e89_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26917dbf_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c34c598_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f51dfe2_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5647b54b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@423af256_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53dd53d0_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e967d26_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d74cd8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2044daae_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67d57ce7_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7811cde2_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e233eac_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@651bbbf_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c67c864_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5226f458_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd719d6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c35ba47_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e1ed133_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17f52f36_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/phi_matrix</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2f753910"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="21f693fa"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="026baf5f"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

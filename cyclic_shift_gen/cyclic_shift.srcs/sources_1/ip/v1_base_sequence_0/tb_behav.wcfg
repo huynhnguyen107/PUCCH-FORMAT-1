@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="70780fs"></ZoomStartTime>
+      <ZoomEndTime time="82271fs"></ZoomEndTime>
+      <Cursor1Time time="74500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="151"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/tb/base_sequence_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/uci_grouphopping" type="array">
+      <obj_property name="ElementShortName">uci_grouphopping[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_grouphopping[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/uci_nID" type="array">
+      <obj_property name="ElementShortName">uci_nID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/uci_nhop" type="logic">
+      <obj_property name="ElementShortName">uci_nhop</obj_property>
+      <obj_property name="ObjectShortName">uci_nhop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/base_sequence" type="array">
+      <obj_property name="ElementShortName">base_sequence[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_sequence[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/base_sequence_valid" type="logic">
+      <obj_property name="ElementShortName">base_sequence_valid</obj_property>
+      <obj_property name="ObjectShortName">base_sequence_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/neither_valid" type="logic">
+      <obj_property name="ElementShortName">neither_valid</obj_property>
+      <obj_property name="ObjectShortName">neither_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/disable_valid" type="logic">
+      <obj_property name="ElementShortName">disable_valid</obj_property>
+      <obj_property name="ObjectShortName">disable_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_valid" type="logic">
+      <obj_property name="ElementShortName">enable_valid</obj_property>
+      <obj_property name="ObjectShortName">enable_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/out_valid_neither" type="logic">
+      <obj_property name="ElementShortName">out_valid_neither</obj_property>
+      <obj_property name="ObjectShortName">out_valid_neither</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_cinit" type="array">
+      <obj_property name="ElementShortName">enable_cinit[5:0]</obj_property>
+      <obj_property name="ObjectShortName">enable_cinit[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/fss" type="array">
+      <obj_property name="ElementShortName">fss[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fss[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/mark_p" type="array">
+      <obj_property name="ElementShortName">mark_p[5:0]</obj_property>
+      <obj_property name="ObjectShortName">mark_p[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_scramble_valid" type="logic">
+      <obj_property name="ElementShortName">enable_scramble_valid</obj_property>
+      <obj_property name="ObjectShortName">enable_scramble_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_scramble" type="array">
+      <obj_property name="ElementShortName">enable_scramble[7:0]</obj_property>
+      <obj_property name="ObjectShortName">enable_scramble[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_f_gh_valid" type="logic">
+      <obj_property name="ElementShortName">enable_f_gh_valid</obj_property>
+      <obj_property name="ObjectShortName">enable_f_gh_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/enable_f_gh" type="array">
+      <obj_property name="ElementShortName">enable_f_gh[4:0]</obj_property>
+      <obj_property name="ObjectShortName">enable_f_gh[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/disable_cinit_valid" type="logic">
+      <obj_property name="ElementShortName">disable_cinit_valid</obj_property>
+      <obj_property name="ObjectShortName">disable_cinit_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/disable_cinit" type="array">
+      <obj_property name="ElementShortName">disable_cinit[12:0]</obj_property>
+      <obj_property name="ObjectShortName">disable_cinit[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/valid_disable_c" type="logic">
+      <obj_property name="ElementShortName">valid_disable_c</obj_property>
+      <obj_property name="ObjectShortName">valid_disable_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/disable_c" type="logic">
+      <obj_property name="ElementShortName">disable_c</obj_property>
+      <obj_property name="ObjectShortName">disable_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/grouphopping_valid" type="logic">
+      <obj_property name="ElementShortName">grouphopping_valid</obj_property>
+      <obj_property name="ObjectShortName">grouphopping_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/fgh" type="array">
+      <obj_property name="ElementShortName">fgh[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fgh[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/v" type="logic">
+      <obj_property name="ElementShortName">v</obj_property>
+      <obj_property name="ObjectShortName">v</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/total_f" type="array">
+      <obj_property name="ElementShortName">total_f[5:0]</obj_property>
+      <obj_property name="ObjectShortName">total_f[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/u_valid" type="logic">
+      <obj_property name="ElementShortName">u_valid</obj_property>
+      <obj_property name="ObjectShortName">u_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/u" type="array">
+      <obj_property name="ElementShortName">u[4:0]</obj_property>
+      <obj_property name="ObjectShortName">u[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/phi_valid" type="logic">
+      <obj_property name="ElementShortName">phi_valid</obj_property>
+      <obj_property name="ObjectShortName">phi_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/phi" type="array">
+      <obj_property name="ElementShortName">phi[2:0]</obj_property>
+      <obj_property name="ObjectShortName">phi[2:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/base_sequence" type="array">
+      <obj_property name="ElementShortName">base_sequence[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_sequence[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus214" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus197" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/base_sequence_0/base_sequence[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/base_sequence_0/base_sequence_valid" type="logic">
+      <obj_property name="ElementShortName">base_sequence_valid</obj_property>
+      <obj_property name="ObjectShortName">base_sequence_valid</obj_property>
+   </wvobject>
+</wave_config>

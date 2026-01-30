@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/sim/modulo30_mult_gen_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'modulo30_mult_gen_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_0/sim/modulo30_mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'modulo30_mult_gen_0'

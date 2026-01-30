@@ -1,0 +1,866 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 30 01:18:29 2025
+# Process ID: 17804
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20172 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-0\cyclic_shift_gen\cyclic_shift.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.xpr}
+update_compile_order -fileset sources_1
+create_ip -name base_sequence -vendor xilinx.com -library user -version 1.0 -module_name ba_se_0 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {ba_se_0}] [get_ips ba_se_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/base_sequence_0_1/base_sequence_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/base_sequence_0_1/base_sequence_0.xci}}
+file delete -force {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/base_sequence_0_1}
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\cyclic_shift_gen\component.xml}
+launch_simulation
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/tb_behav.wcfg} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/tb_behav.wcfg}} [get_filesets sim_1]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/cyclic_shift_gen/cyclic_shift.srcs/sources_1/ip/base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe}}
+ipx::merge_project_changes files [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen}
+close_sim
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:xcorr_12:1.0 [get_ips  correlation_xcorr_12_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips correlation_xcorr_12_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.srcs/sources_1/ip/correlation_xcorr_12_0/correlation_xcorr_12_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.srcs/sources_1/ip/correlation_xcorr_12_0/correlation_xcorr_12_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.srcs/sources_1/ip/correlation_xcorr_12_0/correlation_xcorr_12_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/correlation/correlation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\correlation\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/correlation}
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.xpr}
+update_compile_order -fileset sources_1
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name m30_mul0 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {m30_mul0} CONFIG.PortAType {Unsigned} CONFIG.PortAWidth {11} CONFIG.PortBType {Unsigned} CONFIG.PortBWidth {16} CONFIG.OutputWidthHigh {26}] [get_ips m30_mul0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul0/m30_mul0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul0/m30_mul0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul0/m30_mul0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul0/m30_mul0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul0/m30_mul0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name m30_mul1 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {m30_mul1} CONFIG.PortAType {Unsigned} CONFIG.PortAWidth {6} CONFIG.PortBType {Unsigned} CONFIG.PortBWidth {5} CONFIG.OutputWidthHigh {10}] [get_ips m30_mul1]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul1/m30_mul1.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul1/m30_mul1.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul1/m30_mul1.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul1/m30_mul1.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/m30_mul1/m30_mul1.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_0/modulo30_mult_gen_0.xci}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/modulo30_mult_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_0/modulo30_mult_gen_0.xci} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/modulo30_mult_gen_1.xci}}
+file delete -force {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_0} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1}
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\all_sub_ips\modulo_30\component.xml}
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/modulo_30/tb_behav.wcfg}
+source tb.tcl
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/modulo_30}
+close_sim
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.xpr}
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips}} [current_project]
+update_ip_catalog
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:ctr_fft:1.0 [get_ips  ctr_fft_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ctr_fft_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\ofdm_demodulation\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation} {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips}} [current_project]
+update_ip_catalog
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/ctr_pre_fft/ctr_ofdm.xpr}
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\all_sub_ips\ctr_pre_fft\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/ctr_pre_fft}
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:ctr_fft:1.0 [get_ips  ctr_fft_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ctr_fft_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\ofdm_demodulation\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation}
+set_property  ip_repo_paths  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips}} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+ipx::merge_project_changes files [ipx::current_core]
+report_ip_status -name ip_status 
+set_property core_revision 9 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation} {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips}} [current_project]
+update_ip_catalog
+report_ip_status -name ip_status 
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+create_ip -name ctr_pre_fft -vendor xilinx.com -library user -version 1.0 -module_name ofdm_ctr -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {ofdm_ctr}] [get_ips ofdm_ctr]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}] -no_script -reset -force -quiet
+remove_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr/ofdm_ctr.xci}}
+file delete -force {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ofdm_ctr}
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+create_ip -name ctr_pre_fft -vendor xilinx.com -library user -version 1.0 -module_name ctr_pre_fft_0 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/ctr_pre_fft_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0/ctr_fft_0.xci}}
+file delete -force {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/ofdm_demodulation.srcs/sources_1/ip/ctr_fft_0}
+report_ip_status -name ip_status 
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-0\ofdm_demodulation\component.xml}
+report_ip_status -name ip_status 
+launch_simulation
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+export_ip_user_files -of_objects  [get_files {{D:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation/component.xml}}] -no_script -reset -force -quiet
+remove_files  {{D:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation/component.xml}}
+ipx::package_project -root_dir {d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation}
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-0/ofdm_demodulation}
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ofdm_demodulation:1.0 ofdm_demodulation_0
+endgroup
+set_property location {9 2968 -747} [get_bd_cells ofdm_demodulation_0]
+set_property location {5 1854 -229} [get_bd_cells ofdm_demodulation_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins ofdm_demodulation_0/clk]
+connect_bd_net [get_bd_ports rst] [get_bd_pins ofdm_demodulation_0/rst]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/scale_factor] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/i_trigger_cp] [get_bd_pins frame_sync_0/cp]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/i_start_symbol] [get_bd_pins frame_sync_0/start_symbol]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/ant_input] [get_bd_pins xlslice_0/Dout]
+disconnect_bd_net /ofdm_demodulation_v2_0_pucch_ofdm [get_bd_pins ofdm_demodulation_v2_0/pucch_ofdm]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/pucch_ofdm] [get_bd_pins xlconcat_0/In0]
+delete_bd_objs [get_bd_nets ofdm_demodulation_v2_0_start_symbol]
+connect_bd_net [get_bd_pins ofdm_demodulation_0/start_symbol] [get_bd_pins frame_sync_1/in_start_symbol]
+delete_bd_objs [get_bd_cells ofdm_demodulation_v2_0]
+save_bd_design
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}} [get_filesets sim_1]
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/physical_control_0/start_symbol}} 
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/frame_sync_0/cp}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/frame_sync_0/start_symbol}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/o_valid}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/start_symbol}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/frame_sync_1/slot_idx}} {{/tb/pucch0_wrapper/pucch0_i/frame_sync_1/rb_idx}} {{/tb/pucch0_wrapper/pucch0_i/frame_sync_1/sym_idx}} {{/tb/pucch0_wrapper/pucch0_i/frame_sync_1/start_symbol}} {{/tb/pucch0_wrapper/pucch0_i/frame_sync_1/valid_out}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/scale_factor}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/i_trigger_cp}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/i_start_symbol}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/ant_input}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/o_valid}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/start_symbol}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/i_imag_pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/i_real_pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/imag_pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/real_pucch_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/s_axis_data_tdata}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/m_axis_data_tdata}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/o_data_valid}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/imag_pucch_ofdm_scale}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/real_pucch_ofdm_scale}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/d_o_valid}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/m_axis_data_tvalid}} {{/tb/pucch0_wrapper/pucch0_i/ofdm_demodulation_0/inst/DATA_WIDTH}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+startgroup
+set_property -dict [list CONFIG.DIN_FROM {31} CONFIG.DOUT_WIDTH {32}] [get_bd_cells xlslice_0]
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -top
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {3}] [get_bd_cells xlconstant_2]
+endgroup
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:ofdm_demodulation:1.0 [get_ips  pucch0_ofdm_demodulation_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_ofdm_demodulation_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/frame_sync_0/start_symbol}} 
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/demapping_0/clk}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/rst}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_instra_fre_hop}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_nsymbols}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_first_symbol_idx}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_prbsoffset}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_secondhop_prb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_symbol}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_rb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_data_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/resoureset0_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/resoureset1_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/two_symbol_valid}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+create_bd_cell -type ip -vlnv xilinx.com:user:ulcch_parameter:1.0 ulcch_parameter_0
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  pucch0_ulcch_parameter_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_ulcch_parameter_0_0] -no_script -sync -force -quiet
+set_property location {2 469 1240} [get_bd_cells ulcch_parameter_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins ulcch_parameter_0/clk]
+connect_bd_net [get_bd_ports rst] [get_bd_pins ulcch_parameter_0/rst]
+set_property location {1.5 301 245} [get_bd_cells ulcch_parameter_0]
+set_property name i_pucch_valid [get_bd_ports layer2_valid]
+connect_bd_net [get_bd_ports i_pucch_valid] [get_bd_pins ulcch_parameter_0/i_pucch_valid]
+set_property name ulcch_para [get_bd_ports layer2_para]
+connect_bd_net [get_bd_ports ulcch_para] [get_bd_pins ulcch_parameter_0/ulcch_para]
+set_property location {1.5 194 1262} [get_bd_cells ulcch_parameter_0]
+set_property name grou [get_bd_ports slot_ind]
+set_property name i_group_hopping [get_bd_ports group_hopping]
+connect_bd_net [get_bd_ports i_group_hopping] [get_bd_pins ulcch_parameter_0/i_group_hopping]
+set_property name hopping_ID [get_bd_ports grou]
+delete_bd_objs [get_bd_ports hopping_ID]
+create_bd_port -dir I -from 15 -to 0 i_hopping_ID
+set_property location {-421 1136} [get_bd_ports i_hopping_ID]
+connect_bd_net [get_bd_ports i_hopping_ID] [get_bd_pins ulcch_parameter_0/i_hopping_ID]
+create_bd_port -dir I i_config_valid
+set_property location {-423 1253} [get_bd_ports i_config_valid]
+connect_bd_net [get_bd_ports i_config_valid] [get_bd_pins ulcch_parameter_0/i_config_valid]
+set_property location {5 1401 659} [get_bd_cells ulcch_parameter_0]
+disconnect_bd_net /layer2_parameter_0_uci_valid [get_bd_pins layer2_parameter_0/uci_valid]
+connect_bd_net [get_bd_pins ulcch_parameter_0/pucch_valid] [get_bd_pins peak_search_0/in_uci_valid]
+disconnect_bd_net /layer2_parameter_0_uci_nid [get_bd_pins layer2_parameter_0/uci_nid]
+connect_bd_net [get_bd_pins ulcch_parameter_0/hopping_ID] [get_bd_pins cyclic_gen_0/uci_nID]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_slot_idx] [get_bd_pins demapping_0/uci_slot]
+disconnect_bd_net /layer2_parameter_0_uci_frist_symbol [get_bd_pins layer2_parameter_0/uci_frist_symbol]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_frist_symbol] [get_bd_pins demapping_0/uci_first_symbol_idx]
+delete_bd_objs [get_bd_nets layer2_parameter_0_uci_pbr_offset]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_pbr_offset] [get_bd_pins demapping_0/uci_prbsoffset]
+delete_bd_objs [get_bd_nets layer2_parameter_0_uci_second_prb]
+connect_bd_net [get_bd_pins demapping_0/uci_secondhop_prb] [get_bd_pins ulcch_parameter_0/uci_second_prb]
+delete_bd_objs [get_bd_nets layer2_parameter_0_uci_symbol]
+connect_bd_net [get_bd_pins demapping_0/uci_nsymbols] [get_bd_pins ulcch_parameter_0/uci_symbol]
+delete_bd_objs [get_bd_nets layer2_parameter_0_uci_intra_fre_hopping]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_intra_fre_hopping] [get_bd_pins demapping_0/uci_instra_fre_hop]
+disconnect_bd_net /layer2_parameter_0_uci_m0 [get_bd_pins layer2_parameter_0/uci_m0]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_m0] [get_bd_pins cyclic_gen_0/uci_m0]
+disconnect_bd_net /layer2_parameter_0_uci_ack [get_bd_pins layer2_parameter_0/uci_ack]
+connect_bd_net [get_bd_pins ulcch_parameter_0/uci_ack] [get_bd_pins peak_search_0/uci_ack]
+disconnect_bd_net /group_hopping_1 [get_bd_ports i_group_hopping]
+disconnect_bd_net /group_hopping_1 [get_bd_pins ulcch_parameter_0/i_group_hopping]
+connect_bd_net [get_bd_pins ulcch_parameter_0/group_hopping] [get_bd_pins cyclic_gen_0/uci_grouphopping]
+connect_bd_net [get_bd_ports i_group_hopping] [get_bd_pins ulcch_parameter_0/i_group_hopping]
+delete_bd_objs [get_bd_cells layer2_parameter_0]
+save_bd_design
+report_ip_status -name ip_status 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:ulcch_parameter:1.0 [get_ips  pucch0_ulcch_parameter_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_ulcch_parameter_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/clk}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/rst}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/i_pucch_valid}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/ulcch_para}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/i_config_valid}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/i_group_hopping}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/i_hopping_ID}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/pucch_valid}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_slot_idx}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_rnti}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_nid}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_srflag}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_frist_symbol}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_pbr_offset}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_second_prb}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_prb}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_symbol}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_intra_fre_hopping}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_m0}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/uci_ack}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/config_valid}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/group_hopping}} {{/tb/pucch0_wrapper/pucch0_i/ulcch_parameter_0/hopping_ID}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/demapping_0/clk}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/rst}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_instra_fre_hop}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_nsymbols}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_first_symbol_idx}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_prbsoffset}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_secondhop_prb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/uci_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_symbol}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_rb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/fr_data_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/resoureset0_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/resoureset1_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/two_symbol_valid}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_instra_fre_hop}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_nsymbols}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_first_symbol_idx}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_prbsoffset}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_secondhop_prb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/fr_slot}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/fr_symbol}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/fr_rb}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/fr_data_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/resoureset0_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/resoureset1_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/two_symbol_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/uci_ex_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/slot_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/symbol_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/rb_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/second_symbol_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/second_rb_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/two_symbol_valid_temp}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/fre_hopping_valid}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/resource_set1}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/h_resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/h_resource_set1}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/final_resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/final_resource_set1}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/edge_resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/edge_resource_set1}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/d_resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/demapping_0/inst/d_resource_set1}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:demapping:1.0 [get_ips  pucch0_demapping_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_demapping_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:demapping:1.0 [get_ips  pucch0_demapping_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_demapping_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:demapping:1.0 [get_ips  pucch0_demapping_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_demapping_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:demapping:1.0 [get_ips  pucch0_demapping_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_demapping_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/in_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_nID}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_slot}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_first_symbol}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_sym_alloc}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_m0}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_ack}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_grouphopping}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/uci_nhop}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/cyclic_shift}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/base_sequence}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/base_sequence_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/phase}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/phase_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/fifo_base}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/d_phase}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/d_phase_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/pre_cyclic_temp}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/pre_cyclic}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/pre_cyclic_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/reg_uci_ack}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/select_cnt}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/select_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/d_pre_cyclic_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/inst/d_pre_cyclic}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+endgroup
+disconnect_bd_net /xlconstant_1_dout [get_bd_pins xlconstant_1/dout]
+set_property -dict [list CONFIG.CONST_VAL {1}] [get_bd_cells xlconstant_1]
+disconnect_bd_net /xlconstant_0_dout [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins cyclic_gen_0/uci_sym_alloc]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins cyclic_gen_1/uci_sym_alloc]
+save_bd_design
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic_valid}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic}} 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+copy_bd_objs /  [get_bd_cells {xlslice_0}]
+connect_bd_net [get_bd_pins xlslice_1/Din] [get_bd_pins rx_duplication_0/ofdm_resource_ext]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins correlation_0/resourcesetresourceset]
+save_bd_design
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/ofdm_resource_ext}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/ofdm_resource_ext_valid}} 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/correlation_0/sqrt_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/sqrt}} 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/mcs}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/ack}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/out_valid}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1
+endgroup
+set_property location {8 2807 953} [get_bd_cells xlconcat_1]
+set_property -dict [list CONFIG.IN5_WIDTH.VALUE_SRC USER CONFIG.IN7_WIDTH.VALUE_SRC USER CONFIG.IN6_WIDTH.VALUE_SRC USER CONFIG.IN2_WIDTH.VALUE_SRC USER CONFIG.IN1_WIDTH.VALUE_SRC USER CONFIG.IN4_WIDTH.VALUE_SRC USER CONFIG.IN3_WIDTH.VALUE_SRC USER CONFIG.IN0_WIDTH.VALUE_SRC USER] [get_bd_cells xlconcat_1]
+set_property -dict [list CONFIG.NUM_PORTS {8} CONFIG.IN0_WIDTH {20} CONFIG.IN1_WIDTH {20} CONFIG.IN2_WIDTH {20} CONFIG.IN3_WIDTH {20} CONFIG.IN4_WIDTH {20} CONFIG.IN5_WIDTH {20} CONFIG.IN6_WIDTH {20} CONFIG.IN7_WIDTH {20}] [get_bd_cells xlconcat_1]
+connect_bd_net [get_bd_pins correlation_0/sqrt] [get_bd_pins xlconcat_1/In0]
+connect_bd_net [get_bd_pins xlconcat_1/In1] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In2] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In3] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In4] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In5] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In6] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/In7] [get_bd_pins correlation_0/sqrt]
+connect_bd_net [get_bd_pins xlconcat_1/dout] [get_bd_pins combine_rx_sym_0/in_sqrt]
+save_bd_design
+report_ip_status -name ip_status 
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/resource_set0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/resource_set1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/two_symbol_valid}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/in_ofdm}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm_resource_ext}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm_resource_ext_valid}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/valid_96_0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d1_valid_96_0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d2_valid_96_0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/f_edge}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/addra0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/douta0}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/valid_96_1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d1_valid_96_1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d2_valid_96_1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/addra1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/douta1}} {{/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/RX_num}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:rx_duplication:1.0 [get_ips  pucch0_rx_duplication_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_rx_duplication_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:rx_duplication:1.0 [get_ips  pucch0_rx_duplication_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_rx_duplication_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:rx_duplication:1.0 [get_ips  pucch0_rx_duplication_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_rx_duplication_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:rx_duplication:1.0 [get_ips  pucch0_rx_duplication_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_rx_duplication_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourceset_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourcesetresourceset}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid_400}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cnt_400}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/xcorr_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/I2}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/Q2}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/total_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/IQ_total}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+delete_bd_objs [get_bd_nets cyclic_gen_1_cyclic_shift]
+delete_bd_objs [get_bd_nets cyclic_gen_0_cyclic_shift]
+startgroup
+connect_bd_net [get_bd_pins cyclic_gen_1/cyclic_shift] [get_bd_pins sync_cyclic_0/cyclic_1]
+endgroup
+connect_bd_net [get_bd_pins sync_cyclic_0/cyclic_0] [get_bd_pins cyclic_gen_0/cyclic_shift]
+save_bd_design
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/peak_valid}} {{/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/peak}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic_valid}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/valid_0}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_0}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/valid_1}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_1}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_valid}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/wr_cyclic_1}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/rd_en}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cnt_valid}} {{/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cnt}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+delete_bd_objs [get_bd_nets cyclic_gen_0_cyclic_shift_valid]
+delete_bd_objs [get_bd_nets cyclic_gen_1_cyclic_shift_valid]
+connect_bd_net [get_bd_pins cyclic_gen_1/cyclic_shift_valid] [get_bd_pins sync_cyclic_0/valid_1]
+connect_bd_net [get_bd_pins sync_cyclic_0/valid_0] [get_bd_pins cyclic_gen_0/cyclic_shift_valid]
+save_bd_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:sync_cyclic:1.0 [get_ips  pucch0_sync_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_sync_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourceset_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourcesetresourceset}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid_400}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cnt_400}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/xcorr_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/I2}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/Q2}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/total_valid}} {{/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/IQ_total}} 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:correlation:1.0 [get_ips  pucch0_correlation_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_correlation_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:correlation:1.0 [get_ips  pucch0_correlation_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pucch0_correlation_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/pucch0.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/clk}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/rst}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/in_uci_valid}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/uci_ack}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/peak_valid}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/peak}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/out_valid}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/reg_ack}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack_1}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/valid}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/cnt_res}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/cnt}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/idx}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/max}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/latch_valid}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/latch_idx}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs1}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack1}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs2}} {{/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack2}} 
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+source tb.tcl
+run 300000 ns
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/tb_behav.wcfg}
+close_sim

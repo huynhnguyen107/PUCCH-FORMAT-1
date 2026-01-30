@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/m30_mul1/sim/m30_mul1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm30_mul1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/base_seq/base_seq.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/m30_mul0/sim/m30_mul0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm30_mul0'

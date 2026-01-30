@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="65900fs"></ZoomStartTime>
+      <ZoomEndTime time="297701fs"></ZoomEndTime>
+      <Cursor1Time time="174500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="141"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="47" />
+   <wvobject fp_name="/tb/phase_generator0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_NID" type="array">
+      <obj_property name="ElementShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_sym_alloc" type="logic">
+      <obj_property name="ElementShortName">uci_sym_alloc</obj_property>
+      <obj_property name="ObjectShortName">uci_sym_alloc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_ack" type="array">
+      <obj_property name="ElementShortName">uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_ack[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_NID" type="array">
+      <obj_property name="ElementShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_ack" type="array">
+      <obj_property name="ElementShortName">uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_ack[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/reg_uci_NID" type="array">
+      <obj_property name="ElementShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/reg_uci_slot" type="array">
+      <obj_property name="ElementShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/reg_uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/reg_uci_sym_alloc" type="logic">
+      <obj_property name="ElementShortName">reg_uci_sym_alloc</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_sym_alloc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/slot_value" type="array">
+      <obj_property name="ElementShortName">slot_value[8:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_value[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/symbol_value" type="array">
+      <obj_property name="ElementShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/seq_start" type="array">
+      <obj_property name="ElementShortName">seq_start[9:0]</obj_property>
+      <obj_property name="ObjectShortName">seq_start[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/d_in_valid" type="logic">
+      <obj_property name="ElementShortName">d_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/d2_in_valid" type="logic">
+      <obj_property name="ElementShortName">d2_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/d3_in_valid" type="logic">
+      <obj_property name="ElementShortName">d3_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d3_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/n_cs" type="array">
+      <obj_property name="ElementShortName">n_cs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">n_cs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/n_cs_valid" type="logic">
+      <obj_property name="ElementShortName">n_cs_valid</obj_property>
+      <obj_property name="ObjectShortName">n_cs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/m_cs_valid" type="logic">
+      <obj_property name="ElementShortName">m_cs_valid</obj_property>
+      <obj_property name="ObjectShortName">m_cs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/m_cs" type="array">
+      <obj_property name="ElementShortName">m_cs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_cs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/reg_n_cs" type="array">
+      <obj_property name="ElementShortName">reg_n_cs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_n_cs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/ack_selection0/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/ack_selection0/m_cs" type="array">
+      <obj_property name="ElementShortName">m_cs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_cs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/m_cs_valid" type="logic">
+      <obj_property name="ElementShortName">m_cs_valid</obj_property>
+      <obj_property name="ObjectShortName">m_cs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/total_m0_mcs" type="array">
+      <obj_property name="ElementShortName">total_m0_mcs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">total_m0_mcs[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/total_m0_mcs_valid" type="logic">
+      <obj_property name="ElementShortName">total_m0_mcs_valid</obj_property>
+      <obj_property name="ObjectShortName">total_m0_mcs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/pre_alpha" type="array">
+      <obj_property name="ElementShortName">pre_alpha[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_alpha[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/pre_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">pre_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">pre_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/alpha_valid" type="logic">
+      <obj_property name="ElementShortName">alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/alpha" type="array">
+      <obj_property name="ElementShortName">alpha[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alpha[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/m_cs" type="array">
+      <obj_property name="ElementShortName">m_cs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_cs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/dis_alpha" type="array">
+      <obj_property name="ElementShortName">dis_alpha[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dis_alpha[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/dis_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">dis_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">dis_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/nomal_alpha" type="array">
+      <obj_property name="ElementShortName">nomal_alpha[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nomal_alpha[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/nomal_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">nomal_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">nomal_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/I" type="array">
+      <obj_property name="ElementShortName">I[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/Q" type="array">
+      <obj_property name="ElementShortName">Q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_generator0/phase_valid" type="logic">
+      <obj_property name="ElementShortName">phase_valid</obj_property>
+      <obj_property name="ObjectShortName">phase_valid</obj_property>
+   </wvobject>
+</wave_config>

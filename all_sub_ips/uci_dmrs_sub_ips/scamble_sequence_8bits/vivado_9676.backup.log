@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jan 29 18:43:09 2026
+# Process ID: 9676
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/scamble_sequence_8bits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36704 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\scamble_sequence_8bits\scamble_sequence.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/scamble_sequence_8bits/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/scamble_sequence_8bits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/scamble_sequence_8bits/scamble_sequence.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/all_sub_ips/scamble_sequence_8bits' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/FPGA/Vivaldo Project/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence_8bits', nor could it be found using path 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence_8bits'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/FPGA/Vivaldo Project/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence', nor could it be found using path 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:fpga/vivaldo project/pucch-format-0/all_sub_ips/scamble_sequence_8bits'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA/Vivaldo Project/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence_8bits'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA/Vivaldo Project/ofdm_demodulation/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/scamble_sequence'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 889.117 ; gain = 200.031
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 18:46:49 2026...

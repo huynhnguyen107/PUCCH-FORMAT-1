@@ -1,0 +1,2 @@
+cyclic_cmpy_0.vhd,vhdl,xil_defaultlib,../../../../cyclic_shift.srcs/sources_1/ip/cyclic_cmpy_0/sim/cyclic_cmpy_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

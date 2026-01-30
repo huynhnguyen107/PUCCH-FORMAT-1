@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jan 29 18:41:22 2026
+# Process ID: 29044
+# Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/dis_alpha_gen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24220 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\all_sub_ips\dis_alpha_gen\dis_alpha_gen.xpr
+# Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/dis_alpha_gen/vivado.log
+# Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/dis_alpha_gen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/dis_alpha_gen/dis_alpha_gen.xpr}
+update_compile_order -fileset sources_1

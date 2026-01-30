@@ -1,0 +1,118 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto abd24ebd72bd4eaa884be561f529c56d --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L cmpy_v6_0_18 -L xil_defaultlib -L fifo_generator_v13_2_5 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_pkg
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=11,ai_type=1...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture modulo30_mult_gen_0_arch of entity xil_defaultlib.modulo30_mult_gen_0 [modulo30_mult_gen_0_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=6,bi_width=5...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture modulo30_mult_gen_1_arch of entity xil_defaultlib.modulo30_mult_gen_1 [modulo30_mult_gen_1_default]
+Compiling module xil_defaultlib.modulo_30
+Compiling module xil_defaultlib.modulo_30_0
+Compiling module xil_defaultlib.x1_x2_init
+Compiling module xil_defaultlib.scramble_sequence_8bits
+Compiling module xil_defaultlib.scramble_sequence_8bits_0
+Compiling module xil_defaultlib.modulo_30_1
+Compiling module xil_defaultlib.scramble_sequence_1bit
+Compiling module xil_defaultlib.scramble_sequence_1bit_0
+Compiling module xil_defaultlib.modulo_30_2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.extend_valid_new(number_cycles=9...
+Compiling module xil_defaultlib.phi_matrix
+Compiling module xil_defaultlib.phi_matrix_0
+Compiling module xil_defaultlib.base_sequence
+Compiling module xil_defaultlib.ba_se_0
+Compiling module xil_defaultlib.ack_selection
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=9,ai_type=1,...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture modulo12_mult_gen_2_arch of entity xil_defaultlib.modulo12_mult_gen_2 [modulo12_mult_gen_2_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=6,bi_width=4...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture modulo12_mult_gen_1_arch of entity xil_defaultlib.modulo12_mult_gen_1 [modulo12_mult_gen_1_default]
+Compiling module xil_defaultlib.modulo_12
+Compiling module xil_defaultlib.alpha_modulo_12_0
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=4,bi_width=4...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture mult_gen_dis_alpha_arch of entity xil_defaultlib.mult_gen_dis_alpha [mult_gen_dis_alpha_default]
+Compiling module xil_defaultlib.dis_alpha_gen
+Compiling module xil_defaultlib.dis_alpha_gen_0
+Compiling module xil_defaultlib.modulo_12_1_nomalize
+Compiling module xil_defaultlib.phase_gen
+Compiling module xil_defaultlib.cyc_phase_gen_0
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.cyclic_fifo_generator_0
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=17,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,amultsel="...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.input_negation [\input_negation(c_xdevicefamily=...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="v...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_synth [\cmpy_v6_0_18_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_viv [\cmpy_v6_0_18_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18 [\cmpy_v6_0_18(c_xdevicefamily="v...]
+Compiling architecture cyclic_cmpy_0_arch of entity xil_defaultlib.cyclic_cmpy_0 [cyclic_cmpy_0_default]
+Compiling module xil_defaultlib.cyclic_gen
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
