@@ -9,3 +9,6 @@
 # Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/uci_dmrs_sub_ips/scamble_sequence_8bits/vivado.log
 # Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/uci_dmrs_sub_ips/scamble_sequence_8bits\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/uci_dmrs_sub_ips/scamble_sequence_8bits/scamble_sequence.xpr}
+update_compile_order -fileset sources_1
