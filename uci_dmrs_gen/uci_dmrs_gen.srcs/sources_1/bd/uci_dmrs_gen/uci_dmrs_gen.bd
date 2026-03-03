@@ -2,10 +2,19 @@
   "design": {
     "design_info": {
       "boundary_crc": "0x0",
+      "device": "xcvu9p-flga2104-2L-e",
       "name": "uci_dmrs_gen",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2019.2"
     },
-    "design_tree": {}
+    "design_tree": {
+      "cyclic_gen_0": ""
+    },
+    "components": {
+      "cyclic_gen_0": {
+        "vlnv": "xilinx.com:user:cyclic_gen:1.0",
+        "xci_name": "uci_dmrs_gen_cyclic_gen_0_0"
+      }
+    }
   }
 }

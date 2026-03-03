@@ -29,14 +29,14 @@ module dis_alpha_gen (
 	output  [7:0] dis_alpha	
 	);
 	reg [3:0] reg_alpha;
-	reg [6:0] cnt_96;
+	reg [6:0] cnt_11;
 	reg [3:0] cnt_12;
 	reg  cnt_valid;
 	reg  d_cnt_valid;
 	always @(posedge clk) begin
 		if (rst) begin
 			cnt_valid <= 0;
-			cnt_96 <= 0;
+			cnt_11 <= 0;
 			cnt_12 <= 0;
 			reg_alpha <= 0;
 			d_cnt_valid <= 0;
@@ -47,13 +47,13 @@ module dis_alpha_gen (
 			//valid
 			if (in_valid) 
 				cnt_valid <= 1;
-			else if (cnt_96 >= 95)
+			else if (cnt_11 >= 12-1)
 				cnt_valid <= 0;
-			//cnt 96	
+			//cnt 11	
 			if (cnt_valid)	
-				cnt_96 <= cnt_96 +1;
+				cnt_11 <= cnt_11 +1;
 			else
-				cnt_96 <= 0;
+				cnt_11 <= 0;
 			//cnt 12
 			if (cnt_valid)	
 				cnt_12 <= (cnt_12==11) ? 0: cnt_12 +1;

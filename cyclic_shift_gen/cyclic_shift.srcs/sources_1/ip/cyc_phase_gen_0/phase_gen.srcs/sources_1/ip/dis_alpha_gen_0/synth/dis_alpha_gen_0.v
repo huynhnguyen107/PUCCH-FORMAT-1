@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:dis_alpha_gen:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 (* X_CORE_INFO = "dis_alpha_gen,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "dis_alpha_gen_0,dis_alpha_gen,{}" *)
-(* CORE_GENERATION_INFO = "dis_alpha_gen_0,dis_alpha_gen,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=dis_alpha_gen,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "dis_alpha_gen_0,dis_alpha_gen,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=dis_alpha_gen,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module dis_alpha_gen_0 (

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../n_cs_gen.srcs/sources_1/ip/ncs_gen_fifo/sim/ncs_gen_fifo.v" \
+"../../../../n_cs_gen.srcs/sources_1/ip/ncs_scra_seq_8/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
+"../../../../n_cs_gen.srcs/sources_1/ip/ncs_scra_seq_8/sim/ncs_scra_seq_8.v" \
+"../../../../n_cs_gen.srcs/sources_1/new/n_cs_gen.v" \
+"../../../../n_cs_gen.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

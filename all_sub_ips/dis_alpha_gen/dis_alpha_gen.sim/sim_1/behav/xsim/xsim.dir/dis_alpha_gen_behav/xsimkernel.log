@@ -1,7 +1,7 @@
-Running: xsim.dir/dis_alpha_gen_behav/xsimk.exe -simmode gui -wdb dis_alpha_gen_behav.wdb -simrunnum 0 -socket 63078
+Running: xsim.dir/dis_alpha_gen_behav/xsimk.exe -simmode gui -wdb dis_alpha_gen_behav.wdb -simrunnum 0 -socket 51094
 Design successfully loaded
-Design Loading Memory Usage: 8540 KB (Peak: 8540 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading Memory Usage: 7900 KB (Peak: 7900 KB)
+Design Loading CPU Usage: 31 ms
 Simulation completed
-Simulation Memory Usage: 9536 KB (Peak: 9536 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 8924 KB (Peak: 8924 KB)
+Simulation CPU Usage: 46 ms

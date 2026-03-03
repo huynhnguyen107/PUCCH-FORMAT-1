@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sim_1/new/tb.v,1772416577,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sources_1/ip/ba_seq_control_blk_0/sim/ba_seq_control_blk_0.v,1772410708,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sources_1/new/ba_seq_control.v,,ba_seq_control_blk_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sources_1/ip/base_se_control_blk_1/sim/base_se_control_blk_1.v,1772410743,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sources_1/ip/ba_seq_control_blk_0/sim/ba_seq_control_blk_0.v,,base_se_control_blk_1,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sources_1/new/ba_seq_control.v,1772416687,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/ba_seq_control/ba_seq_control.srcs/sim_1/new/tb.v,,ba_seq_control,,,,,,,,

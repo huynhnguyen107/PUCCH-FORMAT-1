@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="29517fs"></ZoomStartTime>
+      <ZoomEndTime time="155418fs"></ZoomEndTime>
+      <Cursor1Time time="50500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="205"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_NID" type="array">
+      <obj_property name="ElementShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">reg_in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">reg_in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_NID" type="array">
+      <obj_property name="ElementShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_slot" type="array">
+      <obj_property name="ElementShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">reg_uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_m0" type="array">
+      <obj_property name="ElementShortName">reg_uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_m0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_uci_ack" type="array">
+      <obj_property name="ElementShortName">reg_uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_ack[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/slot_value" type="array">
+      <obj_property name="ElementShortName">slot_value[8:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_value[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/symbol_value" type="array">
+      <obj_property name="ElementShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/d_in_valid" type="logic">
+      <obj_property name="ElementShortName">d_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/d2_in_valid" type="logic">
+      <obj_property name="ElementShortName">d2_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/d3_in_valid" type="logic">
+      <obj_property name="ElementShortName">d3_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d3_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/seq_start" type="array">
+      <obj_property name="ElementShortName">seq_start[9:0]</obj_property>
+      <obj_property name="ObjectShortName">seq_start[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/ncs_valid_tmp" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/cnt_ncs_tmp" type="array">
+      <obj_property name="ElementShortName">cnt_ncs_tmp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_ncs_tmp[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/ncs_range" type="logic">
+      <obj_property name="ElementShortName">ncs_range</obj_property>
+      <obj_property name="ObjectShortName">ncs_range</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/reg_in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">reg_in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">reg_in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/ncs_tmp" type="array">
+      <obj_property name="ElementShortName">ncs_tmp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_tmp[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/ncs_fifo" type="array">
+      <obj_property name="ElementShortName">ncs_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_fifo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/ncs_valid_fifo" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_fifo</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/cnt_fifo_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/cnt_fifo" type="array">
+      <obj_property name="ElementShortName">cnt_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/cnt_read" type="array">
+      <obj_property name="ElementShortName">cnt_read[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_read[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/max_symbol" type="array">
+      <obj_property name="ElementShortName">max_symbol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">max_symbol[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/rd_en_1" type="logic">
+      <obj_property name="ElementShortName">rd_en_1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n_cs_gen0/rd_en_2" type="logic">
+      <obj_property name="ElementShortName">rd_en_2</obj_property>
+      <obj_property name="ObjectShortName">rd_en_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ncs" type="array">
+      <obj_property name="ElementShortName">ncs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ncs_valid" type="logic">
+      <obj_property name="ElementShortName">ncs_valid</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid</obj_property>
+   </wvobject>
+</wave_config>

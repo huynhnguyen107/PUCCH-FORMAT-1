@@ -1,6 +1,182 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Feb 26 15:10:58 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uci_n_cs_gen'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uci_n_cs_gen (xilinx.com:user:n_cs_gen:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Feb 26 14:49:02 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uci_phase_gen_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of uci_phase_gen_0 (xilinx.com:user:phase_gen:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'uci_phase_gen_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'uci_NID'
+
+-Upgrade has removed port 'uci_ack'
+
+-Upgrade has removed port 'uci_first_symbol'
+
+-Upgrade has removed port 'uci_slot'
+
+-Upgrade has removed port 'uci_sym_alloc'
+
+-Upgrade has added port 'n_cs_valid'
+
+-Upgrade has added port 'ncs'
+
+-Upgrade has added port 'uci_mcs'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Feb 26 14:49:02 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyc_phase_gen_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of cyc_phase_gen_0 (xilinx.com:user:phase_gen:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'cyc_phase_gen_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'uci_NID'
+
+-Upgrade has removed port 'uci_ack'
+
+-Upgrade has removed port 'uci_first_symbol'
+
+-Upgrade has removed port 'uci_slot'
+
+-Upgrade has removed port 'uci_sym_alloc'
+
+-Upgrade has added port 'n_cs_valid'
+
+-Upgrade has added port 'ncs'
+
+-Upgrade has added port 'uci_mcs'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Feb 26 14:16:56 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyc_phase_gen_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cyc_phase_gen_0 (xilinx.com:user:phase_gen:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Feb 22 19:27:30 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ba_se_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ba_se_1 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Feb 22 19:26:55 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ba_se_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ba_se_0 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Thu Jan 29 18:26:34 2026
 | Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

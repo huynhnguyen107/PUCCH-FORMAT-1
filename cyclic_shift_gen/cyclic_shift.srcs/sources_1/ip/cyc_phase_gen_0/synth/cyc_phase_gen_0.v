@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -59,12 +59,10 @@ module cyc_phase_gen_0 (
   clk,
   rst,
   in_valid,
-  uci_NID,
-  uci_slot,
-  uci_first_symbol,
-  uci_sym_alloc,
   uci_m0,
-  uci_ack,
+  uci_mcs,
+  n_cs_valid,
+  ncs,
   phase_valid,
   phase
 );
@@ -72,12 +70,10 @@ module cyc_phase_gen_0 (
 input wire clk;
 input wire rst;
 input wire in_valid;
-input wire [10 : 0] uci_NID;
-input wire [4 : 0] uci_slot;
-input wire [3 : 0] uci_first_symbol;
-input wire uci_sym_alloc;
 input wire [3 : 0] uci_m0;
-input wire [1 : 0] uci_ack;
+input wire [3 : 0] uci_mcs;
+input wire n_cs_valid;
+input wire [7 : 0] ncs;
 output wire phase_valid;
 output wire [31 : 0] phase;
 
@@ -85,12 +81,10 @@ output wire [31 : 0] phase;
     .clk(clk),
     .rst(rst),
     .in_valid(in_valid),
-    .uci_NID(uci_NID),
-    .uci_slot(uci_slot),
-    .uci_first_symbol(uci_first_symbol),
-    .uci_sym_alloc(uci_sym_alloc),
     .uci_m0(uci_m0),
-    .uci_ack(uci_ack),
+    .uci_mcs(uci_mcs),
+    .n_cs_valid(n_cs_valid),
+    .ncs(ncs),
     .phase_valid(phase_valid),
     .phase(phase)
   );

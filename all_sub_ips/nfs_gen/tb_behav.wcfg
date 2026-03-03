@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7270fs"></ZoomStartTime>
+      <ZoomEndTime time="32651fs"></ZoomEndTime>
+      <Cursor1Time time="11500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="195"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_intra_fr_hop" type="logic">
+      <obj_property name="ElementShortName">uci_intra_fr_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_intra_fr_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/nfs_0" type="array">
+      <obj_property name="ElementShortName">nfs_0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nfs_0[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/nfs_1" type="array">
+      <obj_property name="ElementShortName">nfs_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nfs_1[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/nfs_valid" type="logic">
+      <obj_property name="ElementShortName">nfs_valid</obj_property>
+      <obj_property name="ObjectShortName">nfs_valid</obj_property>
+   </wvobject>
+</wave_config>

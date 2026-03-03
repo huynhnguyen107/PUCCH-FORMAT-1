@@ -111,18 +111,18 @@ extern void execute_411(char*, char *);
 extern void transaction_0(char*, char*, unsigned, unsigned, unsigned);
 extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 extern void transaction_5(char*, char*, unsigned, unsigned, unsigned);
-extern void transaction_9(char*, char*, unsigned, unsigned, unsigned);
+extern void transaction_11(char*, char*, unsigned, unsigned, unsigned);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 extern void transaction_6(char*, char*, unsigned, unsigned, unsigned);
-extern void transaction_7(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[67] = {(funcp)execute_2, (funcp)vlog_simple_process_execute_0_fast_no_reg_no_agg, (funcp)execute_80, (funcp)execute_83, (funcp)execute_400, (funcp)execute_401, (funcp)execute_398, (funcp)execute_97, (funcp)execute_98, (funcp)execute_99, (funcp)execute_100, (funcp)execute_101, (funcp)execute_392, (funcp)execute_387, (funcp)execute_122, (funcp)execute_143, (funcp)execute_159, (funcp)execute_175, (funcp)execute_191, (funcp)execute_208, (funcp)execute_219, (funcp)execute_236, (funcp)execute_252, (funcp)execute_268, (funcp)execute_284, (funcp)execute_301, (funcp)execute_328, (funcp)execute_309, (funcp)execute_311, (funcp)execute_314, (funcp)execute_316, (funcp)execute_318, (funcp)execute_320, (funcp)execute_322, (funcp)execute_324, (funcp)execute_326, (funcp)execute_335, (funcp)execute_343, (funcp)execute_350, (funcp)execute_357, (funcp)execute_363, (funcp)execute_370, (funcp)execute_377, (funcp)execute_384, (funcp)execute_391, (funcp)execute_129, (funcp)execute_131, (funcp)execute_133, (funcp)execute_111, (funcp)execute_112, (funcp)execute_107, (funcp)execute_110, (funcp)execute_403, (funcp)execute_404, (funcp)execute_405, (funcp)execute_407, (funcp)execute_408, (funcp)execute_409, (funcp)execute_410, (funcp)execute_411, (funcp)transaction_0, (funcp)vlog_transfunc_eventcallback, (funcp)transaction_5, (funcp)transaction_9, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_6, (funcp)transaction_7};
+extern void transaction_8(char*, char*, unsigned, unsigned, unsigned);
+funcp funcTab[67] = {(funcp)execute_2, (funcp)vlog_simple_process_execute_0_fast_no_reg_no_agg, (funcp)execute_80, (funcp)execute_83, (funcp)execute_400, (funcp)execute_401, (funcp)execute_398, (funcp)execute_97, (funcp)execute_98, (funcp)execute_99, (funcp)execute_100, (funcp)execute_101, (funcp)execute_392, (funcp)execute_387, (funcp)execute_122, (funcp)execute_143, (funcp)execute_159, (funcp)execute_175, (funcp)execute_191, (funcp)execute_208, (funcp)execute_219, (funcp)execute_236, (funcp)execute_252, (funcp)execute_268, (funcp)execute_284, (funcp)execute_301, (funcp)execute_328, (funcp)execute_309, (funcp)execute_311, (funcp)execute_314, (funcp)execute_316, (funcp)execute_318, (funcp)execute_320, (funcp)execute_322, (funcp)execute_324, (funcp)execute_326, (funcp)execute_335, (funcp)execute_343, (funcp)execute_350, (funcp)execute_357, (funcp)execute_363, (funcp)execute_370, (funcp)execute_377, (funcp)execute_384, (funcp)execute_391, (funcp)execute_129, (funcp)execute_131, (funcp)execute_133, (funcp)execute_111, (funcp)execute_112, (funcp)execute_107, (funcp)execute_110, (funcp)execute_403, (funcp)execute_404, (funcp)execute_405, (funcp)execute_407, (funcp)execute_408, (funcp)execute_409, (funcp)execute_410, (funcp)execute_411, (funcp)transaction_0, (funcp)vlog_transfunc_eventcallback, (funcp)transaction_5, (funcp)transaction_11, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_6, (funcp)transaction_8};
 const int NumRelocateId= 67;
 
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/dis_alpha_gen_behav/xsim.reloc",  (void **)funcTab, 67);
-	iki_vhdl_file_variable_register(dp + 28912);
-	iki_vhdl_file_variable_register(dp + 28968);
+	iki_vhdl_file_variable_register(dp + 29264);
+	iki_vhdl_file_variable_register(dp + 29320);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
@@ -138,7 +138,7 @@ void simulate(char *dp)
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/dis_alpha_gen_behav/xsim.reloc");
 	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
 
-	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 42304, dp + 41272, 0, 7, 0, 7, 8, 1);
+	iki_vlog_schedule_transaction_signal_fast_vhdl_value_time_0(dp + 42928, dp + 41624, 0, 7, 0, 7, 8, 1);
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength

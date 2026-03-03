@@ -27,19 +27,17 @@ module tb( );
 	reg in_valid;
 	reg [4:0] uci_slot;
 	reg [3:0] uci_first_symbol;
-	reg uci_sym_alloc;
 	reg [3:0] uci_m0;
-	reg [1:0] uci_ack;
+	reg [3:0] uci_nSymbs;
 	reg [10:0] uci_nID;
 	reg [1:0] uci_grouphopping;
-	reg uci_nhop;
+	reg  uci_intra_fr_hop;
 	wire [31:0] cyclic_shift;
 	wire cyclic_shift_valid;
-	
 	//call instance
-	cyclic_gen cyclic_gen0 (clk, rst, in_valid, uci_nID, uci_slot, 
-		uci_first_symbol, uci_sym_alloc, uci_m0, uci_ack,
-		uci_grouphopping, uci_nhop, cyclic_shift_valid, cyclic_shift );
+	cyclic_gen #(1)cyclic_gen0 (clk, rst, in_valid, uci_nID, uci_slot, 
+		uci_first_symbol, uci_m0, uci_nSymbs,
+		uci_grouphopping, uci_intra_fr_hop,  cyclic_shift_valid, cyclic_shift );
 	//create initial signals and create rst
 	initial begin
 		clk = 0;
@@ -47,12 +45,11 @@ module tb( );
 		in_valid = 0;
 		uci_slot = 0;
 		uci_first_symbol = 0;
-		uci_sym_alloc = 0;
 		uci_m0 = 0;
-		uci_ack = 0;
+		uci_nSymbs = 0;
 		uci_grouphopping = 0;
+		uci_intra_fr_hop = 0;
 		uci_nID = 0;
-		uci_nhop = 0;
 		#50 rst =0;
 	end
 	//create clock
@@ -62,25 +59,23 @@ module tb( );
 		wait (!rst)
 		@(posedge clk) begin
 			in_valid <= 1;
-			uci_slot <= 4;
+			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_sym_alloc <= 1;
 			uci_m0 <= 0;
-			uci_ack <= 2;
-			uci_grouphopping <= 1;
-			uci_nID <= 35;
-			uci_nhop <= 1;
+			uci_nSymbs <= 14;
+			uci_grouphopping <= 0;
+			uci_intra_fr_hop <= 1;
+			uci_nID <= 0;
 		end
 			@(posedge clk) begin
 			in_valid <= 0;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_sym_alloc <= 0;
 			uci_m0 <= 0;
-			uci_ack <= 0;
+			uci_nSymbs <= 0;
 			uci_grouphopping <= 0;
+			uci_intra_fr_hop <= 0;
 			uci_nID <= 0;
-			uci_nhop <= 0;
 		end
 	end
 endmodule

@@ -11,65 +11,353 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="999995fs"></ZoomStartTime>
-      <ZoomEndTime time="1000001fs"></ZoomEndTime>
-      <Cursor1Time time="999995fs"></Cursor1Time>
+      <ZoomStartTime time="50287fs"></ZoomStartTime>
+      <ZoomEndTime time="75568fs"></ZoomEndTime>
+      <Cursor1Time time="53500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
-   <wvobject fp_name="/tb/clk" type="logic">
+   <WVObjectSize size="84" />
+   <wvobject fp_name="/tb/cyclic_gen0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/rst" type="logic">
+   <wvobject fp_name="/tb/cyclic_gen0/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/in_valid" type="logic">
+   <wvobject fp_name="/tb/cyclic_gen0/in_valid" type="logic">
       <obj_property name="ElementShortName">in_valid</obj_property>
       <obj_property name="ObjectShortName">in_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/uci_slot" type="array">
-      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
-      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/uci_first_symbol" type="array">
-      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
-      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/uci_sym_alloc" type="logic">
-      <obj_property name="ElementShortName">uci_sym_alloc</obj_property>
-      <obj_property name="ObjectShortName">uci_sym_alloc</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/uci_m0" type="array">
-      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
-      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/uci_ack" type="array">
-      <obj_property name="ElementShortName">uci_ack[1:0]</obj_property>
-      <obj_property name="ObjectShortName">uci_ack[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/uci_nID" type="array">
+   <wvobject fp_name="/tb/cyclic_gen0/uci_nID" type="array">
       <obj_property name="ElementShortName">uci_nID[10:0]</obj_property>
       <obj_property name="ObjectShortName">uci_nID[10:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/uci_grouphopping" type="array">
+   <wvobject fp_name="/tb/cyclic_gen0/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_grouphopping" type="array">
       <obj_property name="ElementShortName">uci_grouphopping[1:0]</obj_property>
       <obj_property name="ObjectShortName">uci_grouphopping[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/uci_nhop" type="logic">
+   <wvobject fp_name="/tb/cyclic_gen0/uci_intra_fr_hop" type="logic">
+      <obj_property name="ElementShortName">uci_intra_fr_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_intra_fr_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/base_sequence0" type="array">
+      <obj_property name="ElementShortName">base_sequence0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_sequence0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/base_sequence_valid0" type="logic">
+      <obj_property name="ElementShortName">base_sequence_valid0</obj_property>
+      <obj_property name="ObjectShortName">base_sequence_valid0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/base_sequence1" type="array">
+      <obj_property name="ElementShortName">base_sequence1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_sequence1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/base_sequence_valid1" type="logic">
+      <obj_property name="ElementShortName">base_sequence_valid1</obj_property>
+      <obj_property name="ObjectShortName">base_sequence_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_nhop" type="logic">
       <obj_property name="ElementShortName">uci_nhop</obj_property>
       <obj_property name="ObjectShortName">uci_nhop</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/cyclic_shift" type="array">
+   <wvobject fp_name="/tb/cyclic_gen0/MODE" type="array">
+      <obj_property name="ElementShortName">MODE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MODE[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/ncs_valid" type="logic">
+      <obj_property name="ElementShortName">ncs_valid</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/ncs" type="array">
+      <obj_property name="ElementShortName">ncs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/phase" type="array">
+      <obj_property name="ElementShortName">phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/phase_valid" type="logic">
+      <obj_property name="ElementShortName">phase_valid</obj_property>
+      <obj_property name="ObjectShortName">phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/fifo_base" type="array">
+      <obj_property name="ElementShortName">fifo_base[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_base[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/d_phase" type="array">
+      <obj_property name="ElementShortName">d_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/d_phase_valid" type="logic">
+      <obj_property name="ElementShortName">d_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">d_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/pre_cyclic_temp" type="array">
+      <obj_property name="ElementShortName">pre_cyclic_temp[63:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_cyclic_temp[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/pre_cyclic" type="array">
+      <obj_property name="ElementShortName">pre_cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_cyclic[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/pre_cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">pre_cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">pre_cyclic_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/reg_uci_ack" type="array">
+      <obj_property name="ElementShortName">reg_uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/select_cnt" type="array">
+      <obj_property name="ElementShortName">select_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">select_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/select_valid" type="logic">
+      <obj_property name="ElementShortName">select_valid</obj_property>
+      <obj_property name="ObjectShortName">select_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/d_pre_cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">d_pre_cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">d_pre_cyclic_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/d_pre_cyclic" type="array">
+      <obj_property name="ElementShortName">d_pre_cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_pre_cyclic[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/cyclic_shift_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/cyclic_shift" type="array">
       <obj_property name="ElementShortName">cyclic_shift[31:0]</obj_property>
       <obj_property name="ObjectShortName">cyclic_shift[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/cyclic_shift_valid" type="logic">
-      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
-      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/uci_NID" type="array">
+      <obj_property name="ElementShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_NID[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_valid" type="logic">
+      <obj_property name="ElementShortName">ncs_valid</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs" type="array">
+      <obj_property name="ElementShortName">ncs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">reg_in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">reg_in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_NID" type="array">
+      <obj_property name="ElementShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_NID[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_slot" type="array">
+      <obj_property name="ElementShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_slot[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_first_symbol[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">reg_uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_nSymbs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_m0" type="array">
+      <obj_property name="ElementShortName">reg_uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_m0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/reg_uci_ack" type="array">
+      <obj_property name="ElementShortName">reg_uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/seq_start" type="array">
+      <obj_property name="ElementShortName">seq_start[9:0]</obj_property>
+      <obj_property name="ObjectShortName">seq_start[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/slot_value" type="array">
+      <obj_property name="ElementShortName">slot_value[8:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_value[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/symbol_value" type="array">
+      <obj_property name="ElementShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_value[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/d_in_valid" type="logic">
+      <obj_property name="ElementShortName">d_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/d2_in_valid" type="logic">
+      <obj_property name="ElementShortName">d2_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/d3_in_valid" type="logic">
+      <obj_property name="ElementShortName">d3_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d3_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_tmp" type="array">
+      <obj_property name="ElementShortName">ncs_tmp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_tmp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_valid_tmp" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/cnt_ncs_tmp" type="array">
+      <obj_property name="ElementShortName">cnt_ncs_tmp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_ncs_tmp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_range" type="logic">
+      <obj_property name="ElementShortName">ncs_range</obj_property>
+      <obj_property name="ObjectShortName">ncs_range</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_fifo" type="array">
+      <obj_property name="ElementShortName">ncs_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_fifo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_valid_fifo" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_fifo</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/cnt_fifo_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/cnt_fifo" type="array">
+      <obj_property name="ElementShortName">cnt_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/cnt_read" type="array">
+      <obj_property name="ElementShortName">cnt_read[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_read[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/max_symbol" type="array">
+      <obj_property name="ElementShortName">max_symbol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">max_symbol[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/rd_en_1" type="logic">
+      <obj_property name="ElementShortName">rd_en_1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/rd_en_2" type="logic">
+      <obj_property name="ElementShortName">rd_en_2</obj_property>
+      <obj_property name="ObjectShortName">rd_en_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/ID" type="array">
+      <obj_property name="ElementShortName">ID[30:0]</obj_property>
+      <obj_property name="ObjectShortName">ID[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/markP" type="array">
+      <obj_property name="ElementShortName">markP[30:0]</obj_property>
+      <obj_property name="ObjectShortName">markP[30:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/scramble" type="array">
+      <obj_property name="ElementShortName">scramble[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scramble[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/out_valid_16" type="logic">
+      <obj_property name="ElementShortName">out_valid_16</obj_property>
+      <obj_property name="ObjectShortName">out_valid_16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/x1_16" type="array">
+      <obj_property name="ElementShortName">x1_16[30:0]</obj_property>
+      <obj_property name="ObjectShortName">x1_16[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/x2_16" type="array">
+      <obj_property name="ElementShortName">x2_16[30:0]</obj_property>
+      <obj_property name="ObjectShortName">x2_16[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/x1_next" type="array">
+      <obj_property name="ElementShortName">x1_next[30:0]</obj_property>
+      <obj_property name="ObjectShortName">x1_next[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/x2_next" type="array">
+      <obj_property name="ElementShortName">x2_next[30:0]</obj_property>
+      <obj_property name="ObjectShortName">x2_next[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/c" type="array">
+      <obj_property name="ElementShortName">c[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/max_cnt" type="array">
+      <obj_property name="ElementShortName">max_cnt[30:0]</obj_property>
+      <obj_property name="ObjectShortName">max_cnt[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen0/uci_ncs_gen/inst/ncs_scra_seq_8/inst/scramble_valid" type="logic">
+      <obj_property name="ElementShortName">scramble_valid</obj_property>
+      <obj_property name="ObjectShortName">scramble_valid</obj_property>
    </wvobject>
 </wave_config>
