@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs/sources_1/new/com_mul_cyclic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module com_mul_cyclic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
