@@ -1,9 +1,40 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto abd24ebd72bd4eaa884be561f529c56d --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xil_defaultlib -L fifo_generator_v13_2_5 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto abd24ebd72bd4eaa884be561f529c56d --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L fifo_generator_v13_2_5 -L axi_utils_v2_0_6 -L cmpy_v6_0_18 -L xlconstant_v1_1_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:127]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:128]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:129]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:130]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:131]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:132]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:133]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:134]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:135]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:136]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:137]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:138]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:139]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:140]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:141]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:142]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:143]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:144]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:145]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:146]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:147]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:148]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:149]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:150]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:151]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:152]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:153]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:154]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:155]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:156]
+WARNING: [VRFC 10-3283] element index 31 into 'temp_in' is out of bounds [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v:157]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -22,6 +53,21 @@ Compiling package ieee.std_logic_unsigned
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_pkg
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.ba_seq_control_blk_0
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.base_se_control_blk_1
+Compiling module xil_defaultlib.ba_seq_control
+Compiling module xil_defaultlib.cyclic_gen_ba_seq_control_0_0
 Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
 Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
@@ -54,15 +100,45 @@ Compiling module xil_defaultlib.extend_valid_new(number_cycles=1...
 Compiling module xil_defaultlib.phi_matrix
 Compiling module xil_defaultlib.phi_matrix_0
 Compiling module xil_defaultlib.base_sequence
-Compiling module xil_defaultlib.ba_se_0
-Compiling module xil_defaultlib.ba_se_1
+Compiling module xil_defaultlib.cyclic_gen_base_sequence_0_0
+Compiling module xil_defaultlib.cyclic_gen_base_sequence_0_1
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=17,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,amultsel="...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="virtexuplu...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.input_negation [\input_negation(c_xdevicefamily=...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="v...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_synth [\cmpy_v6_0_18_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_viv [\cmpy_v6_0_18_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18 [\cmpy_v6_0_18(c_xdevicefamily="v...]
+Compiling architecture cyclic_cmpy_0_arch of entity xil_defaultlib.cyclic_cmpy_0 [cyclic_cmpy_0_default]
+Compiling module xil_defaultlib.com_mul_cyclic
+Compiling module xil_defaultlib.cyclic_gen_com_mul_cyclic_0_0
 Compiling module xil_defaultlib.ncs_scra_seq_8
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.ncs_gen_fifo
 Compiling module xil_defaultlib.n_cs_gen
-Compiling module xil_defaultlib.uci_ncs_gen
+Compiling module xil_defaultlib.cyclic_gen_n_cs_gen_0_0
+Compiling module xil_defaultlib.nfs_gen
+Compiling module xil_defaultlib.cyclic_gen_nfs_gen_0_0
 Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=9,ai_type=1,...]
 Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="virtexupl...]
 Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
@@ -84,7 +160,12 @@ Compiling module xil_defaultlib.dis_alpha_gen
 Compiling module xil_defaultlib.dis_alpha_gen_0
 Compiling module xil_defaultlib.modulo_12_1_nomalize
 Compiling module xil_defaultlib.phase_gen
-Compiling module xil_defaultlib.uci_phase_gen_0
+Compiling module xil_defaultlib.cyclic_gen_phase_gen_0_0
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant
+Compiling module xil_defaultlib.cyclic_gen_xlconstant_0_0
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant(CON...
+Compiling module xil_defaultlib.cyclic_gen_xlconstant_0_1
+Compiling module xil_defaultlib.cyclic_gen_xlconstant_0_2
 Compiling module xil_defaultlib.cyclic_gen
 Compiling module xil_defaultlib.tb
 Compiling module xil_defaultlib.glbl

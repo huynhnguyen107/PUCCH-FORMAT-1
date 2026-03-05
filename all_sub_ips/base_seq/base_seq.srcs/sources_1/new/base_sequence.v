@@ -28,7 +28,7 @@ module base_sequence(
 	input [1:0] uci_grouphopping,
 	input [10:0] uci_nID,
 	input uci_nhop,
-	output reg [31:0] base_sequence,
+	output [31:0] base_sequence,
 	output  base_sequence_valid
     );
 	reg neither_valid;
@@ -60,6 +60,8 @@ module base_sequence(
 	// find phi
 	wire phi_valid;
 	wire [2:0]  phi;
+	//reg [31:0] base_sequence
+	reg [31:0] reg_base_sequence;
 	// uci_grouphopping selection
 	always @(posedge clk)
 		if (rst) begin
@@ -170,27 +172,28 @@ module base_sequence(
 	always @(*) begin
 		case (phi)
 			3'b001: begin//1
-				base_sequence [15:0] = 16'd23170;//0.7
-				base_sequence [31:16] = 16'd23170;//0.7
+				reg_base_sequence [15:0] = 16'd23170;//0.7
+				reg_base_sequence [31:16] = 16'd23170;//0.7
 			end
 			3'b111: begin//-1
-				base_sequence [15:0] = 16'd23170;//0.7
-				base_sequence [31:16] = 16'd65536 -16'd23170;//-0.7
+				reg_base_sequence [15:0] = 16'd23170;//0.7
+				reg_base_sequence [31:16] = 16'd65536 -16'd23170;//-0.7
 			end
 			3'b011: begin//3
-				base_sequence [15:0] = 16'd65536 -16'd23170;//-0.7
-				base_sequence [31:16] = 16'd23170;//0.7
+				reg_base_sequence [15:0] = 16'd65536 -16'd23170;//-0.7
+				reg_base_sequence [31:16] = 16'd23170;//0.7
 			end
 			3'b101: begin//-3
-				base_sequence [15:0] = 16'd65536 -16'd23170;//-0.7
-				base_sequence [31:16] = 16'd65536 -16'd23170;//-0.7
+				reg_base_sequence [15:0] = 16'd65536 -16'd23170;//-0.7
+				reg_base_sequence [31:16] = 16'd65536 -16'd23170;//-0.7
 			end
 			default: begin
-				base_sequence [15:0] = 16'd23170;
-				base_sequence [31:16] = 16'd23170;
+				reg_base_sequence [15:0] = 16'd23170;
+				reg_base_sequence [31:16] = 16'd23170;
 			end
 		endcase
 	end
 	assign base_sequence_valid = phi_valid;
+	assign base_sequence = reg_base_sequence;
 endmodule
 

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../phase_gen_control.srcs/sources_1/ip/phase_fifo_0/sim/phase_fifo_0.v" \
+"../../../../phase_gen_control.srcs/sources_1/new/phase_gen_control.v" \
+"../../../../phase_gen_control.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

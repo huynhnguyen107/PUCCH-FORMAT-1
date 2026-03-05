@@ -29,15 +29,26 @@ module tb( );
 	reg [3:0] uci_first_symbol;
 	reg [3:0] uci_m0;
 	reg [3:0] uci_nSymbs;
-	reg [10:0] uci_nID;
+	reg [10:0] uci_NID;
 	reg [1:0] uci_grouphopping;
 	reg  uci_intra_fr_hop;
-	wire [31:0] cyclic_shift;
-	wire cyclic_shift_valid;
+	wire [31:0] cyclic;
+	wire cyclic_valid;
 	//call instance
-	cyclic_gen #(1)cyclic_gen0 (clk, rst, in_valid, uci_nID, uci_slot, 
-		uci_first_symbol, uci_m0, uci_nSymbs,
-		uci_grouphopping, uci_intra_fr_hop,  cyclic_shift_valid, cyclic_shift );
+	 cyclic_gen cyclic_gen_i
+	   (.clk(clk),
+		.in_valid(in_valid),
+		.rst(rst),
+		.uci_NID(uci_NID),
+		.uci_first_symbol(uci_first_symbol),
+		.uci_grouphopping(uci_grouphopping),
+		.uci_intra_fr_hop(uci_intra_fr_hop),
+		.uci_m0(uci_m0),
+		.uci_nsymbols(uci_nSymbs),
+		.uci_slot(uci_slot),
+		.cyclic(cyclic),
+		.cyclic_valid(cyclic_valid)
+		);
 	//create initial signals and create rst
 	initial begin
 		clk = 0;
@@ -49,7 +60,7 @@ module tb( );
 		uci_nSymbs = 0;
 		uci_grouphopping = 0;
 		uci_intra_fr_hop = 0;
-		uci_nID = 0;
+		uci_NID = 0;
 		#50 rst =0;
 	end
 	//create clock
@@ -65,7 +76,7 @@ module tb( );
 			uci_nSymbs <= 14;
 			uci_grouphopping <= 0;
 			uci_intra_fr_hop <= 1;
-			uci_nID <= 0;
+			uci_NID <= 0;
 		end
 			@(posedge clk) begin
 			in_valid <= 0;
@@ -75,7 +86,7 @@ module tb( );
 			uci_nSymbs <= 0;
 			uci_grouphopping <= 0;
 			uci_intra_fr_hop <= 0;
-			uci_nID <= 0;
+			uci_NID <= 0;
 		end
 	end
 endmodule

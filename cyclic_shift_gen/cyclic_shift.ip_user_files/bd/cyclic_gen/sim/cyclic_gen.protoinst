@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"cyclic_gen": {
+			"proto_instances": {
+			}
+		}
+	}
+}

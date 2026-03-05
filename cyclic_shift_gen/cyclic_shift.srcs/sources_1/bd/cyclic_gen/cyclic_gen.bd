@@ -1,11 +1,363 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0x5A4977FB785F898D",
+      "device": "xcvu9p-flga2104-2L-e",
       "name": "cyclic_gen",
-      "synth_flow_mode": "Hierarchical",
+      "synth_flow_mode": "None",
       "tool_version": "2019.2"
     },
-    "design_tree": {}
+    "design_tree": {
+      "n_cs_gen_0": "",
+      "phase_gen_0": "",
+      "nfs_gen_0": "",
+      "ba_seq_control_0": "",
+      "com_mul_cyclic_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "xlconstant_2": "",
+      "base_sequence_0": "",
+      "base_sequence_1": "",
+      "phase_gen_control_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "in_valid": {
+        "direction": "I"
+      },
+      "uci_slot": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "uci_grouphopping": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "uci_NID": {
+        "direction": "I",
+        "left": "10",
+        "right": "0"
+      },
+      "uci_nsymbols": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "uci_intra_fr_hop": {
+        "direction": "I"
+      },
+      "uci_first_symbol": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "uci_m0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "cyclic_valid": {
+        "direction": "O"
+      },
+      "cyclic": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "n_cs_gen_0": {
+        "vlnv": "xilinx.com:user:n_cs_gen:1.0",
+        "xci_name": "cyclic_gen_n_cs_gen_0_0"
+      },
+      "phase_gen_0": {
+        "vlnv": "xilinx.com:user:phase_gen:1.0",
+        "xci_name": "cyclic_gen_phase_gen_0_0"
+      },
+      "nfs_gen_0": {
+        "vlnv": "xilinx.com:user:nfs_gen:1.0",
+        "xci_name": "cyclic_gen_nfs_gen_0_0"
+      },
+      "ba_seq_control_0": {
+        "vlnv": "xilinx.com:user:ba_seq_control:1.0",
+        "xci_name": "cyclic_gen_ba_seq_control_0_0"
+      },
+      "com_mul_cyclic_0": {
+        "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
+        "xci_name": "cyclic_gen_com_mul_cyclic_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "cyclic_gen_xlconstant_0_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "cyclic_gen_xlconstant_0_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "cyclic_gen_xlconstant_0_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "base_sequence_0": {
+        "vlnv": "xilinx.com:user:base_sequence:1.0",
+        "xci_name": "cyclic_gen_base_sequence_0_0"
+      },
+      "base_sequence_1": {
+        "vlnv": "xilinx.com:user:base_sequence:1.0",
+        "xci_name": "cyclic_gen_base_sequence_0_1"
+      },
+      "phase_gen_control_0": {
+        "vlnv": "xilinx.com:user:phase_gen_control:1.0",
+        "xci_name": "cyclic_gen_phase_gen_control_0_0"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "nfs_gen_0/clk",
+          "ba_seq_control_0/clk",
+          "n_cs_gen_0/clk",
+          "phase_gen_0/clk",
+          "com_mul_cyclic_0/clk",
+          "base_sequence_0/clk",
+          "base_sequence_1/clk",
+          "phase_gen_control_0/clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "nfs_gen_0/rst",
+          "ba_seq_control_0/rst",
+          "n_cs_gen_0/rst",
+          "phase_gen_0/rst",
+          "com_mul_cyclic_0/rst",
+          "base_sequence_0/rst",
+          "base_sequence_1/rst",
+          "phase_gen_control_0/rst"
+        ]
+      },
+      "in_valid_1": {
+        "ports": [
+          "in_valid",
+          "nfs_gen_0/in_valid",
+          "n_cs_gen_0/in_valid",
+          "phase_gen_0/in_valid",
+          "base_sequence_0/in_valid",
+          "base_sequence_1/in_valid",
+          "phase_gen_control_0/in_valid"
+        ]
+      },
+      "uci_slot_1": {
+        "ports": [
+          "uci_slot",
+          "n_cs_gen_0/uci_slot",
+          "base_sequence_0/uci_slot",
+          "base_sequence_1/uci_slot"
+        ]
+      },
+      "uci_grouphopping_1": {
+        "ports": [
+          "uci_grouphopping",
+          "base_sequence_0/uci_grouphopping",
+          "base_sequence_1/uci_grouphopping"
+        ]
+      },
+      "uci_NID_1": {
+        "ports": [
+          "uci_NID",
+          "n_cs_gen_0/uci_NID",
+          "base_sequence_0/uci_nID",
+          "base_sequence_1/uci_nID"
+        ]
+      },
+      "base_sequence_0_base_sequence": {
+        "ports": [
+          "base_sequence_0/base_sequence",
+          "ba_seq_control_0/basequence_0"
+        ]
+      },
+      "base_sequence_1_base_sequence": {
+        "ports": [
+          "base_sequence_1/base_sequence",
+          "ba_seq_control_0/basequence_1"
+        ]
+      },
+      "base_sequence_0_base_sequence_valid": {
+        "ports": [
+          "base_sequence_0/base_sequence_valid",
+          "ba_seq_control_0/basequence_valid_0"
+        ]
+      },
+      "base_sequence_1_base_sequence_valid": {
+        "ports": [
+          "base_sequence_1/base_sequence_valid",
+          "ba_seq_control_0/basequence_valid_1"
+        ]
+      },
+      "uci_nsymbols_1": {
+        "ports": [
+          "uci_nsymbols",
+          "nfs_gen_0/uci_nSymbs",
+          "n_cs_gen_0/uci_nSymbs",
+          "phase_gen_control_0/uci_nSymbs"
+        ]
+      },
+      "uci_intra_fr_hop_1": {
+        "ports": [
+          "uci_intra_fr_hop",
+          "nfs_gen_0/uci_intra_fr_hop",
+          "base_sequence_0/uci_nhop"
+        ]
+      },
+      "nfs_gen_0_nfs_valid": {
+        "ports": [
+          "nfs_gen_0/nfs_valid",
+          "ba_seq_control_0/nfs_valid"
+        ]
+      },
+      "nfs_gen_0_nfs_0": {
+        "ports": [
+          "nfs_gen_0/nfs_0",
+          "ba_seq_control_0/nfs_0"
+        ]
+      },
+      "nfs_gen_0_nfs_1": {
+        "ports": [
+          "nfs_gen_0/nfs_1",
+          "ba_seq_control_0/nfs_1"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "n_cs_gen_0/in_uci_flag",
+          "phase_gen_control_0/in_uci_flag"
+        ]
+      },
+      "uci_first_symbol_1": {
+        "ports": [
+          "uci_first_symbol",
+          "n_cs_gen_0/uci_first_symbol"
+        ]
+      },
+      "uci_m0_1": {
+        "ports": [
+          "uci_m0",
+          "phase_gen_0/uci_m0"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "phase_gen_0/uci_mcs"
+        ]
+      },
+      "n_cs_gen_0_ncs_valid": {
+        "ports": [
+          "n_cs_gen_0/ncs_valid",
+          "phase_gen_0/n_cs_valid"
+        ]
+      },
+      "n_cs_gen_0_ncs": {
+        "ports": [
+          "n_cs_gen_0/ncs",
+          "phase_gen_0/ncs"
+        ]
+      },
+      "ba_seq_control_0_basequence_out_valid": {
+        "ports": [
+          "ba_seq_control_0/basequence_out_valid",
+          "com_mul_cyclic_0/basequence_valid"
+        ]
+      },
+      "ba_seq_control_0_basequence_out": {
+        "ports": [
+          "ba_seq_control_0/basequence_out",
+          "com_mul_cyclic_0/basequence"
+        ]
+      },
+      "com_mul_cyclic_0_cyclic_valid": {
+        "ports": [
+          "com_mul_cyclic_0/cyclic_valid",
+          "cyclic_valid"
+        ]
+      },
+      "com_mul_cyclic_0_cyclic": {
+        "ports": [
+          "com_mul_cyclic_0/cyclic",
+          "cyclic"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "base_sequence_1/uci_nhop"
+        ]
+      },
+      "phase_gen_0_phase_valid": {
+        "ports": [
+          "phase_gen_0/phase_valid",
+          "phase_gen_control_0/i_phase_valid"
+        ]
+      },
+      "phase_gen_0_phase": {
+        "ports": [
+          "phase_gen_0/phase",
+          "phase_gen_control_0/i_phase"
+        ]
+      },
+      "phase_gen_control_0_start_en": {
+        "ports": [
+          "phase_gen_control_0/start_en",
+          "ba_seq_control_0/start_en"
+        ]
+      },
+      "phase_gen_control_0_o_phase_valid": {
+        "ports": [
+          "phase_gen_control_0/o_phase_valid",
+          "com_mul_cyclic_0/phase_valid"
+        ]
+      },
+      "phase_gen_control_0_o_phase": {
+        "ports": [
+          "phase_gen_control_0/o_phase",
+          "com_mul_cyclic_0/phase"
+        ]
+      }
+    }
   }
 }
