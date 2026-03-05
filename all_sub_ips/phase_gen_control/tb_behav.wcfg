@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="141569fs"></ZoomStartTime>
-      <ZoomEndTime time="153160fs"></ZoomEndTime>
-      <Cursor1Time time="143500fs"></Cursor1Time>
+      <ZoomStartTime time="139312fs"></ZoomStartTime>
+      <ZoomEndTime time="162493fs"></ZoomEndTime>
+      <Cursor1Time time="145500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="236"></NameColumnWidth>
       <ValueColumnWidth column_width="141"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="25" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -70,13 +70,25 @@
       <obj_property name="ElementShortName">cnt_write[3:0]</obj_property>
       <obj_property name="ObjectShortName">cnt_write[3:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/valid_read" type="logic">
+      <obj_property name="ElementShortName">valid_read</obj_property>
+      <obj_property name="ObjectShortName">valid_read</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/phase_gen_control0/start_read" type="logic">
       <obj_property name="ElementShortName">start_read</obj_property>
       <obj_property name="ObjectShortName">start_read</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/phase_gen_control0/valid_read" type="logic">
-      <obj_property name="ElementShortName">valid_read</obj_property>
-      <obj_property name="ObjectShortName">valid_read</obj_property>
+   <wvobject fp_name="/tb/phase_gen_control0/valid_d" type="logic">
+      <obj_property name="ElementShortName">valid_d</obj_property>
+      <obj_property name="ObjectShortName">valid_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/start_read_d" type="logic">
+      <obj_property name="ElementShortName">start_read_d</obj_property>
+      <obj_property name="ObjectShortName">start_read_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/cnt_d" type="array">
+      <obj_property name="ElementShortName">cnt_d[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_d[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/phase_gen_control0/cnt_11_read" type="array">
       <obj_property name="ElementShortName">cnt_11_read[3:0]</obj_property>
@@ -102,6 +114,18 @@
    <wvobject fp_name="/tb/o_phase_valid" type="logic">
       <obj_property name="ElementShortName">o_phase_valid</obj_property>
       <obj_property name="ObjectShortName">o_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/start_en" type="logic">
+      <obj_property name="ElementShortName">start_en</obj_property>
+      <obj_property name="ObjectShortName">start_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/o_phase_valid" type="logic">
+      <obj_property name="ElementShortName">o_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">o_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/phase_gen_control0/o_phase" type="array">
+      <obj_property name="ElementShortName">o_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_phase[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/phase_gen_control0/start_en" type="logic">
       <obj_property name="ElementShortName">start_en</obj_property>

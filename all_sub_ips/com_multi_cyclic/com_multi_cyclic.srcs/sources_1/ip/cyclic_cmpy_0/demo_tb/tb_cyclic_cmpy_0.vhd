@@ -91,7 +91,6 @@ architecture tb of tb_cyclic_cmpy_0 is
 
   -- General inputs
   signal aclk               : std_logic := '0';  -- the master clock
-  signal aclken             : std_logic := '1';  -- clock enable
 
   -- Slave channel A inputs
   signal s_axis_a_tvalid    : std_logic := '0';  -- TVALID for channel A
@@ -213,7 +212,6 @@ begin
   dut : entity work.cyclic_cmpy_0
     port map (
       aclk                => aclk,
-      aclken              => aclken,
       s_axis_a_tvalid     => s_axis_a_tvalid,
       s_axis_a_tdata      => s_axis_a_tdata,
       s_axis_b_tvalid     => s_axis_b_tvalid,
@@ -244,26 +242,6 @@ begin
   end process clock_gen;
 
   -----------------------------------------------------------------------
-  -- Generate clock enable
-  -----------------------------------------------------------------------
-
-  -- Disable the clock for 20 clock cycles starting in cycle 100.
-  -- Keep the clock enable tied high for the rest of the test.
-  aclken_gen : process
-  begin
-    aclken <= '1';
-    -- Drive clock enable T_HOLD time after rising edge of clock
-    wait until rising_edge(aclk);
-    wait for T_HOLD;
-    -- Clock enable goes low in cycle 100, goes high 20 cycles later
-    wait for CLOCK_PERIOD * 100;
-    aclken <= '0';
-    wait for CLOCK_PERIOD * 20;
-    aclken <= '1';
-    wait;
-  end process aclken_gen;
-
-  -----------------------------------------------------------------------
   -- Generate inputs
   -----------------------------------------------------------------------
 
@@ -281,7 +259,7 @@ begin
     loop
 
       -- Drive inputs T_HOLD time after rising edge of clock
-      wait until rising_edge(aclk) and aclken = '1';
+      wait until rising_edge(aclk);
       wait for T_HOLD;
 
       -- Drive AXI TVALID signals to demonstrate different types of operation
@@ -379,7 +357,7 @@ begin
     -- Instead, check the protocol of the DOUT channel:
     -- check that the payload is valid (not X) when TVALID is high
 
-    if m_axis_dout_tvalid = '1' and aclken = '1' then
+    if m_axis_dout_tvalid = '1' then
       if is_x(m_axis_dout_tdata) then
         report "ERROR: m_axis_dout_tdata is invalid when m_axis_dout_tvalid is high" severity error;
         check_ok := false;

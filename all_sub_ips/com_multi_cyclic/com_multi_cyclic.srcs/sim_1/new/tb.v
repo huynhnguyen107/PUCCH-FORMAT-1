@@ -46,7 +46,7 @@ module tb();
 	always #0.5 clk = !clk;
 	// create other signals
 	initial begin
-		for (i=0;i<12;i=i+1) begin
+		for (i=0;i<84;i=i+1) begin
 			@(posedge clk) begin
 				basequence_valid <= 1;
 				basequence[15:0] <= i*1638;//0.05*i=i*0.05*2^15

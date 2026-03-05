@@ -5,28 +5,41 @@
       "device": "xcvu9p-flga2104-2L-e",
       "name": "cyclic_gen",
       "synth_flow_mode": "None",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
       "n_cs_gen_0": "",
       "phase_gen_0": "",
       "nfs_gen_0": "",
       "ba_seq_control_0": "",
-      "com_mul_cyclic_0": "",
       "xlconstant_0": "",
       "xlconstant_1": "",
       "xlconstant_2": "",
       "base_sequence_0": "",
       "base_sequence_1": "",
-      "phase_gen_control_0": ""
+      "phase_gen_control_0": "",
+      "com_mul_cyclic_0": ""
     },
     "ports": {
       "clk": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "cyclic_gen_clk",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
           }
         }
       },
@@ -34,6 +47,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -101,10 +118,6 @@
         "vlnv": "xilinx.com:user:ba_seq_control:1.0",
         "xci_name": "cyclic_gen_ba_seq_control_0_0"
       },
-      "com_mul_cyclic_0": {
-        "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
-        "xci_name": "cyclic_gen_com_mul_cyclic_0_0"
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "cyclic_gen_xlconstant_0_0"
@@ -141,6 +154,10 @@
       "phase_gen_control_0": {
         "vlnv": "xilinx.com:user:phase_gen_control:1.0",
         "xci_name": "cyclic_gen_phase_gen_control_0_0"
+      },
+      "com_mul_cyclic_0": {
+        "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
+        "xci_name": "cyclic_gen_com_mul_cyclic_0_0"
       }
     },
     "nets": {
@@ -151,10 +168,10 @@
           "ba_seq_control_0/clk",
           "n_cs_gen_0/clk",
           "phase_gen_0/clk",
-          "com_mul_cyclic_0/clk",
           "base_sequence_0/clk",
           "base_sequence_1/clk",
-          "phase_gen_control_0/clk"
+          "phase_gen_control_0/clk",
+          "com_mul_cyclic_0/clk"
         ]
       },
       "rst_1": {
@@ -164,10 +181,10 @@
           "ba_seq_control_0/rst",
           "n_cs_gen_0/rst",
           "phase_gen_0/rst",
-          "com_mul_cyclic_0/rst",
           "base_sequence_0/rst",
           "base_sequence_1/rst",
-          "phase_gen_control_0/rst"
+          "phase_gen_control_0/rst",
+          "com_mul_cyclic_0/rst"
         ]
       },
       "in_valid_1": {

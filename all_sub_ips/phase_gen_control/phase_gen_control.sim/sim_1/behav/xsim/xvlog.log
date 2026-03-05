@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/phase_gen_control/phase_gen_control.srcs/sources_1/ip/phase_fifo_0/sim/phase_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/phase_gen_control/phase_gen_control.srcs/sources_1/new/phase_gen_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_gen_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/phase_gen_control/phase_gen_control.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

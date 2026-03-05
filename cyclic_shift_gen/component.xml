@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>cyclic_gen</spirit:name>
+  <spirit:name>cyclic_gen_wrapper</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:model>
     <spirit:views>
@@ -11,18 +11,30 @@
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>Verilog</spirit:language>
-        <spirit:modelName>cyclic_gen</spirit:modelName>
+        <spirit:modelName>cyclic_gen_wrapper</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_cmpy_6_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_n_cs_gen_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_phase_gen_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_nfs_gen_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_ba_seq_control_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_com_mul_cyclic_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_phase_gen_control_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
@@ -30,7 +42,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>68d8fc59</spirit:value>
+            <spirit:value>620c57f6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -39,18 +51,30 @@
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>Verilog</spirit:language>
-        <spirit:modelName>cyclic_gen</spirit:modelName>
+        <spirit:modelName>cyclic_gen_wrapper</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_cmpy_6_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_n_cs_gen_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_phase_gen_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_nfs_gen_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_ba_seq_control_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_com_mul_cyclic_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_phase_gen_control_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
@@ -58,7 +82,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>68d8fc59</spirit:value>
+            <spirit:value>01370793</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -73,7 +97,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c385c99f</spirit:value>
+            <spirit:value>9c812401</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -107,19 +131,6 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>rst</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
         <spirit:name>in_valid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -133,16 +144,12 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_nID</spirit:name>
+        <spirit:name>rst</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">10</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -150,11 +157,11 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_slot</spirit:name>
+        <spirit:name>uci_NID</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:left spirit:format="long">10</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -184,7 +191,24 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_sym_alloc</spirit:name>
+        <spirit:name>uci_grouphopping</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>uci_intra_fr_hop</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -214,11 +238,11 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_ack</spirit:name>
+        <spirit:name>uci_nsymbols</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:left spirit:format="long">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -231,11 +255,11 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_grouphopping</spirit:name>
+        <spirit:name>uci_slot</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:left spirit:format="long">4</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -248,33 +272,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>uci_nhop</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>cyclic_shift_valid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>cyclic_shift</spirit:name>
+        <spirit:name>cyclic</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -290,52 +288,118 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>cyclic_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyclic_cmpy_0/cyclic_cmpy_0.xci</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/cyclic_gen_base_sequence_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_base_sequence_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyclic_fifo_generator_0/cyclic_fifo_generator_0.xci</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/cyclic_gen_base_sequence_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_base_sequence_1</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyc_phase_gen_0/cyc_phase_gen_0.xci</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_n_cs_gen_0_0/cyclic_gen_n_cs_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_n_cs_gen_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_0_0/cyclic_gen_phase_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_phase_gen_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/ba_se_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_nfs_gen_0_0/cyclic_gen_nfs_gen_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_nfs_gen_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_ba_seq_control_0_0/cyclic_gen_ba_seq_control_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_ba_seq_control_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/cyclic_gen_com_mul_cyclic_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_com_mul_cyclic_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_0/cyclic_gen_xlconstant_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_1/cyclic_gen_xlconstant_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_2/cyclic_gen_xlconstant_0_2.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_2</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_control_0_0/cyclic_gen_phase_gen_control_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_phase_gen_control_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/synth/cyclic_gen.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen_ooc.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>SCOPED_TO_REF_cyclic_gen</spirit:userFileType>
+        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/new/cyclic_gen.v</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/imports/hdl/cyclic_gen_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_ec8c2e84</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9103ee6e</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_cmpy_6_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="cmpy" xilinx:version="6.0">
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="base_sequence" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_n_cs_gen_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="n_cs_gen" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -352,7 +416,135 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_nfs_gen_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="nfs_gen" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_ba_seq_control_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="ba_seq_control" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_com_mul_cyclic_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="com_mul_cyclic" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="xlconstant" xilinx:version="1.1">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_phase_gen_control_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="phase_gen_control" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/cyclic_gen_base_sequence_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_base_sequence_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/cyclic_gen_base_sequence_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_base_sequence_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_n_cs_gen_0_0/cyclic_gen_n_cs_gen_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_n_cs_gen_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_0_0/cyclic_gen_phase_gen_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_phase_gen_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_nfs_gen_0_0/cyclic_gen_nfs_gen_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_nfs_gen_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_ba_seq_control_0_0/cyclic_gen_ba_seq_control_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_ba_seq_control_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/cyclic_gen_com_mul_cyclic_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_com_mul_cyclic_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_0/cyclic_gen_xlconstant_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_1/cyclic_gen_xlconstant_0_1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_1</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_2/cyclic_gen_xlconstant_0_2.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xlconstant_2</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_control_0_0/cyclic_gen_phase_gen_control_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_phase_gen_control_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/sim/cyclic_gen.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/sim/cyclic_gen.protoinst</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>cyclic_shift.srcs/sources_1/imports/hdl/cyclic_gen_wrapper.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
           <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="base_sequence" xilinx:version="1.0">
@@ -362,47 +554,10 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyclic_cmpy_0/cyclic_cmpy_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyclic_fifo_generator_0/cyclic_fifo_generator_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/cyc_phase_gen_0/cyc_phase_gen_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/ba_se_0/ba_se_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/ip/ba_se_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
-        <spirit:userFileType>coe</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/new/cyclic_gen.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_cmpy_6_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_n_cs_gen_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="cmpy" xilinx:version="6.0">
-            <xilinx:mode xilinx:name="create_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="n_cs_gen" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -419,10 +574,50 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_nfs_gen_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="base_sequence" xilinx:version="1.0">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="nfs_gen" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_ba_seq_control_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="ba_seq_control" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_com_mul_cyclic_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="com_mul_cyclic" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="xlconstant" xilinx:version="1.1">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_phase_gen_control_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="phase_gen_control" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -446,18 +641,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/cyclic_gen_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/cyclic_gen_wrapper_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>cyclic_gen_v1_0</spirit:description>
+  <spirit:description>cyclic_gen_wrapper_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">cyclic_gen_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">cyclic_gen_wrapper_v1_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -468,53 +663,28 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>cyclic_gen_v1_0</xilinx:displayName>
+      <xilinx:displayName>cyclic_gen_wrapper_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-30T06:23:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-05T20:10:10Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@497d8ad6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d540d1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d427d9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@11eaf4df_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ae2f70_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6715ecf3_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@cbbc5d6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c6d91bd_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a1dd130_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4baafa60_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b342627_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b15ba0_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd9e47a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b86b88_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@766c4089_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c6f70fe_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f075c4_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb80f0b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ccec15f_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@c3d17bb_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@71fa26c1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@26087a2d_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d15f3b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6233c5a5_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7562b99f_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@403f6299_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e0b809f_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d3f7bc_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@366b206e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c39484_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca3d014_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b3b519b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53c88a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c947721_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@287adc25_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66ecc12b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ce42f04_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b8b20cda"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="4d3b325a"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ba8365bf"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c5fd3293"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="51c58136"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7d4636ae"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="cyclic_gen" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1772676531"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1772676531"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1772676531"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1772676531"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1772741064"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1772741064"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1772741064"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1772741064"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\cyclic_gen_base_sequence_0_0\cyclic_gen_base_sequence_0_0.xci" Type="IP">
         <Instance HierarchyPath="base_sequence_0"/>

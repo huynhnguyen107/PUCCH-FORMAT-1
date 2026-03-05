@@ -41,6 +41,11 @@ module phase_gen_control(
 	reg [3:0] cnt_read;
 	reg start_read;
 	reg valid_read;
+	// start_read delay
+	reg valid_d;
+	wire start_read_d;
+	reg [2:0] cnt_d;
+
 	//rd_en
 	wire rd_en;
 	reg reg_rd_en;
@@ -82,7 +87,8 @@ module phase_gen_control(
 				cnt_write <=0;
 			//start read fifo
 			start_read = cnt_write!=0 & cnt_write== reg_uci_nSymbs;
-			if (start_read)
+			//using start_read_d instead of start_read
+			if (start_read_d)
 				valid_read <=1;
 			else if (cnt_read==reg_uci_nSymbs)
 				valid_read <=0;
@@ -99,7 +105,24 @@ module phase_gen_control(
 		end
 	
 	end
+	//start_read delay
+	always @(posedge clk)
+		if (rst) begin
+			valid_d <= 0;
+			cnt_d <= 0;
+		end
+		else begin
+			if (start_read)
+				valid_d <=1;
+			if (cnt_d==2)
+				valid_d <=0;
+			if (valid_d)
+				cnt_d <= cnt_d +1;
+			else
+				cnt_d<=0;
+		end
+	assign start_read_d = cnt_d==2;
 	assign rd_en= valid_read & cnt_read <reg_uci_nSymbs;
 	assign o_phase_valid= reg_rd_en;
-	assign start_en= !o_phase_valid &rd_en;
+	assign start_en= start_read_d;
 endmodule

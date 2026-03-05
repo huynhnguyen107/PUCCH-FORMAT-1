@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:com_mul_cyclic:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 (* X_CORE_INFO = "com_mul_cyclic,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{}" *)
-(* CORE_GENERATION_INFO = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=com_mul_cyclic,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=com_mul_cyclic,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module cyclic_gen_com_mul_cyclic_0_0 (

@@ -1,3 +1,26 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Van-Huynh Nguyen-nvhuynh107@gmail.com
+// 
+// Create Date: 02/24/2026 08:02:31 PM
+// Design Name: cylic shift generator
+// Module Name: cylic_shift_generator
+// Project Name: PUCCH-FORMAT-0
+// Target Devices: VCU108
+// Tool Versions: Vivado2019a
+// Description:  mutiply phase and base sequence
+// 
+// Dependencies: N/A
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
@@ -9,47 +32,20 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-module cyclic_gen_wrapper
-   (clk,
-    cyclic,
-    cyclic_valid,
-    in_valid,
-    rst,
-    uci_NID,
-    uci_first_symbol,
-    uci_grouphopping,
-    uci_intra_fr_hop,
-    uci_m0,
-    uci_nhop,
-    uci_nsymbols,
-    uci_slot);
-  input clk;
-  output [31:0]cyclic;
-  output cyclic_valid;
-  input in_valid;
-  input rst;
-  input [10:0]uci_NID;
-  input [3:0]uci_first_symbol;
-  input [1:0]uci_grouphopping;
-  input uci_intra_fr_hop;
-  input [3:0]uci_m0;
-  input uci_nhop;
-  input [3:0]uci_nsymbols;
-  input [4:0]uci_slot;
-
-  wire clk;
-  wire [31:0]cyclic;
-  wire cyclic_valid;
-  wire in_valid;
-  wire rst;
-  wire [10:0]uci_NID;
-  wire [3:0]uci_first_symbol;
-  wire [1:0]uci_grouphopping;
-  wire uci_intra_fr_hop;
-  wire [3:0]uci_m0;
-  wire uci_nhop;
-  wire [3:0]uci_nsymbols;
-  wire [4:0]uci_slot;
+module cyclic_gen_wrapper(
+  input clk,
+  input in_valid,
+  input rst,
+  input [10:0]uci_NID,
+  input [3:0]uci_first_symbol,
+  input [1:0]uci_grouphopping,
+  input uci_intra_fr_hop,
+  input [3:0]uci_m0,
+  input [3:0]uci_nsymbols,
+  input [4:0]uci_slot,
+  output [31:0]cyclic,
+  output cyclic_valid
+   );
 
   cyclic_gen cyclic_gen_i
        (.clk(clk),
@@ -62,7 +58,6 @@ module cyclic_gen_wrapper
         .uci_grouphopping(uci_grouphopping),
         .uci_intra_fr_hop(uci_intra_fr_hop),
         .uci_m0(uci_m0),
-        .uci_nhop(uci_nhop),
         .uci_nsymbols(uci_nsymbols),
         .uci_slot(uci_slot));
 endmodule

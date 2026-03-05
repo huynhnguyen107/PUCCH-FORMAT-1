@@ -59,7 +59,6 @@ USE cmpy_v6_0_18.cmpy_v6_0_18;
 ENTITY cyclic_cmpy_0 IS
   PORT (
     aclk : IN STD_LOGIC;
-    aclken : IN STD_LOGIC;
     s_axis_a_tvalid : IN STD_LOGIC;
     s_axis_a_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axis_b_tvalid : IN STD_LOGIC;
@@ -143,8 +142,6 @@ ARCHITECTURE cyclic_cmpy_0_arch OF cyclic_cmpy_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_a_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_A TDATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_a_tvalid: SIGNAL IS "XIL_INTERFACENAME S_AXIS_A, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_a_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_A TVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclken: SIGNAL IS "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_HIGH";
-  ATTRIBUTE X_INTERFACE_INFO OF aclken: SIGNAL IS "xilinx.com:signal:clockenable:1.0 aclken_intf CE";
   ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF S_AXIS_CTRL:S_AXIS_B:S_AXIS_A:M_AXIS_DOUT, ASSOCIATED_RESET aresetn, ASSOCIATED_CLKEN aclken, FREQ_HZ 10000000, PHASE 0.000, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk_intf CLK";
 BEGIN
@@ -164,7 +161,7 @@ BEGIN
       ROUND => 0,
       USE_DSP_CASCADES => 1,
       C_THROTTLE_SCHEME => 3,
-      C_HAS_ACLKEN => 1,
+      C_HAS_ACLKEN => 0,
       C_HAS_ARESETN => 0,
       C_HAS_S_AXIS_A_TUSER => 0,
       C_HAS_S_AXIS_A_TLAST => 0,
@@ -184,7 +181,7 @@ BEGIN
     )
     PORT MAP (
       aclk => aclk,
-      aclken => aclken,
+      aclken => '1',
       aresetn => '1',
       s_axis_a_tvalid => s_axis_a_tvalid,
       s_axis_a_tuser => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),

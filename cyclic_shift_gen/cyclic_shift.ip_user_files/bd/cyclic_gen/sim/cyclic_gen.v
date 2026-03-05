@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Mar  4 21:08:27 2026
+//Date        : Thu Mar  5 15:04:23 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target cyclic_gen.bd
 //Design      : cyclic_gen
@@ -53,6 +53,9 @@ module cyclic_gen
   wire nfs_gen_0_nfs_valid;
   wire [31:0]phase_gen_0_phase;
   wire phase_gen_0_phase_valid;
+  wire [31:0]phase_gen_control_0_o_phase;
+  wire phase_gen_control_0_o_phase_valid;
+  wire phase_gen_control_0_start_en;
   wire rst_1;
   wire [10:0]uci_NID_1;
   wire [3:0]uci_first_symbol_1;
@@ -89,7 +92,7 @@ module cyclic_gen
         .nfs_1(nfs_gen_0_nfs_1),
         .nfs_valid(nfs_gen_0_nfs_valid),
         .rst(rst_1),
-        .start_en(1'b0));
+        .start_en(phase_gen_control_0_start_en));
   cyclic_gen_base_sequence_0_0 base_sequence_0
        (.base_sequence(base_sequence_0_base_sequence),
         .base_sequence_valid(base_sequence_0_base_sequence_valid),
@@ -116,8 +119,8 @@ module cyclic_gen
         .clk(clk_1),
         .cyclic(com_mul_cyclic_0_cyclic),
         .cyclic_valid(com_mul_cyclic_0_cyclic_valid),
-        .phase({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .phase_valid(1'b0),
+        .phase(phase_gen_control_0_o_phase),
+        .phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1));
   cyclic_gen_n_cs_gen_0_0 n_cs_gen_0
        (.clk(clk_1),
@@ -155,7 +158,10 @@ module cyclic_gen
         .i_phase_valid(phase_gen_0_phase_valid),
         .in_uci_flag(xlconstant_0_dout),
         .in_valid(in_valid_1),
+        .o_phase(phase_gen_control_0_o_phase),
+        .o_phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1),
+        .start_en(phase_gen_control_0_start_en),
         .uci_nSymbs(uci_nsymbols_1));
   cyclic_gen_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
