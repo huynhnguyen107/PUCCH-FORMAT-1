@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../wise_spreading.srcs/sources_1/ip/wise_rom_7/sim/wise_rom_7.v" \
+"../../../../wise_spreading.srcs/sources_1/ip/wise_rom_6/sim/wise_rom_6.v" \
+"../../../../wise_spreading.srcs/sources_1/ip/wise_rom_5/sim/wise_rom_5.v" \
+"../../../../wise_spreading.srcs/sources_1/ip/wise_rom_4/sim/wise_rom_4.v" \
+"../../../../wise_spreading.srcs/sources_1/ip/wise_rom_3/sim/wise_rom_3.v" \
+"../../../../wise_spreading.srcs/sources_1/new/wise_spreading.v" \
+"../../../../wise_spreading.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
