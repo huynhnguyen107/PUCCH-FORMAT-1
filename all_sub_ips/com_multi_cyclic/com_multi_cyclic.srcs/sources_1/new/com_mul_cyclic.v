@@ -28,9 +28,15 @@ module com_mul_cyclic(
 	input phase_valid,
 	input [31:0] phase,
 	output cyclic_valid,
-	output [31:0] cyclic
+	output [31:0] cyclic,
+	output o_wise_enable
     );
 	wire [79 : 0] m_axis_dout_tdata;
+	//enable wise spreading
+	reg d_basequence_valid;
+	wire rasing_edge;
+	reg cnt_valid;
+	reg [3:0]cnt;
 	
 	cyclic_cmpy_0 cyclic_cmpy_0 (
 	  .aclk(clk),                              // input wire aclk
@@ -42,4 +48,28 @@ module com_mul_cyclic(
 	  .m_axis_dout_tdata(m_axis_dout_tdata)    // output wire [79 : 0] m_axis_dout_tdata
 	);
 	assign cyclic= {m_axis_dout_tdata[69:54], m_axis_dout_tdata[29:14]};
+	//enable wise spreading
+	//rasing edge
+	assign rasing_edge = !d_basequence_valid & basequence_valid;
+	always @(posedge clk) begin
+		if (rst) begin
+			d_basequence_valid <= 0;
+			cnt_valid <= 0;
+			cnt <= 0;
+		end 
+		else begin
+			d_basequence_valid <= basequence_valid;
+			if (rasing_edge)
+				cnt_valid <= 1;
+			else if (cnt==5)
+				cnt_valid <= 0;
+			if (cnt_valid)
+				cnt <= cnt + 1;
+			else
+				cnt <=0;
+		end
+	
+	end
+	//o_wise_enable
+	assign o_wise_enable = cnt==4;
 endmodule

@@ -29,7 +29,8 @@ module wise_spreading(
 	input [2:0] nfs,
 	input enable,
 	output wi_seq_valid,
-	output[31:0] wi_seq
+	output[31:0] wi_seq,
+	output o_enable
     );
 	reg [3:0] reg_uci_OCC;
 	reg [2:0] reg_nfs;
@@ -159,4 +160,5 @@ module wise_spreading(
 	//assign output
 	assign wi_seq = dout;
 	assign wi_seq_valid = valid_11 & (cnt_fs <reg_nfs);
+	assign o_enable= (cnt_fs == reg_nfs-1)& (cnt_11==11);
 endmodule

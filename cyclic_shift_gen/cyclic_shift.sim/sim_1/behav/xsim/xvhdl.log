@@ -1,2 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/sources_1/ip/cyclic_cmpy_0/sim/cyclic_cmpy_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'cyclic_cmpy_0'

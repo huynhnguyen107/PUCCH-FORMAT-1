@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1260fs"></ZoomStartTime>
-      <ZoomEndTime time="26741fs"></ZoomEndTime>
-      <Cursor1Time time="7500fs"></Cursor1Time>
+      <ZoomStartTime time="976208fs"></ZoomStartTime>
+      <ZoomEndTime time="1040159fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -487,5 +487,25 @@
          <obj_property name="ElementShortName">[0]</obj_property>
          <obj_property name="ObjectShortName">[0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/com_mul_cyclic_0/cnt_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/com_mul_cyclic_0/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/com_mul_cyclic_0/d_basequence_valid" type="logic">
+      <obj_property name="ElementShortName">d_basequence_valid</obj_property>
+      <obj_property name="ObjectShortName">d_basequence_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/com_mul_cyclic_0/rasing_edge" type="logic">
+      <obj_property name="ElementShortName">rasing_edge</obj_property>
+      <obj_property name="ObjectShortName">rasing_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/com_mul_cyclic_0/o_wise_enable" type="logic">
+      <obj_property name="ElementShortName">o_wise_enable</obj_property>
+      <obj_property name="ObjectShortName">o_wise_enable</obj_property>
    </wvobject>
 </wave_config>

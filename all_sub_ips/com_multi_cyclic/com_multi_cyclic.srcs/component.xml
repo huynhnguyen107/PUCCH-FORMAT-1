@@ -21,7 +21,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>45ba63aa</spirit:value>
+            <spirit:value>33722d3a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -40,7 +40,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>45ba63aa</spirit:value>
+            <spirit:value>33722d3a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -55,7 +55,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>30d285f4</spirit:value>
+            <spirit:value>82c27e11</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -191,6 +191,19 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>o_wise_enable</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
@@ -203,7 +216,7 @@
       <spirit:file>
         <spirit:name>sources_1/new/com_mul_cyclic.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4ded34de</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9f9d8d82</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -279,8 +292,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>com_mul_cyclic_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-05T20:03:24Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-08T01:05:31Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6e621001_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7b0da60e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
@@ -321,12 +334,29 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6bb7ff0a_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@f9cc4c0_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2897fa_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d456d42_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20c34456_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d8ea01e_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@770bea31_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42a76856_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21b60f10_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@446a1afb_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4820caab_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fcca36d_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f0fc0b1_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b6040d2_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489b50c8_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ba6033_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4446fa75_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@143f85aa_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@459813a2_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@637a42e1_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/com_multi_cyclic/com_multi_cyclic.srcs</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="919e19dd"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="fa80d8ba"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ae20d78f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="762079a6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="e5a96272"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

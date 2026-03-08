@@ -46,6 +46,7 @@ module tb();
 	always #0.5 clk = !clk;
 	// create other signals
 	initial begin
+		wait (!rst)
 		for (i=0;i<84;i=i+1) begin
 			@(posedge clk) begin
 				basequence_valid <= 1;
