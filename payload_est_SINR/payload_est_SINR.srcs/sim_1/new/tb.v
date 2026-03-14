@@ -17,7 +17,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-	
+
 
 module tb(
     );
@@ -27,15 +27,15 @@ module tb(
 	reg uci_modulation;
 	reg mean_data_valid;
 	reg [34*8-1:0] mean_data;
-	reg [34*8-1:0] sig_power_valid;
-	reg [30*8-1:0] sig_power;
+	reg  sinr_valid;
+	reg [64*8-1:0] sinr;
 	wire payload_valid;
 	wire [1:0] payload;
-	wire sinr_valid;
-	wire [64:0] sinr;
+	wire mean_sinr_valid;
+	wire [64-1:0] mean_sinr;
 	// call instance
 	payload_est_SINR #(8) payload_est_SINR_0 (clk, rst, in_valid, uci_modulation, mean_data_valid, mean_data,
-							sig_power_valid, sig_power, payload_valid, payload, sinr_valid, sinr);
+							sinr_valid, sinr, payload_valid, payload, mean_sinr_valid, mean_sinr);
 	//create rst and initial other signals
 	initial begin
 		rst=1;
@@ -44,8 +44,8 @@ module tb(
 		uci_modulation=0;
 		mean_data_valid=0;
 		mean_data=0;
-		sig_power_valid=0;
-		sig_power=0;
+		sinr_valid=0;
+		sinr=0;
 	#50 rst=0;
 	end
 	//create clock
@@ -58,24 +58,24 @@ module tb(
 			uci_modulation <=1;
 			mean_data_valid <=0;
 			mean_data <=0;
-			sig_power_valid <=0;
-			sig_power <=0;
+			sinr_valid <=0;
+			sinr <=0;
 		end
 		@(posedge clk) begin
 			in_valid <=0;
 			uci_modulation <=0;
 			mean_data_valid <=1;
 			mean_data <={8{17'd114688, 17'd114688}};
-			sig_power_valid <=0;
-			sig_power <=0;
+			sinr_valid <=1;
+			sinr <={8{64'd98304}};
 		end
 		@(posedge clk) begin
 			in_valid <=0;
 			uci_modulation <=0;
 			mean_data_valid <=0;
 			mean_data <=0;
-			sig_power_valid <=0;
-			sig_power <=0;
+			sinr_valid <=0;
+			sinr <=0;
 		end
 	end
 endmodule

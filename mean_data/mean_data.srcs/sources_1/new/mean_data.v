@@ -30,10 +30,8 @@ module mean_data(
 	input [31:0] despread_dmrs,
 	output o_mean_data_valid,
 	output [33:0] o_mean_data,
-	output sig_power_valid,
-	output [29:0] sig_power,
 	output sinr_valid,
-	output [31:0] sinr
+	output [63:0] sinr
     );
 	reg [3:0] reg_nsymbol;
 	reg [2:0] reg_ndmrs_1st;
@@ -84,6 +82,8 @@ module mean_data(
 	wire [27:0] sig_power_dmrs_2;
 	wire [27:0] sig_power_uci_1;
 	wire [27:0] sig_power_uci_2;
+	wire sig_power_valid;
+	wire [29:0] sig_power;
 	//noise power
 	wire [31:0] dmrs_1st_fifo;
 	reg noise_cnt_valid;
@@ -105,8 +105,6 @@ module mean_data(
 	wire [69:0] mean_noise_80;
 	wire [31:0] mean_noise;
 	reg mean_noise_valid;
-	//sinr
-	wire [47:0] sinr_48;
 	// wire [33:0] c;
 	//calculate number symbol for dmrs_1st and dmrs_2nd
 	always @(posedge clk) begin
@@ -325,28 +323,16 @@ module mean_data(
 	);
 	assign mean_noise = mean_noise_80[62:31];
 	// find sinr
-	// mean_data_div_gen_0 mean_data_div_gen_0 (
-	  // .aclk(clk),                                      // input wire aclk
-	  // .s_axis_divisor_tvalid(mean_noise_valid),    // input wire s_axis_divisor_tvalid
-	  // .s_axis_divisor_tdata({2'd0, sig_power}),      // input wire [31 : 0] s_axis_divisor_tdata
-	  // .s_axis_dividend_tvalid(mean_noise_valid),  // input wire s_axis_dividend_tvalid
-	  // .s_axis_dividend_tdata(mean_noise),    // input wire [31 : 0] s_axis_dividend_tdata
-	  // .m_axis_dout_tvalid(sinr_valid),          // output wire m_axis_dout_tvalid
-	  // .m_axis_dout_tdata(sinr_48)            // output wire [63 : 0] m_axis_dout_tdata
-	// );
-	
 	mean_data_div_gen_0 mean_data_div_gen_0 (
 	  .aclk(clk),                                      // input wire aclk
 	  .s_axis_divisor_tvalid(mean_noise_valid),    // input wire s_axis_divisor_tvalid
-	  .s_axis_divisor_tready(),    // output wire s_axis_divisor_tready
-	  .s_axis_divisor_tdata({2'd0, sig_power}),      // input wire [31 : 0] s_axis_divisor_tdata
+	  .s_axis_divisor_tdata(mean_noise),      // input wire [31 : 0] s_axis_divisor_tdata
 	  .s_axis_dividend_tvalid(mean_noise_valid),  // input wire s_axis_dividend_tvalid
-	  .s_axis_dividend_tready(),  // output wire s_axis_dividend_tready
-	  .s_axis_dividend_tdata(mean_noise),    // input wire [31 : 0] s_axis_dividend_tdata
+	  .s_axis_dividend_tdata({sig_power, 15'd0}),    // input wire [47 : 0] s_axis_dividend_tdata
 	  .m_axis_dout_tvalid(sinr_valid),          // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(sinr_48)            // output wire [47 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(sinr)            // output wire [63 : 0] m_axis_dout_tdata
 	);
-	assign sinr = sinr_48[61:30] ; 
+	// assign sinr = sinr_48[61:30] ; 
 	
 	 //select dividents
 	assign div_uci_2 = div_dmrs_1;
@@ -438,9 +424,9 @@ module mean_data(
 	c1_cmpy c1_cmpy (
 	  .aclk(clk),                              // input wire aclk
 	  .s_axis_a_tvalid(m_axis_dout_tdata_valid),        // input wire s_axis_a_tvalid
-	  .s_axis_a_tdata(mean_uci_1),          // input wire [31 : 0] s_axis_a_tdata
+	  .s_axis_a_tdata({mean_uci_1[63:48], mean_uci_1[31:16]}),          // input wire [31 : 0] s_axis_a_tdata
 	  .s_axis_b_tvalid(m_axis_dout_tdata_valid),        // input wire s_axis_b_tvalid
-	  .s_axis_b_tdata({-mean_dmrs_1[31:16], mean_dmrs_1[15:0]}),          // input wire [31 : 0] s_axis_b_tdata
+	  .s_axis_b_tdata({-mean_dmrs_1[63:48], mean_dmrs_1[31:16]}),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(o_mean_data_valid),  // output wire m_axis_dout_tvalid
 	  .m_axis_dout_tdata(m_axis_dout_tdata5)    // output wire [79 : 0] m_axis_dout_tdata
 	);
@@ -448,9 +434,9 @@ module mean_data(
 	c1_cmpy c2_cmpy (
 	  .aclk(clk),                              // input wire aclk
 	  .s_axis_a_tvalid(m_axis_dout_tdata_valid),        // input wire s_axis_a_tvalid
-	  .s_axis_a_tdata(mean_uci_2),          // input wire [31 : 0] s_axis_a_tdata
+	  .s_axis_a_tdata({mean_uci_2[63:48], mean_uci_2[31:16]}),          // input wire [31 : 0] s_axis_a_tdata
 	  .s_axis_b_tvalid(m_axis_dout_tdata_valid),        // input wire s_axis_b_tvalid
-	  .s_axis_b_tdata({-mean_dmrs_2[31:16], mean_dmrs_2[15:0]}),          // input wire [31 : 0] s_axis_b_tdata
+	  .s_axis_b_tdata({-mean_dmrs_2[63:48], mean_dmrs_2[31:16]}),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
 	  .m_axis_dout_tdata(m_axis_dout_tdata6)    // output wire [79 : 0] m_axis_dout_tdata
 	);

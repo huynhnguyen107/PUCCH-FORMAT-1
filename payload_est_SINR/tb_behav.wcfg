@@ -11,190 +11,46 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="50583fs"></ZoomStartTime>
-      <ZoomEndTime time="56089fs"></ZoomEndTime>
+      <ZoomStartTime time="51132fs"></ZoomStartTime>
+      <ZoomEndTime time="53345fs"></ZoomEndTime>
       <Cursor1Time time="51500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="347"></NameColumnWidth>
-      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
-   <wvobject fp_name="/tb/clk" type="logic">
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb/payload_est_SINR_0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/rst" type="logic">
+   <wvobject fp_name="/tb/payload_est_SINR_0/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/in_valid" type="logic">
+   <wvobject fp_name="/tb/payload_est_SINR_0/in_valid" type="logic">
       <obj_property name="ElementShortName">in_valid</obj_property>
       <obj_property name="ObjectShortName">in_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/uci_modulation" type="logic">
+   <wvobject fp_name="/tb/payload_est_SINR_0/uci_modulation" type="logic">
       <obj_property name="ElementShortName">uci_modulation</obj_property>
       <obj_property name="ObjectShortName">uci_modulation</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/mean_data_valid" type="logic">
+   <wvobject fp_name="/tb/payload_est_SINR_0/mean_data_valid" type="logic">
       <obj_property name="ElementShortName">mean_data_valid</obj_property>
       <obj_property name="ObjectShortName">mean_data_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/mean_data" type="array">
+   <wvobject fp_name="/tb/payload_est_SINR_0/mean_data" type="array">
       <obj_property name="ElementShortName">mean_data[271:0]</obj_property>
       <obj_property name="ObjectShortName">mean_data[271:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus795" type="vbus">
-      <obj_property name="label">Q</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/mean_data[33]" type="logic">
-         <obj_property name="ElementShortName">[33]</obj_property>
-         <obj_property name="ObjectShortName">[33]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[32]" type="logic">
-         <obj_property name="ElementShortName">[32]</obj_property>
-         <obj_property name="ObjectShortName">[32]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[31]" type="logic">
-         <obj_property name="ElementShortName">[31]</obj_property>
-         <obj_property name="ObjectShortName">[31]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[30]" type="logic">
-         <obj_property name="ElementShortName">[30]</obj_property>
-         <obj_property name="ObjectShortName">[30]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[29]" type="logic">
-         <obj_property name="ElementShortName">[29]</obj_property>
-         <obj_property name="ObjectShortName">[29]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[28]" type="logic">
-         <obj_property name="ElementShortName">[28]</obj_property>
-         <obj_property name="ObjectShortName">[28]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[27]" type="logic">
-         <obj_property name="ElementShortName">[27]</obj_property>
-         <obj_property name="ObjectShortName">[27]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[26]" type="logic">
-         <obj_property name="ElementShortName">[26]</obj_property>
-         <obj_property name="ObjectShortName">[26]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[25]" type="logic">
-         <obj_property name="ElementShortName">[25]</obj_property>
-         <obj_property name="ObjectShortName">[25]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[24]" type="logic">
-         <obj_property name="ElementShortName">[24]</obj_property>
-         <obj_property name="ObjectShortName">[24]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[23]" type="logic">
-         <obj_property name="ElementShortName">[23]</obj_property>
-         <obj_property name="ObjectShortName">[23]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[22]" type="logic">
-         <obj_property name="ElementShortName">[22]</obj_property>
-         <obj_property name="ObjectShortName">[22]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[21]" type="logic">
-         <obj_property name="ElementShortName">[21]</obj_property>
-         <obj_property name="ObjectShortName">[21]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[20]" type="logic">
-         <obj_property name="ElementShortName">[20]</obj_property>
-         <obj_property name="ObjectShortName">[20]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[19]" type="logic">
-         <obj_property name="ElementShortName">[19]</obj_property>
-         <obj_property name="ObjectShortName">[19]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[18]" type="logic">
-         <obj_property name="ElementShortName">[18]</obj_property>
-         <obj_property name="ObjectShortName">[18]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[17]" type="logic">
-         <obj_property name="ElementShortName">[17]</obj_property>
-         <obj_property name="ObjectShortName">[17]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/sinr_valid" type="logic">
+      <obj_property name="ElementShortName">sinr_valid</obj_property>
+      <obj_property name="ObjectShortName">sinr_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus777" type="vbus">
-      <obj_property name="label">I</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/mean_data[16]" type="logic">
-         <obj_property name="ElementShortName">[16]</obj_property>
-         <obj_property name="ObjectShortName">[16]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[15]" type="logic">
-         <obj_property name="ElementShortName">[15]</obj_property>
-         <obj_property name="ObjectShortName">[15]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[14]" type="logic">
-         <obj_property name="ElementShortName">[14]</obj_property>
-         <obj_property name="ObjectShortName">[14]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[13]" type="logic">
-         <obj_property name="ElementShortName">[13]</obj_property>
-         <obj_property name="ObjectShortName">[13]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[12]" type="logic">
-         <obj_property name="ElementShortName">[12]</obj_property>
-         <obj_property name="ObjectShortName">[12]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[11]" type="logic">
-         <obj_property name="ElementShortName">[11]</obj_property>
-         <obj_property name="ObjectShortName">[11]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[10]" type="logic">
-         <obj_property name="ElementShortName">[10]</obj_property>
-         <obj_property name="ObjectShortName">[10]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[9]" type="logic">
-         <obj_property name="ElementShortName">[9]</obj_property>
-         <obj_property name="ObjectShortName">[9]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[8]" type="logic">
-         <obj_property name="ElementShortName">[8]</obj_property>
-         <obj_property name="ObjectShortName">[8]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[7]" type="logic">
-         <obj_property name="ElementShortName">[7]</obj_property>
-         <obj_property name="ObjectShortName">[7]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[6]" type="logic">
-         <obj_property name="ElementShortName">[6]</obj_property>
-         <obj_property name="ObjectShortName">[6]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[5]" type="logic">
-         <obj_property name="ElementShortName">[5]</obj_property>
-         <obj_property name="ObjectShortName">[5]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[4]" type="logic">
-         <obj_property name="ElementShortName">[4]</obj_property>
-         <obj_property name="ObjectShortName">[4]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[3]" type="logic">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[2]" type="logic">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[1]" type="logic">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/mean_data[0]" type="logic">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">[0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/sinr" type="array">
+      <obj_property name="ElementShortName">sinr[511:0]</obj_property>
+      <obj_property name="ObjectShortName">sinr[511:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/payload_est_SINR_0/payload_valid" type="logic">
       <obj_property name="ElementShortName">payload_valid</obj_property>
@@ -204,111 +60,23 @@
       <obj_property name="ElementShortName">payload[1:0]</obj_property>
       <obj_property name="ObjectShortName">payload[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/payload_est_SINR_0/sinr_valid" type="logic">
-      <obj_property name="ElementShortName">sinr_valid</obj_property>
-      <obj_property name="ObjectShortName">sinr_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/payload_est_SINR_0/sinr" type="array">
-      <obj_property name="ElementShortName">sinr[64:0]</obj_property>
-      <obj_property name="ObjectShortName">sinr[64:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/payload_est_SINR_0/reg_uci_modulation" type="logic">
       <obj_property name="ElementShortName">reg_uci_modulation</obj_property>
       <obj_property name="ObjectShortName">reg_uci_modulation</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/mean_data_shift" type="array">
+      <obj_property name="ElementShortName">mean_data_shift[271:0]</obj_property>
+      <obj_property name="ObjectShortName">mean_data_shift[271:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data" type="array">
       <obj_property name="ElementShortName">sum_mean_data[39:0]</obj_property>
       <obj_property name="ObjectShortName">sum_mean_data[39:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="vbus922" type="vbus">
-      <obj_property name="label">I</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[19]" type="logic">
-         <obj_property name="ElementShortName">[19]</obj_property>
-         <obj_property name="ObjectShortName">[19]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[18]" type="logic">
-         <obj_property name="ElementShortName">[18]</obj_property>
-         <obj_property name="ObjectShortName">[18]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[17]" type="logic">
-         <obj_property name="ElementShortName">[17]</obj_property>
-         <obj_property name="ObjectShortName">[17]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[16]" type="logic">
-         <obj_property name="ElementShortName">[16]</obj_property>
-         <obj_property name="ObjectShortName">[16]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[15]" type="logic">
-         <obj_property name="ElementShortName">[15]</obj_property>
-         <obj_property name="ObjectShortName">[15]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[14]" type="logic">
-         <obj_property name="ElementShortName">[14]</obj_property>
-         <obj_property name="ObjectShortName">[14]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[13]" type="logic">
-         <obj_property name="ElementShortName">[13]</obj_property>
-         <obj_property name="ObjectShortName">[13]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[12]" type="logic">
-         <obj_property name="ElementShortName">[12]</obj_property>
-         <obj_property name="ObjectShortName">[12]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[11]" type="logic">
-         <obj_property name="ElementShortName">[11]</obj_property>
-         <obj_property name="ObjectShortName">[11]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[10]" type="logic">
-         <obj_property name="ElementShortName">[10]</obj_property>
-         <obj_property name="ObjectShortName">[10]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[9]" type="logic">
-         <obj_property name="ElementShortName">[9]</obj_property>
-         <obj_property name="ObjectShortName">[9]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[8]" type="logic">
-         <obj_property name="ElementShortName">[8]</obj_property>
-         <obj_property name="ObjectShortName">[8]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[7]" type="logic">
-         <obj_property name="ElementShortName">[7]</obj_property>
-         <obj_property name="ObjectShortName">[7]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[6]" type="logic">
-         <obj_property name="ElementShortName">[6]</obj_property>
-         <obj_property name="ObjectShortName">[6]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[5]" type="logic">
-         <obj_property name="ElementShortName">[5]</obj_property>
-         <obj_property name="ObjectShortName">[5]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[4]" type="logic">
-         <obj_property name="ElementShortName">[4]</obj_property>
-         <obj_property name="ObjectShortName">[4]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[3]" type="logic">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[2]" type="logic">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[1]" type="logic">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[0]" type="logic">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">[0]</obj_property>
-      </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus901" type="vbus">
+   <wvobject fp_name="vbus2206" type="vbus">
       <obj_property name="label">Q</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -396,192 +164,396 @@
          <obj_property name="ObjectShortName">[20]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym" type="array">
-      <obj_property name="ElementShortName">equal_sym[39:0]</obj_property>
-      <obj_property name="ObjectShortName">equal_sym[39:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="vbus1053" type="vbus">
+   <wvobject fp_name="vbus2185" type="vbus">
       <obj_property name="label">I</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[19]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[19]" type="logic">
          <obj_property name="ElementShortName">[19]</obj_property>
          <obj_property name="ObjectShortName">[19]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[18]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[18]" type="logic">
          <obj_property name="ElementShortName">[18]</obj_property>
          <obj_property name="ObjectShortName">[18]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[17]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[17]" type="logic">
          <obj_property name="ElementShortName">[17]</obj_property>
          <obj_property name="ObjectShortName">[17]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[16]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[16]" type="logic">
          <obj_property name="ElementShortName">[16]</obj_property>
          <obj_property name="ObjectShortName">[16]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[15]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[15]" type="logic">
          <obj_property name="ElementShortName">[15]</obj_property>
          <obj_property name="ObjectShortName">[15]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[14]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[14]" type="logic">
          <obj_property name="ElementShortName">[14]</obj_property>
          <obj_property name="ObjectShortName">[14]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[13]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[13]" type="logic">
          <obj_property name="ElementShortName">[13]</obj_property>
          <obj_property name="ObjectShortName">[13]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[12]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[12]" type="logic">
          <obj_property name="ElementShortName">[12]</obj_property>
          <obj_property name="ObjectShortName">[12]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[11]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[11]" type="logic">
          <obj_property name="ElementShortName">[11]</obj_property>
          <obj_property name="ObjectShortName">[11]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[10]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[10]" type="logic">
          <obj_property name="ElementShortName">[10]</obj_property>
          <obj_property name="ObjectShortName">[10]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[9]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[9]" type="logic">
          <obj_property name="ElementShortName">[9]</obj_property>
          <obj_property name="ObjectShortName">[9]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[8]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[8]" type="logic">
          <obj_property name="ElementShortName">[8]</obj_property>
          <obj_property name="ObjectShortName">[8]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[7]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[7]" type="logic">
          <obj_property name="ElementShortName">[7]</obj_property>
          <obj_property name="ObjectShortName">[7]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[6]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[6]" type="logic">
          <obj_property name="ElementShortName">[6]</obj_property>
          <obj_property name="ObjectShortName">[6]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[5]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[5]" type="logic">
          <obj_property name="ElementShortName">[5]</obj_property>
          <obj_property name="ObjectShortName">[5]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[4]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[4]" type="logic">
          <obj_property name="ElementShortName">[4]</obj_property>
          <obj_property name="ObjectShortName">[4]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[3]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[3]" type="logic">
          <obj_property name="ElementShortName">[3]</obj_property>
          <obj_property name="ObjectShortName">[3]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[2]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[2]" type="logic">
          <obj_property name="ElementShortName">[2]</obj_property>
          <obj_property name="ObjectShortName">[2]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[1]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[1]" type="logic">
          <obj_property name="ElementShortName">[1]</obj_property>
          <obj_property name="ObjectShortName">[1]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[0]" type="logic">
+      <wvobject fp_name="/tb/payload_est_SINR_0/sum_mean_data[0]" type="logic">
          <obj_property name="ElementShortName">[0]</obj_property>
          <obj_property name="ObjectShortName">[0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus1032" type="vbus">
-      <obj_property name="label">Q</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[39]" type="logic">
-         <obj_property name="ElementShortName">[39]</obj_property>
-         <obj_property name="ObjectShortName">[39]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[38]" type="logic">
-         <obj_property name="ElementShortName">[38]</obj_property>
-         <obj_property name="ObjectShortName">[38]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[37]" type="logic">
-         <obj_property name="ElementShortName">[37]</obj_property>
-         <obj_property name="ObjectShortName">[37]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[36]" type="logic">
-         <obj_property name="ElementShortName">[36]</obj_property>
-         <obj_property name="ObjectShortName">[36]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[35]" type="logic">
-         <obj_property name="ElementShortName">[35]</obj_property>
-         <obj_property name="ObjectShortName">[35]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[34]" type="logic">
-         <obj_property name="ElementShortName">[34]</obj_property>
-         <obj_property name="ObjectShortName">[34]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[33]" type="logic">
-         <obj_property name="ElementShortName">[33]</obj_property>
-         <obj_property name="ObjectShortName">[33]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[32]" type="logic">
-         <obj_property name="ElementShortName">[32]</obj_property>
-         <obj_property name="ObjectShortName">[32]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[31]" type="logic">
-         <obj_property name="ElementShortName">[31]</obj_property>
-         <obj_property name="ObjectShortName">[31]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[30]" type="logic">
-         <obj_property name="ElementShortName">[30]</obj_property>
-         <obj_property name="ObjectShortName">[30]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[29]" type="logic">
-         <obj_property name="ElementShortName">[29]</obj_property>
-         <obj_property name="ObjectShortName">[29]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[28]" type="logic">
-         <obj_property name="ElementShortName">[28]</obj_property>
-         <obj_property name="ObjectShortName">[28]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[27]" type="logic">
-         <obj_property name="ElementShortName">[27]</obj_property>
-         <obj_property name="ObjectShortName">[27]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[26]" type="logic">
-         <obj_property name="ElementShortName">[26]</obj_property>
-         <obj_property name="ObjectShortName">[26]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[25]" type="logic">
-         <obj_property name="ElementShortName">[25]</obj_property>
-         <obj_property name="ObjectShortName">[25]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[24]" type="logic">
-         <obj_property name="ElementShortName">[24]</obj_property>
-         <obj_property name="ObjectShortName">[24]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[23]" type="logic">
-         <obj_property name="ElementShortName">[23]</obj_property>
-         <obj_property name="ObjectShortName">[23]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[22]" type="logic">
-         <obj_property name="ElementShortName">[22]</obj_property>
-         <obj_property name="ObjectShortName">[22]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[21]" type="logic">
-         <obj_property name="ElementShortName">[21]</obj_property>
-         <obj_property name="ObjectShortName">[21]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym[20]" type="logic">
-         <obj_property name="ElementShortName">[20]</obj_property>
-         <obj_property name="ObjectShortName">[20]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym" type="array">
+      <obj_property name="ElementShortName">equal_sym[39:0]</obj_property>
+      <obj_property name="ObjectShortName">equal_sym[39:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/payload_est_SINR_0/equal_sym_valid" type="logic">
       <obj_property name="ElementShortName">equal_sym_valid</obj_property>
       <obj_property name="ObjectShortName">equal_sym_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/payload_est_SINR_0/estPayload" type="array">
-      <obj_property name="ElementShortName">estPayload[1:0]</obj_property>
-      <obj_property name="ObjectShortName">estPayload[1:0]</obj_property>
+   <wvobject fp_name="/tb/payload_est_SINR_0/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus2080" type="vbus">
+      <obj_property name="label">SINR64</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[63]" type="logic">
+         <obj_property name="ElementShortName">[63]</obj_property>
+         <obj_property name="ObjectShortName">[63]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[62]" type="logic">
+         <obj_property name="ElementShortName">[62]</obj_property>
+         <obj_property name="ObjectShortName">[62]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[61]" type="logic">
+         <obj_property name="ElementShortName">[61]</obj_property>
+         <obj_property name="ObjectShortName">[61]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[60]" type="logic">
+         <obj_property name="ElementShortName">[60]</obj_property>
+         <obj_property name="ObjectShortName">[60]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[59]" type="logic">
+         <obj_property name="ElementShortName">[59]</obj_property>
+         <obj_property name="ObjectShortName">[59]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[58]" type="logic">
+         <obj_property name="ElementShortName">[58]</obj_property>
+         <obj_property name="ObjectShortName">[58]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[57]" type="logic">
+         <obj_property name="ElementShortName">[57]</obj_property>
+         <obj_property name="ObjectShortName">[57]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[56]" type="logic">
+         <obj_property name="ElementShortName">[56]</obj_property>
+         <obj_property name="ObjectShortName">[56]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[55]" type="logic">
+         <obj_property name="ElementShortName">[55]</obj_property>
+         <obj_property name="ObjectShortName">[55]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[54]" type="logic">
+         <obj_property name="ElementShortName">[54]</obj_property>
+         <obj_property name="ObjectShortName">[54]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[53]" type="logic">
+         <obj_property name="ElementShortName">[53]</obj_property>
+         <obj_property name="ObjectShortName">[53]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[52]" type="logic">
+         <obj_property name="ElementShortName">[52]</obj_property>
+         <obj_property name="ObjectShortName">[52]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[51]" type="logic">
+         <obj_property name="ElementShortName">[51]</obj_property>
+         <obj_property name="ObjectShortName">[51]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[50]" type="logic">
+         <obj_property name="ElementShortName">[50]</obj_property>
+         <obj_property name="ObjectShortName">[50]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[49]" type="logic">
+         <obj_property name="ElementShortName">[49]</obj_property>
+         <obj_property name="ObjectShortName">[49]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[48]" type="logic">
+         <obj_property name="ElementShortName">[48]</obj_property>
+         <obj_property name="ObjectShortName">[48]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[47]" type="logic">
+         <obj_property name="ElementShortName">[47]</obj_property>
+         <obj_property name="ObjectShortName">[47]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[46]" type="logic">
+         <obj_property name="ElementShortName">[46]</obj_property>
+         <obj_property name="ObjectShortName">[46]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[45]" type="logic">
+         <obj_property name="ElementShortName">[45]</obj_property>
+         <obj_property name="ObjectShortName">[45]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[44]" type="logic">
+         <obj_property name="ElementShortName">[44]</obj_property>
+         <obj_property name="ObjectShortName">[44]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[43]" type="logic">
+         <obj_property name="ElementShortName">[43]</obj_property>
+         <obj_property name="ObjectShortName">[43]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[42]" type="logic">
+         <obj_property name="ElementShortName">[42]</obj_property>
+         <obj_property name="ObjectShortName">[42]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[41]" type="logic">
+         <obj_property name="ElementShortName">[41]</obj_property>
+         <obj_property name="ObjectShortName">[41]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[40]" type="logic">
+         <obj_property name="ElementShortName">[40]</obj_property>
+         <obj_property name="ObjectShortName">[40]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[39]" type="logic">
+         <obj_property name="ElementShortName">[39]</obj_property>
+         <obj_property name="ObjectShortName">[39]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[38]" type="logic">
+         <obj_property name="ElementShortName">[38]</obj_property>
+         <obj_property name="ObjectShortName">[38]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[37]" type="logic">
+         <obj_property name="ElementShortName">[37]</obj_property>
+         <obj_property name="ObjectShortName">[37]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[36]" type="logic">
+         <obj_property name="ElementShortName">[36]</obj_property>
+         <obj_property name="ObjectShortName">[36]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[35]" type="logic">
+         <obj_property name="ElementShortName">[35]</obj_property>
+         <obj_property name="ObjectShortName">[35]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[34]" type="logic">
+         <obj_property name="ElementShortName">[34]</obj_property>
+         <obj_property name="ObjectShortName">[34]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[33]" type="logic">
+         <obj_property name="ElementShortName">[33]</obj_property>
+         <obj_property name="ObjectShortName">[33]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[32]" type="logic">
+         <obj_property name="ElementShortName">[32]</obj_property>
+         <obj_property name="ObjectShortName">[32]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/payload_est_SINR_0/sinr[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/total_sinr_shift" type="array">
+      <obj_property name="ElementShortName">total_sinr_shift[514:0]</obj_property>
+      <obj_property name="ObjectShortName">total_sinr_shift[514:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/total_sinr" type="array">
+      <obj_property name="ElementShortName">total_sinr[66:0]</obj_property>
+      <obj_property name="ObjectShortName">total_sinr[66:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/RX" type="array">
+      <obj_property name="ElementShortName">RX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/mean_sinr_valid" type="logic">
+      <obj_property name="ElementShortName">mean_sinr_valid</obj_property>
+      <obj_property name="ObjectShortName">mean_sinr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/payload_est_SINR_0/mean_sinr" type="array">
+      <obj_property name="ElementShortName">mean_sinr[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mean_sinr[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
 </wave_config>

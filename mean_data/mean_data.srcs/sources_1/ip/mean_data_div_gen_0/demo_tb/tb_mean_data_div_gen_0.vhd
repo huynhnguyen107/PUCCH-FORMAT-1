@@ -94,7 +94,7 @@ architecture tb of tb_mean_data_div_gen_0 is
 
   -- Slave channel DIVIDEND inputs
   signal s_axis_dividend_tvalid    : std_logic := '0';  -- TVALID for channel A
-  signal s_axis_dividend_tdata     : std_logic_vector(31 downto 0) := (others => 'X');  -- TDATA for channel A
+  signal s_axis_dividend_tdata     : std_logic_vector(47 downto 0) := (others => 'X');  -- TDATA for channel A
 
   -- Slave channel DIVISOR inputs
   signal s_axis_divisor_tvalid    : std_logic := '0';  -- TVALID for channel B
@@ -103,9 +103,9 @@ architecture tb of tb_mean_data_div_gen_0 is
 
   -- Breakout signals. These signals are the application-specific operands which
   -- become subfields of the TDATA fields.
-  signal dividend : std_logic_vector(31 downto 0) := (others => '0');
+  signal dividend : std_logic_vector(44 downto 0) := (others => '0');
   signal divisor  : std_logic_vector(29 downto 0) := (others => '0');
-  signal quotient : std_logic_vector(31 downto 0) := (others => '0');
+  signal quotient : std_logic_vector(44 downto 0) := (others => '0');
   signal fractional : std_logic_vector(14 downto 0) := (others => '0');
   -----------------------------------------------------------------------
   -- DUT output signals
@@ -113,7 +113,7 @@ architecture tb of tb_mean_data_div_gen_0 is
 
   -- Master channel DOUT outputs
   signal m_axis_dout_tvalid : std_logic := '0';  -- TVALID for channel DOUT
-  signal m_axis_dout_tdata  : std_logic_vector(47 downto 0) := (others => '0');  -- TDATA for channel DOUT
+  signal m_axis_dout_tdata  : std_logic_vector(63 downto 0) := (others => '0');  -- TDATA for channel DOUT
 
   -----------------------------------------------------------------------
   -- Testbench signals
@@ -129,7 +129,7 @@ architecture tb of tb_mean_data_div_gen_0 is
   -----------------------------------------------------------------------
 
   constant IP_dividend_DEPTH : integer := 30;
-  constant IP_dividend_WIDTH : integer := 32;
+  constant IP_dividend_WIDTH : integer := 45;
   constant IP_divisor_DEPTH : integer := 32;
   constant IP_divisor_WIDTH : integer := 30;
   subtype T_IP_dividend_ENTRY is std_logic_vector(IP_dividend_WIDTH-1 downto 0);
@@ -168,8 +168,8 @@ architecture tb of tb_mean_data_div_gen_0 is
   constant IP_dividend_DATA : T_IP_dividend_TABLE := create_ip_dividend_table;
   constant IP_divisor_DATA  : T_IP_divisor_TABLE  := create_ip_divisor_table;
 
-  -- Drive X when data is invalid to highlight data ignored
-  constant INVALID : std_logic := 'X';
+  -- Drive zeros when data is invalid to avoid simulator warnings
+  constant INVALID : std_logic := '0';
 begin
 
   -----------------------------------------------------------------------
@@ -274,8 +274,8 @@ begin
       if dividend_tvalid_nxt /= '1' then
         s_axis_dividend_tdata <= (others => INVALID);
       else
-        -- TDATA: This holds the dividend operand. It is 32 bits wide and byte-aligned with the operand in the LSBs
-        s_axis_dividend_tdata <= std_logic_vector(resize(signed(IP_dividend_DATA(ip_dividend_index)),32));
+        -- TDATA: This holds the dividend operand. It is 45 bits wide and byte-aligned with the operand in the LSBs
+        s_axis_dividend_tdata <= std_logic_vector(resize(signed(IP_dividend_DATA(ip_dividend_index)),48));
       end if;
 
       -- Drive AXI slave channel B payload
@@ -340,9 +340,9 @@ begin
   -----------------------------------------------------------------------
 
   divisor  <= s_axis_divisor_tdata(29 downto 0);
-  dividend <= s_axis_dividend_tdata(31 downto 0);
+  dividend <= s_axis_dividend_tdata(44 downto 0);
   fractional <= m_axis_dout_tdata(14 downto 0);
-  quotient <= m_axis_dout_tdata(46 downto 15);
+  quotient <= m_axis_dout_tdata(59 downto 15);
 
 end tb;
 

@@ -4,7 +4,6 @@ Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cccb9a4c8b
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 272 differs from formal bit length 1 for port 'sig_power_valid' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/payload_est_SINR/payload_est_SINR.srcs/sim_1/new/tb.v:38]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

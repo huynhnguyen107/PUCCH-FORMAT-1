@@ -27,12 +27,12 @@ module payload_est_SINR #(parameter RX=8)(
 	input uci_modulation,//0-bpsk, 1-qpsk
 	input mean_data_valid,
 	input [34*RX-1:0] mean_data,
-	input sig_power_valid,
-	input [30*RX-1:0] sig_power,
+	input sinr_valid,
+	input [64*RX-1:0] sinr,
 	output payload_valid,
 	output [1:0] payload,
-	output sinr_valid,
-	output [64:0] sinr
+	output mean_sinr_valid,
+	output [64-1:0] mean_sinr
     );
 	//total mean data
 	reg reg_uci_modulation;
@@ -41,8 +41,12 @@ module payload_est_SINR #(parameter RX=8)(
 	reg [34+2*$clog2(RX)-1:0] equal_sym;
 	reg  equal_sym_valid;
 	//Demodulation
-	wire [1:0] estPayload;
 	integer i=0;
+	integer j=0;
+	//total SINR
+	reg [64*RX+$clog2(RX)-1:0] total_sinr_shift ;
+	reg [64+$clog2(RX)-1:0] total_sinr ;
+	
 	always @(*) begin
 		sum_mean_data = 0;
 		for (i=0;i<RX;i=i+1) begin
@@ -68,5 +72,20 @@ module payload_est_SINR #(parameter RX=8)(
 
 
 	//Demodulation
-	assign estPayload= !reg_uci_modulation ? (equal_sym[34+2*$clog2(RX)-1]&equal_sym[17+$clog2(RX)-1] ? 1: 0) : {equal_sym[34+2*$clog2(RX)-1],equal_sym[17+$clog2(RX)-1]} ;
+	assign payload= !reg_uci_modulation ? (equal_sym[34+2*$clog2(RX)-1]&equal_sym[17+$clog2(RX)-1] ? 1: 0) : {equal_sym[34+2*$clog2(RX)-1],equal_sym[17+$clog2(RX)-1]} ;
+	assign payload_valid = equal_sym_valid;
+	//total SINR
+	always @(*) begin
+		total_sinr = 0;
+		for (j=0 ; j<RX ; j=j+1) begin
+			total_sinr_shift = sinr>>(64*j);
+			total_sinr = total_sinr + total_sinr_shift[63:0];
+		end
+			
+	end
+	assign mean_sinr = total_sinr>>($clog2(RX));
+	assign mean_sinr_valid = sinr_valid;
+
+
+
 endmodule
