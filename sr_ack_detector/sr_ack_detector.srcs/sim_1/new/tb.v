@@ -54,12 +54,12 @@ module tb();
 		wait(!rst)
 		@(posedge clk) begin
 			in_valid <=1 ;
-			uci_o_ack <=0 ;
+			uci_o_ack <=1 ;
 			mean_sinr_valid <=0 ;
 			mean_sinr <=0 ;
 			payload_valid <=0 ;
 			payload <=0 ;
-			sinr_threshold <=0 ;
+			sinr_threshold <=2 ;
 		end
 		@(posedge clk) begin
 			in_valid <=0 ;
@@ -68,7 +68,7 @@ module tb();
 			mean_sinr <=0 ;
 			payload_valid <=0 ;
 			payload <=0 ;
-			sinr_threshold <=0 ;
+			sinr_threshold <=2 ;
 		end
 		@(posedge clk) begin
 			in_valid <=0 ;
@@ -76,17 +76,17 @@ module tb();
 			mean_sinr_valid <=0 ;
 			mean_sinr <=0 ;
 			payload_valid <=1 ;
-			payload <=0 ;
+			payload <=1 ;
 			sinr_threshold <=0 ;
 		end
 		@(posedge clk) begin
 			in_valid <=0 ;
 			uci_o_ack <=0 ;
 			mean_sinr_valid <=1 ;
-			mean_sinr <=0 ;
+			mean_sinr <=54 ;
 			payload_valid <=0 ;
 			payload <=0 ;
-			sinr_threshold <=0 ;
+			sinr_threshold <=2 ;
 		end
 		@(posedge clk) begin
 			in_valid <=0 ;
@@ -95,7 +95,7 @@ module tb();
 			mean_sinr <=0 ;
 			payload_valid <=0 ;
 			payload <=0 ;
-			sinr_threshold <=0 ;
+			sinr_threshold <=2 ;
 		end
 	end
 endmodule

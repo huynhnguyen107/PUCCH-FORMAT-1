@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2778895fs"></ZoomEndTime>
-      <Cursor1Time time="999998fs"></Cursor1Time>
+      <ZoomStartTime time="50814fs"></ZoomStartTime>
+      <ZoomEndTime time="72935fs"></ZoomEndTime>
+      <Cursor1Time time="54500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="347"></NameColumnWidth>
@@ -43,6 +43,10 @@
    <wvobject fp_name="/tb/mean_sinr" type="array">
       <obj_property name="ElementShortName">mean_sinr[63:0]</obj_property>
       <obj_property name="ObjectShortName">mean_sinr[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/payload_valid" type="logic">
       <obj_property name="ElementShortName">payload_valid</obj_property>
@@ -55,6 +59,10 @@
    <wvobject fp_name="/tb/sinr_threshold" type="array">
       <obj_property name="ElementShortName">sinr_threshold[63:0]</obj_property>
       <obj_property name="ObjectShortName">sinr_threshold[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/o_valid" type="logic">
       <obj_property name="ElementShortName">o_valid</obj_property>

@@ -49,10 +49,10 @@ module sr_ack_detector(
 		else begin
 			if (in_valid)
 				reg_o_ack <= uci_o_ack;
-			if (mean_sinr_valid) begin
-				reg_mean_sinr <= mean_sinr;
+			if (payload_valid) 	
 				reg_payload <= payload;
-			end
+			if (mean_sinr_valid) 
+				reg_mean_sinr <= mean_sinr;
 			o_valid <= mean_sinr_valid;
 		end
 	end
@@ -81,10 +81,16 @@ module sr_ack_detector(
 					harq = reg_payload;
 				end
 			end
-			default: begin //dtx only mean no signal received
-				harq = 0;
-				dtx = 1;
+			default: begin //1
 				sr = 0;
+				if (reg_mean_sinr<=sinr_threshold) begin
+					dtx = 1;
+					harq = reg_payload;
+				end
+				else begin
+					dtx = 0;
+					harq = reg_payload;
+				end
 			end
 		endcase	
 	end
