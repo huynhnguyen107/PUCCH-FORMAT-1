@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../mean_data.srcs/sources_1/ip/mean_data_div_gen_0/sim/mean_data_div_gen_0.vhd" \
+
+nosort

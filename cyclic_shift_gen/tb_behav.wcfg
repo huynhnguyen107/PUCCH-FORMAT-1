@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="242715fs"></ZoomStartTime>
-      <ZoomEndTime time="253426fs"></ZoomEndTime>
-      <Cursor1Time time="244500fs"></Cursor1Time>
+      <ZoomStartTime time="153534fs"></ZoomStartTime>
+      <ZoomEndTime time="207335fs"></ZoomEndTime>
+      <Cursor1Time time="162500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="347"></NameColumnWidth>
-      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="66" />
+   <WVObjectSize size="70" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -829,5 +829,21 @@
          <obj_property name="ElementShortName">[0]</obj_property>
          <obj_property name="ObjectShortName">[0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase" type="array">
+      <obj_property name="ElementShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase_valid" type="logic">
+      <obj_property name="ElementShortName">phase_gen_control_0_o_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">phase_gen_control_0_o_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase" type="array">
+      <obj_property name="ElementShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase_valid" type="logic">
+      <obj_property name="ElementShortName">phase_gen_control_0_o_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">phase_gen_control_0_o_phase_valid</obj_property>
    </wvobject>
 </wave_config>

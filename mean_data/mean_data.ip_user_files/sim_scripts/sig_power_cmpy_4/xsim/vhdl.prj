@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../mean_data.srcs/sources_1/ip/sig_power_cmpy_4/sim/sig_power_cmpy_4.vhd" \
+
+nosort

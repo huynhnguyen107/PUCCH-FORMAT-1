@@ -1,0 +1,2 @@
+power_cmpy_0.vhd,vhdl,xil_defaultlib,../../../../mean_data.srcs/sources_1/ip/power_cmpy_0/sim/power_cmpy_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

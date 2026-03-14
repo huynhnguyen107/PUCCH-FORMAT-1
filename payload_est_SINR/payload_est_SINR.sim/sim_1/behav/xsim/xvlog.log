@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/payload_est_SINR/payload_est_SINR.srcs/sources_1/new/payload_est_SINR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module payload_est_SINR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/payload_est_SINR/payload_est_SINR.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

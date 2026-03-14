@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../de_spread.srcs/sources_1/ip/de_spread_fifo_0/sim/de_spread_fifo_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
