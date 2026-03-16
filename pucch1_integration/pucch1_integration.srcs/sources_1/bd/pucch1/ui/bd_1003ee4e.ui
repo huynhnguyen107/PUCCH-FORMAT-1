@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.74014",
+   "Default View_TopLeft":"1415,-79",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -400 -y -440 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -400 -y -410 -defaultsOSRD
+preplace port trigger_05 -pg 1 -lvl 0 -x -400 -y -380 -defaultsOSRD
+preplace port stop_trigger -pg 1 -lvl 0 -x -400 -y -350 -defaultsOSRD
+preplace port i_pucch1_valid -pg 1 -lvl 0 -x -400 -y -1030 -defaultsOSRD
+preplace port i_config_valid -pg 1 -lvl 0 -x -400 -y -1000 -defaultsOSRD
+preplace portBus ant_input -pg 1 -lvl 0 -x -400 -y -170 -defaultsOSRD
+preplace portBus pucch_parameter -pg 1 -lvl 0 -x -400 -y -470 -defaultsOSRD
+preplace portBus i_group_hopping -pg 1 -lvl 0 -x -400 -y -970 -defaultsOSRD
+preplace portBus i_hopping_ID -pg 1 -lvl 0 -x -400 -y -940 -defaultsOSRD
+preplace inst physical_control_0 -pg 1 -lvl 2 -x 270 -y -270 -defaultsOSRD
+preplace inst frame_sync_0 -pg 1 -lvl 3 -x 680 -y 550 -defaultsOSRD
+preplace inst ofdm_demodulation_0 -pg 1 -lvl 5 -x 1590 -y -330 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1010 -y -160 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x -30 -y -180 -defaultsOSRD
+preplace inst frame_sync_1 -pg 1 -lvl 5 -x 1590 -y 130 -defaultsOSRD
+preplace inst ulcch_parameter_0 -pg 1 -lvl 3 -x 680 -y 190 -defaultsOSRD
+preplace inst demapping_0 -pg 1 -lvl 6 -x 1950 -y -10 -defaultsOSRD
+preplace netloc clk_1 1 0 6 N -440 100 -370 430 -340 N -340 1110 -130 N
+preplace netloc rst_1 1 0 6 N -410 90 -360 420 -330 N -330 1130 -110 N
+preplace netloc trigger_05_1 1 0 2 N -380 80
+preplace netloc stop_trigger_1 1 0 2 -380 -240 N
+preplace netloc physical_control_0_start_symbol 1 2 1 410 -270n
+preplace netloc xlconstant_0_dout 1 4 1 1120 -340n
+preplace netloc frame_sync_0_cp 1 3 2 870J -320 N
+preplace netloc frame_sync_0_start_symbol 1 3 2 880J -300 N
+preplace netloc xlslice_0_Dout 1 1 4 NJ -180 450J -280 NJ -280 N
+preplace netloc ant_input_1 1 0 1 -380 -180n
+preplace netloc ofdm_demodulation_0_start_symbol 1 4 2 1170 -140 1760
+preplace netloc i_pucch1_valid_1 1 0 3 N -1030 N -1030 490
+preplace netloc pucch_parameter_1 1 0 3 N -470 N -470 460
+preplace netloc i_config_valid_1 1 0 3 N -1000 N -1000 480
+preplace netloc i_group_hopping_1 1 0 3 N -970 N -970 470
+preplace netloc i_hopping_ID_1 1 0 3 N -940 N -940 440
+preplace netloc ulcch_parameter_0_uci_intra_fre_hopping 1 3 3 890J -90 N -90 N
+preplace netloc ulcch_parameter_0_uci_slot_idx 1 3 3 860J -70 N -70 N
+preplace netloc ulcch_parameter_0_uci_symbol 1 3 3 900J 130 1100 -50 N
+preplace netloc ulcch_parameter_0_uci_frist_symbol 1 3 3 NJ 140 1140 -40 1760
+preplace netloc ulcch_parameter_0_uci_pbr_offset 1 3 3 NJ 160 1150 -30 1740
+preplace netloc ulcch_parameter_0_uci_second_prb 1 3 3 NJ 180 1160 -20 1730
+preplace netloc ulcch_parameter_0_pucch_valid 1 3 3 NJ 40 1090 -60 1750
+preplace netloc frame_sync_1_start_slot 1 5 1 1740 50n
+preplace netloc frame_sync_1_sym_idx 1 5 1 1740 70n
+preplace netloc frame_sync_1_rb_idx 1 5 1 1760 90n
+preplace netloc frame_sync_1_valid_out 1 5 1 1760 110n
+levelinfo -pg 1 -400 -30 270 680 1010 1590 1950 2120
+pagesize -pg 1 -db -bbox -sgen -610 -1050 2120 700
+"
+}
+0

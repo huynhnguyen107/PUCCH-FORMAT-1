@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" \
+"../../../../data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" \
+"../../../../data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" \
+"../../../../data_dmrs_selection.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

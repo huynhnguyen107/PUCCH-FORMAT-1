@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/pucch1/ip/pucch1_ofdm_demodulation_0_0/ofdm_demodulation.srcs/sources_1/ip/xfft_0/sim/xfft_0.vhd" \
+
+nosort

@@ -1,0 +1,300 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5C31B7BA881F9B73",
+      "device": "xcvu9p-flga2104-2L-e",
+      "name": "pucch1",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "physical_control_0": "",
+      "frame_sync_0": "",
+      "ofdm_demodulation_0": "",
+      "xlconstant_0": "",
+      "xlslice_0": "",
+      "frame_sync_1": "",
+      "ulcch_parameter_0": "",
+      "demapping_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "122880000"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "trigger_05": {
+        "direction": "I"
+      },
+      "stop_trigger": {
+        "direction": "I"
+      },
+      "ant_input": {
+        "direction": "I",
+        "left": "255",
+        "right": "0"
+      },
+      "pucch_parameter": {
+        "direction": "I",
+        "left": "511",
+        "right": "0"
+      },
+      "i_pucch1_valid": {
+        "direction": "I"
+      },
+      "i_config_valid": {
+        "direction": "I"
+      },
+      "i_group_hopping": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "i_hopping_ID": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "physical_control_0": {
+        "vlnv": "xilinx.com:user:physical_control:1.0",
+        "xci_name": "pucch1_physical_control_0_0"
+      },
+      "frame_sync_0": {
+        "vlnv": "xilinx.com:user:frame_sync:1.0",
+        "xci_name": "pucch1_frame_sync_0_0"
+      },
+      "ofdm_demodulation_0": {
+        "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
+        "xci_name": "pucch1_ofdm_demodulation_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch1_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "4"
+          },
+          "CONST_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "pucch1_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_WIDTH": {
+            "value": "256"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "frame_sync_1": {
+        "vlnv": "xilinx.com:user:frame_sync:1.0",
+        "xci_name": "pucch1_frame_sync_1_0"
+      },
+      "ulcch_parameter_0": {
+        "vlnv": "xilinx.com:user:ulcch_parameter:1.0",
+        "xci_name": "pucch1_ulcch_parameter_0_0"
+      },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch1_demapping_0_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "physical_control_0/clk",
+          "frame_sync_0/clk",
+          "ofdm_demodulation_0/clk",
+          "frame_sync_1/clk",
+          "ulcch_parameter_0/clk",
+          "demapping_0/clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "physical_control_0/rst",
+          "frame_sync_0/rst",
+          "ofdm_demodulation_0/rst",
+          "frame_sync_1/rst",
+          "ulcch_parameter_0/rst",
+          "demapping_0/rst"
+        ]
+      },
+      "trigger_05_1": {
+        "ports": [
+          "trigger_05",
+          "physical_control_0/in_0_5ms"
+        ]
+      },
+      "stop_trigger_1": {
+        "ports": [
+          "stop_trigger",
+          "physical_control_0/stop_request_trigger"
+        ]
+      },
+      "physical_control_0_start_symbol": {
+        "ports": [
+          "physical_control_0/start_symbol",
+          "frame_sync_0/in_start_symbol"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "ofdm_demodulation_0/scale_factor"
+        ]
+      },
+      "frame_sync_0_cp": {
+        "ports": [
+          "frame_sync_0/cp",
+          "ofdm_demodulation_0/i_trigger_cp"
+        ]
+      },
+      "frame_sync_0_start_symbol": {
+        "ports": [
+          "frame_sync_0/start_symbol",
+          "ofdm_demodulation_0/i_start_symbol"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "ofdm_demodulation_0/ant_input"
+        ]
+      },
+      "ant_input_1": {
+        "ports": [
+          "ant_input",
+          "xlslice_0/Din"
+        ]
+      },
+      "ofdm_demodulation_0_start_symbol": {
+        "ports": [
+          "ofdm_demodulation_0/start_symbol",
+          "frame_sync_1/in_start_symbol"
+        ]
+      },
+      "i_pucch1_valid_1": {
+        "ports": [
+          "i_pucch1_valid",
+          "ulcch_parameter_0/i_pucch_valid"
+        ]
+      },
+      "pucch_parameter_1": {
+        "ports": [
+          "pucch_parameter",
+          "ulcch_parameter_0/ulcch_para"
+        ]
+      },
+      "i_config_valid_1": {
+        "ports": [
+          "i_config_valid",
+          "ulcch_parameter_0/i_config_valid"
+        ]
+      },
+      "i_group_hopping_1": {
+        "ports": [
+          "i_group_hopping",
+          "ulcch_parameter_0/i_group_hopping"
+        ]
+      },
+      "i_hopping_ID_1": {
+        "ports": [
+          "i_hopping_ID",
+          "ulcch_parameter_0/i_hopping_ID"
+        ]
+      },
+      "ulcch_parameter_0_uci_intra_fre_hopping": {
+        "ports": [
+          "ulcch_parameter_0/uci_intra_fre_hopping",
+          "demapping_0/uci_instra_fre_hop"
+        ]
+      },
+      "ulcch_parameter_0_uci_slot_idx": {
+        "ports": [
+          "ulcch_parameter_0/uci_slot_idx",
+          "demapping_0/uci_slot"
+        ]
+      },
+      "ulcch_parameter_0_uci_symbol": {
+        "ports": [
+          "ulcch_parameter_0/uci_symbol",
+          "demapping_0/uci_nsymbols"
+        ]
+      },
+      "ulcch_parameter_0_uci_frist_symbol": {
+        "ports": [
+          "ulcch_parameter_0/uci_frist_symbol",
+          "demapping_0/uci_first_symbol_idx"
+        ]
+      },
+      "ulcch_parameter_0_uci_pbr_offset": {
+        "ports": [
+          "ulcch_parameter_0/uci_pbr_offset",
+          "demapping_0/uci_prbsoffset"
+        ]
+      },
+      "ulcch_parameter_0_uci_second_prb": {
+        "ports": [
+          "ulcch_parameter_0/uci_second_prb",
+          "demapping_0/uci_secondhop_prb"
+        ]
+      },
+      "ulcch_parameter_0_pucch_valid": {
+        "ports": [
+          "ulcch_parameter_0/pucch_valid",
+          "demapping_0/uci_valid"
+        ]
+      },
+      "frame_sync_1_start_slot": {
+        "ports": [
+          "frame_sync_1/start_slot",
+          "demapping_0/fr_slot"
+        ]
+      },
+      "frame_sync_1_sym_idx": {
+        "ports": [
+          "frame_sync_1/sym_idx",
+          "demapping_0/fr_symbol"
+        ]
+      },
+      "frame_sync_1_rb_idx": {
+        "ports": [
+          "frame_sync_1/rb_idx",
+          "demapping_0/fr_rb"
+        ]
+      },
+      "frame_sync_1_valid_out": {
+        "ports": [
+          "frame_sync_1/valid_out",
+          "demapping_0/fr_data_valid"
+        ]
+      }
+    }
+  }
+}

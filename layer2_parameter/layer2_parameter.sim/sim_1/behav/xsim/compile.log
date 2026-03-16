@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/layer2_parameter/layer2_parameter.srcs/sources_1/new/ulcch_parameter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ulcch_parameter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/layer2_parameter/layer2_parameter.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -2,24 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Jan 29 17:41:27 2026
-# Process ID: 16828
+# Start of session at: Mon Mar 16 16:05:12 2026
+# Process ID: 26152
 # Current directory: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30224 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\resoure_demapping\demapping.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33924 D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\resoure_demapping\demapping.xpr
 # Log file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/vivado.log
 # Journal file: D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.xpr}
-update_compile_order -fileset sources_1
-set_property  ip_repo_paths  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips}} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/frame_sync}} [current_project]
-update_ip_catalog
-launch_simulation
-open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/tb_behav.wcfg}
-source tb.tcl
-ipx::open_ipxact_file {D:/fpga/vivaldo project/pucch-format-0/resoure_demapping/component.xml}
-close_sim
