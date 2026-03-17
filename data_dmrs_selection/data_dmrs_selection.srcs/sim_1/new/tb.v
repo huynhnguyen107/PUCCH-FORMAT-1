@@ -20,7 +20,7 @@
 module tb();
 	reg clk;
 	reg rst;
-	reg in_valid;
+	reg uci_valid;
 	reg [3:0] uci_nsymbols;
 	reg resoureset_valid;
 	reg ofdm_valid;
@@ -32,13 +32,13 @@ module tb();
 	integer i=0;
 	integer k=0;
 	//call instance
-	data_dmrs_selection data_dmrs_selection(clk, rst, in_valid, uci_nsymbols, resoureset_valid, ofdm_valid,
+	data_dmrs_selection data_dmrs_selection(clk, rst, uci_valid, uci_nsymbols, resoureset_valid, ofdm_valid,
 											ofdm, dmrs_valid, dmrs, data_valid, data);
 	// create reset and initial other signals
 	initial begin
 		rst=1;
 		clk=0;
-		in_valid=0;
+		uci_valid=0;
 		uci_nsymbols=0;
 		resoureset_valid=0;
 		ofdm_valid=0;
@@ -51,7 +51,7 @@ module tb();
 	initial begin
 		wait(!rst)
 		@(posedge clk) begin
-			in_valid <=1;
+			uci_valid <=1;
 			uci_nsymbols <=14;
 			resoureset_valid <=0;
 			ofdm_valid <=0;
@@ -60,7 +60,7 @@ module tb();
 		for (k=0;k<14;k=k+1) begin
 			for (i=0;i<12;i=i+1) begin
 				@(posedge clk) begin
-					in_valid <=0;
+					uci_valid <=0;
 					uci_nsymbols <=0;
 					resoureset_valid <=1;
 					ofdm_valid <=1;
@@ -70,7 +70,7 @@ module tb();
 			end
 			for (i=0;i<12;i=i+1) begin
 				@(posedge clk) begin
-					in_valid <=0;
+					uci_valid <=0;
 					uci_nsymbols <=0;
 					resoureset_valid <=0;
 					ofdm_valid <=0;

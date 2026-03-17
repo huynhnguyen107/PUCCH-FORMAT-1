@@ -22,3 +22,2441 @@ WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:n_cs_gen:1.0'
 open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 931.910 ; gain = 235.668
 update_compile_order -fileset sources_1
 close_project
+create_project data_dmrs_selection {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection} -part xcvu9p-flga2104-2L-e
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+set_property board_part xilinx.com:vcu118:part0:2.3 [current_project]
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new}
+close [ open {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/Vivaldo -notrace
+couldn't read file "D:/FPGA/Vivaldo": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 16 17:08:32 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.637 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb/data_dmrs_selection/n_dmrs}} {{/tb/data_dmrs_selection/n_data}} {{/tb/data_dmrs_selection/cnt_11}} {{/tb/data_dmrs_selection/valid_odd_even}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1069.637 ; gain = 0.000
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}} [get_filesets sim_1]
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data_valid' is not allowed [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register dmrs_valid is not permitted, left-hand side should be reg/integer/time/genvar [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:60]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register dmrs_valid is not permitted, left-hand side should be reg/integer/time/genvar [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:68]
+ERROR: [VRFC 10-2865] module 'data_dmrs_selection' ignored due to previous errors [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:22]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1069.637 ; gain = 0.000
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/fifo_dmrs_valid}} {{/tb/data_dmrs_selection/fifo_data_valid}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.637 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1069.637 ; gain = 0.000
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name data_dmrs_fifo_0 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {data_dmrs_fifo_0} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {false} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_ips data_dmrs_fifo_0]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'data_dmrs_fifo_0' to 'data_dmrs_fifo_0' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_dmrs_fifo_0'...
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_dmrs_fifo_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_dmrs_fifo_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'data_dmrs_fifo_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'data_dmrs_fifo_0'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name data_dmrs_fifo_1 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {data_dmrs_fifo_1} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {false} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_ips data_dmrs_fifo_1]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'data_dmrs_fifo_1' to 'data_dmrs_fifo_1' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_dmrs_fifo_1'...
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_dmrs_fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_dmrs_fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'data_dmrs_fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'data_dmrs_fifo_1'...
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1094.730 ; gain = 0.000
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/cnt_nsymbols}} 
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/start_read}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+ERROR: [VRFC 10-4982] syntax error near ')' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:77]
+ERROR: [VRFC 10-4982] syntax error near 'else' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:79]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword else used in incorrect context [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:79]
+ERROR: [VRFC 10-2865] module 'data_dmrs_selection' ignored due to previous errors [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:22]
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/dmrs_rd_en}} {{/tb/data_dmrs_selection/dmrs_dout}} {{/tb/data_dmrs_selection/data_rd_en}} {{/tb/data_dmrs_selection/data_dout}} {{/tb/data_dmrs_selection/dmrs_cnt_valid}} {{/tb/data_dmrs_selection/dmrs_cnt_11}} {{/tb/data_dmrs_selection/dmrs_cnt}} {{/tb/data_dmrs_selection/data_cnt_valid}} {{/tb/data_dmrs_selection/data_cnt_11}} {{/tb/data_dmrs_selection/data_cnt}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1094.730 ; gain = 0.000
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/dmrs_rd_en}} {{/tb/data_dmrs_selection/data_rd_en}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+ERROR: [VRFC 10-4982] syntax error near 'reg' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:59]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword reg used in incorrect context [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:59]
+ERROR: [VRFC 10-4982] syntax error near '<=' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:67]
+ERROR: [VRFC 10-4982] syntax error near 'end' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:71]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword end used in incorrect context [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:71]
+ERROR: [VRFC 10-2939] 'n_data' is an unknown type [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:63]
+ERROR: [VRFC 10-2951] 'in_valid' is not a constant [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:66]
+ERROR: [VRFC 10-2939] 'n_dmrs' is an unknown type [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:67]
+ERROR: [VRFC 10-2939] 'n_data' is an unknown type [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:68]
+ERROR: [VRFC 10-2989] 'data_dout_valid' is not declared [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:105]
+ERROR: [VRFC 10-2989] 'data_dout_valid' is not declared [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:137]
+ERROR: [VRFC 10-2989] 'data_dout_valid' is not declared [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:171]
+ERROR: [VRFC 10-2865] module 'data_dmrs_selection' ignored due to previous errors [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v:22]
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+current_wave_config {tb_behav.wcfg}
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg
+add_wave {{/tb/data_dmrs_selection/dmrs_valid}} {{/tb/data_dmrs_selection/dmrs}} {{/tb/data_dmrs_selection/data_valid}} {{/tb/data_dmrs_selection/data}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1094.730 ; gain = 0.000
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1094.730 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+"xvhdl --incr --relax -prj tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.sim/sim_1/behav/xsim'
+"xelab -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6ad74b1150104f429cd04b5a6654058d --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.data_dmrs_fifo_0
+Compiling module xil_defaultlib.data_dmrs_fifo_1
+Compiling module xil_defaultlib.data_dmrs_selection
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1094.730 ; gain = 0.000
+ipx::package_project -root_dir {d:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection} -vendor xilinx.com -library user -taxonomy /UserIP
+WARNING: [IP_Flow 19-4963] data_dmrs_fifo_1 has board value specified. The packaged IP will be restricted to usage with board 'xilinx.com:vcu118:part0:2.3'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{d:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection'.
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 18:30:37 2026...

@@ -161,7 +161,6 @@ proc create_root_design { parentCell } {
   set clk [ create_bd_port -dir I -type clk -freq_hz 100000000 clk ]
   set cyclic [ create_bd_port -dir O -from 31 -to 0 cyclic ]
   set cyclic_valid [ create_bd_port -dir O cyclic_valid ]
-  set in_valid [ create_bd_port -dir I in_valid ]
   set rst [ create_bd_port -dir I -type rst rst ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
@@ -173,6 +172,7 @@ proc create_root_design { parentCell } {
   set uci_m0 [ create_bd_port -dir I -from 3 -to 0 uci_m0 ]
   set uci_nsymbols [ create_bd_port -dir I -from 3 -to 0 uci_nsymbols ]
   set uci_slot [ create_bd_port -dir I -from 4 -to 0 uci_slot ]
+  set uci_valid [ create_bd_port -dir I uci_valid ]
 
   # Create instance: ba_seq_control_0, and set properties
   set ba_seq_control_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ba_seq_control:1.0 ba_seq_control_0 ]
@@ -224,7 +224,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins ba_seq_control_0/clk] [get_bd_pins base_sequence_0/clk] [get_bd_pins base_sequence_1/clk] [get_bd_pins com_mul_cyclic_0/clk] [get_bd_pins n_cs_gen_0/clk] [get_bd_pins nfs_gen_0/clk] [get_bd_pins phase_gen_0/clk] [get_bd_pins phase_gen_control_0/clk]
   connect_bd_net -net com_mul_cyclic_0_cyclic [get_bd_ports cyclic] [get_bd_pins com_mul_cyclic_0/cyclic]
   connect_bd_net -net com_mul_cyclic_0_cyclic_valid [get_bd_ports cyclic_valid] [get_bd_pins com_mul_cyclic_0/cyclic_valid]
-  connect_bd_net -net in_valid_1 [get_bd_ports in_valid] [get_bd_pins base_sequence_0/in_valid] [get_bd_pins base_sequence_1/in_valid] [get_bd_pins n_cs_gen_0/in_valid] [get_bd_pins nfs_gen_0/in_valid] [get_bd_pins phase_gen_0/in_valid] [get_bd_pins phase_gen_control_0/in_valid]
+  connect_bd_net -net in_valid_1 [get_bd_ports uci_valid] [get_bd_pins base_sequence_0/in_valid] [get_bd_pins base_sequence_1/in_valid] [get_bd_pins n_cs_gen_0/in_valid] [get_bd_pins nfs_gen_0/in_valid] [get_bd_pins phase_gen_0/in_valid] [get_bd_pins phase_gen_control_0/in_valid]
   connect_bd_net -net n_cs_gen_0_ncs [get_bd_pins n_cs_gen_0/ncs] [get_bd_pins phase_gen_0/ncs]
   connect_bd_net -net n_cs_gen_0_ncs_valid [get_bd_pins n_cs_gen_0/ncs_valid] [get_bd_pins phase_gen_0/n_cs_valid]
   connect_bd_net -net nfs_gen_0_nfs_0 [get_bd_pins ba_seq_control_0/nfs_0] [get_bd_pins nfs_gen_0/nfs_0]

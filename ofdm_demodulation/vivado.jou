@@ -11,3 +11,115 @@
 #-----------------------------------------------------------
 start_gui
 open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/ofdm_demodulation/ofdm_demodulation.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project data_dmrs_selection {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection} -part xcvu9p-flga2104-2L-e
+set_property board_part xilinx.com:vcu118:part0:2.3 [current_project]
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new
+file mkdir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new}
+close [ open {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v} w ]
+add_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new
+file mkdir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new}
+close [ open {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb.tcl
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/data_dmrs_selection/n_dmrs}} {{/tb/data_dmrs_selection/n_data}} {{/tb/data_dmrs_selection/cnt_11}} {{/tb/data_dmrs_selection/valid_odd_even}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}}
+set_property xsim.view {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}} [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/fifo_dmrs_valid}} {{/tb/data_dmrs_selection/fifo_data_valid}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name data_dmrs_fifo_0 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {data_dmrs_fifo_0} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {false} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_ips data_dmrs_fifo_0]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/data_dmrs_fifo_0.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name data_dmrs_fifo_1 -dir {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {data_dmrs_fifo_1} CONFIG.Input_Data_Width {32} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {32} CONFIG.Output_Depth {512} CONFIG.Use_Embedded_Registers {false} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {511} CONFIG.Full_Threshold_Negate_Value {510}] [get_ips data_dmrs_fifo_1]
+generate_target {instantiation_template} [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+set_property generate_synth_checkpoint false [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+generate_target all [get_files  {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}]
+export_ip_user_files -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/data_dmrs_fifo_1.xci}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/cnt_nsymbols}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/start_read}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/dmrs_rd_en}} {{/tb/data_dmrs_selection/dmrs_dout}} {{/tb/data_dmrs_selection/data_rd_en}} {{/tb/data_dmrs_selection/data_dout}} {{/tb/data_dmrs_selection/dmrs_cnt_valid}} {{/tb/data_dmrs_selection/dmrs_cnt_11}} {{/tb/data_dmrs_selection/dmrs_cnt}} {{/tb/data_dmrs_selection/data_cnt_valid}} {{/tb/data_dmrs_selection/data_cnt_11}} {{/tb/data_dmrs_selection/data_cnt}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/dmrs_rd_en}} {{/tb/data_dmrs_selection/data_rd_en}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/data_dmrs_selection/dmrs_valid}} {{/tb/data_dmrs_selection/dmrs}} {{/tb/data_dmrs_selection/data_valid}} {{/tb/data_dmrs_selection/data}} 
+relaunch_sim
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+ipx::package_project -root_dir {d:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection} -vendor xilinx.com -library user -taxonomy /UserIP
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{d:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection}} [current_project]
+update_ip_catalog
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+close_sim
+close_project

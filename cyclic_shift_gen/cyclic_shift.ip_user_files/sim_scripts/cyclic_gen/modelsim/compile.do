@@ -118,7 +118,7 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/sources_1/ip/cyclic_cmpy_0/sim/cyclic_cmpy_0.vhd" \
 
 vlog -work xil_defaultlib -64 -incr \
-"../../../bd/cyclic_gen/ipshared/5c1d/sources_1/new/com_mul_cyclic.v" \
+"../../../bd/cyclic_gen/ipshared/7068/sources_1/new/com_mul_cyclic.v" \
 "../../../bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/sim/cyclic_gen_com_mul_cyclic_0_0.v" \
 
 vlog -work xlconstant_v1_1_6 -64 -incr \

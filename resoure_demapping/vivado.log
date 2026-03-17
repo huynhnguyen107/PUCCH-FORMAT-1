@@ -23,3 +23,4 @@ WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:demapping:1.0
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:n_cs_gen:1.0'. The one found in IP location 'd:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/n_cs_gen/n_cs_gen.srcs' will take precedence over the same IP in location d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/n_cs_gen
 open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 908.133 ; gain = 204.121
 update_compile_order -fileset sources_1
+close_project

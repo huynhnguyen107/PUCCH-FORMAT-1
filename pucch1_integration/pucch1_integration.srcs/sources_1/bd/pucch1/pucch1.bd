@@ -1,11 +1,12 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5C31B7BA881F9B73",
+      "boundary_crc": "0x5BD17CD2E4F52374",
       "device": "xcvu9p-flga2104-2L-e",
       "name": "pucch1",
       "synth_flow_mode": "None",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
       "physical_control_0": "",
@@ -15,15 +16,69 @@
       "xlslice_0": "",
       "frame_sync_1": "",
       "ulcch_parameter_0": "",
-      "demapping_0": ""
+      "demapping_0": "",
+      "data_dmrs_selection_0": "",
+      "de_spread_0": "",
+      "de_spread_1": "",
+      "cyclic_dmrs": {
+        "n_cs_gen_0": "",
+        "phase_gen_0": "",
+        "phase_gen_control_0": "",
+        "base_sequence_0": "",
+        "base_sequence_1": "",
+        "nfs_gen_0": "",
+        "ba_seq_control_0": "",
+        "com_mul_cyclic_0": "",
+        "mcs": "",
+        "xlconstant_1": "",
+        "xlconstant_2": ""
+      },
+      "cyclic_uci": {
+        "n_cs_gen_0": "",
+        "phase_gen_0": "",
+        "phase_gen_control_0": "",
+        "base_sequence_0": "",
+        "base_sequence_1": "",
+        "nfs_gen_0": "",
+        "ba_seq_control_0": "",
+        "com_mul_cyclic_0": "",
+        "mcs": "",
+        "xlconstant_1": "",
+        "xlconstant_2": ""
+      },
+      "uci_wise_spreading_0": "",
+      "uci_wise_spreading_1": "",
+      "uci_dmrs_gen_0": "",
+      "dmrs_wise_spreading_1": "",
+      "dmrs_wise_spreading_0": "",
+      "uci_dmrs_gen_1": "",
+      "mean_data_0": "",
+      "sr_ack_detector_0": "",
+      "xlconstant_1": "",
+      "xlconcat_0": "",
+      "xlconcat_1": "",
+      "uci_occ": "",
+      "payload_est_SINR_0": ""
     },
     "ports": {
       "clk": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "pucch1_clk",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "122880000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
           }
         }
       },
@@ -31,6 +86,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -66,6 +125,20 @@
       "i_hopping_ID": {
         "direction": "I",
         "left": "15",
+        "right": "0"
+      },
+      "o_valid": {
+        "direction": "O"
+      },
+      "dtx": {
+        "direction": "O"
+      },
+      "sr": {
+        "direction": "O"
+      },
+      "harq": {
+        "direction": "O",
+        "left": "1",
         "right": "0"
       }
     },
@@ -120,6 +193,849 @@
       "demapping_0": {
         "vlnv": "xilinx.com:user:demapping:1.0",
         "xci_name": "pucch1_demapping_0_1"
+      },
+      "data_dmrs_selection_0": {
+        "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
+        "xci_name": "pucch1_data_dmrs_selection_0_0"
+      },
+      "de_spread_0": {
+        "vlnv": "xilinx.com:user:de_spread:1.0",
+        "xci_name": "pucch1_de_spread_0_0"
+      },
+      "de_spread_1": {
+        "vlnv": "xilinx.com:user:de_spread:1.0",
+        "xci_name": "pucch1_de_spread_1_0"
+      },
+      "cyclic_dmrs": {
+        "ports": {
+          "clk": {
+            "direction": "I"
+          },
+          "rst": {
+            "direction": "I"
+          },
+          "in_valid": {
+            "direction": "I"
+          },
+          "uci_m0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_nSymbs": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_intra_fr_hop": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_NID": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_slot": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_first_symbol": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_grouphopping": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dmrs_cyclic": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dmrs_cylcic_valid": {
+            "direction": "O"
+          },
+          "wise_enable": {
+            "direction": "O"
+          },
+          "nfs_valid": {
+            "direction": "O"
+          },
+          "nfs_0": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "nfs_1": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        },
+        "components": {
+          "n_cs_gen_0": {
+            "vlnv": "xilinx.com:user:n_cs_gen:1.0",
+            "xci_name": "pucch1_n_cs_gen_0_0"
+          },
+          "phase_gen_0": {
+            "vlnv": "xilinx.com:user:phase_gen:1.0",
+            "xci_name": "pucch1_phase_gen_0_0"
+          },
+          "phase_gen_control_0": {
+            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
+            "xci_name": "pucch1_phase_gen_control_0_0"
+          },
+          "base_sequence_0": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_0_0"
+          },
+          "base_sequence_1": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_1_0"
+          },
+          "nfs_gen_0": {
+            "vlnv": "xilinx.com:user:nfs_gen:1.0",
+            "xci_name": "pucch1_nfs_gen_0_0"
+          },
+          "ba_seq_control_0": {
+            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
+            "xci_name": "pucch1_ba_seq_control_0_0"
+          },
+          "com_mul_cyclic_0": {
+            "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
+            "xci_name": "pucch1_com_mul_cyclic_0_0"
+          },
+          "mcs": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_0_1",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlconstant_1": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_0_2",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlconstant_2": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_1_0",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "phase_gen_0/clk",
+              "nfs_gen_0/clk",
+              "n_cs_gen_0/clk",
+              "phase_gen_control_0/clk",
+              "ba_seq_control_0/clk",
+              "base_sequence_1/clk",
+              "base_sequence_0/clk",
+              "com_mul_cyclic_0/clk"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "phase_gen_0/rst",
+              "nfs_gen_0/rst",
+              "n_cs_gen_0/rst",
+              "phase_gen_control_0/rst",
+              "ba_seq_control_0/rst",
+              "base_sequence_1/rst",
+              "base_sequence_0/rst",
+              "com_mul_cyclic_0/rst"
+            ]
+          },
+          "in_valid_1": {
+            "ports": [
+              "in_valid",
+              "phase_gen_0/in_valid",
+              "nfs_gen_0/in_valid",
+              "n_cs_gen_0/in_valid",
+              "phase_gen_control_0/in_valid",
+              "base_sequence_1/in_valid",
+              "base_sequence_0/in_valid"
+            ]
+          },
+          "uci_m0_1": {
+            "ports": [
+              "uci_m0",
+              "phase_gen_0/uci_m0"
+            ]
+          },
+          "uci_nSymbs_1": {
+            "ports": [
+              "uci_nSymbs",
+              "nfs_gen_0/uci_nSymbs",
+              "n_cs_gen_0/uci_nSymbs",
+              "phase_gen_control_0/uci_nSymbs"
+            ]
+          },
+          "uci_intra_fr_hop_1": {
+            "ports": [
+              "uci_intra_fr_hop",
+              "nfs_gen_0/uci_intra_fr_hop",
+              "base_sequence_1/uci_nhop"
+            ]
+          },
+          "uci_NID_1": {
+            "ports": [
+              "uci_NID",
+              "n_cs_gen_0/uci_NID",
+              "base_sequence_1/uci_nID",
+              "base_sequence_0/uci_nID"
+            ]
+          },
+          "uci_slot_1": {
+            "ports": [
+              "uci_slot",
+              "n_cs_gen_0/uci_slot",
+              "base_sequence_1/uci_slot",
+              "base_sequence_0/uci_slot"
+            ]
+          },
+          "uci_first_symbol_1": {
+            "ports": [
+              "uci_first_symbol",
+              "n_cs_gen_0/uci_first_symbol"
+            ]
+          },
+          "n_cs_gen_0_ncs_valid": {
+            "ports": [
+              "n_cs_gen_0/ncs_valid",
+              "phase_gen_0/n_cs_valid"
+            ]
+          },
+          "n_cs_gen_0_ncs": {
+            "ports": [
+              "n_cs_gen_0/ncs",
+              "phase_gen_0/ncs"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "mcs/dout",
+              "phase_gen_0/uci_mcs"
+            ]
+          },
+          "phase_gen_0_phase_valid": {
+            "ports": [
+              "phase_gen_0/phase_valid",
+              "phase_gen_control_0/i_phase_valid"
+            ]
+          },
+          "phase_gen_0_phase": {
+            "ports": [
+              "phase_gen_0/phase",
+              "phase_gen_control_0/i_phase"
+            ]
+          },
+          "xlconstant_1_dout": {
+            "ports": [
+              "xlconstant_1/dout",
+              "n_cs_gen_0/in_uci_flag",
+              "phase_gen_control_0/in_uci_flag"
+            ]
+          },
+          "uci_grouphopping_1": {
+            "ports": [
+              "uci_grouphopping",
+              "base_sequence_0/uci_grouphopping",
+              "base_sequence_1/uci_grouphopping"
+            ]
+          },
+          "xlconstant_2_dout": {
+            "ports": [
+              "xlconstant_2/dout",
+              "base_sequence_0/uci_nhop"
+            ]
+          },
+          "base_sequence_0_base_sequence_valid": {
+            "ports": [
+              "base_sequence_0/base_sequence_valid",
+              "ba_seq_control_0/basequence_valid_0"
+            ]
+          },
+          "base_sequence_0_base_sequence": {
+            "ports": [
+              "base_sequence_0/base_sequence",
+              "ba_seq_control_0/basequence_0"
+            ]
+          },
+          "base_sequence_1_base_sequence_valid": {
+            "ports": [
+              "base_sequence_1/base_sequence_valid",
+              "ba_seq_control_0/basequence_valid_1"
+            ]
+          },
+          "base_sequence_1_base_sequence": {
+            "ports": [
+              "base_sequence_1/base_sequence",
+              "ba_seq_control_0/basequence_1"
+            ]
+          },
+          "nfs_gen_0_nfs_0": {
+            "ports": [
+              "nfs_gen_0/nfs_0",
+              "ba_seq_control_0/nfs_0",
+              "nfs_0"
+            ]
+          },
+          "nfs_gen_0_nfs_1": {
+            "ports": [
+              "nfs_gen_0/nfs_1",
+              "ba_seq_control_0/nfs_1",
+              "nfs_1"
+            ]
+          },
+          "nfs_gen_0_nfs_valid": {
+            "ports": [
+              "nfs_gen_0/nfs_valid",
+              "ba_seq_control_0/nfs_valid",
+              "nfs_valid"
+            ]
+          },
+          "phase_gen_control_0_start_en": {
+            "ports": [
+              "phase_gen_control_0/start_en",
+              "ba_seq_control_0/start_en"
+            ]
+          },
+          "ba_seq_control_0_basequence_out_valid": {
+            "ports": [
+              "ba_seq_control_0/basequence_out_valid",
+              "com_mul_cyclic_0/basequence_valid"
+            ]
+          },
+          "ba_seq_control_0_basequence_out": {
+            "ports": [
+              "ba_seq_control_0/basequence_out",
+              "com_mul_cyclic_0/basequence"
+            ]
+          },
+          "phase_gen_control_0_o_phase_valid": {
+            "ports": [
+              "phase_gen_control_0/o_phase_valid",
+              "com_mul_cyclic_0/phase_valid",
+              "com_mul_cyclic_0/phase"
+            ]
+          },
+          "com_mul_cyclic_0_cyclic": {
+            "ports": [
+              "com_mul_cyclic_0/cyclic",
+              "dmrs_cyclic"
+            ]
+          },
+          "com_mul_cyclic_0_cyclic_valid": {
+            "ports": [
+              "com_mul_cyclic_0/cyclic_valid",
+              "dmrs_cylcic_valid"
+            ]
+          },
+          "com_mul_cyclic_0_o_wise_enable": {
+            "ports": [
+              "com_mul_cyclic_0/o_wise_enable",
+              "wise_enable"
+            ]
+          }
+        }
+      },
+      "cyclic_uci": {
+        "ports": {
+          "clk": {
+            "direction": "I"
+          },
+          "rst": {
+            "direction": "I"
+          },
+          "in_valid": {
+            "direction": "I"
+          },
+          "uci_m0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_nSymbs": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_intra_fr_hop": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_NID": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_slot": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "uci_first_symbol": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_grouphopping": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "uci_cyclic": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uci_cyclic_valid": {
+            "direction": "O"
+          },
+          "wise_enable": {
+            "direction": "O"
+          },
+          "nfs_valid": {
+            "direction": "O"
+          },
+          "nfs_0": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "nfs_1": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        },
+        "components": {
+          "n_cs_gen_0": {
+            "vlnv": "xilinx.com:user:n_cs_gen:1.0",
+            "xci_name": "pucch1_n_cs_gen_0_1"
+          },
+          "phase_gen_0": {
+            "vlnv": "xilinx.com:user:phase_gen:1.0",
+            "xci_name": "pucch1_phase_gen_0_1"
+          },
+          "phase_gen_control_0": {
+            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
+            "xci_name": "pucch1_phase_gen_control_0_1"
+          },
+          "base_sequence_0": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_0_1"
+          },
+          "base_sequence_1": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_1_1"
+          },
+          "nfs_gen_0": {
+            "vlnv": "xilinx.com:user:nfs_gen:1.0",
+            "xci_name": "pucch1_nfs_gen_0_1"
+          },
+          "ba_seq_control_0": {
+            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
+            "xci_name": "pucch1_ba_seq_control_0_1"
+          },
+          "com_mul_cyclic_0": {
+            "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
+            "xci_name": "pucch1_com_mul_cyclic_0_1"
+          },
+          "mcs": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_0_3",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlconstant_1": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_1_1",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "1"
+              },
+              "CONST_WIDTH": {
+                "value": "1"
+              }
+            }
+          },
+          "xlconstant_2": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "pucch1_xlconstant_2_0",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "clk_1": {
+            "ports": [
+              "clk",
+              "phase_gen_0/clk",
+              "nfs_gen_0/clk",
+              "n_cs_gen_0/clk",
+              "phase_gen_control_0/clk",
+              "ba_seq_control_0/clk",
+              "base_sequence_1/clk",
+              "base_sequence_0/clk",
+              "com_mul_cyclic_0/clk"
+            ]
+          },
+          "rst_1": {
+            "ports": [
+              "rst",
+              "phase_gen_0/rst",
+              "nfs_gen_0/rst",
+              "n_cs_gen_0/rst",
+              "phase_gen_control_0/rst",
+              "ba_seq_control_0/rst",
+              "base_sequence_1/rst",
+              "base_sequence_0/rst",
+              "com_mul_cyclic_0/rst"
+            ]
+          },
+          "in_valid_1": {
+            "ports": [
+              "in_valid",
+              "phase_gen_0/in_valid",
+              "nfs_gen_0/in_valid",
+              "n_cs_gen_0/in_valid",
+              "phase_gen_control_0/in_valid",
+              "base_sequence_1/in_valid",
+              "base_sequence_0/in_valid"
+            ]
+          },
+          "uci_m0_1": {
+            "ports": [
+              "uci_m0",
+              "phase_gen_0/uci_m0"
+            ]
+          },
+          "uci_nSymbs_1": {
+            "ports": [
+              "uci_nSymbs",
+              "nfs_gen_0/uci_nSymbs",
+              "n_cs_gen_0/uci_nSymbs",
+              "phase_gen_control_0/uci_nSymbs"
+            ]
+          },
+          "uci_intra_fr_hop_1": {
+            "ports": [
+              "uci_intra_fr_hop",
+              "nfs_gen_0/uci_intra_fr_hop",
+              "base_sequence_1/uci_nhop"
+            ]
+          },
+          "uci_NID_1": {
+            "ports": [
+              "uci_NID",
+              "n_cs_gen_0/uci_NID",
+              "base_sequence_1/uci_nID",
+              "base_sequence_0/uci_nID"
+            ]
+          },
+          "uci_slot_1": {
+            "ports": [
+              "uci_slot",
+              "n_cs_gen_0/uci_slot",
+              "base_sequence_1/uci_slot",
+              "base_sequence_0/uci_slot"
+            ]
+          },
+          "uci_first_symbol_1": {
+            "ports": [
+              "uci_first_symbol",
+              "n_cs_gen_0/uci_first_symbol"
+            ]
+          },
+          "n_cs_gen_0_ncs_valid": {
+            "ports": [
+              "n_cs_gen_0/ncs_valid",
+              "phase_gen_0/n_cs_valid"
+            ]
+          },
+          "n_cs_gen_0_ncs": {
+            "ports": [
+              "n_cs_gen_0/ncs",
+              "phase_gen_0/ncs"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "mcs/dout",
+              "phase_gen_0/uci_mcs"
+            ]
+          },
+          "phase_gen_0_phase_valid": {
+            "ports": [
+              "phase_gen_0/phase_valid",
+              "phase_gen_control_0/i_phase_valid"
+            ]
+          },
+          "phase_gen_0_phase": {
+            "ports": [
+              "phase_gen_0/phase",
+              "phase_gen_control_0/i_phase"
+            ]
+          },
+          "xlconstant_1_dout": {
+            "ports": [
+              "xlconstant_1/dout",
+              "n_cs_gen_0/in_uci_flag",
+              "phase_gen_control_0/in_uci_flag"
+            ]
+          },
+          "uci_grouphopping_1": {
+            "ports": [
+              "uci_grouphopping",
+              "base_sequence_0/uci_grouphopping",
+              "base_sequence_1/uci_grouphopping"
+            ]
+          },
+          "xlconstant_2_dout": {
+            "ports": [
+              "xlconstant_2/dout",
+              "base_sequence_0/uci_nhop"
+            ]
+          },
+          "base_sequence_0_base_sequence_valid": {
+            "ports": [
+              "base_sequence_0/base_sequence_valid",
+              "ba_seq_control_0/basequence_valid_0"
+            ]
+          },
+          "base_sequence_0_base_sequence": {
+            "ports": [
+              "base_sequence_0/base_sequence",
+              "ba_seq_control_0/basequence_0"
+            ]
+          },
+          "base_sequence_1_base_sequence_valid": {
+            "ports": [
+              "base_sequence_1/base_sequence_valid",
+              "ba_seq_control_0/basequence_valid_1"
+            ]
+          },
+          "base_sequence_1_base_sequence": {
+            "ports": [
+              "base_sequence_1/base_sequence",
+              "ba_seq_control_0/basequence_1"
+            ]
+          },
+          "nfs_gen_0_nfs_0": {
+            "ports": [
+              "nfs_gen_0/nfs_0",
+              "ba_seq_control_0/nfs_0",
+              "nfs_0"
+            ]
+          },
+          "nfs_gen_0_nfs_1": {
+            "ports": [
+              "nfs_gen_0/nfs_1",
+              "ba_seq_control_0/nfs_1",
+              "nfs_1"
+            ]
+          },
+          "nfs_gen_0_nfs_valid": {
+            "ports": [
+              "nfs_gen_0/nfs_valid",
+              "ba_seq_control_0/nfs_valid",
+              "nfs_valid"
+            ]
+          },
+          "phase_gen_control_0_start_en": {
+            "ports": [
+              "phase_gen_control_0/start_en",
+              "ba_seq_control_0/start_en"
+            ]
+          },
+          "ba_seq_control_0_basequence_out_valid": {
+            "ports": [
+              "ba_seq_control_0/basequence_out_valid",
+              "com_mul_cyclic_0/basequence_valid"
+            ]
+          },
+          "ba_seq_control_0_basequence_out": {
+            "ports": [
+              "ba_seq_control_0/basequence_out",
+              "com_mul_cyclic_0/basequence"
+            ]
+          },
+          "phase_gen_control_0_o_phase_valid": {
+            "ports": [
+              "phase_gen_control_0/o_phase_valid",
+              "com_mul_cyclic_0/phase_valid",
+              "com_mul_cyclic_0/phase"
+            ]
+          },
+          "com_mul_cyclic_0_cyclic": {
+            "ports": [
+              "com_mul_cyclic_0/cyclic",
+              "uci_cyclic"
+            ]
+          },
+          "com_mul_cyclic_0_cyclic_valid": {
+            "ports": [
+              "com_mul_cyclic_0/cyclic_valid",
+              "uci_cyclic_valid"
+            ]
+          },
+          "com_mul_cyclic_0_o_wise_enable": {
+            "ports": [
+              "com_mul_cyclic_0/o_wise_enable",
+              "wise_enable"
+            ]
+          }
+        }
+      },
+      "uci_wise_spreading_0": {
+        "vlnv": "xilinx.com:user:wise_spreading:1.0",
+        "xci_name": "pucch1_wise_spreading_0_0"
+      },
+      "uci_wise_spreading_1": {
+        "vlnv": "xilinx.com:user:wise_spreading:1.0",
+        "xci_name": "pucch1_wise_spreading_0_1"
+      },
+      "uci_dmrs_gen_0": {
+        "vlnv": "xilinx.com:user:uci_dmrs_gen:1.0",
+        "xci_name": "pucch1_uci_dmrs_gen_0_0"
+      },
+      "dmrs_wise_spreading_1": {
+        "vlnv": "xilinx.com:user:wise_spreading:1.0",
+        "xci_name": "pucch1_dmrs_wise_spreading_0_0"
+      },
+      "dmrs_wise_spreading_0": {
+        "vlnv": "xilinx.com:user:wise_spreading:1.0",
+        "xci_name": "pucch1_dmrs_wise_spreading_1_0"
+      },
+      "uci_dmrs_gen_1": {
+        "vlnv": "xilinx.com:user:uci_dmrs_gen:1.0",
+        "xci_name": "pucch1_uci_dmrs_gen_0_1"
+      },
+      "mean_data_0": {
+        "vlnv": "xilinx.com:user:mean_data:1.0",
+        "xci_name": "pucch1_mean_data_0_0"
+      },
+      "sr_ack_detector_0": {
+        "vlnv": "xilinx.com:user:sr_ack_detector:1.0",
+        "xci_name": "pucch1_sr_ack_detector_0_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch1_xlconstant_0_4",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "4"
+          },
+          "CONST_WIDTH": {
+            "value": "64"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "pucch1_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "64"
+          },
+          "IN1_WIDTH": {
+            "value": "64"
+          },
+          "IN2_WIDTH": {
+            "value": "64"
+          },
+          "IN3_WIDTH": {
+            "value": "64"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "pucch1_xlconcat_0_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "34"
+          },
+          "IN1_WIDTH": {
+            "value": "34"
+          },
+          "IN2_WIDTH": {
+            "value": "34"
+          },
+          "IN3_WIDTH": {
+            "value": "34"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "uci_occ": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch1_xlconstant_2_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "payload_est_SINR_0": {
+        "vlnv": "xilinx.com:user:payload_est_SINR:1.0",
+        "xci_name": "pucch1_payload_est_SINR_0_0",
+        "parameters": {
+          "RX": {
+            "value": "4"
+          }
+        }
       }
     },
     "nets": {
@@ -131,7 +1047,21 @@
           "ofdm_demodulation_0/clk",
           "frame_sync_1/clk",
           "ulcch_parameter_0/clk",
-          "demapping_0/clk"
+          "demapping_0/clk",
+          "data_dmrs_selection_0/clk",
+          "de_spread_0/clk",
+          "de_spread_1/clk",
+          "cyclic_dmrs/clk",
+          "cyclic_uci/clk",
+          "uci_wise_spreading_0/clk",
+          "uci_wise_spreading_1/clk",
+          "uci_dmrs_gen_0/clk",
+          "dmrs_wise_spreading_0/clk",
+          "dmrs_wise_spreading_1/clk",
+          "uci_dmrs_gen_1/clk",
+          "mean_data_0/clk",
+          "sr_ack_detector_0/clk",
+          "payload_est_SINR_0/clk"
         ]
       },
       "rst_1": {
@@ -142,7 +1072,21 @@
           "ofdm_demodulation_0/rst",
           "frame_sync_1/rst",
           "ulcch_parameter_0/rst",
-          "demapping_0/rst"
+          "demapping_0/rst",
+          "data_dmrs_selection_0/rst",
+          "de_spread_0/rst",
+          "de_spread_1/rst",
+          "cyclic_dmrs/rst",
+          "cyclic_uci/rst",
+          "uci_wise_spreading_0/rst",
+          "uci_wise_spreading_1/rst",
+          "uci_dmrs_gen_0/rst",
+          "dmrs_wise_spreading_0/rst",
+          "dmrs_wise_spreading_1/rst",
+          "uci_dmrs_gen_1/rst",
+          "mean_data_0/rst",
+          "sr_ack_detector_0/rst",
+          "payload_est_SINR_0/rst"
         ]
       },
       "trigger_05_1": {
@@ -232,25 +1176,35 @@
       "ulcch_parameter_0_uci_intra_fre_hopping": {
         "ports": [
           "ulcch_parameter_0/uci_intra_fre_hopping",
-          "demapping_0/uci_instra_fre_hop"
+          "demapping_0/uci_instra_fre_hop",
+          "cyclic_dmrs/uci_intra_fr_hop",
+          "cyclic_uci/uci_intra_fr_hop"
         ]
       },
       "ulcch_parameter_0_uci_slot_idx": {
         "ports": [
           "ulcch_parameter_0/uci_slot_idx",
-          "demapping_0/uci_slot"
+          "demapping_0/uci_slot",
+          "cyclic_dmrs/uci_slot",
+          "cyclic_uci/uci_slot"
         ]
       },
       "ulcch_parameter_0_uci_symbol": {
         "ports": [
           "ulcch_parameter_0/uci_symbol",
-          "demapping_0/uci_nsymbols"
+          "demapping_0/uci_nsymbols",
+          "data_dmrs_selection_0/uci_nsymbols",
+          "cyclic_dmrs/uci_nSymbs",
+          "cyclic_uci/uci_nSymbs",
+          "mean_data_0/uci_nsymbol"
         ]
       },
       "ulcch_parameter_0_uci_frist_symbol": {
         "ports": [
           "ulcch_parameter_0/uci_frist_symbol",
-          "demapping_0/uci_first_symbol_idx"
+          "demapping_0/uci_first_symbol_idx",
+          "cyclic_dmrs/uci_first_symbol",
+          "cyclic_uci/uci_first_symbol"
         ]
       },
       "ulcch_parameter_0_uci_pbr_offset": {
@@ -268,7 +1222,17 @@
       "ulcch_parameter_0_pucch_valid": {
         "ports": [
           "ulcch_parameter_0/pucch_valid",
-          "demapping_0/uci_valid"
+          "demapping_0/uci_valid",
+          "data_dmrs_selection_0/uci_valid",
+          "cyclic_dmrs/in_valid",
+          "cyclic_uci/in_valid",
+          "uci_wise_spreading_0/in_valid",
+          "uci_wise_spreading_1/in_valid",
+          "dmrs_wise_spreading_0/in_valid",
+          "dmrs_wise_spreading_1/in_valid",
+          "mean_data_0/in_valid",
+          "sr_ack_detector_0/in_valid",
+          "payload_est_SINR_0/in_valid"
         ]
       },
       "frame_sync_1_start_slot": {
@@ -293,6 +1257,362 @@
         "ports": [
           "frame_sync_1/valid_out",
           "demapping_0/fr_data_valid"
+        ]
+      },
+      "demapping_0_resoureset_valid": {
+        "ports": [
+          "demapping_0/resoureset_valid",
+          "data_dmrs_selection_0/resoureset_valid"
+        ]
+      },
+      "ofdm_demodulation_0_pucch_ofdm": {
+        "ports": [
+          "ofdm_demodulation_0/pucch_ofdm",
+          "data_dmrs_selection_0/ofdm"
+        ]
+      },
+      "ofdm_demodulation_0_o_valid": {
+        "ports": [
+          "ofdm_demodulation_0/o_valid",
+          "data_dmrs_selection_0/ofdm_valid"
+        ]
+      },
+      "data_dmrs_selection_0_dmrs_valid": {
+        "ports": [
+          "data_dmrs_selection_0/dmrs_valid",
+          "de_spread_0/rx_data_valid"
+        ]
+      },
+      "data_dmrs_selection_0_dmrs": {
+        "ports": [
+          "data_dmrs_selection_0/dmrs",
+          "de_spread_0/rx_data"
+        ]
+      },
+      "data_dmrs_selection_0_data_valid": {
+        "ports": [
+          "data_dmrs_selection_0/data_valid",
+          "de_spread_1/rx_data_valid"
+        ]
+      },
+      "data_dmrs_selection_0_data": {
+        "ports": [
+          "data_dmrs_selection_0/data",
+          "de_spread_1/rx_data"
+        ]
+      },
+      "ulcch_parameter_0_uci_m0": {
+        "ports": [
+          "ulcch_parameter_0/uci_m0",
+          "cyclic_dmrs/uci_m0",
+          "cyclic_uci/uci_m0"
+        ]
+      },
+      "ulcch_parameter_0_hopping_ID": {
+        "ports": [
+          "ulcch_parameter_0/hopping_ID",
+          "cyclic_dmrs/uci_NID",
+          "cyclic_uci/uci_NID"
+        ]
+      },
+      "ulcch_parameter_0_group_hopping": {
+        "ports": [
+          "ulcch_parameter_0/group_hopping",
+          "cyclic_dmrs/uci_grouphopping",
+          "cyclic_uci/uci_grouphopping"
+        ]
+      },
+      "cyclic_uci_wise_enable": {
+        "ports": [
+          "cyclic_uci/wise_enable",
+          "uci_wise_spreading_0/enable"
+        ]
+      },
+      "dmrs_wise_spreading_0_o_enable": {
+        "ports": [
+          "uci_wise_spreading_0/o_enable",
+          "uci_wise_spreading_1/enable"
+        ]
+      },
+      "cyclic_uci_nfs_valid": {
+        "ports": [
+          "cyclic_uci/nfs_valid",
+          "uci_wise_spreading_0/nfs_valid",
+          "uci_wise_spreading_1/nfs_valid"
+        ]
+      },
+      "cyclic_uci_nfs_0": {
+        "ports": [
+          "cyclic_uci/nfs_0",
+          "uci_wise_spreading_0/nfs"
+        ]
+      },
+      "cyclic_uci_nfs_1": {
+        "ports": [
+          "cyclic_uci/nfs_1",
+          "uci_wise_spreading_1/nfs"
+        ]
+      },
+      "cyclic_uci_uci_cyclic_valid": {
+        "ports": [
+          "cyclic_uci/uci_cyclic_valid",
+          "uci_dmrs_gen_0/cyclic_valid"
+        ]
+      },
+      "cyclic_uci_uci_cyclic": {
+        "ports": [
+          "cyclic_uci/uci_cyclic",
+          "uci_dmrs_gen_0/cyclic"
+        ]
+      },
+      "dmrs_wise_spreading_0_wi_seq_valid": {
+        "ports": [
+          "uci_wise_spreading_0/wi_seq_valid",
+          "uci_dmrs_gen_0/wise_valid_0"
+        ]
+      },
+      "dmrs_wise_spreading_0_wi_seq": {
+        "ports": [
+          "uci_wise_spreading_0/wi_seq",
+          "uci_dmrs_gen_0/wise_0"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq_valid": {
+        "ports": [
+          "uci_wise_spreading_1/wi_seq_valid",
+          "uci_dmrs_gen_0/wise_valid_1"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq": {
+        "ports": [
+          "uci_wise_spreading_1/wi_seq",
+          "uci_dmrs_gen_0/wise_1"
+        ]
+      },
+      "uci_dmrs_gen_0_uci_dmrs_valid": {
+        "ports": [
+          "uci_dmrs_gen_0/uci_dmrs_valid",
+          "de_spread_0/spreading_data_valid"
+        ]
+      },
+      "uci_dmrs_gen_0_uci_dmrs": {
+        "ports": [
+          "uci_dmrs_gen_0/uci_dmrs",
+          "de_spread_0/spreading_data"
+        ]
+      },
+      "cyclic_dmrs_nfs_valid": {
+        "ports": [
+          "cyclic_dmrs/nfs_valid",
+          "dmrs_wise_spreading_0/nfs_valid",
+          "dmrs_wise_spreading_1/nfs_valid"
+        ]
+      },
+      "cyclic_dmrs_nfs_0": {
+        "ports": [
+          "cyclic_dmrs/nfs_0",
+          "dmrs_wise_spreading_0/nfs"
+        ]
+      },
+      "cyclic_dmrs_wise_enable": {
+        "ports": [
+          "cyclic_dmrs/wise_enable",
+          "dmrs_wise_spreading_0/enable"
+        ]
+      },
+      "cyclic_dmrs_nfs_1": {
+        "ports": [
+          "cyclic_dmrs/nfs_1",
+          "dmrs_wise_spreading_1/nfs"
+        ]
+      },
+      "dmrs_wise_spreading_0_o_enable1": {
+        "ports": [
+          "dmrs_wise_spreading_0/o_enable",
+          "dmrs_wise_spreading_1/enable"
+        ]
+      },
+      "cyclic_dmrs_dmrs_cylcic_valid": {
+        "ports": [
+          "cyclic_dmrs/dmrs_cylcic_valid",
+          "uci_dmrs_gen_1/cyclic_valid"
+        ]
+      },
+      "cyclic_dmrs_dmrs_cyclic": {
+        "ports": [
+          "cyclic_dmrs/dmrs_cyclic",
+          "uci_dmrs_gen_1/cyclic"
+        ]
+      },
+      "dmrs_wise_spreading_0_wi_seq_valid1": {
+        "ports": [
+          "dmrs_wise_spreading_0/wi_seq_valid",
+          "uci_dmrs_gen_1/wise_valid_0"
+        ]
+      },
+      "dmrs_wise_spreading_0_wi_seq1": {
+        "ports": [
+          "dmrs_wise_spreading_0/wi_seq",
+          "uci_dmrs_gen_1/wise_0"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq_valid1": {
+        "ports": [
+          "dmrs_wise_spreading_1/wi_seq_valid",
+          "uci_dmrs_gen_1/wise_valid_1"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq1": {
+        "ports": [
+          "dmrs_wise_spreading_1/wi_seq",
+          "uci_dmrs_gen_1/wise_1"
+        ]
+      },
+      "uci_dmrs_gen_1_uci_dmrs_valid": {
+        "ports": [
+          "uci_dmrs_gen_1/uci_dmrs_valid",
+          "de_spread_1/spreading_data_valid"
+        ]
+      },
+      "uci_dmrs_gen_1_uci_dmrs": {
+        "ports": [
+          "uci_dmrs_gen_1/uci_dmrs",
+          "de_spread_1/spreading_data"
+        ]
+      },
+      "de_spread_0_de_spreading_data_valid": {
+        "ports": [
+          "de_spread_0/de_spreading_data_valid",
+          "mean_data_0/despread_uci_valid"
+        ]
+      },
+      "de_spread_0_de_spreading_data": {
+        "ports": [
+          "de_spread_0/de_spreading_data",
+          "mean_data_0/despread_uci"
+        ]
+      },
+      "de_spread_1_de_spreading_data_valid": {
+        "ports": [
+          "de_spread_1/de_spreading_data_valid",
+          "mean_data_0/despread_dmrs_valid"
+        ]
+      },
+      "de_spread_1_de_spreading_data": {
+        "ports": [
+          "de_spread_1/de_spreading_data",
+          "mean_data_0/despread_dmrs"
+        ]
+      },
+      "mean_data_0_o_mean_data_valid": {
+        "ports": [
+          "mean_data_0/o_mean_data_valid",
+          "payload_est_SINR_0/mean_data_valid"
+        ]
+      },
+      "mean_data_0_sinr_valid": {
+        "ports": [
+          "mean_data_0/sinr_valid",
+          "payload_est_SINR_0/sinr_valid"
+        ]
+      },
+      "payload_est_SINR_0_mean_sinr_valid": {
+        "ports": [
+          "payload_est_SINR_0/mean_sinr_valid",
+          "sr_ack_detector_0/mean_sinr_valid"
+        ]
+      },
+      "payload_est_SINR_0_mean_sinr": {
+        "ports": [
+          "payload_est_SINR_0/mean_sinr",
+          "sr_ack_detector_0/mean_sinr"
+        ]
+      },
+      "payload_est_SINR_0_payload_valid": {
+        "ports": [
+          "payload_est_SINR_0/payload_valid",
+          "sr_ack_detector_0/payload_valid"
+        ]
+      },
+      "payload_est_SINR_0_payload": {
+        "ports": [
+          "payload_est_SINR_0/payload",
+          "sr_ack_detector_0/payload"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "sr_ack_detector_0/sinr_threshold"
+        ]
+      },
+      "mean_data_0_sinr": {
+        "ports": [
+          "mean_data_0/sinr",
+          "xlconcat_0/In0",
+          "xlconcat_0/In1",
+          "xlconcat_0/In2",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "payload_est_SINR_0/sinr"
+        ]
+      },
+      "mean_data_0_o_mean_data": {
+        "ports": [
+          "mean_data_0/o_mean_data",
+          "xlconcat_1/In0",
+          "xlconcat_1/In1",
+          "xlconcat_1/In2",
+          "xlconcat_1/In3"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "payload_est_SINR_0/mean_data"
+        ]
+      },
+      "sr_ack_detector_0_o_valid": {
+        "ports": [
+          "sr_ack_detector_0/o_valid",
+          "o_valid"
+        ]
+      },
+      "sr_ack_detector_0_dtx": {
+        "ports": [
+          "sr_ack_detector_0/dtx",
+          "dtx"
+        ]
+      },
+      "sr_ack_detector_0_sr": {
+        "ports": [
+          "sr_ack_detector_0/sr",
+          "sr"
+        ]
+      },
+      "sr_ack_detector_0_harq": {
+        "ports": [
+          "sr_ack_detector_0/harq",
+          "harq"
+        ]
+      },
+      "uci_occ_dout": {
+        "ports": [
+          "uci_occ/dout",
+          "uci_wise_spreading_0/uci_OCC",
+          "uci_wise_spreading_1/uci_OCC",
+          "dmrs_wise_spreading_0/uci_OCC",
+          "dmrs_wise_spreading_1/uci_OCC"
+        ]
+      },
+      "ulcch_parameter_0_uci_ack": {
+        "ports": [
+          "ulcch_parameter_0/uci_ack",
+          "sr_ack_detector_0/uci_o_ack"
         ]
       }
     }

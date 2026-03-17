@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_fifo_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_dmrs_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

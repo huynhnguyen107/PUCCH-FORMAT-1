@@ -34,8 +34,8 @@
 
 module cyclic_gen_wrapper(
   input clk,
-  input in_valid,
   input rst,
+  input uci_valid,
   input [10:0]uci_NID,
   input [3:0]uci_first_symbol,
   input [1:0]uci_grouphopping,
@@ -51,7 +51,7 @@ module cyclic_gen_wrapper(
        (.clk(clk),
         .cyclic(cyclic),
         .cyclic_valid(cyclic_valid),
-        .in_valid(in_valid),
+        .uci_valid(uci_valid),
         .rst(rst),
         .uci_NID(uci_NID),
         .uci_first_symbol(uci_first_symbol),

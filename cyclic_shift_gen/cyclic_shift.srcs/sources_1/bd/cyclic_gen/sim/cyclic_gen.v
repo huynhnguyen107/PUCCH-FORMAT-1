@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Mar  5 15:04:23 2026
+//Date        : Mon Mar 16 19:16:51 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target cyclic_gen.bd
 //Design      : cyclic_gen
@@ -14,7 +14,6 @@ module cyclic_gen
    (clk,
     cyclic,
     cyclic_valid,
-    in_valid,
     rst,
     uci_NID,
     uci_first_symbol,
@@ -22,11 +21,11 @@ module cyclic_gen
     uci_intra_fr_hop,
     uci_m0,
     uci_nsymbols,
-    uci_slot);
+    uci_slot,
+    uci_valid);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN cyclic_gen_clk, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) input clk;
   output [31:0]cyclic;
   output cyclic_valid;
-  input in_valid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input rst;
   input [10:0]uci_NID;
   input [3:0]uci_first_symbol;
@@ -35,6 +34,7 @@ module cyclic_gen
   input [3:0]uci_m0;
   input [3:0]uci_nsymbols;
   input [4:0]uci_slot;
+  input uci_valid;
 
   wire [31:0]ba_seq_control_0_basequence_out;
   wire ba_seq_control_0_basequence_out_valid;
@@ -71,7 +71,7 @@ module cyclic_gen
   assign clk_1 = clk;
   assign cyclic[31:0] = com_mul_cyclic_0_cyclic;
   assign cyclic_valid = com_mul_cyclic_0_cyclic_valid;
-  assign in_valid_1 = in_valid;
+  assign in_valid_1 = uci_valid;
   assign rst_1 = rst;
   assign uci_NID_1 = uci_NID[10:0];
   assign uci_first_symbol_1 = uci_first_symbol[3:0];

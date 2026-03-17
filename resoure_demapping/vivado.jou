@@ -11,3 +11,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.xpr}
+update_compile_order -fileset sources_1
+close_project

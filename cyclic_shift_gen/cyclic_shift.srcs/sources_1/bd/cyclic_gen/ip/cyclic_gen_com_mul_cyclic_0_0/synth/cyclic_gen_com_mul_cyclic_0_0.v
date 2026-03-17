@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:com_mul_cyclic:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 (* X_CORE_INFO = "com_mul_cyclic,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{}" *)
-(* CORE_GENERATION_INFO = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=com_mul_cyclic,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "cyclic_gen_com_mul_cyclic_0_0,com_mul_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=com_mul_cyclic,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module cyclic_gen_com_mul_cyclic_0_0 (
@@ -63,7 +63,8 @@ module cyclic_gen_com_mul_cyclic_0_0 (
   phase_valid,
   phase,
   cyclic_valid,
-  cyclic
+  cyclic,
+  o_wise_enable
 );
 
 input wire clk;
@@ -74,6 +75,7 @@ input wire phase_valid;
 input wire [31 : 0] phase;
 output wire cyclic_valid;
 output wire [31 : 0] cyclic;
+output wire o_wise_enable;
 
   com_mul_cyclic inst (
     .clk(clk),
@@ -83,6 +85,7 @@ output wire [31 : 0] cyclic;
     .phase_valid(phase_valid),
     .phase(phase),
     .cyclic_valid(cyclic_valid),
-    .cyclic(cyclic)
+    .cyclic(cyclic),
+    .o_wise_enable(o_wise_enable)
   );
 endmodule

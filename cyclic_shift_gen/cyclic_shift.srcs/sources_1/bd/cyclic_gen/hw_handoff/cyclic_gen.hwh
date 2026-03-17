@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar  5 15:04:24 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 19:17:12 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="cyclic_gen" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -28,7 +28,7 @@
         <CONNECTION INSTANCE="com_mul_cyclic_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+    <PORT DIR="I" NAME="uci_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
       <CONNECTIONS>
         <CONNECTION INSTANCE="nfs_gen_0" PORT="in_valid"/>
         <CONNECTION INSTANCE="n_cs_gen_0" PORT="in_valid"/>
@@ -183,9 +183,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_slot">
@@ -238,9 +238,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_slot">
@@ -276,7 +276,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/com_mul_cyclic_0" HWVERSION="1.0" INSTANCE="com_mul_cyclic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="com_mul_cyclic" VLNV="xilinx.com:user:com_mul_cyclic:1.0">
+    <MODULE COREREVISION="6" FULLNAME="/com_mul_cyclic_0" HWVERSION="1.0" INSTANCE="com_mul_cyclic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="com_mul_cyclic" VLNV="xilinx.com:user:com_mul_cyclic:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="cyclic_gen_com_mul_cyclic_0_0"/>
@@ -323,6 +323,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="cyclic"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="o_wise_enable" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -348,9 +349,9 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="10" NAME="uci_NID" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_NID">
@@ -404,9 +405,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_nsymbols">
@@ -454,9 +455,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="uci_m0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_m0">
@@ -519,9 +520,9 @@
             <CONNECTION INSTANCE="phase_gen_0" PORT="phase"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_in_valid">
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="in_valid"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="uci_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_nsymbols">

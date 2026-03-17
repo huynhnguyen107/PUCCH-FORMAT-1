@@ -42,7 +42,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>620c57f6</spirit:value>
+            <spirit:value>016b33fc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -82,7 +82,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>01370793</spirit:value>
+            <spirit:value>3e481b0b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -97,7 +97,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9c812401</spirit:value>
+            <spirit:value>6a135f78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -131,7 +131,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>in_valid</spirit:name>
+        <spirit:name>rst</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -144,7 +144,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>rst</spirit:name>
+        <spirit:name>uci_valid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -310,56 +310,100 @@
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/cyclic_gen_base_sequence_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_base_sequence_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/cyclic_gen_base_sequence_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_base_sequence_1</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_n_cs_gen_0_0/cyclic_gen_n_cs_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_n_cs_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_0_0/cyclic_gen_phase_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_phase_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_nfs_gen_0_0/cyclic_gen_nfs_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_nfs_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_ba_seq_control_0_0/cyclic_gen_ba_seq_control_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_ba_seq_control_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/cyclic_gen_com_mul_cyclic_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_com_mul_cyclic_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_0/cyclic_gen_xlconstant_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_1/cyclic_gen_xlconstant_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_1</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_2/cyclic_gen_xlconstant_0_2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_2</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_control_0_0/cyclic_gen_phase_gen_control_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_phase_gen_control_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/synth/cyclic_gen.v</spirit:name>
@@ -372,17 +416,17 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/imports/hdl/cyclic_gen_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_9103ee6e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_361d9bc9</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -471,71 +515,111 @@
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/cyclic_gen_base_sequence_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_base_sequence_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/cyclic_gen_base_sequence_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_base_sequence_1</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_n_cs_gen_0_0/cyclic_gen_n_cs_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_n_cs_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_0_0/cyclic_gen_phase_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_phase_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_nfs_gen_0_0/cyclic_gen_nfs_gen_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_nfs_gen_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_ba_seq_control_0_0/cyclic_gen_ba_seq_control_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_ba_seq_control_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_com_mul_cyclic_0_0/cyclic_gen_com_mul_cyclic_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_com_mul_cyclic_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_0/cyclic_gen_xlconstant_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_1/cyclic_gen_xlconstant_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_1</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_xlconstant_0_2/cyclic_gen_xlconstant_0_2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xlconstant_2</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_phase_gen_control_0_0/cyclic_gen_phase_gen_control_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_phase_gen_control_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/sim/cyclic_gen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/sim/cyclic_gen.protoinst</spirit:name>
-        <spirit:fileType>unknown</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
+        <spirit:name>cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -547,7 +631,7 @@
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_base_sequence_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="base_sequence" xilinx:version="1.0">
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="base_sequence" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -626,16 +710,16 @@
     <spirit:fileSet>
       <spirit:name>xilinx_testbench_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>tb_behav.wcfg</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>cyclic_shift.srcs/sim_1/new/tb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>tb_behav.wcfg</spirit:name>
-        <spirit:fileType>unknown</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -670,20 +754,22 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-05T20:10:10Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-03-16T23:26:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b3b519b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@53c88a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c947721_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@287adc25_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@66ecc12b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@ce42f04_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@598d27f7_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50037bb1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@241af13e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b7252eb_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b759a8b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27eccfb6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a6fbad8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a38c2ea_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c5fd3293"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="51c58136"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="56c63ce7"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="b7c039bb"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="7d4636ae"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

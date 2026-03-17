@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:com_mul_cyclic:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -62,7 +62,8 @@ module cyclic_gen_com_mul_cyclic_0_0 (
   phase_valid,
   phase,
   cyclic_valid,
-  cyclic
+  cyclic,
+  o_wise_enable
 );
 
 input wire clk;
@@ -73,6 +74,7 @@ input wire phase_valid;
 input wire [31 : 0] phase;
 output wire cyclic_valid;
 output wire [31 : 0] cyclic;
+output wire o_wise_enable;
 
   com_mul_cyclic inst (
     .clk(clk),
@@ -82,6 +84,7 @@ output wire [31 : 0] cyclic;
     .phase_valid(phase_valid),
     .phase(phase),
     .cyclic_valid(cyclic_valid),
-    .cyclic(cyclic)
+    .cyclic(cyclic),
+    .o_wise_enable(o_wise_enable)
   );
 endmodule

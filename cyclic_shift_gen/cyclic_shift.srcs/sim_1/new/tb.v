@@ -24,7 +24,7 @@
 module tb( );
 	reg clk;
 	reg rst;
-	reg in_valid;
+	reg uci_valid;
 	reg [4:0] uci_slot;
 	reg [3:0] uci_first_symbol;
 	reg [3:0] uci_m0;
@@ -37,8 +37,8 @@ module tb( );
 	//call instance
 	 cyclic_gen cyclic_gen_i
 	   (.clk(clk),
-		.in_valid(in_valid),
 		.rst(rst),
+        .uci_valid(uci_valid),
 		.uci_NID(uci_NID),
 		.uci_first_symbol(uci_first_symbol),
 		.uci_grouphopping(uci_grouphopping),
@@ -53,7 +53,7 @@ module tb( );
 	initial begin
 		clk = 0;
 		rst = 1;
-		in_valid = 0;
+		uci_valid = 0;
 		uci_slot = 0;
 		uci_first_symbol = 0;
 		uci_m0 = 0;
@@ -69,7 +69,7 @@ module tb( );
 	initial begin
 		wait (!rst)
 		@(posedge clk) begin
-			in_valid <= 1;
+			uci_valid <= 1;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
 			uci_m0 <= 0;
@@ -79,7 +79,7 @@ module tb( );
 			uci_NID <= 0;
 		end
 			@(posedge clk) begin
-			in_valid <= 0;
+			uci_valid <= 0;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
 			uci_m0 <= 0;

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5A4977FB785F898D",
+      "boundary_crc": "0x252798B22B087CE7",
       "device": "xcvu9p-flga2104-2L-e",
       "name": "cyclic_gen",
       "synth_flow_mode": "None",
@@ -56,7 +56,7 @@
           }
         }
       },
-      "in_valid": {
+      "uci_valid": {
         "direction": "I"
       },
       "uci_slot": {
@@ -189,7 +189,7 @@
       },
       "in_valid_1": {
         "ports": [
-          "in_valid",
+          "uci_valid",
           "nfs_gen_0/in_valid",
           "n_cs_gen_0/in_valid",
           "phase_gen_0/in_valid",

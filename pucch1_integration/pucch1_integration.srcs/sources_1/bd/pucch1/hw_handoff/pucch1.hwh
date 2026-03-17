@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 15:24:25 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 21:55:11 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="pucch1" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -11,6 +11,35 @@
         <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="clk"/>
         <CONNECTION INSTANCE="frame_sync_1" PORT="clk"/>
         <CONNECTION INSTANCE="ulcch_parameter_0" PORT="clk"/>
+        <CONNECTION INSTANCE="demapping_0" PORT="clk"/>
+        <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="clk"/>
+        <CONNECTION INSTANCE="de_spread_0" PORT="clk"/>
+        <CONNECTION INSTANCE="de_spread_1" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="clk"/>
+        <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="clk"/>
+        <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="clk"/>
+        <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="clk"/>
+        <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="clk"/>
+        <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="clk"/>
+        <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="clk"/>
+        <CONNECTION INSTANCE="mean_data_0" PORT="clk"/>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="clk"/>
+        <CONNECTION INSTANCE="payload_est_SINR_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
@@ -20,6 +49,35 @@
         <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="rst"/>
         <CONNECTION INSTANCE="frame_sync_1" PORT="rst"/>
         <CONNECTION INSTANCE="ulcch_parameter_0" PORT="rst"/>
+        <CONNECTION INSTANCE="demapping_0" PORT="rst"/>
+        <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="rst"/>
+        <CONNECTION INSTANCE="de_spread_0" PORT="rst"/>
+        <CONNECTION INSTANCE="de_spread_1" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="rst"/>
+        <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="rst"/>
+        <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="rst"/>
+        <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="rst"/>
+        <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="rst"/>
+        <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="rst"/>
+        <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="rst"/>
+        <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="rst"/>
+        <CONNECTION INSTANCE="mean_data_0" PORT="rst"/>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="rst"/>
+        <CONNECTION INSTANCE="payload_est_SINR_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="trigger_05" SIGIS="undef" SIGNAME="External_Ports_trigger_05">
@@ -62,11 +120,1224 @@
         <CONNECTION INSTANCE="ulcch_parameter_0" PORT="i_hopping_ID"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="o_valid" SIGIS="undef" SIGNAME="sr_ack_detector_0_o_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="o_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="dtx" SIGIS="undef" SIGNAME="sr_ack_detector_0_dtx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="dtx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sr" SIGIS="undef" SIGNAME="sr_ack_detector_0_sr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="sr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="harq" RIGHT="0" SIGIS="undef" SIGNAME="sr_ack_detector_0_harq">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sr_ack_detector_0" PORT="harq"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_dmrs/ba_seq_control_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_ba_seq_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ba_seq_control" VLNV="xilinx.com:user:ba_seq_control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_ba_seq_control_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid_0" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_0_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="base_sequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_0_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="base_sequence"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid_1" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_1_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="base_sequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_1_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="base_sequence"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_en" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_control_0_start_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="start_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="basequence_out_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_ba_seq_control_0_basequence_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="basequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="basequence_out" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_ba_seq_control_0_basequence_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="basequence"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_dmrs/base_sequence_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_base_sequence_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="base_sequence" VLNV="xilinx.com:user:base_sequence:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_base_sequence_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="uci_grouphopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_group_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="group_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_nID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_nhop" SIGIS="undef" SIGNAME="cyclic_dmrs_xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="base_sequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_0_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="base_sequence_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_0_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_valid_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_dmrs/base_sequence_1" HWVERSION="1.0" INSTANCE="cyclic_dmrs_base_sequence_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="base_sequence" VLNV="xilinx.com:user:base_sequence:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_base_sequence_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="uci_grouphopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_group_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="group_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_nID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_nhop" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_intra_fre_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="base_sequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_1_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="base_sequence_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_base_sequence_1_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_valid_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_dmrs/com_mul_cyclic_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_com_mul_cyclic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="com_mul_cyclic" VLNV="xilinx.com:user:com_mul_cyclic:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_com_mul_cyclic_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_ba_seq_control_0_basequence_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_out_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_ba_seq_control_0_basequence_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="basequence_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="phase_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="o_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="o_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cyclic_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_cyclic_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="cyclic_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="cyclic" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_cyclic">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="cyclic"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_wise_enable" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_o_wise_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_dmrs/mcs" HWVERSION="1.1" INSTANCE="cyclic_dmrs_mcs" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_mcs_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="uci_mcs"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/cyclic_dmrs/n_cs_gen_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_n_cs_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n_cs_gen" VLNV="xilinx.com:user:n_cs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_n_cs_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_uci_flag" SIGIS="undef" SIGNAME="cyclic_dmrs_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_NID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_first_symbol" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_frist_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_frist_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ncs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_n_cs_gen_0_ncs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="n_cs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ncs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_n_cs_gen_0_ncs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="ncs"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_dmrs/nfs_gen_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_nfs_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nfs_gen" VLNV="xilinx.com:user:nfs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MODE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_nfs_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_intra_fr_hop" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_intra_fre_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="nfs_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="nfs_0"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="nfs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="nfs_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="nfs_1"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="nfs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="nfs_valid"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="nfs_valid"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_dmrs/phase_gen_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_phase_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen" VLNV="xilinx.com:user:phase_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_phase_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_m0" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_m0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_m0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_mcs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_mcs_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_mcs" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="n_cs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_n_cs_gen_0_ncs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="ncs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="ncs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_n_cs_gen_0_ncs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="ncs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="phase_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_0_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="i_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_0_phase">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="i_phase"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_dmrs/phase_gen_control_0" HWVERSION="1.0" INSTANCE="cyclic_dmrs_phase_gen_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen_control" VLNV="xilinx.com:user:phase_gen_control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_phase_gen_control_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_phase_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_0_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="i_phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_0_phase">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="phase"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_uci_flag" SIGIS="undef" SIGNAME="cyclic_dmrs_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_phase_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="phase_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="phase"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="o_phase" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="start_en" SIGIS="undef" SIGNAME="cyclic_dmrs_phase_gen_control_0_start_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_ba_seq_control_0" PORT="start_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_dmrs/xlconstant_1" HWVERSION="1.1" INSTANCE="cyclic_dmrs_xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="in_uci_flag"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="in_uci_flag"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_dmrs/xlconstant_2" HWVERSION="1.1" INSTANCE="cyclic_dmrs_xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="uci_nhop"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_uci/ba_seq_control_0" HWVERSION="1.0" INSTANCE="cyclic_uci_ba_seq_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ba_seq_control" VLNV="xilinx.com:user:ba_seq_control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_ba_seq_control_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid_0" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_0_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="base_sequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_0_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="base_sequence"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid_1" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_1_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="base_sequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_1_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="base_sequence"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_en" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_control_0_start_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="start_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="basequence_out_valid" SIGIS="undef" SIGNAME="cyclic_uci_ba_seq_control_0_basequence_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="basequence_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="basequence_out" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_ba_seq_control_0_basequence_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="basequence"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_uci/base_sequence_0" HWVERSION="1.0" INSTANCE="cyclic_uci_base_sequence_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="base_sequence" VLNV="xilinx.com:user:base_sequence:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_base_sequence_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="uci_grouphopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_group_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="group_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_nID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_nhop" SIGIS="undef" SIGNAME="cyclic_uci_xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="base_sequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_0_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="base_sequence_valid" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_0_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_valid_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_uci/base_sequence_1" HWVERSION="1.0" INSTANCE="cyclic_uci_base_sequence_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="base_sequence" VLNV="xilinx.com:user:base_sequence:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_base_sequence_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="uci_grouphopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_group_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="group_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_nID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_nhop" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_intra_fre_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="base_sequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_1_base_sequence">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="base_sequence_valid" SIGIS="undef" SIGNAME="cyclic_uci_base_sequence_1_base_sequence_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_valid_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_uci/com_mul_cyclic_0" HWVERSION="1.0" INSTANCE="cyclic_uci_com_mul_cyclic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="com_mul_cyclic" VLNV="xilinx.com:user:com_mul_cyclic:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_com_mul_cyclic_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="basequence_valid" SIGIS="undef" SIGNAME="cyclic_uci_ba_seq_control_0_basequence_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_out_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="basequence" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_ba_seq_control_0_basequence_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="basequence_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="phase_valid" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="o_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="o_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cyclic_valid" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_cyclic_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="cyclic_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="cyclic" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_cyclic">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="cyclic"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_wise_enable" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_o_wise_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_uci/mcs" HWVERSION="1.1" INSTANCE="cyclic_uci_mcs" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_mcs_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="uci_mcs"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/cyclic_uci/n_cs_gen_0" HWVERSION="1.0" INSTANCE="cyclic_uci_n_cs_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="n_cs_gen" VLNV="xilinx.com:user:n_cs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_n_cs_gen_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_uci_flag" SIGIS="undef" SIGNAME="cyclic_uci_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="uci_NID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="hopping_ID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_first_symbol" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_frist_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_frist_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ncs_valid" SIGIS="undef" SIGNAME="cyclic_uci_n_cs_gen_0_ncs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="n_cs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ncs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_n_cs_gen_0_ncs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="ncs"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_uci/nfs_gen_0" HWVERSION="1.0" INSTANCE="cyclic_uci_nfs_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nfs_gen" VLNV="xilinx.com:user:nfs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="MODE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_nfs_gen_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_intra_fr_hop" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_intra_fre_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="nfs_0" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="nfs_0"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="nfs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="nfs_1" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="nfs_1"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="nfs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="nfs_valid"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="nfs_valid"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/cyclic_uci/phase_gen_0" HWVERSION="1.0" INSTANCE="cyclic_uci_phase_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen" VLNV="xilinx.com:user:phase_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_phase_gen_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_m0" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_m0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_m0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_mcs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_mcs_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_mcs" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="n_cs_valid" SIGIS="undef" SIGNAME="cyclic_uci_n_cs_gen_0_ncs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="ncs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="ncs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_n_cs_gen_0_ncs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="ncs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="phase_valid" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_0_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="i_phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_0_phase">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="i_phase"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_uci/phase_gen_control_0" HWVERSION="1.0" INSTANCE="cyclic_uci_phase_gen_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen_control" VLNV="xilinx.com:user:phase_gen_control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_phase_gen_control_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_phase_valid" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_0_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="phase_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="i_phase" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_0_phase">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="phase"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nSymbs" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_uci_flag" SIGIS="undef" SIGNAME="cyclic_uci_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_phase_valid" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_control_0_o_phase_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="phase_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="phase"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="o_phase" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="start_en" SIGIS="undef" SIGNAME="cyclic_uci_phase_gen_control_0_start_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_ba_seq_control_0" PORT="start_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_uci/xlconstant_1" HWVERSION="1.1" INSTANCE="cyclic_uci_xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="in_uci_flag"/>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="in_uci_flag"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/cyclic_uci/xlconstant_2" HWVERSION="1.1" INSTANCE="cyclic_uci_xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="uci_nhop"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/data_dmrs_selection_0" HWVERSION="1.0" INSTANCE="data_dmrs_selection_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_dmrs_selection" VLNV="xilinx.com:user:data_dmrs_selection:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_data_dmrs_selection_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resoureset_valid" SIGIS="undef" SIGNAME="demapping_0_resoureset_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="resoureset_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ofdm_valid" SIGIS="undef" SIGNAME="ofdm_demodulation_0_o_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="o_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ofdm" RIGHT="0" SIGIS="undef" SIGNAME="ofdm_demodulation_0_pucch_ofdm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="pucch_ofdm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dmrs_valid" SIGIS="undef" SIGNAME="data_dmrs_selection_0_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="rx_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="dmrs" RIGHT="0" SIGIS="undef" SIGNAME="data_dmrs_selection_0_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="rx_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_valid" SIGIS="undef" SIGNAME="data_dmrs_selection_0_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="rx_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="data_dmrs_selection_0_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="rx_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/de_spread_0" HWVERSION="1.0" INSTANCE="de_spread_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="de_spread" VLNV="xilinx.com:user:de_spread:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_de_spread_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="spreading_data_valid" SIGIS="undef" SIGNAME="uci_dmrs_gen_0_uci_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="uci_dmrs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="spreading_data" RIGHT="0" SIGIS="undef" SIGNAME="uci_dmrs_gen_0_uci_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="uci_dmrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_data_valid" SIGIS="undef" SIGNAME="data_dmrs_selection_0_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="dmrs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="rx_data" RIGHT="0" SIGIS="undef" SIGNAME="data_dmrs_selection_0_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="dmrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="de_spreading_data" RIGHT="0" SIGIS="undef" SIGNAME="de_spread_0_de_spreading_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="despread_uci"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="de_spreading_data_valid" SIGIS="undef" SIGNAME="de_spread_0_de_spreading_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="despread_uci_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/de_spread_1" HWVERSION="1.0" INSTANCE="de_spread_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="de_spread" VLNV="xilinx.com:user:de_spread:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_de_spread_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="spreading_data_valid" SIGIS="undef" SIGNAME="uci_dmrs_gen_1_uci_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="uci_dmrs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="spreading_data" RIGHT="0" SIGIS="undef" SIGNAME="uci_dmrs_gen_1_uci_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="uci_dmrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_data_valid" SIGIS="undef" SIGNAME="data_dmrs_selection_0_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="rx_data" RIGHT="0" SIGIS="undef" SIGNAME="data_dmrs_selection_0_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="de_spreading_data" RIGHT="0" SIGIS="undef" SIGNAME="de_spread_1_de_spreading_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="despread_dmrs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="de_spreading_data_valid" SIGIS="undef" SIGNAME="de_spread_1_de_spreading_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="despread_dmrs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE COREREVISION="2" FULLNAME="/demapping_0" HWVERSION="1.0" INSTANCE="demapping_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="demapping" VLNV="xilinx.com:user:demapping:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -74,20 +1345,192 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clk" SIGIS="undef"/>
-        <PORT DIR="I" NAME="rst" SIGIS="undef"/>
-        <PORT DIR="I" NAME="uci_instra_fre_hop" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="uci_first_symbol_idx" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="uci_prbsoffset" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="9" NAME="uci_secondhop_prb" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="uci_valid" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="4" NAME="fr_slot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="fr_symbol" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="8" NAME="fr_rb" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="fr_data_valid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="resoureset_valid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_instra_fre_hop" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_intra_fre_hopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_first_symbol_idx" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_frist_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_frist_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="uci_prbsoffset" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_pbr_offset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_pbr_offset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="uci_secondhop_prb" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_second_prb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_second_prb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="fr_slot" RIGHT="0" SIGIS="undef" SIGNAME="frame_sync_1_start_slot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="frame_sync_1" PORT="start_slot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="fr_symbol" RIGHT="0" SIGIS="undef" SIGNAME="frame_sync_1_sym_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="frame_sync_1" PORT="sym_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="fr_rb" RIGHT="0" SIGIS="undef" SIGNAME="frame_sync_1_rb_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="frame_sync_1" PORT="rb_idx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fr_data_valid" SIGIS="undef" SIGNAME="frame_sync_1_valid_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="frame_sync_1" PORT="valid_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="resoureset_valid" SIGIS="undef" SIGNAME="demapping_0_resoureset_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="resoureset_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/dmrs_wise_spreading_0" HWVERSION="1.0" INSTANCE="dmrs_wise_spreading_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="wise_spreading" VLNV="xilinx.com:user:wise_spreading:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_dmrs_wise_spreading_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_OCC" RIGHT="0" SIGIS="undef" SIGNAME="uci_occ_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_occ" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_o_wise_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="o_wise_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wi_seq_valid" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="wise_valid_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="wi_seq" RIGHT="0" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="wise_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_enable" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_o_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/dmrs_wise_spreading_1" HWVERSION="1.0" INSTANCE="dmrs_wise_spreading_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="wise_spreading" VLNV="xilinx.com:user:wise_spreading:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_dmrs_wise_spreading_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_OCC" RIGHT="0" SIGIS="undef" SIGNAME="uci_occ_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_occ" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="nfs_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_o_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="o_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wi_seq_valid" SIGIS="undef" SIGNAME="dmrs_wise_spreading_1_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="wise_valid_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="wi_seq" RIGHT="0" SIGIS="undef" SIGNAME="dmrs_wise_spreading_1_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_1" PORT="wise_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_enable" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -157,15 +1600,107 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="4" NAME="slot_idx" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="start_slot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="start_slot" SIGIS="undef" SIGNAME="frame_sync_1_start_slot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="fr_slot"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="3" NAME="sub_idx" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="8" NAME="rb_idx" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="sym_idx" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="8" NAME="rb_idx" RIGHT="0" SIGIS="undef" SIGNAME="frame_sync_1_rb_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="fr_rb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="sym_idx" RIGHT="0" SIGIS="undef" SIGNAME="frame_sync_1_sym_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="fr_symbol"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="start_symbol" SIGIS="undef"/>
         <PORT DIR="O" LEFT="7" NAME="frame_idx" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="start_frame" SIGIS="undef"/>
         <PORT DIR="O" LEFT="11" NAME="cp" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="valid_out" SIGIS="undef"/>
+        <PORT DIR="O" NAME="valid_out" SIGIS="undef" SIGNAME="frame_sync_1_valid_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="fr_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/mean_data_0" HWVERSION="1.0" INSTANCE="mean_data_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mean_data" VLNV="xilinx.com:user:mean_data:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_mean_data_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_nsymbol" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="despread_uci_valid" SIGIS="undef" SIGNAME="de_spread_0_de_spreading_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="de_spreading_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="despread_uci" RIGHT="0" SIGIS="undef" SIGNAME="de_spread_0_de_spreading_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="de_spreading_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="despread_dmrs_valid" SIGIS="undef" SIGNAME="de_spread_1_de_spreading_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="de_spreading_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="despread_dmrs" RIGHT="0" SIGIS="undef" SIGNAME="de_spread_1_de_spreading_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="de_spreading_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_mean_data_valid" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="mean_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="33" NAME="o_mean_data" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In0"/>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In1"/>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In2"/>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sinr_valid" SIGIS="undef" SIGNAME="mean_data_0_sinr_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="sinr_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="sinr" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In2"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -207,11 +1742,86 @@
             <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="pucch_ofdm" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="o_valid" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="pucch_ofdm" RIGHT="0" SIGIS="undef" SIGNAME="ofdm_demodulation_0_pucch_ofdm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="ofdm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_valid" SIGIS="undef" SIGNAME="ofdm_demodulation_0_o_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="ofdm_valid"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="start_symbol" SIGIS="undef" SIGNAME="ofdm_demodulation_0_start_symbol">
           <CONNECTIONS>
             <CONNECTION INSTANCE="frame_sync_1" PORT="in_start_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/payload_est_SINR_0" HWVERSION="1.0" INSTANCE="payload_est_SINR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="payload_est_SINR" VLNV="xilinx.com:user:payload_est_SINR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="RX" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_payload_est_SINR_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_modulation" SIGIS="undef"/>
+        <PORT DIR="I" NAME="mean_data_valid" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="o_mean_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="135" NAME="mean_data" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sinr_valid" SIGIS="undef" SIGNAME="mean_data_0_sinr_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="sinr_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="255" NAME="sinr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="payload_valid" SIGIS="undef" SIGNAME="payload_est_SINR_0_payload_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="payload_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="payload" RIGHT="0" SIGIS="undef" SIGNAME="payload_est_SINR_0_payload">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="payload"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mean_sinr_valid" SIGIS="undef" SIGNAME="payload_est_SINR_0_mean_sinr_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="mean_sinr_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="mean_sinr" RIGHT="0" SIGIS="undef" SIGNAME="payload_est_SINR_0_mean_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="mean_sinr"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -249,6 +1859,337 @@
             <CONNECTION INSTANCE="frame_sync_0" PORT="in_start_symbol"/>
           </CONNECTIONS>
         </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sr_ack_detector_0" HWVERSION="1.0" INSTANCE="sr_ack_detector_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sr_ack_detector" VLNV="xilinx.com:user:sr_ack_detector:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_sr_ack_detector_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uci_o_ack" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mean_sinr_valid" SIGIS="undef" SIGNAME="payload_est_SINR_0_mean_sinr_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="mean_sinr_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="mean_sinr" RIGHT="0" SIGIS="undef" SIGNAME="payload_est_SINR_0_mean_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="mean_sinr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="payload_valid" SIGIS="undef" SIGNAME="payload_est_SINR_0_payload_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="payload_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="payload" RIGHT="0" SIGIS="undef" SIGNAME="payload_est_SINR_0_payload">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="payload"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="sinr_threshold" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_valid" SIGIS="undef" SIGNAME="sr_ack_detector_0_o_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="o_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dtx" SIGIS="undef" SIGNAME="sr_ack_detector_0_dtx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dtx"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sr" SIGIS="undef" SIGNAME="sr_ack_detector_0_sr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="harq" RIGHT="0" SIGIS="undef" SIGNAME="sr_ack_detector_0_harq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="harq"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/uci_dmrs_gen_0" HWVERSION="1.0" INSTANCE="uci_dmrs_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uci_dmrs_gen" VLNV="xilinx.com:user:uci_dmrs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_uci_dmrs_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cyclic_valid" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_cyclic_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="cyclic_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="cyclic" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_cyclic">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="cyclic"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wise_valid_0" SIGIS="undef" SIGNAME="uci_wise_spreading_0_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="wi_seq_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="wise_0" RIGHT="0" SIGIS="undef" SIGNAME="uci_wise_spreading_0_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="wi_seq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wise_valid_1" SIGIS="undef" SIGNAME="uci_wise_spreading_1_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="wi_seq_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="wise_1" RIGHT="0" SIGIS="undef" SIGNAME="uci_wise_spreading_1_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="wi_seq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="uci_dmrs_valid" SIGIS="undef" SIGNAME="uci_dmrs_gen_0_uci_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="spreading_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uci_dmrs" RIGHT="0" SIGIS="undef" SIGNAME="uci_dmrs_gen_0_uci_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_0" PORT="spreading_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/uci_dmrs_gen_1" HWVERSION="1.0" INSTANCE="uci_dmrs_gen_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="uci_dmrs_gen" VLNV="xilinx.com:user:uci_dmrs_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_uci_dmrs_gen_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cyclic_valid" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_cyclic_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="cyclic_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="cyclic" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_dmrs_com_mul_cyclic_0_cyclic">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_com_mul_cyclic_0" PORT="cyclic"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wise_valid_0" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="wi_seq_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="wise_0" RIGHT="0" SIGIS="undef" SIGNAME="dmrs_wise_spreading_0_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="wi_seq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wise_valid_1" SIGIS="undef" SIGNAME="dmrs_wise_spreading_1_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="wi_seq_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="wise_1" RIGHT="0" SIGIS="undef" SIGNAME="dmrs_wise_spreading_1_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="wi_seq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="uci_dmrs_valid" SIGIS="undef" SIGNAME="uci_dmrs_gen_1_uci_dmrs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="spreading_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uci_dmrs" RIGHT="0" SIGIS="undef" SIGNAME="uci_dmrs_gen_1_uci_dmrs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="de_spread_1" PORT="spreading_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/uci_occ" HWVERSION="1.1" INSTANCE="uci_occ" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_2_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="uci_occ_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="uci_OCC"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="uci_OCC"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="uci_OCC"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="uci_OCC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/uci_wise_spreading_0" HWVERSION="1.0" INSTANCE="uci_wise_spreading_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="wise_spreading" VLNV="xilinx.com:user:wise_spreading:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_wise_spreading_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_OCC" RIGHT="0" SIGIS="undef" SIGNAME="uci_occ_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_occ" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="cyclic_uci_com_mul_cyclic_0_o_wise_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_com_mul_cyclic_0" PORT="o_wise_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wi_seq_valid" SIGIS="undef" SIGNAME="uci_wise_spreading_0_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="wise_valid_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="wi_seq" RIGHT="0" SIGIS="undef" SIGNAME="uci_wise_spreading_0_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="wise_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_enable" SIGIS="undef" SIGNAME="uci_wise_spreading_0_o_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/uci_wise_spreading_1" HWVERSION="1.0" INSTANCE="uci_wise_spreading_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="wise_spreading" VLNV="xilinx.com:user:wise_spreading:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_wise_spreading_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ulcch_parameter_0" PORT="pucch_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="uci_OCC" RIGHT="0" SIGIS="undef" SIGNAME="uci_occ_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_occ" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nfs_valid" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="nfs" RIGHT="0" SIGIS="undef" SIGNAME="cyclic_uci_nfs_gen_0_nfs_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="nfs_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="uci_wise_spreading_0_o_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="o_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wi_seq_valid" SIGIS="undef" SIGNAME="uci_wise_spreading_1_wi_seq_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="wise_valid_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="wi_seq" RIGHT="0" SIGIS="undef" SIGNAME="uci_wise_spreading_1_wi_seq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="uci_dmrs_gen_0" PORT="wise_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_enable" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -294,22 +2235,253 @@
             <CONNECTION INSTANCE="External_Ports" PORT="i_hopping_ID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="pucch_valid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="uci_slot_idx" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="pucch_valid" SIGIS="undef" SIGNAME="ulcch_parameter_0_pucch_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_valid"/>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="uci_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="in_valid"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="uci_wise_spreading_1" PORT="in_valid"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="dmrs_wise_spreading_1" PORT="in_valid"/>
+            <CONNECTION INSTANCE="mean_data_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="in_valid"/>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="in_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="uci_slot_idx" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_slot_idx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="uci_slot"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="uci_slot"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="15" NAME="uci_rnti" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="15" NAME="uci_nid" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="7" NAME="uci_srflag" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="uci_frist_symbol" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="uci_pbr_offset" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="uci_second_prb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="uci_frist_symbol" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_frist_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_first_symbol_idx"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="uci_first_symbol"/>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="uci_first_symbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="uci_pbr_offset" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_pbr_offset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_prbsoffset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="uci_second_prb" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_second_prb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_secondhop_prb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="15" NAME="uci_prb" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="uci_symbol" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="uci_intra_fre_hopping" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="uci_m0" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="uci_ack" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="uci_symbol" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_nsymbols"/>
+            <CONNECTION INSTANCE="data_dmrs_selection_0" PORT="uci_nsymbols"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_control_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_control_0" PORT="uci_nSymbs"/>
+            <CONNECTION INSTANCE="mean_data_0" PORT="uci_nsymbol"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="uci_intra_fre_hopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_intra_fre_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demapping_0" PORT="uci_instra_fre_hop"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_nfs_gen_0" PORT="uci_intra_fr_hop"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="uci_nhop"/>
+            <CONNECTION INSTANCE="cyclic_uci_nfs_gen_0" PORT="uci_intra_fr_hop"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="uci_nhop"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="uci_m0" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_m0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_phase_gen_0" PORT="uci_m0"/>
+            <CONNECTION INSTANCE="cyclic_uci_phase_gen_0" PORT="uci_m0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="uci_ack" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="uci_o_ack"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="config_valid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="group_hopping" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="15" NAME="hopping_ID" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="group_hopping" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_group_hopping">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="uci_grouphopping"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="uci_grouphopping"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="uci_grouphopping"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="uci_grouphopping"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="hopping_ID" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_hopping_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cyclic_dmrs_n_cs_gen_0" PORT="uci_NID"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_1" PORT="uci_nID"/>
+            <CONNECTION INSTANCE="cyclic_dmrs_base_sequence_0" PORT="uci_nID"/>
+            <CONNECTION INSTANCE="cyclic_uci_n_cs_gen_0" PORT="uci_NID"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_1" PORT="uci_nID"/>
+            <CONNECTION INSTANCE="cyclic_uci_base_sequence_0" PORT="uci_nID"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="256"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="sinr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="sinr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="sinr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="In3" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_sinr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="sinr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="255" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="sinr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_1" HWVERSION="2.1" INSTANCE="xlconcat_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="34"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="34"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="34"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="34"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="136"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconcat_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="33" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="o_mean_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="33" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="o_mean_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="33" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="o_mean_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="33" NAME="In3" RIGHT="0" SIGIS="undef" SIGNAME="mean_data_0_o_mean_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mean_data_0" PORT="o_mean_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="135" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="payload_est_SINR_0" PORT="mean_data"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -325,6 +2497,23 @@
         <PORT DIR="O" LEFT="2" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="scale_factor"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0000000000000004"/>
+        <PARAMETER NAME="Component_Name" VALUE="pucch1_xlconstant_0_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="63" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sr_ack_detector_0" PORT="sinr_threshold"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
