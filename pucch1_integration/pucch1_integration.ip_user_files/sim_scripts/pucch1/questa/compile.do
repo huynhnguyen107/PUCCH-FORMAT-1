@@ -1,6 +1,7 @@
 vlib questa_lib/work
 vlib questa_lib/msim
 
+vlib questa_lib/msim/xpm
 vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/xbip_utils_v3_0_10
 vlib questa_lib/msim/axi_utils_v2_0_6
@@ -26,6 +27,7 @@ vlib questa_lib/msim/xbip_dsp48_multadd_v3_0_6
 vlib questa_lib/msim/div_gen_v5_1_16
 vlib questa_lib/msim/xlconcat_v2_1_3
 
+vmap xpm questa_lib/msim/xpm
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap xbip_utils_v3_0_10 questa_lib/msim/xbip_utils_v3_0_10
 vmap axi_utils_v2_0_6 questa_lib/msim/axi_utils_v2_0_6
@@ -50,6 +52,13 @@ vmap xbip_dsp48_mult_v3_0_6 questa_lib/msim/xbip_dsp48_mult_v3_0_6
 vmap xbip_dsp48_multadd_v3_0_6 questa_lib/msim/xbip_dsp48_multadd_v3_0_6
 vmap div_gen_v5_1_16 questa_lib/msim/div_gen_v5_1_16
 vmap xlconcat_v2_1_3 questa_lib/msim/xlconcat_v2_1_3
+
+vlog -work xpm -64 -sv \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm -64 -93 \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 \
 "../../../bd/pucch1/ipshared/aca9/demapping.srcs/sources_1/new/demapping.v" \
@@ -245,29 +254,6 @@ vlog -work xil_defaultlib -64 \
 "../../../bd/pucch1/ip/pucch1_wise_spreading_0_1/sim/pucch1_wise_spreading_0_1.v" \
 "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_0_0/sim/pucch1_dmrs_wise_spreading_0_0.v" \
 "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_1_0/sim/pucch1_dmrs_wise_spreading_1_0.v" \
-
-vcom -work xbip_utils_v3_0_10 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
-
-vcom -work axi_utils_v2_0_6 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/axi_utils_v2_0_vh_rfs.vhd" \
-
-vcom -work xbip_pipe_v3_0_6 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
-
-vcom -work xbip_bram18k_v3_0_6 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
-
-vcom -work mult_gen_v12_0_16 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/mult_gen_v12_0_vh_rfs.vhd" \
-
-vcom -work cmpy_v6_0_18 -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/cmpy_v6_0_vh_rfs.vhd" \
-
-vcom -work xil_defaultlib -64 -93 \
-"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/sim/uci_dmrs_cmpy_0.vhd" \
-
-vlog -work xil_defaultlib -64 \
 "../../../bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sim/pucch1_uci_dmrs_gen_0_1.v" \
 "../../../bd/pucch1/ipshared/fee0/payload_est_SINR.srcs/sources_1/new/payload_est_SINR.v" \
 "../../../bd/pucch1/ip/pucch1_payload_est_SINR_0_0/sim/pucch1_payload_est_SINR_0_0.v" \

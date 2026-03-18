@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.67935",
-   "Default View_TopLeft":"1055,397",
+   "Default View_ScaleFactor":"0.482267",
+   "Default View_TopLeft":"-670,514",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -44,9 +44,9 @@ preplace inst xlconstant_1 -pg 1 -lvl 14 -x 5300 -y 240 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 12 -x 4750 -y 280 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 12 -x 4750 -y 120 -defaultsOSRD
 preplace inst uci_occ -pg 1 -lvl 7 -x 2455 -y -210 -defaultsOSRD
-preplace inst payload_est_SINR_0 -pg 1 -lvl 13 -x 5040 -y -30 -defaultsOSRD
-preplace netloc clk_1 1 0 15 20 800 340 730 640 730 950 680 1410 580 1830 446 2130 -80 2700 -290 3010 -220 3510 50 4020 20 N 20 4860 100 5180 10 N
-preplace netloc rst_1 1 0 15 30 810 330 720 650 720 960 700 1400 570 1840 466 2140 -70 2650 -250 2990 -210 3500 60 4010 10 N 10 4880 110 5190 30 N
+preplace inst payload_est_SINR_0 -pg 1 -lvl 13 -x 5050 -y -30 -defaultsOSRD
+preplace netloc clk_1 1 0 15 20 800 340 730 640 730 950 680 1410 580 1830 446 2130 -80 2700 -290 3010 -220 3510 50 4020 20 N 20 4870 100 5190 10 N
+preplace netloc rst_1 1 0 15 30 810 330 720 650 720 960 700 1400 570 1840 466 2140 -70 2650 -250 2990 -210 3500 60 4010 10 N 10 4890 110 5200 30 N
 preplace netloc trigger_05_1 1 0 1 NJ 910
 preplace netloc stop_trigger_1 1 0 1 30J 930n
 preplace netloc physical_control_0_start_symbol 1 1 1 N 900
@@ -67,7 +67,7 @@ preplace netloc ulcch_parameter_0_uci_symbol 1 4 7 1340 600 1810 600 2170J 686 N
 preplace netloc ulcch_parameter_0_uci_frist_symbol 1 4 3 1420 420 NJ 420 2210J
 preplace netloc ulcch_parameter_0_uci_pbr_offset 1 4 1 1380 440n
 preplace netloc ulcch_parameter_0_uci_second_prb 1 4 1 1360 460n
-preplace netloc ulcch_parameter_0_pucch_valid 1 4 11 1370 486 1820 486 2150J -60 2680 -300 N -300 N -300 4000 -160 N -160 4850 -160 N -160 5420
+preplace netloc ulcch_parameter_0_pucch_valid 1 4 11 1370 486 1820 486 2150J -60 2680 -300 N -300 N -300 4000 -50 N -50 4900 120 5210 50 N
 preplace netloc frame_sync_1_start_slot 1 4 1 1340 820n
 preplace netloc frame_sync_1_sym_idx 1 4 1 N 880
 preplace netloc frame_sync_1_rb_idx 1 4 1 1330 860n
@@ -113,23 +113,23 @@ preplace netloc de_spread_0_de_spreading_data 1 10 1 3990 -70n
 preplace netloc de_spread_1_de_spreading_data_valid 1 10 1 4020 210n
 preplace netloc de_spread_1_de_spreading_data 1 10 1 3980 210n
 preplace netloc mean_data_0_o_mean_data_valid 1 11 2 4550 -20 N
-preplace netloc mean_data_0_sinr_valid 1 11 2 4560 30 4870
-preplace netloc payload_est_SINR_0_mean_sinr_valid 1 13 2 N -20 5400
+preplace netloc mean_data_0_sinr_valid 1 11 2 4560 30 4880
+preplace netloc payload_est_SINR_0_mean_sinr_valid 1 13 2 N -20 5410
 preplace netloc payload_est_SINR_0_mean_sinr 1 13 2 N 0 5380
-preplace netloc payload_est_SINR_0_payload_valid 1 13 2 N -60 5410
+preplace netloc payload_est_SINR_0_payload_valid 1 13 2 N -60 5420
 preplace netloc payload_est_SINR_0_payload 1 13 2 N -40 5390
 preplace netloc xlconstant_1_dout 1 14 1 5400 170n
 preplace netloc mean_data_0_sinr 1 11 1 4560 190n
-preplace netloc xlconcat_0_dout 1 12 1 4890 40n
+preplace netloc xlconcat_0_dout 1 12 1 4910 40n
 preplace netloc mean_data_0_o_mean_data 1 11 1 4570 90n
-preplace netloc xlconcat_1_dout 1 12 1 4850 0n
+preplace netloc xlconcat_1_dout 1 12 1 4860 0n
 preplace netloc sr_ack_detector_0_o_valid 1 15 1 5720 -370n
 preplace netloc sr_ack_detector_0_dtx 1 15 1 5730 -340n
 preplace netloc sr_ack_detector_0_sr 1 15 1 5740 -310n
 preplace netloc sr_ack_detector_0_harq 1 15 1 5750 -280n
 preplace netloc uci_occ_dout 1 7 1 2670 -210n
-preplace netloc ulcch_parameter_0_uci_ack 1 4 11 1330J -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 5430
-levelinfo -pg 1 0 190 490 790 1150 1620 1970 2455 2850 3360 3810 4390 4750 5040 5300 5590 5770
+preplace netloc ulcch_parameter_0_uci_ack 1 4 11 1330J -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 4850J 130 NJ 130 5400
+levelinfo -pg 1 0 190 490 790 1150 1620 1970 2455 2850 3360 3810 4390 4750 5050 5300 5590 5770
 pagesize -pg 1 -db -bbox -sgen -210 -1420 5880 1720
 "
 }

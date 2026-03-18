@@ -1,3 +1,10 @@
+-makelib xcelium_lib/xpm -sv \
+  "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/pucch1/ipshared/aca9/demapping.srcs/sources_1/new/demapping.v" \
   "../../../bd/pucch1/ip/pucch1_demapping_0_1/sim/pucch1_demapping_0_1.v" \
@@ -192,29 +199,6 @@
   "../../../bd/pucch1/ip/pucch1_wise_spreading_0_1/sim/pucch1_wise_spreading_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_0_0/sim/pucch1_dmrs_wise_spreading_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_1_0/sim/pucch1_dmrs_wise_spreading_1_0.v" \
--endlib
--makelib xcelium_lib/xbip_utils_v3_0_10 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/axi_utils_v2_0_6 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/axi_utils_v2_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xbip_pipe_v3_0_6 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xbip_bram18k_v3_0_6 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/mult_gen_v12_0_16 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/mult_gen_v12_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/cmpy_v6_0_18 \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/hdl/cmpy_v6_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/pucch1_integration/pucch1_integration.srcs/sources_1/bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sources_1/ip/uci_dmrs_cmpy_0/sim/uci_dmrs_cmpy_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
   "../../../bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sim/pucch1_uci_dmrs_gen_0_1.v" \
   "../../../bd/pucch1/ipshared/fee0/payload_est_SINR.srcs/sources_1/new/payload_est_SINR.v" \
   "../../../bd/pucch1/ip/pucch1_payload_est_SINR_0_0/sim/pucch1_payload_est_SINR_0_0.v" \

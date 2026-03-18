@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Mon Mar 16 21:55:06 2026
+//Date        : Tue Mar 17 19:02:08 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch1.bd
 //Design      : pucch1
@@ -634,7 +634,7 @@ module pucch1
         .rst(rst_1),
         .sinr(xlconcat_0_dout),
         .sinr_valid(mean_data_0_sinr_valid),
-        .uci_modulation(1'b0));
+        .uci_modulation(ulcch_parameter_0_uci_ack[0]));
   pucch1_physical_control_0_0 physical_control_0
        (.clk(clk_1),
         .in_0_5ms(trigger_05_1),

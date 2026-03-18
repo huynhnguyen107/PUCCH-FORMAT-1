@@ -1612,7 +1612,8 @@
       "ulcch_parameter_0_uci_ack": {
         "ports": [
           "ulcch_parameter_0/uci_ack",
-          "sr_ack_detector_0/uci_o_ack"
+          "sr_ack_detector_0/uci_o_ack",
+          "payload_est_SINR_0/uci_modulation"
         ]
       }
     }

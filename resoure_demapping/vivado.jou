@@ -13,3 +13,209 @@ start_gui
 open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.xpr}
 update_compile_order -fileset sources_1
 close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/data_dmrs_selection.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/data_dmrs_selection/tb_behav.wcfg}
+source tb.tcl
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-1\data_dmrs_selection\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/data_dmrs_selection}
+close_sim
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/de_spread/de_spread.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:com_mul_cyclic:1.0 [get_ips  cyclic_gen_com_mul_cyclic_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips cyclic_gen_com_mul_cyclic_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property name uci_valid [get_bd_ports in_valid]
+save_bd_design
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}]
+export_ip_user_files -of_objects [get_files {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+validate_bd_design -force
+save_bd_design
+launch_simulation
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -top
+import_files -force -norecurse {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/hdl/cyclic_gen_wrapper.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+validate_bd_design -force
+save_bd_design
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe}}] -no_script -reset -force -quiet
+remove_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_0/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe} {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/ip/cyclic_gen_base_sequence_0_1/base_seq.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi.coe}}
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+launch_simulation
+report_ip_status -name ip_status 
+launch_simulation
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+make_wrapper -files [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -fileset [get_filesets sources_1] -inst_template
+launch_simulation
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+source tb.tcl
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-1\cyclic_shift_gen\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+source tb.tcl
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen}
+report_ip_status -name ip_status 
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+ipx::merge_project_changes files [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen}
+ipx::unload_core {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -after {D:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml} {{D:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}}
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-1\cyclic_shift_gen\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+export_ip_user_files -of_objects  [get_files {{D:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}}] -no_script -reset -force -quiet
+remove_files  {{D:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}}
+ipx::package_project -root_dir {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen} -vendor xilinx.com -library user -taxonomy /UserIP -force
+reset_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects  [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -sync -no_script -force -quiet
+generate_target all [get_files  {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}]
+export_ip_user_files -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}}] -directory {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/sim_scripts} -ip_user_files_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files} -ipstatic_source_dir {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/modelsim} {questa=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/questa} {riviera=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/riviera} {activehdl=D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+export_ip_user_files -of_objects  [get_files {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sim_1/new/tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sim_1/new/tb.v}}
+file delete -force {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sim_1/new/tb.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sim_1/new/tb.v} w ]
+add_files -fileset sim_1 {{D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sim_1/new/tb.v}}
+close_sim
+launch_simulation
+open_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+source tb.tcl
+save_wave_config {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/tb_behav.wcfg}
+report_ip_status -name ip_status 
+ipx::unload_core {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}
+export_ip_user_files -of_objects  [get_files {{d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}}] -no_script -reset -force -quiet
+remove_files  {{d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen/component.xml}}
+ipx::package_project -root_dir {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen} -vendor xilinx.com -library user -taxonomy /UserIP -force
+report_ip_status -name ip_status 
+ipx::remove_file cyclic_shift.srcs/sources_1/bd/cyclic_gen/sim/cyclic_gen.protoinst [ipx::get_file_groups xilinx_anylanguagebehavioralsimulation -of_objects [ipx::current_core]]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/cyclic_shift_gen}
+open_bd_design {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/cyclic_shift_gen/cyclic_shift.srcs/sources_1/bd/cyclic_gen/cyclic_gen.bd}
+close_sim
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/wise_spreading/wise_spreading.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/uci_dmrs_gen/uci_dmrs_gen.xpr}
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\FPGA\Vivaldo Project\PUCCH-FORMAT-1\uci_dmrs_gen\uci_dmrs_gen.srcs\component.xml}
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/uci_dmrs_gen/uci_dmrs_gen.srcs}
+close_project
+open_project {D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/payload_est_SINR/payload_est_SINR.xpr}
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {D:\fpga\vivaldo project\pucch-format-1\payload_est_sinr\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/payload_est_sinr}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::remove_bus_interface rst [ipx::current_core]
+ipx::remove_bus_interface clk [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {d:/fpga/vivaldo project/pucch-format-1/payload_est_sinr}
+close_project

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="353001fs"></ZoomEndTime>
+      <Cursor1Time time="53500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="623"></NameColumnWidth>
+      <ValueColumnWidth column_width="207"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/trigger_05" type="logic">
+      <obj_property name="ElementShortName">trigger_05</obj_property>
+      <obj_property name="ObjectShortName">trigger_05</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/stop_trigger" type="logic">
+      <obj_property name="ElementShortName">stop_trigger</obj_property>
+      <obj_property name="ObjectShortName">stop_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_pucch1_valid" type="logic">
+      <obj_property name="ElementShortName">i_pucch1_valid</obj_property>
+      <obj_property name="ObjectShortName">i_pucch1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_config_valid" type="logic">
+      <obj_property name="ElementShortName">i_config_valid</obj_property>
+      <obj_property name="ObjectShortName">i_config_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_group_hopping" type="array">
+      <obj_property name="ElementShortName">i_group_hopping[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_group_hopping[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_hopping_ID" type="array">
+      <obj_property name="ElementShortName">i_hopping_ID[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_hopping_ID[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/pucch_valid" type="logic">
+      <obj_property name="ElementShortName">pucch_valid</obj_property>
+      <obj_property name="ObjectShortName">pucch_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_slot_idx" type="array">
+      <obj_property name="ElementShortName">uci_slot_idx[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot_idx[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_rnti" type="array">
+      <obj_property name="ElementShortName">uci_rnti[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_rnti[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_nid" type="array">
+      <obj_property name="ElementShortName">uci_nid[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nid[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_srflag" type="array">
+      <obj_property name="ElementShortName">uci_srflag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_srflag[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_frist_symbol" type="array">
+      <obj_property name="ElementShortName">uci_frist_symbol[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_frist_symbol[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_pbr_offset" type="array">
+      <obj_property name="ElementShortName">uci_pbr_offset[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_pbr_offset[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_second_prb" type="array">
+      <obj_property name="ElementShortName">uci_second_prb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_second_prb[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_prb" type="array">
+      <obj_property name="ElementShortName">uci_prb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_prb[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_symbol" type="array">
+      <obj_property name="ElementShortName">uci_symbol[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_symbol[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_intra_fre_hopping" type="array">
+      <obj_property name="ElementShortName">uci_intra_fre_hopping[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_intra_fre_hopping[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/uci_ack" type="array">
+      <obj_property name="ElementShortName">uci_ack[15:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_ack[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/config_valid" type="logic">
+      <obj_property name="ElementShortName">config_valid</obj_property>
+      <obj_property name="ObjectShortName">config_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/group_hopping" type="array">
+      <obj_property name="ElementShortName">group_hopping[7:0]</obj_property>
+      <obj_property name="ObjectShortName">group_hopping[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/hopping_ID" type="array">
+      <obj_property name="ElementShortName">hopping_ID[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hopping_ID[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch_parameter" type="array">
+      <obj_property name="ElementShortName">pucch_parameter[511:0]</obj_property>
+      <obj_property name="ObjectShortName">pucch_parameter[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/wire_pucch_parameter" type="array">
+      <obj_property name="ElementShortName">wire_pucch_parameter[511:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_pucch_parameter[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ant_input" type="array">
+      <obj_property name="ElementShortName">ant_input[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ant_input[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dtx" type="logic">
+      <obj_property name="ElementShortName">dtx</obj_property>
+      <obj_property name="ObjectShortName">dtx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/harq" type="array">
+      <obj_property name="ElementShortName">harq[1:0]</obj_property>
+      <obj_property name="ObjectShortName">harq[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sr" type="logic">
+      <obj_property name="ElementShortName">sr</obj_property>
+      <obj_property name="ObjectShortName">sr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uci_param_mem" type="array">
+      <obj_property name="ElementShortName">uci_param_mem[0:0][511:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_param_mem[0:0][511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_imag_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">i_imag_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_imag_pucch_ofdm[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_real_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">i_real_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_real_pucch_ofdm[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/idx" type="array">
+      <obj_property name="ElementShortName">idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/n" type="array">
+      <obj_property name="ElementShortName">n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">n[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/NUM_SAMPLES" type="array">
+      <obj_property name="ElementShortName">NUM_SAMPLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_SAMPLES[31:0]</obj_property>
+   </wvobject>
+</wave_config>
