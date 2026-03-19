@@ -83,15 +83,15 @@ module tb(
 			uci_secondhop_prb =272;
 			uci_valid =1;
 		end
-		// @(posedge clk) begin
-			// uci_instra_fre_hop =0;
-			// uci_slot =0;
-			// uci_nsymbols =0;
-			// uci_first_symbol_idx =0;
-			// uci_prbsoffset =0;
-			// uci_secondhop_prb =0;
-			// uci_valid =0;
-		// end
+		@(posedge clk) begin
+			uci_instra_fre_hop =0;
+			uci_slot =0;
+			uci_nsymbols =0;
+			uci_first_symbol_idx =0;
+			uci_prbsoffset =0;
+			uci_secondhop_prb =0;
+			uci_valid =0;
+		end
 	end
 
 

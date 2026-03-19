@@ -597,7 +597,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net frame_sync_0_cp [get_bd_pins frame_sync_0/cp] [get_bd_pins ofdm_demodulation_0/i_trigger_cp]
   connect_bd_net -net frame_sync_0_start_symbol [get_bd_pins frame_sync_0/start_symbol] [get_bd_pins ofdm_demodulation_0/i_start_symbol]
   connect_bd_net -net frame_sync_1_rb_idx [get_bd_pins demapping_0/fr_rb] [get_bd_pins frame_sync_1/rb_idx]
-  connect_bd_net -net frame_sync_1_start_slot [get_bd_pins demapping_0/fr_slot] [get_bd_pins frame_sync_1/start_slot]
+  connect_bd_net -net frame_sync_1_slot_idx [get_bd_pins demapping_0/fr_slot] [get_bd_pins frame_sync_1/slot_idx]
   connect_bd_net -net frame_sync_1_sym_idx [get_bd_pins demapping_0/fr_symbol] [get_bd_pins frame_sync_1/sym_idx]
   connect_bd_net -net frame_sync_1_valid_out [get_bd_pins demapping_0/fr_data_valid] [get_bd_pins frame_sync_1/valid_out]
   connect_bd_net -net i_config_valid_1 [get_bd_ports i_config_valid] [get_bd_pins ulcch_parameter_0/i_config_valid]

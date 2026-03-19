@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Mar 17 19:02:08 2026
+//Date        : Wed Mar 18 20:12:37 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch1.bd
 //Design      : pucch1
@@ -422,7 +422,7 @@ module pucch1
   wire [11:0]frame_sync_0_cp;
   wire frame_sync_0_start_symbol;
   wire [8:0]frame_sync_1_rb_idx;
-  wire frame_sync_1_start_slot;
+  wire [4:0]frame_sync_1_slot_idx;
   wire [3:0]frame_sync_1_sym_idx;
   wire frame_sync_1_valid_out;
   wire i_config_valid_1;
@@ -553,7 +553,7 @@ module pucch1
        (.clk(clk_1),
         .fr_data_valid(frame_sync_1_valid_out),
         .fr_rb(frame_sync_1_rb_idx),
-        .fr_slot({frame_sync_1_start_slot,frame_sync_1_start_slot,frame_sync_1_start_slot,frame_sync_1_start_slot,frame_sync_1_start_slot}),
+        .fr_slot(frame_sync_1_slot_idx),
         .fr_symbol(frame_sync_1_sym_idx),
         .resoureset_valid(demapping_0_resoureset_valid),
         .rst(rst_1),
@@ -596,7 +596,7 @@ module pucch1
         .in_start_symbol(ofdm_demodulation_0_start_symbol),
         .rb_idx(frame_sync_1_rb_idx),
         .rst(rst_1),
-        .start_slot(frame_sync_1_start_slot),
+        .slot_idx(frame_sync_1_slot_idx),
         .sym_idx(frame_sync_1_sym_idx),
         .valid_out(frame_sync_1_valid_out));
   pucch1_mean_data_0_0 mean_data_0

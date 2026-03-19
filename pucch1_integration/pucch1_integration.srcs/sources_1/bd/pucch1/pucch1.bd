@@ -16,7 +16,6 @@
       "xlslice_0": "",
       "frame_sync_1": "",
       "ulcch_parameter_0": "",
-      "demapping_0": "",
       "data_dmrs_selection_0": "",
       "de_spread_0": "",
       "de_spread_1": "",
@@ -58,7 +57,8 @@
       "xlconcat_0": "",
       "xlconcat_1": "",
       "uci_occ": "",
-      "payload_est_SINR_0": ""
+      "payload_est_SINR_0": "",
+      "demapping_0": ""
     },
     "ports": {
       "clk": {
@@ -189,10 +189,6 @@
       "ulcch_parameter_0": {
         "vlnv": "xilinx.com:user:ulcch_parameter:1.0",
         "xci_name": "pucch1_ulcch_parameter_0_0"
-      },
-      "demapping_0": {
-        "vlnv": "xilinx.com:user:demapping:1.0",
-        "xci_name": "pucch1_demapping_0_1"
       },
       "data_dmrs_selection_0": {
         "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
@@ -1036,6 +1032,10 @@
             "value": "4"
           }
         }
+      },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch1_demapping_0_1"
       }
     },
     "nets": {
@@ -1047,7 +1047,6 @@
           "ofdm_demodulation_0/clk",
           "frame_sync_1/clk",
           "ulcch_parameter_0/clk",
-          "demapping_0/clk",
           "data_dmrs_selection_0/clk",
           "de_spread_0/clk",
           "de_spread_1/clk",
@@ -1061,7 +1060,8 @@
           "uci_dmrs_gen_1/clk",
           "mean_data_0/clk",
           "sr_ack_detector_0/clk",
-          "payload_est_SINR_0/clk"
+          "payload_est_SINR_0/clk",
+          "demapping_0/clk"
         ]
       },
       "rst_1": {
@@ -1072,7 +1072,6 @@
           "ofdm_demodulation_0/rst",
           "frame_sync_1/rst",
           "ulcch_parameter_0/rst",
-          "demapping_0/rst",
           "data_dmrs_selection_0/rst",
           "de_spread_0/rst",
           "de_spread_1/rst",
@@ -1086,7 +1085,8 @@
           "uci_dmrs_gen_1/rst",
           "mean_data_0/rst",
           "sr_ack_detector_0/rst",
-          "payload_est_SINR_0/rst"
+          "payload_est_SINR_0/rst",
+          "demapping_0/rst"
         ]
       },
       "trigger_05_1": {
@@ -1176,35 +1176,35 @@
       "ulcch_parameter_0_uci_intra_fre_hopping": {
         "ports": [
           "ulcch_parameter_0/uci_intra_fre_hopping",
-          "demapping_0/uci_instra_fre_hop",
           "cyclic_dmrs/uci_intra_fr_hop",
-          "cyclic_uci/uci_intra_fr_hop"
+          "cyclic_uci/uci_intra_fr_hop",
+          "demapping_0/uci_instra_fre_hop"
         ]
       },
       "ulcch_parameter_0_uci_slot_idx": {
         "ports": [
           "ulcch_parameter_0/uci_slot_idx",
-          "demapping_0/uci_slot",
           "cyclic_dmrs/uci_slot",
-          "cyclic_uci/uci_slot"
+          "cyclic_uci/uci_slot",
+          "demapping_0/uci_slot"
         ]
       },
       "ulcch_parameter_0_uci_symbol": {
         "ports": [
           "ulcch_parameter_0/uci_symbol",
-          "demapping_0/uci_nsymbols",
           "data_dmrs_selection_0/uci_nsymbols",
           "cyclic_dmrs/uci_nSymbs",
           "cyclic_uci/uci_nSymbs",
-          "mean_data_0/uci_nsymbol"
+          "mean_data_0/uci_nsymbol",
+          "demapping_0/uci_nsymbols"
         ]
       },
       "ulcch_parameter_0_uci_frist_symbol": {
         "ports": [
           "ulcch_parameter_0/uci_frist_symbol",
-          "demapping_0/uci_first_symbol_idx",
           "cyclic_dmrs/uci_first_symbol",
-          "cyclic_uci/uci_first_symbol"
+          "cyclic_uci/uci_first_symbol",
+          "demapping_0/uci_first_symbol_idx"
         ]
       },
       "ulcch_parameter_0_uci_pbr_offset": {
@@ -1222,7 +1222,6 @@
       "ulcch_parameter_0_pucch_valid": {
         "ports": [
           "ulcch_parameter_0/pucch_valid",
-          "demapping_0/uci_valid",
           "data_dmrs_selection_0/uci_valid",
           "cyclic_dmrs/in_valid",
           "cyclic_uci/in_valid",
@@ -1232,13 +1231,8 @@
           "dmrs_wise_spreading_1/in_valid",
           "mean_data_0/in_valid",
           "sr_ack_detector_0/in_valid",
-          "payload_est_SINR_0/in_valid"
-        ]
-      },
-      "frame_sync_1_start_slot": {
-        "ports": [
-          "frame_sync_1/start_slot",
-          "demapping_0/fr_slot"
+          "payload_est_SINR_0/in_valid",
+          "demapping_0/uci_valid"
         ]
       },
       "frame_sync_1_sym_idx": {
@@ -1614,6 +1608,12 @@
           "ulcch_parameter_0/uci_ack",
           "sr_ack_detector_0/uci_o_ack",
           "payload_est_SINR_0/uci_modulation"
+        ]
+      },
+      "frame_sync_1_slot_idx": {
+        "ports": [
+          "frame_sync_1/slot_idx",
+          "demapping_0/fr_slot"
         ]
       }
     }

@@ -1,136 +1,136 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.482267",
-   "Default View_TopLeft":"-670,514",
+   "Default View_ScaleFactor":"1.05098",
+   "Default View_TopLeft":"1115,950",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clk -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
-preplace port rst -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
-preplace port trigger_05 -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
-preplace port stop_trigger -pg 1 -lvl 0 -x 0 -y 940 -defaultsOSRD
-preplace port i_pucch1_valid -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
-preplace port i_config_valid -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
-preplace port o_valid -pg 1 -lvl 16 -x 5770 -y -370 -defaultsOSRD
-preplace port dtx -pg 1 -lvl 16 -x 5770 -y -340 -defaultsOSRD
-preplace port sr -pg 1 -lvl 16 -x 5770 -y -310 -defaultsOSRD
-preplace portBus ant_input -pg 1 -lvl 0 -x 0 -y 1170 -defaultsOSRD
-preplace portBus pucch_parameter -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
-preplace portBus i_group_hopping -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
-preplace portBus i_hopping_ID -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
-preplace portBus harq -pg 1 -lvl 16 -x 5770 -y -280 -defaultsOSRD
-preplace inst physical_control_0 -pg 1 -lvl 1 -x 190 -y 900 -defaultsOSRD
-preplace inst frame_sync_0 -pg 1 -lvl 2 -x 490 -y 880 -defaultsOSRD
-preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 790 -y 1080 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -x 490 -y 1070 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 2 -x 490 -y 1170 -defaultsOSRD
-preplace inst frame_sync_1 -pg 1 -lvl 4 -x 1150 -y 890 -defaultsOSRD
-preplace inst ulcch_parameter_0 -pg 1 -lvl 4 -x 1150 -y 470 -defaultsOSRD
-preplace inst demapping_0 -pg 1 -lvl 5 -x 1620 -y 800 -defaultsOSRD
-preplace inst data_dmrs_selection_0 -pg 1 -lvl 6 -x 1970 -y 810 -defaultsOSRD
-preplace inst de_spread_0 -pg 1 -lvl 10 -x 3810 -y -60 -defaultsOSRD
-preplace inst de_spread_1 -pg 1 -lvl 10 -x 3810 -y 220 -defaultsOSRD
-preplace inst cyclic_dmrs -pg 1 -lvl 7 -x 2455 -y 536 -defaultsOSRD -resize 269 266
-preplace inst cyclic_uci -pg 1 -lvl 7 -x 2455 -y 90 -defaultsOSRD
-preplace inst uci_wise_spreading_0 -pg 1 -lvl 8 -x 2850 -y -130 -defaultsOSRD
-preplace inst uci_wise_spreading_1 -pg 1 -lvl 8 -x 2850 -y 90 -defaultsOSRD
-preplace inst uci_dmrs_gen_0 -pg 1 -lvl 9 -x 3360 -y -80 -defaultsOSRD
-preplace inst dmrs_wise_spreading_1 -pg 1 -lvl 8 -x 2850 -y 530 -defaultsOSRD
-preplace inst dmrs_wise_spreading_0 -pg 1 -lvl 8 -x 2850 -y 310 -defaultsOSRD
-preplace inst uci_dmrs_gen_1 -pg 1 -lvl 9 -x 3360 -y 280 -defaultsOSRD
-preplace inst mean_data_0 -pg 1 -lvl 11 -x 4390 -y 160 -defaultsOSRD
-preplace inst sr_ack_detector_0 -pg 1 -lvl 15 -x 5590 -y 90 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 14 -x 5300 -y 240 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 12 -x 4750 -y 280 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 12 -x 4750 -y 120 -defaultsOSRD
-preplace inst uci_occ -pg 1 -lvl 7 -x 2455 -y -210 -defaultsOSRD
-preplace inst payload_est_SINR_0 -pg 1 -lvl 13 -x 5050 -y -30 -defaultsOSRD
-preplace netloc clk_1 1 0 15 20 800 340 730 640 730 950 680 1410 580 1830 446 2130 -80 2700 -290 3010 -220 3510 50 4020 20 N 20 4870 100 5190 10 N
-preplace netloc rst_1 1 0 15 30 810 330 720 650 720 960 700 1400 570 1840 466 2140 -70 2650 -250 2990 -210 3500 60 4010 10 N 10 4890 110 5200 30 N
-preplace netloc trigger_05_1 1 0 1 NJ 910
-preplace netloc stop_trigger_1 1 0 1 30J 930n
-preplace netloc physical_control_0_start_symbol 1 1 1 N 900
-preplace netloc xlconstant_0_dout 1 2 1 NJ 1070
-preplace netloc frame_sync_0_cp 1 2 1 620 950n
-preplace netloc frame_sync_0_start_symbol 1 2 1 630 890n
-preplace netloc xlslice_0_Dout 1 2 1 640J 1130n
-preplace netloc ant_input_1 1 0 2 NJ 1170 NJ
-preplace netloc ofdm_demodulation_0_start_symbol 1 3 1 960 910n
-preplace netloc i_pucch1_valid_1 1 0 4 NJ 180 NJ 180 NJ 180 970J
-preplace netloc pucch_parameter_1 1 0 4 NJ 460 NJ 460 NJ 460 930J
-preplace netloc i_config_valid_1 1 0 4 NJ 490 NJ 490 NJ 490 NJ
-preplace netloc i_group_hopping_1 1 0 4 20J 510 NJ 510 NJ 510 NJ
-preplace netloc i_hopping_ID_1 1 0 4 20J 530 NJ 530 NJ 530 NJ
-preplace netloc ulcch_parameter_0_uci_intra_fre_hopping 1 4 3 1440 520 NJ 520 2120J
-preplace netloc ulcch_parameter_0_uci_slot_idx 1 4 3 1450 340 NJ 340 2200J
-preplace netloc ulcch_parameter_0_uci_symbol 1 4 7 1340 600 1810 600 2170J 686 N 686 N 686 N 686 4000
-preplace netloc ulcch_parameter_0_uci_frist_symbol 1 4 3 1420 420 NJ 420 2210J
-preplace netloc ulcch_parameter_0_uci_pbr_offset 1 4 1 1380 440n
-preplace netloc ulcch_parameter_0_uci_second_prb 1 4 1 1360 460n
-preplace netloc ulcch_parameter_0_pucch_valid 1 4 11 1370 486 1820 486 2150J -60 2680 -300 N -300 N -300 4000 -50 N -50 4900 120 5210 50 N
-preplace netloc frame_sync_1_start_slot 1 4 1 1340 820n
-preplace netloc frame_sync_1_sym_idx 1 4 1 N 880
-preplace netloc frame_sync_1_rb_idx 1 4 1 1330 860n
-preplace netloc frame_sync_1_valid_out 1 4 1 1390 920n
-preplace netloc demapping_0_resoureset_valid 1 5 1 1790 800n
-preplace netloc ofdm_demodulation_0_pucch_ofdm 1 3 3 940J 710 1430J 620 1780
-preplace netloc ofdm_demodulation_0_o_valid 1 3 3 930J 690 1390J 610 1800
-preplace netloc data_dmrs_selection_0_dmrs_valid 1 6 4 2100 -330 N -330 N -330 3530
-preplace netloc data_dmrs_selection_0_dmrs 1 6 4 2110 -320 N -320 N -320 3520
-preplace netloc data_dmrs_selection_0_data_valid 1 6 4 N 820 N 820 3020 150 3480
-preplace netloc data_dmrs_selection_0_data 1 6 4 N 840 N 840 3060 410 3530
-preplace netloc ulcch_parameter_0_uci_m0 1 4 3 1350 506 NJ 506 2160J
-preplace netloc ulcch_parameter_0_hopping_ID 1 4 3 1350 560 NJ 560 2190J
-preplace netloc ulcch_parameter_0_group_hopping 1 4 3 1330 590 NJ 590 2180J
-preplace netloc cyclic_uci_wise_enable 1 7 1 2660 -70n
-preplace netloc dmrs_wise_spreading_0_o_enable 1 7 2 2720 -260 2970
-preplace netloc cyclic_uci_nfs_valid 1 7 1 2710 -110n
-preplace netloc cyclic_uci_nfs_0 1 7 1 2640 -90n
-preplace netloc cyclic_uci_nfs_1 1 7 1 2690 130n
-preplace netloc cyclic_uci_uci_cyclic_valid 1 7 2 2620 -280 3040J
-preplace netloc cyclic_uci_uci_cyclic 1 7 2 2630 -270 3020J
-preplace netloc dmrs_wise_spreading_0_wi_seq_valid 1 8 1 3000 -150n
-preplace netloc dmrs_wise_spreading_0_wi_seq 1 8 1 2980 -130n
-preplace netloc dmrs_wise_spreading_1_wi_seq_valid 1 8 1 2970 -30n
-preplace netloc dmrs_wise_spreading_1_wi_seq 1 8 1 2980 -10n
-preplace netloc uci_dmrs_gen_0_uci_dmrs_valid 1 9 1 3490 -90n
-preplace netloc uci_dmrs_gen_0_uci_dmrs 1 9 1 3480 -70n
-preplace netloc cyclic_dmrs_nfs_valid 1 7 1 2720 330n
-preplace netloc cyclic_dmrs_nfs_0 1 7 1 2710 350n
-preplace netloc cyclic_dmrs_wise_enable 1 7 1 2620 370n
-preplace netloc cyclic_dmrs_nfs_1 1 7 1 2720 570n
-preplace netloc dmrs_wise_spreading_0_o_enable1 1 7 2 2730 670 2980
-preplace netloc cyclic_dmrs_dmrs_cylcic_valid 1 7 2 2610 660 3030J
-preplace netloc cyclic_dmrs_dmrs_cyclic 1 7 2 2630 650 3040J
-preplace netloc dmrs_wise_spreading_0_wi_seq_valid1 1 8 1 N 290
-preplace netloc dmrs_wise_spreading_0_wi_seq1 1 8 1 N 310
-preplace netloc dmrs_wise_spreading_1_wi_seq_valid1 1 8 1 3000 330n
-preplace netloc dmrs_wise_spreading_1_wi_seq1 1 8 1 3050 350n
-preplace netloc uci_dmrs_gen_1_uci_dmrs_valid 1 9 1 3500 210n
-preplace netloc uci_dmrs_gen_1_uci_dmrs 1 9 1 3520 230n
-preplace netloc de_spread_0_de_spreading_data_valid 1 10 1 3980 -50n
-preplace netloc de_spread_0_de_spreading_data 1 10 1 3990 -70n
-preplace netloc de_spread_1_de_spreading_data_valid 1 10 1 4020 210n
-preplace netloc de_spread_1_de_spreading_data 1 10 1 3980 210n
-preplace netloc mean_data_0_o_mean_data_valid 1 11 2 4550 -20 N
-preplace netloc mean_data_0_sinr_valid 1 11 2 4560 30 4880
-preplace netloc payload_est_SINR_0_mean_sinr_valid 1 13 2 N -20 5410
-preplace netloc payload_est_SINR_0_mean_sinr 1 13 2 N 0 5380
-preplace netloc payload_est_SINR_0_payload_valid 1 13 2 N -60 5420
-preplace netloc payload_est_SINR_0_payload 1 13 2 N -40 5390
-preplace netloc xlconstant_1_dout 1 14 1 5400 170n
-preplace netloc mean_data_0_sinr 1 11 1 4560 190n
-preplace netloc xlconcat_0_dout 1 12 1 4910 40n
-preplace netloc mean_data_0_o_mean_data 1 11 1 4570 90n
-preplace netloc xlconcat_1_dout 1 12 1 4860 0n
-preplace netloc sr_ack_detector_0_o_valid 1 15 1 5720 -370n
-preplace netloc sr_ack_detector_0_dtx 1 15 1 5730 -340n
-preplace netloc sr_ack_detector_0_sr 1 15 1 5740 -310n
-preplace netloc sr_ack_detector_0_harq 1 15 1 5750 -280n
-preplace netloc uci_occ_dout 1 7 1 2670 -210n
-preplace netloc ulcch_parameter_0_uci_ack 1 4 11 1330J -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 NJ -310 4850J 130 NJ 130 5400
-levelinfo -pg 1 0 190 490 790 1150 1620 1970 2455 2850 3360 3810 4390 4750 5050 5300 5590 5770
-pagesize -pg 1 -db -bbox -sgen -210 -1420 5880 1720
+preplace port clk -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x 0 -y 670 -defaultsOSRD
+preplace port trigger_05 -pg 1 -lvl 0 -x 0 -y 750 -defaultsOSRD
+preplace port stop_trigger -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace port i_pucch1_valid -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port i_config_valid -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port o_valid -pg 1 -lvl 12 -x 3920 -y 690 -defaultsOSRD
+preplace port dtx -pg 1 -lvl 12 -x 3920 -y 720 -defaultsOSRD
+preplace port sr -pg 1 -lvl 12 -x 3920 -y 750 -defaultsOSRD
+preplace portBus ant_input -pg 1 -lvl 0 -x 0 -y 1010 -defaultsOSRD
+preplace portBus pucch_parameter -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace portBus i_group_hopping -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace portBus i_hopping_ID -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace portBus harq -pg 1 -lvl 12 -x 3920 -y 780 -defaultsOSRD
+preplace inst physical_control_0 -pg 1 -lvl 1 -x 170 -y 740 -defaultsOSRD
+preplace inst frame_sync_0 -pg 1 -lvl 2 -x 520 -y 720 -defaultsOSRD
+preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 1000 -y 840 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 520 -y 910 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 520 -y 1010 -defaultsOSRD
+preplace inst frame_sync_1 -pg 1 -lvl 4 -x 1380 -y 1150 -defaultsOSRD
+preplace inst ulcch_parameter_0 -pg 1 -lvl 2 -x 520 -y 350 -defaultsOSRD
+preplace inst data_dmrs_selection_0 -pg 1 -lvl 6 -x 2160 -y 950 -defaultsOSRD
+preplace inst de_spread_0 -pg 1 -lvl 7 -x 2550 -y 1120 -defaultsOSRD
+preplace inst de_spread_1 -pg 1 -lvl 7 -x 2550 -y 920 -defaultsOSRD
+preplace inst cyclic_dmrs -pg 1 -lvl 3 -x 1000 -y 450 -defaultsOSRD -resize 269 266
+preplace inst cyclic_uci -pg 1 -lvl 3 -x 1000 -y 150 -defaultsOSRD
+preplace inst uci_wise_spreading_0 -pg 1 -lvl 4 -x 1380 -y 220 -defaultsOSRD
+preplace inst uci_wise_spreading_1 -pg 1 -lvl 5 -x 1790 -y 320 -defaultsOSRD
+preplace inst uci_dmrs_gen_0 -pg 1 -lvl 6 -x 2160 -y 250 -defaultsOSRD
+preplace inst dmrs_wise_spreading_1 -pg 1 -lvl 5 -x 1790 -y 580 -defaultsOSRD
+preplace inst dmrs_wise_spreading_0 -pg 1 -lvl 4 -x 1380 -y 480 -defaultsOSRD
+preplace inst uci_dmrs_gen_1 -pg 1 -lvl 6 -x 2160 -y 670 -defaultsOSRD
+preplace inst mean_data_0 -pg 1 -lvl 8 -x 2900 -y 840 -defaultsOSRD
+preplace inst sr_ack_detector_0 -pg 1 -lvl 11 -x 3770 -y 740 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 10 -x 3460 -y 1000 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 9 -x 3190 -y 1040 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 9 -x 3190 -y 860 -defaultsOSRD
+preplace inst uci_occ -pg 1 -lvl 3 -x 1000 -y 670 -defaultsOSRD
+preplace inst payload_est_SINR_0 -pg 1 -lvl 10 -x 3460 -y 830 -defaultsOSRD
+preplace inst demapping_0 -pg 1 -lvl 5 -x 1790 -y 1020 -defaultsOSRD
+preplace netloc clk_1 1 0 11 20 640 320 130 720 1010 1200 90 1590 170 1990 810 2300 770 2720 680 NJ 680 3290 660 NJ
+preplace netloc rst_1 1 0 11 30 650 330 140 730 1020 1210 100 1570 160 2000 820 2380 790 2730 690 NJ 690 3300 680 NJ
+preplace netloc trigger_05_1 1 0 1 NJ 750
+preplace netloc stop_trigger_1 1 0 1 30J 770n
+preplace netloc physical_control_0_start_symbol 1 1 1 N 740
+preplace netloc xlconstant_0_dout 1 2 1 800J 830n
+preplace netloc frame_sync_0_cp 1 2 1 710 790n
+preplace netloc frame_sync_0_start_symbol 1 2 1 780 730n
+preplace netloc xlslice_0_Dout 1 2 1 710J 890n
+preplace netloc ant_input_1 1 0 2 NJ 1010 NJ
+preplace netloc ofdm_demodulation_0_start_symbol 1 3 1 1170 860n
+preplace netloc i_pucch1_valid_1 1 0 2 NJ 310 310J
+preplace netloc pucch_parameter_1 1 0 2 NJ 340 310J
+preplace netloc i_config_valid_1 1 0 2 NJ 370 NJ
+preplace netloc i_group_hopping_1 1 0 2 20J 390 NJ
+preplace netloc i_hopping_ID_1 1 0 2 20J 410 NJ
+preplace netloc ulcch_parameter_0_uci_intra_fre_hopping 1 2 3 810 950 NJ 950 1580J
+preplace netloc ulcch_parameter_0_uci_slot_idx 1 2 3 830 960 NJ 960 NJ
+preplace netloc ulcch_parameter_0_uci_symbol 1 2 6 790 1000 NJ 1000 1550 830 2030 830 2330J 810 2720J
+preplace netloc ulcch_parameter_0_uci_frist_symbol 1 2 3 840 730 NJ 730 1560J
+preplace netloc ulcch_parameter_0_uci_pbr_offset 1 2 3 770 980 NJ 980 1540J
+preplace netloc ulcch_parameter_0_uci_second_prb 1 2 3 700 990 NJ 990 1530J
+preplace netloc ulcch_parameter_0_pucch_valid 1 2 9 820 290 1240 340 1600 810 1970 800 NJ 800 2740 700 NJ 700 3310 700 NJ
+preplace netloc frame_sync_1_sym_idx 1 4 1 1560 1100n
+preplace netloc frame_sync_1_rb_idx 1 4 1 N 1120
+preplace netloc frame_sync_1_valid_out 1 4 1 1610 1140n
+preplace netloc demapping_0_resoureset_valid 1 5 1 2000 970n
+preplace netloc ofdm_demodulation_0_pucch_ofdm 1 3 3 NJ 820 NJ 820 1960
+preplace netloc ofdm_demodulation_0_o_valid 1 3 3 NJ 840 NJ 840 1950
+preplace netloc data_dmrs_selection_0_dmrs_valid 1 6 1 2310 920n
+preplace netloc data_dmrs_selection_0_dmrs 1 6 1 2290 940n
+preplace netloc data_dmrs_selection_0_data_valid 1 6 1 2350 950n
+preplace netloc data_dmrs_selection_0_data 1 6 1 2370 970n
+preplace netloc ulcch_parameter_0_uci_m0 1 2 1 750 120n
+preplace netloc ulcch_parameter_0_hopping_ID 1 2 1 760 180n
+preplace netloc ulcch_parameter_0_group_hopping 1 2 1 740 240n
+preplace netloc cyclic_uci_wise_enable 1 3 1 1230 140n
+preplace netloc dmrs_wise_spreading_0_o_enable 1 4 1 1610 240n
+preplace netloc cyclic_uci_nfs_valid 1 3 2 1190 80 1620
+preplace netloc cyclic_uci_nfs_0 1 3 1 1170 180n
+preplace netloc cyclic_uci_nfs_1 1 3 2 1180J 70 1630
+preplace netloc cyclic_uci_uci_cyclic_valid 1 3 3 1160J 50 NJ 50 2030
+preplace netloc cyclic_uci_uci_cyclic 1 3 3 1170J 60 NJ 60 2020
+preplace netloc dmrs_wise_spreading_0_wi_seq_valid 1 4 2 1510J 180 1950
+preplace netloc dmrs_wise_spreading_0_wi_seq 1 4 2 1520J 190 2010
+preplace netloc dmrs_wise_spreading_1_wi_seq_valid 1 5 1 N 300
+preplace netloc dmrs_wise_spreading_1_wi_seq 1 5 1 N 320
+preplace netloc uci_dmrs_gen_0_uci_dmrs_valid 1 6 1 2360 240n
+preplace netloc uci_dmrs_gen_0_uci_dmrs 1 6 1 2340 260n
+preplace netloc cyclic_dmrs_nfs_valid 1 3 2 1170 600 NJ
+preplace netloc cyclic_dmrs_nfs_0 1 3 1 1180 480n
+preplace netloc cyclic_dmrs_wise_enable 1 3 1 1190 440n
+preplace netloc cyclic_dmrs_nfs_1 1 3 2 1160 620 NJ
+preplace netloc dmrs_wise_spreading_0_o_enable1 1 4 1 1560 500n
+preplace netloc cyclic_dmrs_dmrs_cylcic_valid 1 3 3 1160 360 1560J 450 2010J
+preplace netloc cyclic_dmrs_dmrs_cyclic 1 3 3 1170 350 1580J 440 2030J
+preplace netloc dmrs_wise_spreading_0_wi_seq_valid1 1 4 2 NJ 460 1970
+preplace netloc dmrs_wise_spreading_0_wi_seq1 1 4 2 1530J 200 1980
+preplace netloc dmrs_wise_spreading_1_wi_seq_valid1 1 5 1 1960 560n
+preplace netloc dmrs_wise_spreading_1_wi_seq1 1 5 1 1950 580n
+preplace netloc uci_dmrs_gen_1_uci_dmrs_valid 1 6 1 2370 660n
+preplace netloc uci_dmrs_gen_1_uci_dmrs 1 6 1 2350 680n
+preplace netloc de_spread_0_de_spreading_data_valid 1 7 1 2720 850n
+preplace netloc de_spread_0_de_spreading_data 1 7 1 2730 870n
+preplace netloc de_spread_1_de_spreading_data_valid 1 7 1 2740 890n
+preplace netloc de_spread_1_de_spreading_data 1 7 1 N 910
+preplace netloc mean_data_0_o_mean_data_valid 1 8 2 3070 950 3300J
+preplace netloc mean_data_0_sinr_valid 1 8 2 3080 770 3290J
+preplace netloc payload_est_SINR_0_mean_sinr_valid 1 10 1 3600 740n
+preplace netloc payload_est_SINR_0_mean_sinr 1 10 1 3620 760n
+preplace netloc payload_est_SINR_0_payload_valid 1 10 1 3610 780n
+preplace netloc payload_est_SINR_0_payload 1 10 1 3630 800n
+preplace netloc xlconstant_1_dout 1 10 1 3640 820n
+preplace netloc mean_data_0_sinr 1 8 1 3060 870n
+preplace netloc xlconcat_0_dout 1 9 1 3320J 900n
+preplace netloc mean_data_0_o_mean_data 1 8 1 3090 830n
+preplace netloc xlconcat_1_dout 1 9 1 NJ 860
+preplace netloc sr_ack_detector_0_o_valid 1 11 1 3900J 690n
+preplace netloc sr_ack_detector_0_dtx 1 11 1 3900J 720n
+preplace netloc sr_ack_detector_0_sr 1 11 1 NJ 750
+preplace netloc sr_ack_detector_0_harq 1 11 1 3900J 770n
+preplace netloc uci_occ_dout 1 3 2 1220 610 1550
+preplace netloc ulcch_parameter_0_uci_ack 1 2 9 750J 970 NJ 970 1520J 1200 NJ 1200 2320J 710 NJ 710 NJ 710 3320 690 3600J
+preplace netloc frame_sync_1_slot_idx 1 4 1 1510 1060n
+levelinfo -pg 1 0 170 520 1000 1380 1790 2160 2550 2900 3190 3460 3770 3920
+pagesize -pg 1 -db -bbox -sgen -210 0 4030 1300
 "
 }
 0

@@ -6,7 +6,9 @@ Q = imag(x);
 
 I_fix = round(I * 2^15);
 Q_fix = round(Q * 2^15);
-
+%set I, Q at 0 =1
+I_fix(1)= 32767;
+Q_fix(1)= 32767;
 I_fix = min(max(I_fix, -32768), 32767);
 Q_fix = min(max(Q_fix, -32768), 32767);
 
