@@ -240,7 +240,8 @@ proc create_hier_cell_cyclic_uci { parentCell nameHier } {
   connect_bd_net -net nfs_gen_0_nfs_valid [get_bd_pins nfs_valid] [get_bd_pins ba_seq_control_0/nfs_valid] [get_bd_pins nfs_gen_0/nfs_valid]
   connect_bd_net -net phase_gen_0_phase [get_bd_pins phase_gen_0/phase] [get_bd_pins phase_gen_control_0/i_phase]
   connect_bd_net -net phase_gen_0_phase_valid [get_bd_pins phase_gen_0/phase_valid] [get_bd_pins phase_gen_control_0/i_phase_valid]
-  connect_bd_net -net phase_gen_control_0_o_phase_valid [get_bd_pins com_mul_cyclic_0/phase] [get_bd_pins com_mul_cyclic_0/phase_valid] [get_bd_pins phase_gen_control_0/o_phase_valid]
+  connect_bd_net -net phase_gen_control_0_o_phase [get_bd_pins com_mul_cyclic_0/phase] [get_bd_pins phase_gen_control_0/o_phase]
+  connect_bd_net -net phase_gen_control_0_o_phase_valid [get_bd_pins com_mul_cyclic_0/phase_valid] [get_bd_pins phase_gen_control_0/o_phase_valid]
   connect_bd_net -net phase_gen_control_0_start_en [get_bd_pins ba_seq_control_0/start_en] [get_bd_pins phase_gen_control_0/start_en]
   connect_bd_net -net rst_1 [get_bd_pins rst] [get_bd_pins ba_seq_control_0/rst] [get_bd_pins base_sequence_0/rst] [get_bd_pins base_sequence_1/rst] [get_bd_pins com_mul_cyclic_0/rst] [get_bd_pins n_cs_gen_0/rst] [get_bd_pins nfs_gen_0/rst] [get_bd_pins phase_gen_0/rst] [get_bd_pins phase_gen_control_0/rst]
   connect_bd_net -net uci_NID_1 [get_bd_pins uci_NID] [get_bd_pins base_sequence_0/uci_nID] [get_bd_pins base_sequence_1/uci_nID] [get_bd_pins n_cs_gen_0/uci_NID]
@@ -376,7 +377,8 @@ proc create_hier_cell_cyclic_dmrs { parentCell nameHier } {
   connect_bd_net -net nfs_gen_0_nfs_valid [get_bd_pins nfs_valid] [get_bd_pins ba_seq_control_0/nfs_valid] [get_bd_pins nfs_gen_0/nfs_valid]
   connect_bd_net -net phase_gen_0_phase [get_bd_pins phase_gen_0/phase] [get_bd_pins phase_gen_control_0/i_phase]
   connect_bd_net -net phase_gen_0_phase_valid [get_bd_pins phase_gen_0/phase_valid] [get_bd_pins phase_gen_control_0/i_phase_valid]
-  connect_bd_net -net phase_gen_control_0_o_phase_valid [get_bd_pins com_mul_cyclic_0/phase] [get_bd_pins com_mul_cyclic_0/phase_valid] [get_bd_pins phase_gen_control_0/o_phase_valid]
+  connect_bd_net -net phase_gen_control_0_o_phase [get_bd_pins com_mul_cyclic_0/phase] [get_bd_pins phase_gen_control_0/o_phase]
+  connect_bd_net -net phase_gen_control_0_o_phase_valid [get_bd_pins com_mul_cyclic_0/phase_valid] [get_bd_pins phase_gen_control_0/o_phase_valid]
   connect_bd_net -net phase_gen_control_0_start_en [get_bd_pins ba_seq_control_0/start_en] [get_bd_pins phase_gen_control_0/start_en]
   connect_bd_net -net rst_1 [get_bd_pins rst] [get_bd_pins ba_seq_control_0/rst] [get_bd_pins base_sequence_0/rst] [get_bd_pins base_sequence_1/rst] [get_bd_pins com_mul_cyclic_0/rst] [get_bd_pins n_cs_gen_0/rst] [get_bd_pins nfs_gen_0/rst] [get_bd_pins phase_gen_0/rst] [get_bd_pins phase_gen_control_0/rst]
   connect_bd_net -net uci_NID_1 [get_bd_pins uci_NID] [get_bd_pins base_sequence_0/uci_nID] [get_bd_pins base_sequence_1/uci_nID] [get_bd_pins n_cs_gen_0/uci_NID]
@@ -448,6 +450,12 @@ proc create_root_design { parentCell } {
   set stop_trigger [ create_bd_port -dir I stop_trigger ]
   set trigger_05 [ create_bd_port -dir I trigger_05 ]
 
+  # Create instance: block_wise_spreading_dmrs, and set properties
+  set block_wise_spreading_dmrs [ create_bd_cell -type ip -vlnv xilinx.com:user:block_wise_spreading:1.0 block_wise_spreading_dmrs ]
+
+  # Create instance: block_wise_spreading_uci, and set properties
+  set block_wise_spreading_uci [ create_bd_cell -type ip -vlnv xilinx.com:user:block_wise_spreading:1.0 block_wise_spreading_uci ]
+
   # Create instance: cyclic_dmrs
   create_hier_cell_cyclic_dmrs [current_bd_instance .] cyclic_dmrs
 
@@ -457,11 +465,11 @@ proc create_root_design { parentCell } {
   # Create instance: data_dmrs_selection_0, and set properties
   set data_dmrs_selection_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:data_dmrs_selection:1.0 data_dmrs_selection_0 ]
 
-  # Create instance: de_spread_0, and set properties
-  set de_spread_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:de_spread:1.0 de_spread_0 ]
+  # Create instance: de_spread_dmrs, and set properties
+  set de_spread_dmrs [ create_bd_cell -type ip -vlnv xilinx.com:user:de_spread:1.0 de_spread_dmrs ]
 
-  # Create instance: de_spread_1, and set properties
-  set de_spread_1 [ create_bd_cell -type ip -vlnv xilinx.com:user:de_spread:1.0 de_spread_1 ]
+  # Create instance: de_spread_uci, and set properties
+  set de_spread_uci [ create_bd_cell -type ip -vlnv xilinx.com:user:de_spread:1.0 de_spread_uci ]
 
   # Create instance: demapping_0, and set properties
   set demapping_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:demapping:1.0 demapping_0 ]
@@ -495,12 +503,6 @@ proc create_root_design { parentCell } {
 
   # Create instance: sr_ack_detector_0, and set properties
   set sr_ack_detector_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:sr_ack_detector:1.0 sr_ack_detector_0 ]
-
-  # Create instance: uci_dmrs_gen_0, and set properties
-  set uci_dmrs_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:uci_dmrs_gen:1.0 uci_dmrs_gen_0 ]
-
-  # Create instance: uci_dmrs_gen_1, and set properties
-  set uci_dmrs_gen_1 [ create_bd_cell -type ip -vlnv xilinx.com:user:uci_dmrs_gen:1.0 uci_dmrs_gen_1 ]
 
   # Create instance: uci_occ, and set properties
   set uci_occ [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 uci_occ ]
@@ -562,9 +564,13 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net ant_input_1 [get_bd_ports ant_input] [get_bd_pins xlslice_0/Din]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins cyclic_dmrs/clk] [get_bd_pins cyclic_uci/clk] [get_bd_pins data_dmrs_selection_0/clk] [get_bd_pins de_spread_0/clk] [get_bd_pins de_spread_1/clk] [get_bd_pins demapping_0/clk] [get_bd_pins dmrs_wise_spreading_0/clk] [get_bd_pins dmrs_wise_spreading_1/clk] [get_bd_pins frame_sync_0/clk] [get_bd_pins frame_sync_1/clk] [get_bd_pins mean_data_0/clk] [get_bd_pins ofdm_demodulation_0/clk] [get_bd_pins payload_est_SINR_0/clk] [get_bd_pins physical_control_0/clk] [get_bd_pins sr_ack_detector_0/clk] [get_bd_pins uci_dmrs_gen_0/clk] [get_bd_pins uci_dmrs_gen_1/clk] [get_bd_pins uci_wise_spreading_0/clk] [get_bd_pins uci_wise_spreading_1/clk] [get_bd_pins ulcch_parameter_0/clk]
-  connect_bd_net -net cyclic_dmrs_dmrs_cyclic [get_bd_pins cyclic_dmrs/dmrs_cyclic] [get_bd_pins uci_dmrs_gen_1/cyclic]
-  connect_bd_net -net cyclic_dmrs_dmrs_cylcic_valid [get_bd_pins cyclic_dmrs/dmrs_cylcic_valid] [get_bd_pins uci_dmrs_gen_1/cyclic_valid]
+  connect_bd_net -net block_wise_spreading_uci_spreading [get_bd_pins block_wise_spreading_dmrs/spreading] [get_bd_pins de_spread_dmrs/spreading_data]
+  connect_bd_net -net block_wise_spreading_uci_spreading1 [get_bd_pins block_wise_spreading_uci/spreading] [get_bd_pins de_spread_uci/spreading_data]
+  connect_bd_net -net block_wise_spreading_uci_spreading_valid [get_bd_pins block_wise_spreading_dmrs/spreading_valid] [get_bd_pins de_spread_dmrs/spreading_data_valid]
+  connect_bd_net -net block_wise_spreading_uci_spreading_valid1 [get_bd_pins block_wise_spreading_uci/spreading_valid] [get_bd_pins de_spread_uci/spreading_data_valid]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins block_wise_spreading_dmrs/clk] [get_bd_pins block_wise_spreading_uci/clk] [get_bd_pins cyclic_dmrs/clk] [get_bd_pins cyclic_uci/clk] [get_bd_pins data_dmrs_selection_0/clk] [get_bd_pins de_spread_dmrs/clk] [get_bd_pins de_spread_uci/clk] [get_bd_pins demapping_0/clk] [get_bd_pins dmrs_wise_spreading_0/clk] [get_bd_pins dmrs_wise_spreading_1/clk] [get_bd_pins frame_sync_0/clk] [get_bd_pins frame_sync_1/clk] [get_bd_pins mean_data_0/clk] [get_bd_pins ofdm_demodulation_0/clk] [get_bd_pins payload_est_SINR_0/clk] [get_bd_pins physical_control_0/clk] [get_bd_pins sr_ack_detector_0/clk] [get_bd_pins uci_wise_spreading_0/clk] [get_bd_pins uci_wise_spreading_1/clk] [get_bd_pins ulcch_parameter_0/clk]
+  connect_bd_net -net cyclic_dmrs_dmrs_cyclic [get_bd_pins block_wise_spreading_dmrs/cyclic] [get_bd_pins cyclic_dmrs/dmrs_cyclic]
+  connect_bd_net -net cyclic_dmrs_dmrs_cylcic_valid [get_bd_pins block_wise_spreading_dmrs/cyclic_valid] [get_bd_pins cyclic_dmrs/dmrs_cylcic_valid]
   connect_bd_net -net cyclic_dmrs_nfs_0 [get_bd_pins cyclic_dmrs/nfs_0] [get_bd_pins dmrs_wise_spreading_0/nfs]
   connect_bd_net -net cyclic_dmrs_nfs_1 [get_bd_pins cyclic_dmrs/nfs_1] [get_bd_pins dmrs_wise_spreading_1/nfs]
   connect_bd_net -net cyclic_dmrs_nfs_valid [get_bd_pins cyclic_dmrs/nfs_valid] [get_bd_pins dmrs_wise_spreading_0/nfs_valid] [get_bd_pins dmrs_wise_spreading_1/nfs_valid]
@@ -572,28 +578,28 @@ proc create_root_design { parentCell } {
   connect_bd_net -net cyclic_uci_nfs_0 [get_bd_pins cyclic_uci/nfs_0] [get_bd_pins uci_wise_spreading_0/nfs]
   connect_bd_net -net cyclic_uci_nfs_1 [get_bd_pins cyclic_uci/nfs_1] [get_bd_pins uci_wise_spreading_1/nfs]
   connect_bd_net -net cyclic_uci_nfs_valid [get_bd_pins cyclic_uci/nfs_valid] [get_bd_pins uci_wise_spreading_0/nfs_valid] [get_bd_pins uci_wise_spreading_1/nfs_valid]
-  connect_bd_net -net cyclic_uci_uci_cyclic [get_bd_pins cyclic_uci/uci_cyclic] [get_bd_pins uci_dmrs_gen_0/cyclic]
-  connect_bd_net -net cyclic_uci_uci_cyclic_valid [get_bd_pins cyclic_uci/uci_cyclic_valid] [get_bd_pins uci_dmrs_gen_0/cyclic_valid]
+  connect_bd_net -net cyclic_uci_uci_cyclic [get_bd_pins block_wise_spreading_uci/cyclic] [get_bd_pins cyclic_uci/uci_cyclic]
+  connect_bd_net -net cyclic_uci_uci_cyclic_valid [get_bd_pins block_wise_spreading_uci/cyclic_valid] [get_bd_pins cyclic_uci/uci_cyclic_valid]
   connect_bd_net -net cyclic_uci_wise_enable [get_bd_pins cyclic_uci/wise_enable] [get_bd_pins uci_wise_spreading_0/enable]
-  connect_bd_net -net data_dmrs_selection_0_data [get_bd_pins data_dmrs_selection_0/data] [get_bd_pins de_spread_1/rx_data]
-  connect_bd_net -net data_dmrs_selection_0_data_valid [get_bd_pins data_dmrs_selection_0/data_valid] [get_bd_pins de_spread_1/rx_data_valid]
-  connect_bd_net -net data_dmrs_selection_0_dmrs [get_bd_pins data_dmrs_selection_0/dmrs] [get_bd_pins de_spread_0/rx_data]
-  connect_bd_net -net data_dmrs_selection_0_dmrs_valid [get_bd_pins data_dmrs_selection_0/dmrs_valid] [get_bd_pins de_spread_0/rx_data_valid]
-  connect_bd_net -net de_spread_0_de_spreading_data [get_bd_pins de_spread_0/de_spreading_data] [get_bd_pins mean_data_0/despread_uci]
-  connect_bd_net -net de_spread_0_de_spreading_data_valid [get_bd_pins de_spread_0/de_spreading_data_valid] [get_bd_pins mean_data_0/despread_uci_valid]
-  connect_bd_net -net de_spread_1_de_spreading_data [get_bd_pins de_spread_1/de_spreading_data] [get_bd_pins mean_data_0/despread_dmrs]
-  connect_bd_net -net de_spread_1_de_spreading_data_valid [get_bd_pins de_spread_1/de_spreading_data_valid] [get_bd_pins mean_data_0/despread_dmrs_valid]
+  connect_bd_net -net data_dmrs_selection_0_data [get_bd_pins data_dmrs_selection_0/data] [get_bd_pins de_spread_uci/rx_data]
+  connect_bd_net -net data_dmrs_selection_0_data_valid [get_bd_pins data_dmrs_selection_0/data_valid] [get_bd_pins de_spread_uci/rx_data_valid]
+  connect_bd_net -net data_dmrs_selection_0_dmrs [get_bd_pins data_dmrs_selection_0/dmrs] [get_bd_pins de_spread_dmrs/rx_data]
+  connect_bd_net -net data_dmrs_selection_0_dmrs_valid [get_bd_pins data_dmrs_selection_0/dmrs_valid] [get_bd_pins de_spread_dmrs/rx_data_valid]
+  connect_bd_net -net de_spread_dmrs_de_spreading_data [get_bd_pins de_spread_dmrs/de_spreading_data] [get_bd_pins mean_data_0/despread_dmrs]
+  connect_bd_net -net de_spread_dmrs_de_spreading_data_valid [get_bd_pins de_spread_dmrs/de_spreading_data_valid] [get_bd_pins mean_data_0/despread_dmrs_valid]
+  connect_bd_net -net de_spread_uci_de_spreading_data [get_bd_pins de_spread_uci/de_spreading_data] [get_bd_pins mean_data_0/despread_uci]
+  connect_bd_net -net de_spread_uci_de_spreading_data_valid [get_bd_pins de_spread_uci/de_spreading_data_valid] [get_bd_pins mean_data_0/despread_uci_valid]
   connect_bd_net -net demapping_0_resoureset_valid [get_bd_pins data_dmrs_selection_0/resoureset_valid] [get_bd_pins demapping_0/resoureset_valid]
   connect_bd_net -net dmrs_wise_spreading_0_o_enable [get_bd_pins uci_wise_spreading_0/o_enable] [get_bd_pins uci_wise_spreading_1/enable]
   connect_bd_net -net dmrs_wise_spreading_0_o_enable1 [get_bd_pins dmrs_wise_spreading_0/o_enable] [get_bd_pins dmrs_wise_spreading_1/enable]
-  connect_bd_net -net dmrs_wise_spreading_0_wi_seq [get_bd_pins uci_dmrs_gen_0/wise_0] [get_bd_pins uci_wise_spreading_0/wi_seq]
-  connect_bd_net -net dmrs_wise_spreading_0_wi_seq1 [get_bd_pins dmrs_wise_spreading_0/wi_seq] [get_bd_pins uci_dmrs_gen_1/wise_0]
-  connect_bd_net -net dmrs_wise_spreading_0_wi_seq_valid [get_bd_pins uci_dmrs_gen_0/wise_valid_0] [get_bd_pins uci_wise_spreading_0/wi_seq_valid]
-  connect_bd_net -net dmrs_wise_spreading_0_wi_seq_valid1 [get_bd_pins dmrs_wise_spreading_0/wi_seq_valid] [get_bd_pins uci_dmrs_gen_1/wise_valid_0]
-  connect_bd_net -net dmrs_wise_spreading_1_wi_seq [get_bd_pins uci_dmrs_gen_0/wise_1] [get_bd_pins uci_wise_spreading_1/wi_seq]
-  connect_bd_net -net dmrs_wise_spreading_1_wi_seq1 [get_bd_pins dmrs_wise_spreading_1/wi_seq] [get_bd_pins uci_dmrs_gen_1/wise_1]
-  connect_bd_net -net dmrs_wise_spreading_1_wi_seq_valid [get_bd_pins uci_dmrs_gen_0/wise_valid_1] [get_bd_pins uci_wise_spreading_1/wi_seq_valid]
-  connect_bd_net -net dmrs_wise_spreading_1_wi_seq_valid1 [get_bd_pins dmrs_wise_spreading_1/wi_seq_valid] [get_bd_pins uci_dmrs_gen_1/wise_valid_1]
+  connect_bd_net -net dmrs_wise_spreading_0_wi_seq [get_bd_pins block_wise_spreading_uci/wise_0] [get_bd_pins uci_wise_spreading_0/wi_seq]
+  connect_bd_net -net dmrs_wise_spreading_0_wi_seq1 [get_bd_pins block_wise_spreading_dmrs/wise_0] [get_bd_pins dmrs_wise_spreading_0/wi_seq]
+  connect_bd_net -net dmrs_wise_spreading_0_wi_seq_valid [get_bd_pins block_wise_spreading_uci/wise_valid_0] [get_bd_pins uci_wise_spreading_0/wi_seq_valid]
+  connect_bd_net -net dmrs_wise_spreading_0_wi_seq_valid1 [get_bd_pins block_wise_spreading_dmrs/wise_valid_0] [get_bd_pins dmrs_wise_spreading_0/wi_seq_valid]
+  connect_bd_net -net dmrs_wise_spreading_1_wi_seq [get_bd_pins block_wise_spreading_uci/wise_1] [get_bd_pins uci_wise_spreading_1/wi_seq]
+  connect_bd_net -net dmrs_wise_spreading_1_wi_seq1 [get_bd_pins block_wise_spreading_dmrs/wise_1] [get_bd_pins dmrs_wise_spreading_1/wi_seq]
+  connect_bd_net -net dmrs_wise_spreading_1_wi_seq_valid [get_bd_pins block_wise_spreading_uci/wise_valid_1] [get_bd_pins uci_wise_spreading_1/wi_seq_valid]
+  connect_bd_net -net dmrs_wise_spreading_1_wi_seq_valid1 [get_bd_pins block_wise_spreading_dmrs/wise_valid_1] [get_bd_pins dmrs_wise_spreading_1/wi_seq_valid]
   connect_bd_net -net frame_sync_0_cp [get_bd_pins frame_sync_0/cp] [get_bd_pins ofdm_demodulation_0/i_trigger_cp]
   connect_bd_net -net frame_sync_0_start_symbol [get_bd_pins frame_sync_0/start_symbol] [get_bd_pins ofdm_demodulation_0/i_start_symbol]
   connect_bd_net -net frame_sync_1_rb_idx [get_bd_pins demapping_0/fr_rb] [get_bd_pins frame_sync_1/rb_idx]
@@ -617,17 +623,13 @@ proc create_root_design { parentCell } {
   connect_bd_net -net payload_est_SINR_0_payload_valid [get_bd_pins payload_est_SINR_0/payload_valid] [get_bd_pins sr_ack_detector_0/payload_valid]
   connect_bd_net -net physical_control_0_start_symbol [get_bd_pins frame_sync_0/in_start_symbol] [get_bd_pins physical_control_0/start_symbol]
   connect_bd_net -net pucch_parameter_1 [get_bd_ports pucch_parameter] [get_bd_pins ulcch_parameter_0/ulcch_para]
-  connect_bd_net -net rst_1 [get_bd_ports rst] [get_bd_pins cyclic_dmrs/rst] [get_bd_pins cyclic_uci/rst] [get_bd_pins data_dmrs_selection_0/rst] [get_bd_pins de_spread_0/rst] [get_bd_pins de_spread_1/rst] [get_bd_pins demapping_0/rst] [get_bd_pins dmrs_wise_spreading_0/rst] [get_bd_pins dmrs_wise_spreading_1/rst] [get_bd_pins frame_sync_0/rst] [get_bd_pins frame_sync_1/rst] [get_bd_pins mean_data_0/rst] [get_bd_pins ofdm_demodulation_0/rst] [get_bd_pins payload_est_SINR_0/rst] [get_bd_pins physical_control_0/rst] [get_bd_pins sr_ack_detector_0/rst] [get_bd_pins uci_dmrs_gen_0/rst] [get_bd_pins uci_dmrs_gen_1/rst] [get_bd_pins uci_wise_spreading_0/rst] [get_bd_pins uci_wise_spreading_1/rst] [get_bd_pins ulcch_parameter_0/rst]
+  connect_bd_net -net rst_1 [get_bd_ports rst] [get_bd_pins block_wise_spreading_dmrs/rst] [get_bd_pins block_wise_spreading_uci/rst] [get_bd_pins cyclic_dmrs/rst] [get_bd_pins cyclic_uci/rst] [get_bd_pins data_dmrs_selection_0/rst] [get_bd_pins de_spread_dmrs/rst] [get_bd_pins de_spread_uci/rst] [get_bd_pins demapping_0/rst] [get_bd_pins dmrs_wise_spreading_0/rst] [get_bd_pins dmrs_wise_spreading_1/rst] [get_bd_pins frame_sync_0/rst] [get_bd_pins frame_sync_1/rst] [get_bd_pins mean_data_0/rst] [get_bd_pins ofdm_demodulation_0/rst] [get_bd_pins payload_est_SINR_0/rst] [get_bd_pins physical_control_0/rst] [get_bd_pins sr_ack_detector_0/rst] [get_bd_pins uci_wise_spreading_0/rst] [get_bd_pins uci_wise_spreading_1/rst] [get_bd_pins ulcch_parameter_0/rst]
   connect_bd_net -net sr_ack_detector_0_dtx [get_bd_ports dtx] [get_bd_pins sr_ack_detector_0/dtx]
   connect_bd_net -net sr_ack_detector_0_harq [get_bd_ports harq] [get_bd_pins sr_ack_detector_0/harq]
   connect_bd_net -net sr_ack_detector_0_o_valid [get_bd_ports o_valid] [get_bd_pins sr_ack_detector_0/o_valid]
   connect_bd_net -net sr_ack_detector_0_sr [get_bd_ports sr] [get_bd_pins sr_ack_detector_0/sr]
   connect_bd_net -net stop_trigger_1 [get_bd_ports stop_trigger] [get_bd_pins physical_control_0/stop_request_trigger]
   connect_bd_net -net trigger_05_1 [get_bd_ports trigger_05] [get_bd_pins physical_control_0/in_0_5ms]
-  connect_bd_net -net uci_dmrs_gen_0_uci_dmrs [get_bd_pins de_spread_0/spreading_data] [get_bd_pins uci_dmrs_gen_0/uci_dmrs]
-  connect_bd_net -net uci_dmrs_gen_0_uci_dmrs_valid [get_bd_pins de_spread_0/spreading_data_valid] [get_bd_pins uci_dmrs_gen_0/uci_dmrs_valid]
-  connect_bd_net -net uci_dmrs_gen_1_uci_dmrs [get_bd_pins de_spread_1/spreading_data] [get_bd_pins uci_dmrs_gen_1/uci_dmrs]
-  connect_bd_net -net uci_dmrs_gen_1_uci_dmrs_valid [get_bd_pins de_spread_1/spreading_data_valid] [get_bd_pins uci_dmrs_gen_1/uci_dmrs_valid]
   connect_bd_net -net uci_occ_dout [get_bd_pins dmrs_wise_spreading_0/uci_OCC] [get_bd_pins dmrs_wise_spreading_1/uci_OCC] [get_bd_pins uci_occ/dout] [get_bd_pins uci_wise_spreading_0/uci_OCC] [get_bd_pins uci_wise_spreading_1/uci_OCC]
   connect_bd_net -net ulcch_parameter_0_group_hopping [get_bd_pins cyclic_dmrs/uci_grouphopping] [get_bd_pins cyclic_uci/uci_grouphopping] [get_bd_pins ulcch_parameter_0/group_hopping]
   connect_bd_net -net ulcch_parameter_0_hopping_ID [get_bd_pins cyclic_dmrs/uci_NID] [get_bd_pins cyclic_uci/uci_NID] [get_bd_pins ulcch_parameter_0/hopping_ID]

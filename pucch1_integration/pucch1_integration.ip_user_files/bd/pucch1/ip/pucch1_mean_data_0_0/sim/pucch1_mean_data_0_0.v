@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:mean_data:1.0
-// IP Revision: 3
+// IP Revision: 6
 
 `timescale 1ns/1ps
 

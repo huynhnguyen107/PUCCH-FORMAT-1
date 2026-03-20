@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 23:02:17 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 20 02:51:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aee42072</spirit:value>
+            <spirit:value>9:6b98510c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -32,7 +32,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aee42072</spirit:value>
+            <spirit:value>9:6b98510c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -48,11 +48,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 23:02:17 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 20 02:51:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aee42072</spirit:value>
+            <spirit:value>9:6b98510c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -67,11 +67,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 23:02:17 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 20 02:51:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f214c27e</spirit:value>
+            <spirit:value>9:3768b300</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -87,11 +87,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 17 23:02:17 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 20 02:51:08 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f214c27e</spirit:value>
+            <spirit:value>9:3768b300</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -249,7 +249,7 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/cdc1/phase_gen_control.srcs/sources_1/new/phase_gen_control.v</spirit:name>
+        <spirit:name>../../ipshared/1744/phase_gen_control.srcs/sources_1/new/phase_gen_control.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -268,7 +268,7 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/cdc1/phase_gen_control.srcs/sources_1/new/phase_gen_control.v</spirit:name>
+        <spirit:name>../../ipshared/1744/phase_gen_control.srcs/sources_1/new/phase_gen_control.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -296,7 +296,7 @@
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@361f22dc_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d400d4e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
@@ -384,11 +384,17 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@38f75852_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@450bb837_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@706f5765_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f0e4d8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10b47438_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d2e262c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c0e47d9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de050c0_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a782d27_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/phase_gen_control</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4dd1db27"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="db7b57d7"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="84973ca5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="cf8035f0"/>
     </xilinx:packagingInfo>

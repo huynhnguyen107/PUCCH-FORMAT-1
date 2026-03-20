@@ -1,16 +1,16 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.443114",
-   "Default View_TopLeft":"-212,-386",
+   "Default View_ScaleFactor":"0.455518",
+   "Default View_TopLeft":"-213,-75",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port clk -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
 preplace port rst -pg 1 -lvl 0 -x -20 -y 130 -defaultsOSRD
 preplace port in_valid -pg 1 -lvl 0 -x -20 -y 250 -defaultsOSRD
-preplace port dmrs_cylcic_valid -pg 1 -lvl 7 -x 1970 -y 320 -defaultsOSRD
-preplace port wise_enable -pg 1 -lvl 7 -x 1970 -y 0 -defaultsOSRD
-preplace port nfs_valid -pg 1 -lvl 7 -x 1970 -y 140 -defaultsOSRD
+preplace port dmrs_cylcic_valid -pg 1 -lvl 7 -x 1990 -y 320 -defaultsOSRD
+preplace port wise_enable -pg 1 -lvl 7 -x 1990 -y 0 -defaultsOSRD
+preplace port nfs_valid -pg 1 -lvl 7 -x 1990 -y 140 -defaultsOSRD
 preplace portBus uci_m0 -pg 1 -lvl 0 -x -20 -y 430 -defaultsOSRD
 preplace portBus uci_nSymbs -pg 1 -lvl 0 -x -20 -y 370 -defaultsOSRD
 preplace portBus uci_intra_fr_hop -pg 1 -lvl 0 -x -20 -y 160 -defaultsOSRD
@@ -18,22 +18,22 @@ preplace portBus uci_NID -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
 preplace portBus uci_slot -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
 preplace portBus uci_first_symbol -pg 1 -lvl 0 -x -20 -y 340 -defaultsOSRD
 preplace portBus uci_grouphopping -pg 1 -lvl 0 -x -20 -y 550 -defaultsOSRD
-preplace portBus dmrs_cyclic -pg 1 -lvl 7 -x 1970 -y 350 -defaultsOSRD
-preplace portBus nfs_0 -pg 1 -lvl 7 -x 1970 -y 80 -defaultsOSRD
-preplace portBus nfs_1 -pg 1 -lvl 7 -x 1970 -y 110 -defaultsOSRD
+preplace portBus dmrs_cyclic -pg 1 -lvl 7 -x 1990 -y 350 -defaultsOSRD
+preplace portBus nfs_0 -pg 1 -lvl 7 -x 1990 -y 80 -defaultsOSRD
+preplace portBus nfs_1 -pg 1 -lvl 7 -x 1990 -y 110 -defaultsOSRD
 preplace inst n_cs_gen_0 -pg 1 -lvl 2 -x 370 -y 290 -defaultsOSRD
 preplace inst phase_gen_0 -pg 1 -lvl 3 -x 690 -y 430 -defaultsOSRD
-preplace inst phase_gen_control_0 -pg 1 -lvl 4 -x 1070 -y 770 -defaultsOSRD
 preplace inst base_sequence_0 -pg 1 -lvl 4 -x 1070 -y 550 -defaultsOSRD
 preplace inst base_sequence_1 -pg 1 -lvl 4 -x 1070 -y 330 -defaultsOSRD
 preplace inst nfs_gen_0 -pg 1 -lvl 4 -x 1070 -y 100 -defaultsOSRD
-preplace inst ba_seq_control_0 -pg 1 -lvl 5 -x 1480 -y 350 -defaultsOSRD
-preplace inst com_mul_cyclic_0 -pg 1 -lvl 6 -x 1800 -y 350 -defaultsOSRD
+preplace inst ba_seq_control_0 -pg 1 -lvl 5 -x 1490 -y 350 -defaultsOSRD
+preplace inst com_mul_cyclic_0 -pg 1 -lvl 6 -x 1820 -y 350 -defaultsOSRD
 preplace inst mcs -pg 1 -lvl 2 -x 370 -y 490 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 190 -defaultsOSRD
 preplace inst xlconstant_2 -pg 1 -lvl 3 -x 690 -y 610 -defaultsOSRD
-preplace netloc clk_1 1 0 6 NJ 100 220 100 560 110 890 0 1310 180 1660
-preplace netloc rst_1 1 0 6 0J 110 210 110 570 100 800 200 1320 200 1640
+preplace inst phase_gen_control_0 -pg 1 -lvl 4 -x 1070 -y 770 -defaultsOSRD
+preplace netloc clk_1 1 0 6 NJ 100 220 100 560 110 890 0 1320 170 1680
+preplace netloc rst_1 1 0 6 0J 110 210 110 570 100 800 200 1330 200 1660
 preplace netloc in_valid_1 1 0 4 NJ 250 240 160 550 160 870
 preplace netloc uci_m0_1 1 0 3 20J 130 NJ 130 540J
 preplace netloc uci_nSymbs_1 1 0 4 NJ 370 200 140 NJ 140 880
@@ -53,18 +53,19 @@ preplace netloc base_sequence_0_base_sequence_valid 1 4 1 1280 300n
 preplace netloc base_sequence_0_base_sequence 1 4 1 1290 320n
 preplace netloc base_sequence_1_base_sequence_valid 1 4 1 N 340
 preplace netloc base_sequence_1_base_sequence 1 4 1 1250 320n
-preplace netloc nfs_gen_0_nfs_0 1 4 3 1300 80 N 80 N
+preplace netloc nfs_gen_0_nfs_0 1 4 3 1310 80 N 80 N
 preplace netloc nfs_gen_0_nfs_1 1 4 3 1260 110 N 110 N
 preplace netloc nfs_gen_0_nfs_valid 1 4 3 1240 140 N 140 N
-preplace netloc phase_gen_control_0_start_en 1 4 1 1320 440n
+preplace netloc phase_gen_control_0_start_en 1 4 1 1330 440n
 preplace netloc ba_seq_control_0_basequence_out_valid 1 5 1 N 340
 preplace netloc ba_seq_control_0_basequence_out 1 5 1 N 360
-preplace netloc phase_gen_control_0_o_phase_valid 1 4 2 1270J 190 1650
+preplace netloc phase_gen_control_0_o_phase_valid 1 4 2 1270J 180 1670
 preplace netloc com_mul_cyclic_0_cyclic 1 6 1 NJ 350
-preplace netloc com_mul_cyclic_0_cyclic_valid 1 6 1 1950J 320n
-preplace netloc com_mul_cyclic_0_o_wise_enable 1 6 1 1940 0n
-levelinfo -pg 1 -20 100 370 690 1070 1480 1800 1970
-pagesize -pg 1 -db -bbox -sgen -220 -20 2130 890
+preplace netloc com_mul_cyclic_0_cyclic_valid 1 6 1 1970J 320n
+preplace netloc com_mul_cyclic_0_o_wise_enable 1 6 1 1960 0n
+preplace netloc phase_gen_control_0_o_phase 1 4 2 1300 190 1650J
+levelinfo -pg 1 -20 100 370 690 1070 1490 1820 1990
+pagesize -pg 1 -db -bbox -sgen -220 -20 2150 890
 "
 }
 

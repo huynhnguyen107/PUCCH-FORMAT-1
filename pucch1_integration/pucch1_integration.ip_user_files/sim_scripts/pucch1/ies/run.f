@@ -129,7 +129,7 @@
   "../../../bd/pucch1/ipshared/ce59/phase_gen.srcs/sources_1/new/phase_gen.v" \
   "../../../bd/pucch1/ip/pucch1_phase_gen_0_0/sim/pucch1_phase_gen_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_phase_gen_control_0_0/phase_gen_control.srcs/sources_1/ip/phase_fifo_0/sim/phase_fifo_0.v" \
-  "../../../bd/pucch1/ipshared/cdc1/phase_gen_control.srcs/sources_1/new/phase_gen_control.v" \
+  "../../../bd/pucch1/ipshared/1744/phase_gen_control.srcs/sources_1/new/phase_gen_control.v" \
   "../../../bd/pucch1/ip/pucch1_phase_gen_control_0_0/sim/pucch1_phase_gen_control_0_0.v" \
 -endlib
 -makelib ies_lib/blk_mem_gen_v8_4_4 \
@@ -171,13 +171,6 @@
   "../../../bd/pucch1/ip/pucch1_xlconstant_0_1/sim/pucch1_xlconstant_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_xlconstant_0_2/sim/pucch1_xlconstant_0_2.v" \
   "../../../bd/pucch1/ip/pucch1_xlconstant_1_0/sim/pucch1_xlconstant_1_0.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/pucch1/ip/pucch1_uci_dmrs_gen_0_0/sources_1/ip/uci_dmrs_cmpy_0/sim/uci_dmrs_cmpy_0.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/pucch1/ipshared/67db/sources_1/new/uci_dmrs_gen.v" \
-  "../../../bd/pucch1/ip/pucch1_uci_dmrs_gen_0_0/sim/pucch1_uci_dmrs_gen_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_n_cs_gen_0_1/sim/pucch1_n_cs_gen_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_phase_gen_0_1/sim/pucch1_phase_gen_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_phase_gen_control_0_1/sim/pucch1_phase_gen_control_0_1.v" \
@@ -199,8 +192,7 @@
   "../../../bd/pucch1/ip/pucch1_wise_spreading_0_1/sim/pucch1_wise_spreading_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_0_0/sim/pucch1_dmrs_wise_spreading_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_dmrs_wise_spreading_1_0/sim/pucch1_dmrs_wise_spreading_1_0.v" \
-  "../../../bd/pucch1/ip/pucch1_uci_dmrs_gen_0_1/sim/pucch1_uci_dmrs_gen_0_1.v" \
-  "../../../bd/pucch1/ipshared/fee0/payload_est_SINR.srcs/sources_1/new/payload_est_SINR.v" \
+  "../../../bd/pucch1/ipshared/a3ad/payload_est_SINR.srcs/sources_1/new/payload_est_SINR.v" \
   "../../../bd/pucch1/ip/pucch1_payload_est_SINR_0_0/sim/pucch1_payload_est_SINR_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
@@ -234,9 +226,9 @@
   "../../../bd/pucch1/ip/pucch1_mean_data_0_0/mean_data.srcs/sources_1/ip/sig_power_cmpy_1/sim/sig_power_cmpy_1.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/pucch1/ipshared/ffc9/mean_data.srcs/sources_1/new/mean_data.v" \
+  "../../../bd/pucch1/ipshared/ff26/mean_data.srcs/sources_1/new/mean_data.v" \
   "../../../bd/pucch1/ip/pucch1_mean_data_0_0/sim/pucch1_mean_data_0_0.v" \
-  "../../../bd/pucch1/ipshared/d12c/sr_ack_detector.srcs/sources_1/new/sr_ack_detector.v" \
+  "../../../bd/pucch1/ipshared/c1d2/sr_ack_detector.srcs/sources_1/new/sr_ack_detector.v" \
   "../../../bd/pucch1/ip/pucch1_sr_ack_detector_0_0/sim/pucch1_sr_ack_detector_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_xlconstant_0_4/sim/pucch1_xlconstant_0_4.v" \
 -endlib
@@ -247,6 +239,14 @@
   "../../../bd/pucch1/ip/pucch1_xlconcat_0_0/sim/pucch1_xlconcat_0_0.v" \
   "../../../bd/pucch1/ip/pucch1_xlconcat_0_1/sim/pucch1_xlconcat_0_1.v" \
   "../../../bd/pucch1/ip/pucch1_xlconstant_2_1/sim/pucch1_xlconstant_2_1.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/pucch1/ip/pucch1_block_wise_spreading_0_0/block_wise_spreading.srcs/sources_1/ip/spreading_cmpy_0/sim/spreading_cmpy_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/pucch1/ipshared/7c92/block_wise_spreading.srcs/sources_1/new/block_wise_spreading.v" \
+  "../../../bd/pucch1/ip/pucch1_block_wise_spreading_0_0/sim/pucch1_block_wise_spreading_0_0.v" \
+  "../../../bd/pucch1/ip/pucch1_block_wise_spreading_dmrs_0/sim/pucch1_block_wise_spreading_dmrs_0.v" \
   "../../../bd/pucch1/sim/pucch1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

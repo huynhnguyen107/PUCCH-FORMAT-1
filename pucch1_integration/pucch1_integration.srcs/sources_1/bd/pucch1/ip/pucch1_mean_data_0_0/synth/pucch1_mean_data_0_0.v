@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:mean_data:1.0
-// IP Revision: 3
+// IP Revision: 6
 
 (* X_CORE_INFO = "mean_data,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_mean_data_0_0,mean_data,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_mean_data_0_0,mean_data,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mean_data,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch1_mean_data_0_0,mean_data,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mean_data,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_mean_data_0_0 (

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:sr_ack_detector:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "sr_ack_detector,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_sr_ack_detector_0_0,sr_ack_detector,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_sr_ack_detector_0_0,sr_ack_detector,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sr_ack_detector,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch1_sr_ack_detector_0_0,sr_ack_detector,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sr_ack_detector,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_sr_ack_detector_0_0 (
@@ -74,7 +74,7 @@ module pucch1_sr_ack_detector_0_0 (
 input wire clk;
 input wire rst;
 input wire in_valid;
-input wire uci_o_ack;
+input wire [1 : 0] uci_o_ack;
 input wire mean_sinr_valid;
 input wire [63 : 0] mean_sinr;
 input wire payload_valid;

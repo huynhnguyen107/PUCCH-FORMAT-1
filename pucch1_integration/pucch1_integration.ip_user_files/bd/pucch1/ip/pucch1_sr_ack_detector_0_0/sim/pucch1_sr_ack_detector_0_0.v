@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:sr_ack_detector:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -73,7 +73,7 @@ module pucch1_sr_ack_detector_0_0 (
 input wire clk;
 input wire rst;
 input wire in_valid;
-input wire uci_o_ack;
+input wire [1 : 0] uci_o_ack;
 input wire mean_sinr_valid;
 input wire [63 : 0] mean_sinr;
 input wire payload_valid;

@@ -21,7 +21,7 @@ module tb();
 	reg clk;
 	reg rst;
 	reg in_valid;
-	reg uci_o_ack;
+	reg [1:0] uci_o_ack;
 	reg mean_sinr_valid;
 	reg [63:0] mean_sinr;
 	reg payload_valid;

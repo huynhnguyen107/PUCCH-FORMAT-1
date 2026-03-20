@@ -53,7 +53,7 @@ module tb();
 			i_phase_valid <= 0;
 			i_phase <= 0;
 			in_valid <= 1;
-			uci_nSymbs <= 14;
+			uci_nSymbs <= 13;
 			in_uci_flag <= 1;
 		end
 		for (k=0;k<7;k=k+1) begin

@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="50814fs"></ZoomStartTime>
-      <ZoomEndTime time="72935fs"></ZoomEndTime>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="39622fs"></ZoomEndTime>
       <Cursor1Time time="54500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="347"></NameColumnWidth>
-      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="13" />
    <wvobject fp_name="/tb/clk" type="logic">
@@ -32,9 +32,9 @@
       <obj_property name="ElementShortName">in_valid</obj_property>
       <obj_property name="ObjectShortName">in_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/uci_o_ack" type="logic">
-      <obj_property name="ElementShortName">uci_o_ack</obj_property>
-      <obj_property name="ObjectShortName">uci_o_ack</obj_property>
+   <wvobject fp_name="/tb/uci_o_ack" type="array">
+      <obj_property name="ElementShortName">uci_o_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_o_ack[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/mean_sinr_valid" type="logic">
       <obj_property name="ElementShortName">mean_sinr_valid</obj_property>

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="pucch1" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1773879162"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1773879162"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1773879162"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1773879162"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1773975120"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1773975120"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1773975120"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1773975120"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\pucch1_demapping_0_1\pucch1_demapping_0_1.xci" Type="IP">
         <Instance HierarchyPath="demapping_0"/>
@@ -80,7 +80,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\pucch1_de_spread_0_0\pucch1_de_spread_0_0.xci" Type="IP">
-        <Instance HierarchyPath="de_spread_0"/>
+        <Instance HierarchyPath="de_spread_dmrs"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -88,7 +88,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\pucch1_de_spread_1_0\pucch1_de_spread_1_0.xci" Type="IP">
-        <Instance HierarchyPath="de_spread_1"/>
+        <Instance HierarchyPath="de_spread_uci"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -177,14 +177,6 @@
       </File>
       <File Name="ip\pucch1_xlconstant_1_0\pucch1_xlconstant_1_0.xci" Type="IP">
         <Instance HierarchyPath="cyclic_dmrs/xlconstant_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pucch1_uci_dmrs_gen_0_0\pucch1_uci_dmrs_gen_0_0.xci" Type="IP">
-        <Instance HierarchyPath="uci_dmrs_gen_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -311,14 +303,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\pucch1_uci_dmrs_gen_0_1\pucch1_uci_dmrs_gen_0_1.xci" Type="IP">
-        <Instance HierarchyPath="uci_dmrs_gen_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\pucch1_payload_est_SINR_0_0\pucch1_payload_est_SINR_0_0.xci" Type="IP">
         <Instance HierarchyPath="payload_est_SINR_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -369,6 +353,22 @@
       </File>
       <File Name="ip\pucch1_xlconstant_2_1\pucch1_xlconstant_2_1.xci" Type="IP">
         <Instance HierarchyPath="uci_occ"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\pucch1_block_wise_spreading_0_0\pucch1_block_wise_spreading_0_0.xci" Type="IP">
+        <Instance HierarchyPath="block_wise_spreading_uci"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\pucch1_block_wise_spreading_dmrs_0\pucch1_block_wise_spreading_dmrs_0.xci" Type="IP">
+        <Instance HierarchyPath="block_wise_spreading_dmrs"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

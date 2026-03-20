@@ -11,18 +11,16 @@
     "design_tree": {
       "physical_control_0": "",
       "frame_sync_0": "",
-      "ofdm_demodulation_0": "",
       "xlconstant_0": "",
       "xlslice_0": "",
       "frame_sync_1": "",
       "ulcch_parameter_0": "",
       "data_dmrs_selection_0": "",
-      "de_spread_0": "",
-      "de_spread_1": "",
+      "de_spread_dmrs": "",
+      "de_spread_uci": "",
       "cyclic_dmrs": {
         "n_cs_gen_0": "",
         "phase_gen_0": "",
-        "phase_gen_control_0": "",
         "base_sequence_0": "",
         "base_sequence_1": "",
         "nfs_gen_0": "",
@@ -30,12 +28,12 @@
         "com_mul_cyclic_0": "",
         "mcs": "",
         "xlconstant_1": "",
-        "xlconstant_2": ""
+        "xlconstant_2": "",
+        "phase_gen_control_0": ""
       },
       "cyclic_uci": {
         "n_cs_gen_0": "",
         "phase_gen_0": "",
-        "phase_gen_control_0": "",
         "base_sequence_0": "",
         "base_sequence_1": "",
         "nfs_gen_0": "",
@@ -43,22 +41,24 @@
         "com_mul_cyclic_0": "",
         "mcs": "",
         "xlconstant_1": "",
-        "xlconstant_2": ""
+        "xlconstant_2": "",
+        "phase_gen_control_0": ""
       },
       "uci_wise_spreading_0": "",
       "uci_wise_spreading_1": "",
-      "uci_dmrs_gen_0": "",
       "dmrs_wise_spreading_1": "",
       "dmrs_wise_spreading_0": "",
-      "uci_dmrs_gen_1": "",
-      "mean_data_0": "",
-      "sr_ack_detector_0": "",
       "xlconstant_1": "",
       "xlconcat_0": "",
       "xlconcat_1": "",
       "uci_occ": "",
+      "demapping_0": "",
+      "block_wise_spreading_uci": "",
+      "block_wise_spreading_dmrs": "",
+      "ofdm_demodulation_0": "",
+      "mean_data_0": "",
       "payload_est_SINR_0": "",
-      "demapping_0": ""
+      "sr_ack_detector_0": ""
     },
     "ports": {
       "clk": {
@@ -151,10 +151,6 @@
         "vlnv": "xilinx.com:user:frame_sync:1.0",
         "xci_name": "pucch1_frame_sync_0_0"
       },
-      "ofdm_demodulation_0": {
-        "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
-        "xci_name": "pucch1_ofdm_demodulation_0_0"
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "pucch1_xlconstant_0_0",
@@ -194,11 +190,11 @@
         "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
         "xci_name": "pucch1_data_dmrs_selection_0_0"
       },
-      "de_spread_0": {
+      "de_spread_dmrs": {
         "vlnv": "xilinx.com:user:de_spread:1.0",
         "xci_name": "pucch1_de_spread_0_0"
       },
-      "de_spread_1": {
+      "de_spread_uci": {
         "vlnv": "xilinx.com:user:de_spread:1.0",
         "xci_name": "pucch1_de_spread_1_0"
       },
@@ -282,10 +278,6 @@
             "vlnv": "xilinx.com:user:phase_gen:1.0",
             "xci_name": "pucch1_phase_gen_0_0"
           },
-          "phase_gen_control_0": {
-            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
-            "xci_name": "pucch1_phase_gen_control_0_0"
-          },
           "base_sequence_0": {
             "vlnv": "xilinx.com:user:base_sequence:1.0",
             "xci_name": "pucch1_base_sequence_0_0"
@@ -341,6 +333,10 @@
                 "value": "1"
               }
             }
+          },
+          "phase_gen_control_0": {
+            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
+            "xci_name": "pucch1_phase_gen_control_0_0"
           }
         },
         "nets": {
@@ -350,11 +346,11 @@
               "phase_gen_0/clk",
               "nfs_gen_0/clk",
               "n_cs_gen_0/clk",
-              "phase_gen_control_0/clk",
               "ba_seq_control_0/clk",
               "base_sequence_1/clk",
               "base_sequence_0/clk",
-              "com_mul_cyclic_0/clk"
+              "com_mul_cyclic_0/clk",
+              "phase_gen_control_0/clk"
             ]
           },
           "rst_1": {
@@ -363,11 +359,11 @@
               "phase_gen_0/rst",
               "nfs_gen_0/rst",
               "n_cs_gen_0/rst",
-              "phase_gen_control_0/rst",
               "ba_seq_control_0/rst",
               "base_sequence_1/rst",
               "base_sequence_0/rst",
-              "com_mul_cyclic_0/rst"
+              "com_mul_cyclic_0/rst",
+              "phase_gen_control_0/rst"
             ]
           },
           "in_valid_1": {
@@ -376,9 +372,9 @@
               "phase_gen_0/in_valid",
               "nfs_gen_0/in_valid",
               "n_cs_gen_0/in_valid",
-              "phase_gen_control_0/in_valid",
               "base_sequence_1/in_valid",
-              "base_sequence_0/in_valid"
+              "base_sequence_0/in_valid",
+              "phase_gen_control_0/in_valid"
             ]
           },
           "uci_m0_1": {
@@ -540,8 +536,7 @@
           "phase_gen_control_0_o_phase_valid": {
             "ports": [
               "phase_gen_control_0/o_phase_valid",
-              "com_mul_cyclic_0/phase_valid",
-              "com_mul_cyclic_0/phase"
+              "com_mul_cyclic_0/phase_valid"
             ]
           },
           "com_mul_cyclic_0_cyclic": {
@@ -560,6 +555,12 @@
             "ports": [
               "com_mul_cyclic_0/o_wise_enable",
               "wise_enable"
+            ]
+          },
+          "phase_gen_control_0_o_phase": {
+            "ports": [
+              "phase_gen_control_0/o_phase",
+              "com_mul_cyclic_0/phase"
             ]
           }
         }
@@ -644,10 +645,6 @@
             "vlnv": "xilinx.com:user:phase_gen:1.0",
             "xci_name": "pucch1_phase_gen_0_1"
           },
-          "phase_gen_control_0": {
-            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
-            "xci_name": "pucch1_phase_gen_control_0_1"
-          },
           "base_sequence_0": {
             "vlnv": "xilinx.com:user:base_sequence:1.0",
             "xci_name": "pucch1_base_sequence_0_1"
@@ -703,6 +700,10 @@
                 "value": "1"
               }
             }
+          },
+          "phase_gen_control_0": {
+            "vlnv": "xilinx.com:user:phase_gen_control:1.0",
+            "xci_name": "pucch1_phase_gen_control_0_1"
           }
         },
         "nets": {
@@ -712,11 +713,11 @@
               "phase_gen_0/clk",
               "nfs_gen_0/clk",
               "n_cs_gen_0/clk",
-              "phase_gen_control_0/clk",
               "ba_seq_control_0/clk",
               "base_sequence_1/clk",
               "base_sequence_0/clk",
-              "com_mul_cyclic_0/clk"
+              "com_mul_cyclic_0/clk",
+              "phase_gen_control_0/clk"
             ]
           },
           "rst_1": {
@@ -725,11 +726,11 @@
               "phase_gen_0/rst",
               "nfs_gen_0/rst",
               "n_cs_gen_0/rst",
-              "phase_gen_control_0/rst",
               "ba_seq_control_0/rst",
               "base_sequence_1/rst",
               "base_sequence_0/rst",
-              "com_mul_cyclic_0/rst"
+              "com_mul_cyclic_0/rst",
+              "phase_gen_control_0/rst"
             ]
           },
           "in_valid_1": {
@@ -738,9 +739,9 @@
               "phase_gen_0/in_valid",
               "nfs_gen_0/in_valid",
               "n_cs_gen_0/in_valid",
-              "phase_gen_control_0/in_valid",
               "base_sequence_1/in_valid",
-              "base_sequence_0/in_valid"
+              "base_sequence_0/in_valid",
+              "phase_gen_control_0/in_valid"
             ]
           },
           "uci_m0_1": {
@@ -902,8 +903,7 @@
           "phase_gen_control_0_o_phase_valid": {
             "ports": [
               "phase_gen_control_0/o_phase_valid",
-              "com_mul_cyclic_0/phase_valid",
-              "com_mul_cyclic_0/phase"
+              "com_mul_cyclic_0/phase_valid"
             ]
           },
           "com_mul_cyclic_0_cyclic": {
@@ -923,6 +923,12 @@
               "com_mul_cyclic_0/o_wise_enable",
               "wise_enable"
             ]
+          },
+          "phase_gen_control_0_o_phase": {
+            "ports": [
+              "phase_gen_control_0/o_phase",
+              "com_mul_cyclic_0/phase"
+            ]
           }
         }
       },
@@ -934,10 +940,6 @@
         "vlnv": "xilinx.com:user:wise_spreading:1.0",
         "xci_name": "pucch1_wise_spreading_0_1"
       },
-      "uci_dmrs_gen_0": {
-        "vlnv": "xilinx.com:user:uci_dmrs_gen:1.0",
-        "xci_name": "pucch1_uci_dmrs_gen_0_0"
-      },
       "dmrs_wise_spreading_1": {
         "vlnv": "xilinx.com:user:wise_spreading:1.0",
         "xci_name": "pucch1_dmrs_wise_spreading_0_0"
@@ -945,18 +947,6 @@
       "dmrs_wise_spreading_0": {
         "vlnv": "xilinx.com:user:wise_spreading:1.0",
         "xci_name": "pucch1_dmrs_wise_spreading_1_0"
-      },
-      "uci_dmrs_gen_1": {
-        "vlnv": "xilinx.com:user:uci_dmrs_gen:1.0",
-        "xci_name": "pucch1_uci_dmrs_gen_0_1"
-      },
-      "mean_data_0": {
-        "vlnv": "xilinx.com:user:mean_data:1.0",
-        "xci_name": "pucch1_mean_data_0_0"
-      },
-      "sr_ack_detector_0": {
-        "vlnv": "xilinx.com:user:sr_ack_detector:1.0",
-        "xci_name": "pucch1_sr_ack_detector_0_0"
       },
       "xlconstant_1": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
@@ -1024,6 +1014,26 @@
           }
         }
       },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch1_demapping_0_1"
+      },
+      "block_wise_spreading_uci": {
+        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
+        "xci_name": "pucch1_block_wise_spreading_0_0"
+      },
+      "block_wise_spreading_dmrs": {
+        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
+        "xci_name": "pucch1_block_wise_spreading_dmrs_0"
+      },
+      "ofdm_demodulation_0": {
+        "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
+        "xci_name": "pucch1_ofdm_demodulation_0_0"
+      },
+      "mean_data_0": {
+        "vlnv": "xilinx.com:user:mean_data:1.0",
+        "xci_name": "pucch1_mean_data_0_0"
+      },
       "payload_est_SINR_0": {
         "vlnv": "xilinx.com:user:payload_est_SINR:1.0",
         "xci_name": "pucch1_payload_est_SINR_0_0",
@@ -1033,9 +1043,9 @@
           }
         }
       },
-      "demapping_0": {
-        "vlnv": "xilinx.com:user:demapping:1.0",
-        "xci_name": "pucch1_demapping_0_1"
+      "sr_ack_detector_0": {
+        "vlnv": "xilinx.com:user:sr_ack_detector:1.0",
+        "xci_name": "pucch1_sr_ack_detector_0_0"
       }
     },
     "nets": {
@@ -1044,24 +1054,24 @@
           "clk",
           "physical_control_0/clk",
           "frame_sync_0/clk",
-          "ofdm_demodulation_0/clk",
           "frame_sync_1/clk",
           "ulcch_parameter_0/clk",
           "data_dmrs_selection_0/clk",
-          "de_spread_0/clk",
-          "de_spread_1/clk",
+          "de_spread_dmrs/clk",
+          "de_spread_uci/clk",
           "cyclic_dmrs/clk",
           "cyclic_uci/clk",
           "uci_wise_spreading_0/clk",
           "uci_wise_spreading_1/clk",
-          "uci_dmrs_gen_0/clk",
           "dmrs_wise_spreading_0/clk",
           "dmrs_wise_spreading_1/clk",
-          "uci_dmrs_gen_1/clk",
+          "demapping_0/clk",
+          "block_wise_spreading_uci/clk",
+          "block_wise_spreading_dmrs/clk",
+          "ofdm_demodulation_0/clk",
           "mean_data_0/clk",
-          "sr_ack_detector_0/clk",
           "payload_est_SINR_0/clk",
-          "demapping_0/clk"
+          "sr_ack_detector_0/clk"
         ]
       },
       "rst_1": {
@@ -1069,24 +1079,24 @@
           "rst",
           "physical_control_0/rst",
           "frame_sync_0/rst",
-          "ofdm_demodulation_0/rst",
           "frame_sync_1/rst",
           "ulcch_parameter_0/rst",
           "data_dmrs_selection_0/rst",
-          "de_spread_0/rst",
-          "de_spread_1/rst",
+          "de_spread_dmrs/rst",
+          "de_spread_uci/rst",
           "cyclic_dmrs/rst",
           "cyclic_uci/rst",
           "uci_wise_spreading_0/rst",
           "uci_wise_spreading_1/rst",
-          "uci_dmrs_gen_0/rst",
           "dmrs_wise_spreading_0/rst",
           "dmrs_wise_spreading_1/rst",
-          "uci_dmrs_gen_1/rst",
+          "demapping_0/rst",
+          "block_wise_spreading_uci/rst",
+          "block_wise_spreading_dmrs/rst",
+          "ofdm_demodulation_0/rst",
           "mean_data_0/rst",
-          "sr_ack_detector_0/rst",
           "payload_est_SINR_0/rst",
-          "demapping_0/rst"
+          "sr_ack_detector_0/rst"
         ]
       },
       "trigger_05_1": {
@@ -1195,8 +1205,8 @@
           "data_dmrs_selection_0/uci_nsymbols",
           "cyclic_dmrs/uci_nSymbs",
           "cyclic_uci/uci_nSymbs",
-          "mean_data_0/uci_nsymbol",
-          "demapping_0/uci_nsymbols"
+          "demapping_0/uci_nsymbols",
+          "mean_data_0/uci_nsymbol"
         ]
       },
       "ulcch_parameter_0_uci_frist_symbol": {
@@ -1229,10 +1239,10 @@
           "uci_wise_spreading_1/in_valid",
           "dmrs_wise_spreading_0/in_valid",
           "dmrs_wise_spreading_1/in_valid",
+          "demapping_0/uci_valid",
           "mean_data_0/in_valid",
-          "sr_ack_detector_0/in_valid",
           "payload_est_SINR_0/in_valid",
-          "demapping_0/uci_valid"
+          "sr_ack_detector_0/in_valid"
         ]
       },
       "frame_sync_1_sym_idx": {
@@ -1274,25 +1284,25 @@
       "data_dmrs_selection_0_dmrs_valid": {
         "ports": [
           "data_dmrs_selection_0/dmrs_valid",
-          "de_spread_0/rx_data_valid"
+          "de_spread_dmrs/rx_data_valid"
         ]
       },
       "data_dmrs_selection_0_dmrs": {
         "ports": [
           "data_dmrs_selection_0/dmrs",
-          "de_spread_0/rx_data"
+          "de_spread_dmrs/rx_data"
         ]
       },
       "data_dmrs_selection_0_data_valid": {
         "ports": [
           "data_dmrs_selection_0/data_valid",
-          "de_spread_1/rx_data_valid"
+          "de_spread_uci/rx_data_valid"
         ]
       },
       "data_dmrs_selection_0_data": {
         "ports": [
           "data_dmrs_selection_0/data",
-          "de_spread_1/rx_data"
+          "de_spread_uci/rx_data"
         ]
       },
       "ulcch_parameter_0_uci_m0": {
@@ -1350,49 +1360,25 @@
       "cyclic_uci_uci_cyclic_valid": {
         "ports": [
           "cyclic_uci/uci_cyclic_valid",
-          "uci_dmrs_gen_0/cyclic_valid"
+          "block_wise_spreading_uci/cyclic_valid"
         ]
       },
       "cyclic_uci_uci_cyclic": {
         "ports": [
           "cyclic_uci/uci_cyclic",
-          "uci_dmrs_gen_0/cyclic"
+          "block_wise_spreading_uci/cyclic"
         ]
       },
       "dmrs_wise_spreading_0_wi_seq_valid": {
         "ports": [
           "uci_wise_spreading_0/wi_seq_valid",
-          "uci_dmrs_gen_0/wise_valid_0"
+          "block_wise_spreading_uci/wise_valid_0"
         ]
       },
       "dmrs_wise_spreading_0_wi_seq": {
         "ports": [
           "uci_wise_spreading_0/wi_seq",
-          "uci_dmrs_gen_0/wise_0"
-        ]
-      },
-      "dmrs_wise_spreading_1_wi_seq_valid": {
-        "ports": [
-          "uci_wise_spreading_1/wi_seq_valid",
-          "uci_dmrs_gen_0/wise_valid_1"
-        ]
-      },
-      "dmrs_wise_spreading_1_wi_seq": {
-        "ports": [
-          "uci_wise_spreading_1/wi_seq",
-          "uci_dmrs_gen_0/wise_1"
-        ]
-      },
-      "uci_dmrs_gen_0_uci_dmrs_valid": {
-        "ports": [
-          "uci_dmrs_gen_0/uci_dmrs_valid",
-          "de_spread_0/spreading_data_valid"
-        ]
-      },
-      "uci_dmrs_gen_0_uci_dmrs": {
-        "ports": [
-          "uci_dmrs_gen_0/uci_dmrs",
-          "de_spread_0/spreading_data"
+          "block_wise_spreading_uci/wise_0"
         ]
       },
       "cyclic_dmrs_nfs_valid": {
@@ -1429,73 +1415,25 @@
       "cyclic_dmrs_dmrs_cylcic_valid": {
         "ports": [
           "cyclic_dmrs/dmrs_cylcic_valid",
-          "uci_dmrs_gen_1/cyclic_valid"
+          "block_wise_spreading_dmrs/cyclic_valid"
         ]
       },
       "cyclic_dmrs_dmrs_cyclic": {
         "ports": [
           "cyclic_dmrs/dmrs_cyclic",
-          "uci_dmrs_gen_1/cyclic"
+          "block_wise_spreading_dmrs/cyclic"
         ]
       },
       "dmrs_wise_spreading_0_wi_seq_valid1": {
         "ports": [
           "dmrs_wise_spreading_0/wi_seq_valid",
-          "uci_dmrs_gen_1/wise_valid_0"
+          "block_wise_spreading_dmrs/wise_valid_0"
         ]
       },
       "dmrs_wise_spreading_0_wi_seq1": {
         "ports": [
           "dmrs_wise_spreading_0/wi_seq",
-          "uci_dmrs_gen_1/wise_0"
-        ]
-      },
-      "dmrs_wise_spreading_1_wi_seq_valid1": {
-        "ports": [
-          "dmrs_wise_spreading_1/wi_seq_valid",
-          "uci_dmrs_gen_1/wise_valid_1"
-        ]
-      },
-      "dmrs_wise_spreading_1_wi_seq1": {
-        "ports": [
-          "dmrs_wise_spreading_1/wi_seq",
-          "uci_dmrs_gen_1/wise_1"
-        ]
-      },
-      "uci_dmrs_gen_1_uci_dmrs_valid": {
-        "ports": [
-          "uci_dmrs_gen_1/uci_dmrs_valid",
-          "de_spread_1/spreading_data_valid"
-        ]
-      },
-      "uci_dmrs_gen_1_uci_dmrs": {
-        "ports": [
-          "uci_dmrs_gen_1/uci_dmrs",
-          "de_spread_1/spreading_data"
-        ]
-      },
-      "de_spread_0_de_spreading_data_valid": {
-        "ports": [
-          "de_spread_0/de_spreading_data_valid",
-          "mean_data_0/despread_uci_valid"
-        ]
-      },
-      "de_spread_0_de_spreading_data": {
-        "ports": [
-          "de_spread_0/de_spreading_data",
-          "mean_data_0/despread_uci"
-        ]
-      },
-      "de_spread_1_de_spreading_data_valid": {
-        "ports": [
-          "de_spread_1/de_spreading_data_valid",
-          "mean_data_0/despread_dmrs_valid"
-        ]
-      },
-      "de_spread_1_de_spreading_data": {
-        "ports": [
-          "de_spread_1/de_spreading_data",
-          "mean_data_0/despread_dmrs"
+          "block_wise_spreading_dmrs/wise_0"
         ]
       },
       "mean_data_0_o_mean_data_valid": {
@@ -1606,14 +1544,86 @@
       "ulcch_parameter_0_uci_ack": {
         "ports": [
           "ulcch_parameter_0/uci_ack",
-          "sr_ack_detector_0/uci_o_ack",
-          "payload_est_SINR_0/uci_modulation"
+          "payload_est_SINR_0/uci_modulation",
+          "sr_ack_detector_0/uci_o_ack"
         ]
       },
       "frame_sync_1_slot_idx": {
         "ports": [
           "frame_sync_1/slot_idx",
           "demapping_0/fr_slot"
+        ]
+      },
+      "block_wise_spreading_uci_spreading_valid": {
+        "ports": [
+          "block_wise_spreading_dmrs/spreading_valid",
+          "de_spread_dmrs/spreading_data_valid"
+        ]
+      },
+      "block_wise_spreading_uci_spreading": {
+        "ports": [
+          "block_wise_spreading_dmrs/spreading",
+          "de_spread_dmrs/spreading_data"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq1": {
+        "ports": [
+          "dmrs_wise_spreading_1/wi_seq",
+          "block_wise_spreading_dmrs/wise_1"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq_valid1": {
+        "ports": [
+          "dmrs_wise_spreading_1/wi_seq_valid",
+          "block_wise_spreading_dmrs/wise_valid_1"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq_valid": {
+        "ports": [
+          "uci_wise_spreading_1/wi_seq_valid",
+          "block_wise_spreading_uci/wise_valid_1"
+        ]
+      },
+      "dmrs_wise_spreading_1_wi_seq": {
+        "ports": [
+          "uci_wise_spreading_1/wi_seq",
+          "block_wise_spreading_uci/wise_1"
+        ]
+      },
+      "block_wise_spreading_uci_spreading_valid1": {
+        "ports": [
+          "block_wise_spreading_uci/spreading_valid",
+          "de_spread_uci/spreading_data_valid"
+        ]
+      },
+      "block_wise_spreading_uci_spreading1": {
+        "ports": [
+          "block_wise_spreading_uci/spreading",
+          "de_spread_uci/spreading_data"
+        ]
+      },
+      "de_spread_dmrs_de_spreading_data": {
+        "ports": [
+          "de_spread_dmrs/de_spreading_data",
+          "mean_data_0/despread_dmrs"
+        ]
+      },
+      "de_spread_uci_de_spreading_data_valid": {
+        "ports": [
+          "de_spread_uci/de_spreading_data_valid",
+          "mean_data_0/despread_uci_valid"
+        ]
+      },
+      "de_spread_uci_de_spreading_data": {
+        "ports": [
+          "de_spread_uci/de_spreading_data",
+          "mean_data_0/despread_uci"
+        ]
+      },
+      "de_spread_dmrs_de_spreading_data_valid": {
+        "ports": [
+          "de_spread_dmrs/de_spreading_data_valid",
+          "mean_data_0/despread_dmrs_valid"
         ]
       }
     }

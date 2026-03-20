@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:payload_est_SINR:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 (* X_CORE_INFO = "payload_est_SINR,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_payload_est_SINR_0_0,payload_est_SINR,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_payload_est_SINR_0_0,payload_est_SINR,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=payload_est_SINR,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX=4}" *)
+(* CORE_GENERATION_INFO = "pucch1_payload_est_SINR_0_0,payload_est_SINR,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=payload_est_SINR,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX=4}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_payload_est_SINR_0_0 (

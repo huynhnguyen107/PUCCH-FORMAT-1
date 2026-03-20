@@ -65,7 +65,7 @@ module tb(
 			in_valid <=0;
 			uci_modulation <=0;
 			mean_data_valid <=1;
-			mean_data <={8{17'd114688, 17'd114688}};
+			mean_data <={8{17'd98304, 17'd32768}};
 			sinr_valid <=1;
 			sinr <={8{64'd98304}};
 		end

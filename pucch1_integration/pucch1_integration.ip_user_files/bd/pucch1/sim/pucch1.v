@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Mar 18 20:12:37 2026
+//Date        : Thu Mar 19 22:51:00 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch1.bd
 //Design      : pucch1
@@ -61,6 +61,7 @@ module cyclic_dmrs_imp_1IXJDMF
   wire nfs_gen_0_nfs_valid;
   wire [31:0]phase_gen_0_phase;
   wire phase_gen_0_phase_valid;
+  wire [31:0]phase_gen_control_0_o_phase;
   wire phase_gen_control_0_o_phase_valid;
   wire phase_gen_control_0_start_en;
   wire rst_1;
@@ -131,7 +132,7 @@ module cyclic_dmrs_imp_1IXJDMF
         .cyclic(com_mul_cyclic_0_cyclic),
         .cyclic_valid(com_mul_cyclic_0_cyclic_valid),
         .o_wise_enable(com_mul_cyclic_0_o_wise_enable),
-        .phase({phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid}),
+        .phase(phase_gen_control_0_o_phase),
         .phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1));
   pucch1_xlconstant_0_1 mcs
@@ -172,6 +173,7 @@ module cyclic_dmrs_imp_1IXJDMF
         .i_phase_valid(phase_gen_0_phase_valid),
         .in_uci_flag(xlconstant_1_dout),
         .in_valid(in_valid_1),
+        .o_phase(phase_gen_control_0_o_phase),
         .o_phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1),
         .start_en(phase_gen_control_0_start_en),
@@ -234,6 +236,7 @@ module cyclic_uci_imp_LVK04D
   wire nfs_gen_0_nfs_valid;
   wire [31:0]phase_gen_0_phase;
   wire phase_gen_0_phase_valid;
+  wire [31:0]phase_gen_control_0_o_phase;
   wire phase_gen_control_0_o_phase_valid;
   wire phase_gen_control_0_start_en;
   wire rst_1;
@@ -304,7 +307,7 @@ module cyclic_uci_imp_LVK04D
         .cyclic(com_mul_cyclic_0_cyclic),
         .cyclic_valid(com_mul_cyclic_0_cyclic_valid),
         .o_wise_enable(com_mul_cyclic_0_o_wise_enable),
-        .phase({phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid,phase_gen_control_0_o_phase_valid}),
+        .phase(phase_gen_control_0_o_phase),
         .phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1));
   pucch1_xlconstant_0_3 mcs
@@ -345,6 +348,7 @@ module cyclic_uci_imp_LVK04D
         .i_phase_valid(phase_gen_0_phase_valid),
         .in_uci_flag(xlconstant_1_dout),
         .in_valid(in_valid_1),
+        .o_phase(phase_gen_control_0_o_phase),
         .o_phase_valid(phase_gen_control_0_o_phase_valid),
         .rst(rst_1),
         .start_en(phase_gen_control_0_start_en),
@@ -387,6 +391,10 @@ module pucch1
   input trigger_05;
 
   wire [255:0]ant_input_1;
+  wire [31:0]block_wise_spreading_uci_spreading;
+  wire [31:0]block_wise_spreading_uci_spreading1;
+  wire block_wise_spreading_uci_spreading_valid;
+  wire block_wise_spreading_uci_spreading_valid1;
   wire clk_1;
   wire [31:0]cyclic_dmrs_dmrs_cyclic;
   wire cyclic_dmrs_dmrs_cylcic_valid;
@@ -404,10 +412,10 @@ module pucch1
   wire data_dmrs_selection_0_data_valid;
   wire [31:0]data_dmrs_selection_0_dmrs;
   wire data_dmrs_selection_0_dmrs_valid;
-  wire [31:0]de_spread_0_de_spreading_data;
-  wire de_spread_0_de_spreading_data_valid;
-  wire [31:0]de_spread_1_de_spreading_data;
-  wire de_spread_1_de_spreading_data_valid;
+  wire [31:0]de_spread_dmrs_de_spreading_data;
+  wire de_spread_dmrs_de_spreading_data_valid;
+  wire [31:0]de_spread_uci_de_spreading_data;
+  wire de_spread_uci_de_spreading_data_valid;
   wire demapping_0_resoureset_valid;
   wire dmrs_wise_spreading_0_o_enable;
   wire dmrs_wise_spreading_0_o_enable1;
@@ -449,10 +457,6 @@ module pucch1
   wire sr_ack_detector_0_sr;
   wire stop_trigger_1;
   wire trigger_05_1;
-  wire [31:0]uci_dmrs_gen_0_uci_dmrs;
-  wire uci_dmrs_gen_0_uci_dmrs_valid;
-  wire [31:0]uci_dmrs_gen_1_uci_dmrs;
-  wire uci_dmrs_gen_1_uci_dmrs_valid;
   wire [3:0]uci_occ_dout;
   wire [7:0]ulcch_parameter_0_group_hopping;
   wire [15:0]ulcch_parameter_0_hopping_ID;
@@ -485,6 +489,28 @@ module pucch1
   assign sr = sr_ack_detector_0_sr;
   assign stop_trigger_1 = stop_trigger;
   assign trigger_05_1 = trigger_05;
+  pucch1_block_wise_spreading_dmrs_0 block_wise_spreading_dmrs
+       (.clk(clk_1),
+        .cyclic(cyclic_dmrs_dmrs_cyclic),
+        .cyclic_valid(cyclic_dmrs_dmrs_cylcic_valid),
+        .rst(rst_1),
+        .spreading(block_wise_spreading_uci_spreading),
+        .spreading_valid(block_wise_spreading_uci_spreading_valid),
+        .wise_0(dmrs_wise_spreading_0_wi_seq1),
+        .wise_1(dmrs_wise_spreading_1_wi_seq1),
+        .wise_valid_0(dmrs_wise_spreading_0_wi_seq_valid1),
+        .wise_valid_1(dmrs_wise_spreading_1_wi_seq_valid1));
+  pucch1_block_wise_spreading_0_0 block_wise_spreading_uci
+       (.clk(clk_1),
+        .cyclic(cyclic_uci_uci_cyclic),
+        .cyclic_valid(cyclic_uci_uci_cyclic_valid),
+        .rst(rst_1),
+        .spreading(block_wise_spreading_uci_spreading1),
+        .spreading_valid(block_wise_spreading_uci_spreading_valid1),
+        .wise_0(dmrs_wise_spreading_0_wi_seq),
+        .wise_1(dmrs_wise_spreading_1_wi_seq),
+        .wise_valid_0(dmrs_wise_spreading_0_wi_seq_valid),
+        .wise_valid_1(dmrs_wise_spreading_1_wi_seq_valid));
   cyclic_dmrs_imp_1IXJDMF cyclic_dmrs
        (.clk(clk_1),
         .dmrs_cyclic(cyclic_dmrs_dmrs_cyclic),
@@ -531,24 +557,24 @@ module pucch1
         .rst(rst_1),
         .uci_nsymbols(ulcch_parameter_0_uci_symbol[3:0]),
         .uci_valid(ulcch_parameter_0_pucch_valid));
-  pucch1_de_spread_0_0 de_spread_0
+  pucch1_de_spread_0_0 de_spread_dmrs
        (.clk(clk_1),
-        .de_spreading_data(de_spread_0_de_spreading_data),
-        .de_spreading_data_valid(de_spread_0_de_spreading_data_valid),
+        .de_spreading_data(de_spread_dmrs_de_spreading_data),
+        .de_spreading_data_valid(de_spread_dmrs_de_spreading_data_valid),
         .rst(rst_1),
         .rx_data(data_dmrs_selection_0_dmrs),
         .rx_data_valid(data_dmrs_selection_0_dmrs_valid),
-        .spreading_data(uci_dmrs_gen_0_uci_dmrs),
-        .spreading_data_valid(uci_dmrs_gen_0_uci_dmrs_valid));
-  pucch1_de_spread_1_0 de_spread_1
+        .spreading_data(block_wise_spreading_uci_spreading),
+        .spreading_data_valid(block_wise_spreading_uci_spreading_valid));
+  pucch1_de_spread_1_0 de_spread_uci
        (.clk(clk_1),
-        .de_spreading_data(de_spread_1_de_spreading_data),
-        .de_spreading_data_valid(de_spread_1_de_spreading_data_valid),
+        .de_spreading_data(de_spread_uci_de_spreading_data),
+        .de_spreading_data_valid(de_spread_uci_de_spreading_data_valid),
         .rst(rst_1),
         .rx_data(data_dmrs_selection_0_data),
         .rx_data_valid(data_dmrs_selection_0_data_valid),
-        .spreading_data(uci_dmrs_gen_1_uci_dmrs),
-        .spreading_data_valid(uci_dmrs_gen_1_uci_dmrs_valid));
+        .spreading_data(block_wise_spreading_uci_spreading1),
+        .spreading_data_valid(block_wise_spreading_uci_spreading_valid1));
   pucch1_demapping_0_1 demapping_0
        (.clk(clk_1),
         .fr_data_valid(frame_sync_1_valid_out),
@@ -601,10 +627,10 @@ module pucch1
         .valid_out(frame_sync_1_valid_out));
   pucch1_mean_data_0_0 mean_data_0
        (.clk(clk_1),
-        .despread_dmrs(de_spread_1_de_spreading_data),
-        .despread_dmrs_valid(de_spread_1_de_spreading_data_valid),
-        .despread_uci(de_spread_0_de_spreading_data),
-        .despread_uci_valid(de_spread_0_de_spreading_data_valid),
+        .despread_dmrs(de_spread_dmrs_de_spreading_data),
+        .despread_dmrs_valid(de_spread_dmrs_de_spreading_data_valid),
+        .despread_uci(de_spread_uci_de_spreading_data),
+        .despread_uci_valid(de_spread_uci_de_spreading_data_valid),
         .in_valid(ulcch_parameter_0_pucch_valid),
         .o_mean_data(mean_data_0_o_mean_data),
         .o_mean_data_valid(mean_data_0_o_mean_data_valid),
@@ -654,29 +680,7 @@ module pucch1
         .rst(rst_1),
         .sinr_threshold(xlconstant_1_dout),
         .sr(sr_ack_detector_0_sr),
-        .uci_o_ack(ulcch_parameter_0_uci_ack[0]));
-  pucch1_uci_dmrs_gen_0_0 uci_dmrs_gen_0
-       (.clk(clk_1),
-        .cyclic(cyclic_uci_uci_cyclic),
-        .cyclic_valid(cyclic_uci_uci_cyclic_valid),
-        .rst(rst_1),
-        .uci_dmrs(uci_dmrs_gen_0_uci_dmrs),
-        .uci_dmrs_valid(uci_dmrs_gen_0_uci_dmrs_valid),
-        .wise_0(dmrs_wise_spreading_0_wi_seq),
-        .wise_1(dmrs_wise_spreading_1_wi_seq),
-        .wise_valid_0(dmrs_wise_spreading_0_wi_seq_valid),
-        .wise_valid_1(dmrs_wise_spreading_1_wi_seq_valid));
-  pucch1_uci_dmrs_gen_0_1 uci_dmrs_gen_1
-       (.clk(clk_1),
-        .cyclic(cyclic_dmrs_dmrs_cyclic),
-        .cyclic_valid(cyclic_dmrs_dmrs_cylcic_valid),
-        .rst(rst_1),
-        .uci_dmrs(uci_dmrs_gen_1_uci_dmrs),
-        .uci_dmrs_valid(uci_dmrs_gen_1_uci_dmrs_valid),
-        .wise_0(dmrs_wise_spreading_0_wi_seq1),
-        .wise_1(dmrs_wise_spreading_1_wi_seq1),
-        .wise_valid_0(dmrs_wise_spreading_0_wi_seq_valid1),
-        .wise_valid_1(dmrs_wise_spreading_1_wi_seq_valid1));
+        .uci_o_ack(ulcch_parameter_0_uci_ack[1:0]));
   pucch1_xlconstant_2_1 uci_occ
        (.dout(uci_occ_dout));
   pucch1_wise_spreading_0_0 uci_wise_spreading_0
