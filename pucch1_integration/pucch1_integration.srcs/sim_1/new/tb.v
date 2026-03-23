@@ -46,14 +46,14 @@ module tb();
 	integer n;
 	//read uci_param
 	initial begin
-		$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case1/uci_param.mem", uci_param_mem);
+		$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case3/uci_param.mem", uci_param_mem);
 	end
 	// assign wire_pucch_parameter = (idx > 1) ? uci_param_mem[0] : 512'd0;
 	assign wire_pucch_parameter = uci_param_mem[0];
 	//read I, Q
 	initial begin
-	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case1/I.mem", I_mem);
-	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case1/Q.mem", Q_mem);
+	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case3/I.mem", I_mem);
+	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case3/Q.mem", Q_mem);
 	end
 	assign ant_input = {8{i_imag_pucch_ofdm, i_real_pucch_ofdm}};
 	//call instance
@@ -131,7 +131,7 @@ module tb();
 					i_imag_pucch_ofdm <= Q_mem[idx-6];
 					end
 				//valid at slot 5,10,15,0....
-				if (idx % (61440*5)==0 & idx>0) begin
+				if (idx % (1228800-61440)==0 & idx>0) begin //next valid is slot 13 for data in slot 0 in next frame
 					i_group_hopping <=0;
 					i_hopping_ID <=0;
 					i_config_valid <=1;
