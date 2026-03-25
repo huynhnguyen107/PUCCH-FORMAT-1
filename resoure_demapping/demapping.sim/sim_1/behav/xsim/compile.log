@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.srcs/sources_1/new/demapping.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demapping
+INFO: [VRFC 10-2458] undeclared symbol d_resource_set, assumed default net type wire [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.srcs/sources_1/new/demapping.v:95]
+INFO: [VRFC 10-311] analyzing module delay_N
+INFO: [VRFC 10-311] analyzing module rasing_edge
+INFO: [VRFC 10-311] analyzing module extend_valid_new
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

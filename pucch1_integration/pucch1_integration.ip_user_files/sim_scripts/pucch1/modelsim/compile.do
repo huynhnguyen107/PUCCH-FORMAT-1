@@ -61,7 +61,7 @@ vcom -work xpm -64 -93 \
 "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 -incr \
-"../../../bd/pucch1/ipshared/aca9/demapping.srcs/sources_1/new/demapping.v" \
+"../../../bd/pucch1/ipshared/bc24/demapping.srcs/sources_1/new/demapping.v" \
 "../../../bd/pucch1/ip/pucch1_demapping_0_1/sim/pucch1_demapping_0_1.v" \
 "../../../bd/pucch1/ipshared/fcfe/physical_control.srcs/sources_1/new/physical_control.v" \
 "../../../bd/pucch1/ip/pucch1_physical_control_0_0/sim/pucch1_physical_control_0_0.v" \

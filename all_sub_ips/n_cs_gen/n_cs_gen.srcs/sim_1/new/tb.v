@@ -57,7 +57,7 @@ module tb();
 			uci_NID <= 0;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_nSymbs <= 11;
+			uci_nSymbs <= 13;
 		end
 		@(posedge clk) begin
 			in_uci_flag <= 0;

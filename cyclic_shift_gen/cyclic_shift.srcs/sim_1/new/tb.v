@@ -34,6 +34,7 @@ module tb( );
 	reg  uci_intra_fr_hop;
 	wire [31:0] cyclic;
 	wire cyclic_valid;
+	integer i=0;
 	//call instance
 	 cyclic_gen cyclic_gen_i
 	   (.clk(clk),
@@ -72,21 +73,46 @@ module tb( );
 			uci_valid <= 1;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_m0 <= 0;
-			uci_nSymbs <= 14;
+			uci_m0 <= 1;
+			uci_nSymbs <= 12;
 			uci_grouphopping <= 0;
 			uci_intra_fr_hop <= 1;
 			uci_NID <= 0;
 		end
-			@(posedge clk) begin
-			uci_valid <= 0;
+		for (i=0;i<1000;i=i+1) begin
+				@(posedge clk) begin
+				uci_valid <= 0;
+				uci_slot <= 0;
+				uci_first_symbol <= 0;
+				uci_m0 <= 0;
+				uci_nSymbs <= 0;
+				uci_grouphopping <= 0;
+				uci_intra_fr_hop <= 0;
+				uci_NID <= 0;
+			end
+		end
+		@(posedge clk) begin
+			uci_valid <= 1;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_m0 <= 0;
-			uci_nSymbs <= 0;
+			uci_m0 <= 1;
+			uci_nSymbs <= 12;
 			uci_grouphopping <= 0;
-			uci_intra_fr_hop <= 0;
+			uci_intra_fr_hop <= 1;
 			uci_NID <= 0;
 		end
+		for (i=0;i<1000;i=i+1) begin
+				@(posedge clk) begin
+				uci_valid <= 0;
+				uci_slot <= 0;
+				uci_first_symbol <= 0;
+				uci_m0 <= 0;
+				uci_nSymbs <= 0;
+				uci_grouphopping <= 0;
+				uci_intra_fr_hop <= 0;
+				uci_NID <= 0;
+			end
+		end
+			
 	end
 endmodule

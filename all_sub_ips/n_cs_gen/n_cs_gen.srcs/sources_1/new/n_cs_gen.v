@@ -135,9 +135,9 @@ module n_cs_gen(
 	  .empty()  // output wire empty
 	);
 	//find max symbols
-	assign max_symbol = reg_in_uci_flag ? (reg_uci_nSymbs>>1) -1:(reg_uci_nSymbs>>1);
+	assign max_symbol = reg_in_uci_flag ? (reg_uci_nSymbs>>1):(reg_uci_nSymbs>>1)+reg_uci_nSymbs[0];
 	assign rd_en_1 = (cnt_fifo==1)|(cnt_fifo==14)|(cnt_fifo==27)|(cnt_fifo==40)|(cnt_fifo==53)|(cnt_fifo==66)|(cnt_fifo==79);
-	assign rd_en_2 = (cnt_read <=max_symbol)&rd_en_1;
+	assign rd_en_2 = (cnt_read <max_symbol)&rd_en_1;
 	//control rd_en
 	always @(posedge clk) begin
 		if (rst) begin

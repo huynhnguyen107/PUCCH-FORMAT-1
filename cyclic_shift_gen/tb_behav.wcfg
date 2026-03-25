@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="149841fs"></ZoomEndTime>
-      <Cursor1Time time="64614fs"></Cursor1Time>
+      <ZoomStartTime time="47980fs"></ZoomStartTime>
+      <ZoomEndTime time="58891fs"></ZoomEndTime>
+      <Cursor1Time time="50500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="347"></NameColumnWidth>
-      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="69" />
+   <WVObjectSize size="144" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -666,6 +666,150 @@
       <obj_property name="ElementShortName">basequence[31:0]</obj_property>
       <obj_property name="ObjectShortName">basequence[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="vbus247" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus230" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/basequence[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase_valid" type="logic">
       <obj_property name="ElementShortName">phase_valid</obj_property>
       <obj_property name="ObjectShortName">phase_valid</obj_property>
@@ -674,6 +818,150 @@
       <obj_property name="ElementShortName">phase[31:0]</obj_property>
       <obj_property name="ObjectShortName">phase[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="vbus313" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus296" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/phase[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic_valid" type="logic">
       <obj_property name="ElementShortName">cyclic_valid</obj_property>
       <obj_property name="ObjectShortName">cyclic_valid</obj_property>
@@ -681,78 +969,6 @@
    <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic" type="array">
       <obj_property name="ElementShortName">cyclic[31:0]</obj_property>
       <obj_property name="ObjectShortName">cyclic[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="vbus719" type="vbus">
-      <obj_property name="label">Q</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[31]" type="logic">
-         <obj_property name="ElementShortName">[31]</obj_property>
-         <obj_property name="ObjectShortName">[31]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[30]" type="logic">
-         <obj_property name="ElementShortName">[30]</obj_property>
-         <obj_property name="ObjectShortName">[30]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[29]" type="logic">
-         <obj_property name="ElementShortName">[29]</obj_property>
-         <obj_property name="ObjectShortName">[29]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[28]" type="logic">
-         <obj_property name="ElementShortName">[28]</obj_property>
-         <obj_property name="ObjectShortName">[28]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[27]" type="logic">
-         <obj_property name="ElementShortName">[27]</obj_property>
-         <obj_property name="ObjectShortName">[27]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[26]" type="logic">
-         <obj_property name="ElementShortName">[26]</obj_property>
-         <obj_property name="ObjectShortName">[26]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[25]" type="logic">
-         <obj_property name="ElementShortName">[25]</obj_property>
-         <obj_property name="ObjectShortName">[25]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[24]" type="logic">
-         <obj_property name="ElementShortName">[24]</obj_property>
-         <obj_property name="ObjectShortName">[24]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[23]" type="logic">
-         <obj_property name="ElementShortName">[23]</obj_property>
-         <obj_property name="ObjectShortName">[23]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[22]" type="logic">
-         <obj_property name="ElementShortName">[22]</obj_property>
-         <obj_property name="ObjectShortName">[22]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[21]" type="logic">
-         <obj_property name="ElementShortName">[21]</obj_property>
-         <obj_property name="ObjectShortName">[21]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[20]" type="logic">
-         <obj_property name="ElementShortName">[20]</obj_property>
-         <obj_property name="ObjectShortName">[20]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[19]" type="logic">
-         <obj_property name="ElementShortName">[19]</obj_property>
-         <obj_property name="ObjectShortName">[19]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[18]" type="logic">
-         <obj_property name="ElementShortName">[18]</obj_property>
-         <obj_property name="ObjectShortName">[18]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[17]" type="logic">
-         <obj_property name="ElementShortName">[17]</obj_property>
-         <obj_property name="ObjectShortName">[17]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[16]" type="logic">
-         <obj_property name="ElementShortName">[16]</obj_property>
-         <obj_property name="ObjectShortName">[16]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject fp_name="vbus736" type="vbus">
       <obj_property name="label">I</obj_property>
@@ -826,6 +1042,78 @@
          <obj_property name="ObjectShortName">[0]</obj_property>
       </wvobject>
    </wvobject>
+   <wvobject fp_name="vbus719" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/com_mul_cyclic_0/inst/cyclic[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase" type="array">
       <obj_property name="ElementShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
       <obj_property name="ObjectShortName">phase_gen_control_0_o_phase[31:0]</obj_property>
@@ -841,5 +1129,566 @@
    <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0_o_phase_valid" type="logic">
       <obj_property name="ElementShortName">phase_gen_control_0_o_phase_valid</obj_property>
       <obj_property name="ObjectShortName">phase_gen_control_0_o_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase_valid" type="logic">
+      <obj_property name="ElementShortName">i_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">i_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase" type="array">
+      <obj_property name="ElementShortName">i_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus389" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus372" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/i_phase[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase_valid" type="logic">
+      <obj_property name="ElementShortName">o_phase_valid</obj_property>
+      <obj_property name="ObjectShortName">o_phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase" type="array">
+      <obj_property name="ElementShortName">o_phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus455" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus438" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/o_phase[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_control_0/start_en" type="logic">
+      <obj_property name="ElementShortName">start_en</obj_property>
+      <obj_property name="ObjectShortName">start_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/uci_m0" type="array">
+      <obj_property name="ElementShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_m0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/uci_mcs" type="array">
+      <obj_property name="ElementShortName">uci_mcs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_mcs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/n_cs_valid" type="logic">
+      <obj_property name="ElementShortName">n_cs_valid</obj_property>
+      <obj_property name="ObjectShortName">n_cs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/ncs" type="array">
+      <obj_property name="ElementShortName">ncs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/phase_valid" type="logic">
+      <obj_property name="ElementShortName">phase_valid</obj_property>
+      <obj_property name="ObjectShortName">phase_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/phase" type="array">
+      <obj_property name="ElementShortName">phase[31:0]</obj_property>
+      <obj_property name="ObjectShortName">phase[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/reg_uci_m0" type="array">
+      <obj_property name="ElementShortName">reg_uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_m0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/reg_uci_mcs" type="array">
+      <obj_property name="ElementShortName">reg_uci_mcs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_mcs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/total_m" type="array">
+      <obj_property name="ElementShortName">total_m[4:0]</obj_property>
+      <obj_property name="ObjectShortName">total_m[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/pre_alpha" type="array">
+      <obj_property name="ElementShortName">pre_alpha[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_alpha[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/pre_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">pre_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">pre_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/alpha" type="array">
+      <obj_property name="ElementShortName">alpha[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alpha[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/alpha_valid" type="logic">
+      <obj_property name="ElementShortName">alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/dis_alpha" type="array">
+      <obj_property name="ElementShortName">dis_alpha[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dis_alpha[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/dis_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">dis_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">dis_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/nomal_alpha" type="array">
+      <obj_property name="ElementShortName">nomal_alpha[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nomal_alpha[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/nomal_alpha_valid" type="logic">
+      <obj_property name="ElementShortName">nomal_alpha_valid</obj_property>
+      <obj_property name="ObjectShortName">nomal_alpha_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/I" type="array">
+      <obj_property name="ElementShortName">I[15:0]</obj_property>
+      <obj_property name="ObjectShortName">I[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/phase_gen_0/inst/Q" type="array">
+      <obj_property name="ElementShortName">Q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/uci_NID" type="array">
+      <obj_property name="ElementShortName">uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_NID[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nSymbs[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_valid" type="logic">
+      <obj_property name="ElementShortName">ncs_valid</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs" type="array">
+      <obj_property name="ElementShortName">ncs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_in_uci_flag" type="logic">
+      <obj_property name="ElementShortName">reg_in_uci_flag</obj_property>
+      <obj_property name="ObjectShortName">reg_in_uci_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_NID" type="array">
+      <obj_property name="ElementShortName">reg_uci_NID[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_NID[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_slot" type="array">
+      <obj_property name="ElementShortName">reg_uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_slot[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_first_symbol" type="array">
+      <obj_property name="ElementShortName">reg_uci_first_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_first_symbol[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_nSymbs" type="array">
+      <obj_property name="ElementShortName">reg_uci_nSymbs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_nSymbs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_m0" type="array">
+      <obj_property name="ElementShortName">reg_uci_m0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_m0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/reg_uci_ack" type="array">
+      <obj_property name="ElementShortName">reg_uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_uci_ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/seq_start" type="array">
+      <obj_property name="ElementShortName">seq_start[9:0]</obj_property>
+      <obj_property name="ObjectShortName">seq_start[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/slot_value" type="array">
+      <obj_property name="ElementShortName">slot_value[8:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_value[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/symbol_value" type="array">
+      <obj_property name="ElementShortName">symbol_value[4:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_value[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/d_in_valid" type="logic">
+      <obj_property name="ElementShortName">d_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/d2_in_valid" type="logic">
+      <obj_property name="ElementShortName">d2_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/d3_in_valid" type="logic">
+      <obj_property name="ElementShortName">d3_in_valid</obj_property>
+      <obj_property name="ObjectShortName">d3_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_tmp" type="array">
+      <obj_property name="ElementShortName">ncs_tmp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_tmp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_valid_tmp" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/cnt_ncs_tmp" type="array">
+      <obj_property name="ElementShortName">cnt_ncs_tmp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_ncs_tmp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_range" type="logic">
+      <obj_property name="ElementShortName">ncs_range</obj_property>
+      <obj_property name="ObjectShortName">ncs_range</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_fifo" type="array">
+      <obj_property name="ElementShortName">ncs_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ncs_fifo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/ncs_valid_fifo" type="logic">
+      <obj_property name="ElementShortName">ncs_valid_fifo</obj_property>
+      <obj_property name="ObjectShortName">ncs_valid_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/cnt_fifo_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/cnt_fifo" type="array">
+      <obj_property name="ElementShortName">cnt_fifo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_fifo[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/cnt_read" type="array">
+      <obj_property name="ElementShortName">cnt_read[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_read[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/max_symbol" type="array">
+      <obj_property name="ElementShortName">max_symbol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">max_symbol[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/rd_en_1" type="logic">
+      <obj_property name="ElementShortName">rd_en_1</obj_property>
+      <obj_property name="ObjectShortName">rd_en_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cyclic_gen_i/n_cs_gen_0/inst/rd_en_2" type="logic">
+      <obj_property name="ElementShortName">rd_en_2</obj_property>
+      <obj_property name="ObjectShortName">rd_en_2</obj_property>
    </wvobject>
 </wave_config>

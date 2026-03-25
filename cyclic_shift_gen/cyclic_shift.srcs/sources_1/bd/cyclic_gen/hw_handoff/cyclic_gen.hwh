@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 19:17:12 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 24 21:41:32 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="cyclic_gen" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -8,41 +8,41 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="nfs_gen_0" PORT="clk"/>
         <CONNECTION INSTANCE="ba_seq_control_0" PORT="clk"/>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="clk"/>
         <CONNECTION INSTANCE="phase_gen_0" PORT="clk"/>
         <CONNECTION INSTANCE="base_sequence_0" PORT="clk"/>
         <CONNECTION INSTANCE="base_sequence_1" PORT="clk"/>
-        <CONNECTION INSTANCE="phase_gen_control_0" PORT="clk"/>
         <CONNECTION INSTANCE="com_mul_cyclic_0" PORT="clk"/>
+        <CONNECTION INSTANCE="phase_gen_control_0" PORT="clk"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
         <CONNECTION INSTANCE="nfs_gen_0" PORT="rst"/>
         <CONNECTION INSTANCE="ba_seq_control_0" PORT="rst"/>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="rst"/>
         <CONNECTION INSTANCE="phase_gen_0" PORT="rst"/>
         <CONNECTION INSTANCE="base_sequence_0" PORT="rst"/>
         <CONNECTION INSTANCE="base_sequence_1" PORT="rst"/>
-        <CONNECTION INSTANCE="phase_gen_control_0" PORT="rst"/>
         <CONNECTION INSTANCE="com_mul_cyclic_0" PORT="rst"/>
+        <CONNECTION INSTANCE="phase_gen_control_0" PORT="rst"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="uci_valid" SIGIS="undef" SIGNAME="External_Ports_uci_valid">
       <CONNECTIONS>
         <CONNECTION INSTANCE="nfs_gen_0" PORT="in_valid"/>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="in_valid"/>
         <CONNECTION INSTANCE="phase_gen_0" PORT="in_valid"/>
         <CONNECTION INSTANCE="base_sequence_0" PORT="in_valid"/>
         <CONNECTION INSTANCE="base_sequence_1" PORT="in_valid"/>
         <CONNECTION INSTANCE="phase_gen_control_0" PORT="in_valid"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="in_valid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="4" NAME="uci_slot" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_slot">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_slot"/>
         <CONNECTION INSTANCE="base_sequence_0" PORT="uci_slot"/>
         <CONNECTION INSTANCE="base_sequence_1" PORT="uci_slot"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_slot"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="1" NAME="uci_grouphopping" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_grouphopping">
@@ -53,16 +53,16 @@
     </PORT>
     <PORT DIR="I" LEFT="10" NAME="uci_NID" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_NID">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_NID"/>
         <CONNECTION INSTANCE="base_sequence_0" PORT="uci_nID"/>
         <CONNECTION INSTANCE="base_sequence_1" PORT="uci_nID"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_NID"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="3" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_uci_nsymbols">
       <CONNECTIONS>
         <CONNECTION INSTANCE="nfs_gen_0" PORT="uci_nSymbs"/>
-        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_nSymbs"/>
         <CONNECTION INSTANCE="phase_gen_control_0" PORT="uci_nSymbs"/>
+        <CONNECTION INSTANCE="n_cs_gen_0" PORT="uci_nSymbs"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="uci_intra_fr_hop" SIGIS="undef" SIGNAME="External_Ports_uci_intra_fr_hop">
@@ -493,7 +493,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/phase_gen_control_0" HWVERSION="1.0" INSTANCE="phase_gen_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen_control" VLNV="xilinx.com:user:phase_gen_control:1.0">
+    <MODULE COREREVISION="7" FULLNAME="/phase_gen_control_0" HWVERSION="1.0" INSTANCE="phase_gen_control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="phase_gen_control" VLNV="xilinx.com:user:phase_gen_control:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="cyclic_gen_phase_gen_control_0_0"/>
@@ -557,15 +557,15 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
         <PARAMETER NAME="Component_Name" VALUE="cyclic_gen_xlconstant_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="n_cs_gen_0" PORT="in_uci_flag"/>
             <CONNECTION INSTANCE="phase_gen_control_0" PORT="in_uci_flag"/>
+            <CONNECTION INSTANCE="n_cs_gen_0" PORT="in_uci_flag"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

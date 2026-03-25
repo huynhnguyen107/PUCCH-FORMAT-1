@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Thu Mar 19 22:51:00 2026
+//Date        : Tue Mar 24 21:41:45 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch1.bd
 //Design      : pucch1
@@ -586,8 +586,8 @@ module pucch1
         .uci_first_symbol_idx(ulcch_parameter_0_uci_frist_symbol[3:0]),
         .uci_instra_fre_hop(ulcch_parameter_0_uci_intra_fre_hopping[0]),
         .uci_nsymbols(ulcch_parameter_0_uci_symbol[3:0]),
-        .uci_prbsoffset(ulcch_parameter_0_uci_pbr_offset[1:0]),
-        .uci_secondhop_prb(ulcch_parameter_0_uci_second_prb[9:0]),
+        .uci_prbsoffset(ulcch_parameter_0_uci_pbr_offset[8:0]),
+        .uci_secondhop_prb(ulcch_parameter_0_uci_second_prb[8:0]),
         .uci_slot(ulcch_parameter_0_uci_slot_idx[4:0]),
         .uci_valid(ulcch_parameter_0_pucch_valid));
   pucch1_dmrs_wise_spreading_1_0 dmrs_wise_spreading_0

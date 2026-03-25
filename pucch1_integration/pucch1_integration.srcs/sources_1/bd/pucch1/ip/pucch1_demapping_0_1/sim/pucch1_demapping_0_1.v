@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:demapping:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 `timescale 1ns/1ps
 
@@ -77,8 +77,8 @@ input wire uci_instra_fre_hop;
 input wire [4 : 0] uci_slot;
 input wire [3 : 0] uci_nsymbols;
 input wire [3 : 0] uci_first_symbol_idx;
-input wire [1 : 0] uci_prbsoffset;
-input wire [9 : 0] uci_secondhop_prb;
+input wire [8 : 0] uci_prbsoffset;
+input wire [8 : 0] uci_secondhop_prb;
 input wire uci_valid;
 input wire [4 : 0] fr_slot;
 input wire [3 : 0] fr_symbol;

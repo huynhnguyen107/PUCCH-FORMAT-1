@@ -29,8 +29,8 @@ module tb(
 	reg [4:0] uci_slot;
 	reg [3:0] uci_nsymbols;
 	reg [3:0] uci_first_symbol_idx;
-	reg [1:0] uci_prbsoffset;
-	reg [9:0] uci_secondhop_prb;
+	reg [8:0] uci_prbsoffset;
+	reg [8:0] uci_secondhop_prb;
 	reg  uci_valid;
 	//frame
 	reg  in_start_symbol;

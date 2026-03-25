@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.665062",
-   "Default View_TopLeft":"2902,510",
+   "Default View_ScaleFactor":"1.52791",
+   "Default View_TopLeft":"1664,554",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -38,13 +38,13 @@ preplace inst xlconstant_1 -pg 1 -lvl 10 -x 3510 -y 1000 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 9 -x 3230 -y 1040 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 9 -x 3230 -y 860 -defaultsOSRD
 preplace inst uci_occ -pg 1 -lvl 3 -x 1000 -y 670 -defaultsOSRD
-preplace inst demapping_0 -pg 1 -lvl 5 -x 1810 -y 1020 -defaultsOSRD
 preplace inst block_wise_spreading_uci -pg 1 -lvl 6 -x 2190 -y 250 -defaultsOSRD
 preplace inst block_wise_spreading_dmrs -pg 1 -lvl 6 -x 2190 -y 670 -defaultsOSRD
 preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 1000 -y 840 -defaultsOSRD
 preplace inst mean_data_0 -pg 1 -lvl 8 -x 2940 -y 840 -defaultsOSRD
 preplace inst payload_est_SINR_0 -pg 1 -lvl 10 -x 3510 -y 830 -defaultsOSRD
 preplace inst sr_ack_detector_0 -pg 1 -lvl 11 -x 3830 -y 740 -defaultsOSRD
+preplace inst demapping_0 -pg 1 -lvl 5 -x 1810 -y 1020 -defaultsOSRD
 preplace netloc clk_1 1 0 11 20 640 320 130 780 730 1220 90 1590 170 2010 820 2370 770 2740 690 NJ 690 3330 660 NJ
 preplace netloc rst_1 1 0 11 10 830 330 140 770 980 1230 100 1570 160 2020 830 2380 790 2760 700 NJ 700 3350 680 NJ
 preplace netloc trigger_05_1 1 0 1 NJ 750

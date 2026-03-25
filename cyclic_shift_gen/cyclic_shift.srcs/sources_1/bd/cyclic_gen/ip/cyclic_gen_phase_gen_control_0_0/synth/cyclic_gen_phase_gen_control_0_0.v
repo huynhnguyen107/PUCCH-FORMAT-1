@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:phase_gen_control:1.0
-// IP Revision: 6
+// IP Revision: 7
 
 (* X_CORE_INFO = "phase_gen_control,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "cyclic_gen_phase_gen_control_0_0,phase_gen_control,{}" *)
-(* CORE_GENERATION_INFO = "cyclic_gen_phase_gen_control_0_0,phase_gen_control,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=phase_gen_control,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "cyclic_gen_phase_gen_control_0_0,phase_gen_control,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=phase_gen_control,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module cyclic_gen_phase_gen_control_0_0 (
