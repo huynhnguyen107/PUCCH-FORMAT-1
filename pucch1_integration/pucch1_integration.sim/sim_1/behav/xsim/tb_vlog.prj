@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../pucch1_integration.ip_user_files/bd/pucch1/ipshared/bc24/demapping.srcs/sources_1/new/demapping.v" \
+"../../../../pucch1_integration.ip_user_files/bd/pucch1/ipshared/4cc8/demapping.srcs/sources_1/new/demapping.v" \
 "../../../../pucch1_integration.ip_user_files/bd/pucch1/ip/pucch1_demapping_0_1/sim/pucch1_demapping_0_1.v" \
 "../../../../pucch1_integration.ip_user_files/bd/pucch1/ipshared/fcfe/physical_control.srcs/sources_1/new/physical_control.v" \
 "../../../../pucch1_integration.ip_user_files/bd/pucch1/ip/pucch1_physical_control_0_0/sim/pucch1_physical_control_0_0.v" \

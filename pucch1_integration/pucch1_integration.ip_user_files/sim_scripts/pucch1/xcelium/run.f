@@ -6,7 +6,7 @@
   "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/pucch1/ipshared/bc24/demapping.srcs/sources_1/new/demapping.v" \
+  "../../../bd/pucch1/ipshared/4cc8/demapping.srcs/sources_1/new/demapping.v" \
   "../../../bd/pucch1/ip/pucch1_demapping_0_1/sim/pucch1_demapping_0_1.v" \
   "../../../bd/pucch1/ipshared/fcfe/physical_control.srcs/sources_1/new/physical_control.v" \
   "../../../bd/pucch1/ip/pucch1_physical_control_0_0/sim/pucch1_physical_control_0_0.v" \

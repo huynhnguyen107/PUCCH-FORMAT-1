@@ -77,7 +77,7 @@ module demapping(
 				slot_valid <= uci_slot == fr_slot;
 				symbol_valid1 <= (fr_symbol >= uci_first_symbol_idx)&(fr_symbol <= (uci_nsymbols[3:1]+uci_first_symbol_idx-1));
 				rb_valid1 <= uci_prbsoffset == fr_rb;
-				symbol_valid2 <= (fr_symbol >= (uci_nsymbols[3:1]+uci_first_symbol_idx))&(fr_symbol <= uci_nsymbols-1);
+				symbol_valid2 <= (fr_symbol >= (uci_nsymbols[3:1]+uci_first_symbol_idx))&(fr_symbol <= uci_nsymbols+uci_first_symbol_idx-1);
 				rb_valid2 <= uci_secondhop_prb == fr_rb;
 			end
 		end

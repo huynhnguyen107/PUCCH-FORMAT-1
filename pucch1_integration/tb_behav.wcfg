@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="60544500fs"></ZoomStartTime>
-      <ZoomEndTime time="61244501fs"></ZoomEndTime>
-      <Cursor1Time time="61036500fs"></Cursor1Time>
+      <ZoomStartTime time="34267fs"></ZoomStartTime>
+      <ZoomEndTime time="149668fs"></ZoomEndTime>
+      <Cursor1Time time="53500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="623"></NameColumnWidth>
-      <ValueColumnWidth column_width="177"></ValueColumnWidth>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="172"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="67" />
+   <WVObjectSize size="193" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -66,10 +66,12 @@
    <wvobject fp_name="/tb/pucch1_integration/pucch1_i/frame_sync_1/slot_idx" type="array">
       <obj_property name="ElementShortName">slot_idx[4:0]</obj_property>
       <obj_property name="ObjectShortName">slot_idx[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/frame_sync_1/frame_idx" type="array">
-      <obj_property name="ElementShortName">frame_idx[7:0]</obj_property>
-      <obj_property name="ObjectShortName">frame_idx[7:0]</obj_property>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/frame_sync_1/sym_idx" type="array">
+      <obj_property name="ElementShortName">sym_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sym_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ulcch_parameter_0/pucch_valid" type="logic">
       <obj_property name="ElementShortName">pucch_valid</obj_property>
@@ -653,6 +655,10 @@
          <obj_property name="ObjectShortName">[16]</obj_property>
       </wvobject>
    </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/de_spread_dmrs/de_spreading_data_valid" type="logic">
+      <obj_property name="ElementShortName">de_spreading_data_valid</obj_property>
+      <obj_property name="ObjectShortName">de_spreading_data_valid</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/pucch1_integration/pucch1_i/de_spread_dmrs/de_spreading_data" type="array">
       <obj_property name="ElementShortName">de_spreading_data[31:0]</obj_property>
       <obj_property name="ObjectShortName">de_spreading_data[31:0]</obj_property>
@@ -800,10 +806,6 @@
          <obj_property name="ElementShortName">[16]</obj_property>
          <obj_property name="ObjectShortName">[16]</obj_property>
       </wvobject>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/de_spread_dmrs/de_spreading_data_valid" type="logic">
-      <obj_property name="ElementShortName">de_spreading_data_valid</obj_property>
-      <obj_property name="ObjectShortName">de_spreading_data_valid</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch1_integration/pucch1_i/de_spread_uci/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -1268,5 +1270,1376 @@
          <obj_property name="ElementShortName">[16]</obj_property>
          <obj_property name="ObjectShortName">[16]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">pucch_ofdm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pucch_ofdm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus565" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus548" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/start_symbol" type="logic">
+      <obj_property name="ElementShortName">start_symbol</obj_property>
+      <obj_property name="ObjectShortName">start_symbol</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_instra_fre_hop" type="logic">
+      <obj_property name="ElementShortName">uci_instra_fre_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_instra_fre_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_first_symbol_idx" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_prbsoffset" type="array">
+      <obj_property name="ElementShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_secondhop_prb" type="array">
+      <obj_property name="ElementShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_slot" type="array">
+      <obj_property name="ElementShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">pucch_ofdm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pucch_ofdm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus565" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus548" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/ofdm_demodulation_0/pucch_ofdm[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_symbol" type="array">
+      <obj_property name="ElementShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_rb" type="array">
+      <obj_property name="ElementShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">0</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_data_valid" type="logic">
+      <obj_property name="ElementShortName">fr_data_valid</obj_property>
+      <obj_property name="ObjectShortName">fr_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fre_hopping_valid" type="logic">
+      <obj_property name="ElementShortName">fre_hopping_valid</obj_property>
+      <obj_property name="ObjectShortName">fre_hopping_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_ex_valid" type="logic">
+      <obj_property name="ElementShortName">uci_ex_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_ex_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/slot_valid" type="logic">
+      <obj_property name="ElementShortName">slot_valid</obj_property>
+      <obj_property name="ObjectShortName">slot_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/symbol_valid1" type="logic">
+      <obj_property name="ElementShortName">symbol_valid1</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rb_valid1" type="logic">
+      <obj_property name="ElementShortName">rb_valid1</obj_property>
+      <obj_property name="ObjectShortName">rb_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/symbol_valid2" type="logic">
+      <obj_property name="ElementShortName">symbol_valid2</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rb_valid2" type="logic">
+      <obj_property name="ElementShortName">rb_valid2</obj_property>
+      <obj_property name="ObjectShortName">rb_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/intra_valid" type="logic">
+      <obj_property name="ElementShortName">intra_valid</obj_property>
+      <obj_property name="ObjectShortName">intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/non_intra_valid" type="logic">
+      <obj_property name="ElementShortName">non_intra_valid</obj_property>
+      <obj_property name="ObjectShortName">non_intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/final_resource_set" type="logic">
+      <obj_property name="ElementShortName">final_resource_set</obj_property>
+      <obj_property name="ObjectShortName">final_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/edge_resource_set" type="logic">
+      <obj_property name="ElementShortName">edge_resource_set</obj_property>
+      <obj_property name="ObjectShortName">edge_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/d_resource_set" type="logic">
+      <obj_property name="ElementShortName">d_resource_set</obj_property>
+      <obj_property name="ObjectShortName">d_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic" type="array">
+      <obj_property name="ElementShortName">cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus743" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus726" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/cyclic[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_valid_0" type="logic">
+      <obj_property name="ElementShortName">wise_valid_0</obj_property>
+      <obj_property name="ObjectShortName">wise_valid_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0" type="array">
+      <obj_property name="ElementShortName">wise_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wise_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus677" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus660" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_0[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_valid_1" type="logic">
+      <obj_property name="ElementShortName">wise_valid_1</obj_property>
+      <obj_property name="ObjectShortName">wise_valid_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/wise_1" type="array">
+      <obj_property name="ElementShortName">wise_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wise_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/spreading_valid" type="logic">
+      <obj_property name="ElementShortName">spreading_valid</obj_property>
+      <obj_property name="ObjectShortName">spreading_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/block_wise_spreading_dmrs/spreading" type="array">
+      <obj_property name="ElementShortName">spreading[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spreading[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/frame_sync_1/slot_idx" type="array">
+      <obj_property name="ElementShortName">slot_idx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">slot_idx[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/ofdm_valid" type="logic">
+      <obj_property name="ElementShortName">ofdm_valid</obj_property>
+      <obj_property name="ObjectShortName">ofdm_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/ofdm" type="array">
+      <obj_property name="ElementShortName">ofdm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs_valid" type="logic">
+      <obj_property name="ElementShortName">dmrs_valid</obj_property>
+      <obj_property name="ObjectShortName">dmrs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs" type="array">
+      <obj_property name="ElementShortName">dmrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmrs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus1353" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus1336" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/dmrs[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus1419" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus1402" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/data[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/ofdm_valid" type="logic">
+      <obj_property name="ElementShortName">ofdm_valid</obj_property>
+      <obj_property name="ObjectShortName">ofdm_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/ofdm" type="array">
+      <obj_property name="ElementShortName">ofdm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/n_dmrs" type="array">
+      <obj_property name="ElementShortName">n_dmrs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">n_dmrs[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/n_data" type="array">
+      <obj_property name="ElementShortName">n_data[2:0]</obj_property>
+      <obj_property name="ObjectShortName">n_data[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/cnt_11" type="array">
+      <obj_property name="ElementShortName">cnt_11[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_11[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/cnt_nsymbols" type="array">
+      <obj_property name="ElementShortName">cnt_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/valid_odd_even" type="logic">
+      <obj_property name="ElementShortName">valid_odd_even</obj_property>
+      <obj_property name="ObjectShortName">valid_odd_even</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/fifo_dmrs_valid" type="logic">
+      <obj_property name="ElementShortName">fifo_dmrs_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_dmrs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/fifo_data_valid" type="logic">
+      <obj_property name="ElementShortName">fifo_data_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/start_read" type="logic">
+      <obj_property name="ElementShortName">start_read</obj_property>
+      <obj_property name="ObjectShortName">start_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_rd_en" type="logic">
+      <obj_property name="ElementShortName">dmrs_rd_en</obj_property>
+      <obj_property name="ObjectShortName">dmrs_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_dout" type="array">
+      <obj_property name="ElementShortName">dmrs_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmrs_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_rd_en" type="logic">
+      <obj_property name="ElementShortName">data_rd_en</obj_property>
+      <obj_property name="ObjectShortName">data_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_dout" type="array">
+      <obj_property name="ElementShortName">data_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_cnt_valid" type="logic">
+      <obj_property name="ElementShortName">dmrs_cnt_valid</obj_property>
+      <obj_property name="ObjectShortName">dmrs_cnt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_cnt_11" type="array">
+      <obj_property name="ElementShortName">dmrs_cnt_11[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dmrs_cnt_11[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_cnt" type="array">
+      <obj_property name="ElementShortName">dmrs_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dmrs_cnt[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_cnt_valid" type="logic">
+      <obj_property name="ElementShortName">data_cnt_valid</obj_property>
+      <obj_property name="ObjectShortName">data_cnt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_cnt_11" type="array">
+      <obj_property name="ElementShortName">data_cnt_11[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cnt_11[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_cnt" type="array">
+      <obj_property name="ElementShortName">data_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_dout_valid" type="logic">
+      <obj_property name="ElementShortName">dmrs_dout_valid</obj_property>
+      <obj_property name="ObjectShortName">dmrs_dout_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_dout_valid" type="logic">
+      <obj_property name="ElementShortName">data_dout_valid</obj_property>
+      <obj_property name="ObjectShortName">data_dout_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs_valid" type="logic">
+      <obj_property name="ElementShortName">dmrs_valid</obj_property>
+      <obj_property name="ObjectShortName">dmrs_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/dmrs" type="array">
+      <obj_property name="ElementShortName">dmrs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmrs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/data_dmrs_selection_0/inst/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_instra_fre_hop" type="logic">
+      <obj_property name="ElementShortName">uci_instra_fre_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_instra_fre_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_first_symbol_idx" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_prbsoffset" type="array">
+      <obj_property name="ElementShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_prbsoffset[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_slot" type="array">
+      <obj_property name="ElementShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_nsymbols" type="array">
+      <obj_property name="ElementShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_nsymbols[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_first_symbol_idx" type="array">
+      <obj_property name="ElementShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_first_symbol_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_secondhop_prb" type="array">
+      <obj_property name="ElementShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_secondhop_prb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_valid" type="logic">
+      <obj_property name="ElementShortName">uci_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_slot" type="array">
+      <obj_property name="ElementShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_slot[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_symbol" type="array">
+      <obj_property name="ElementShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_symbol[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_rb" type="array">
+      <obj_property name="ElementShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="ObjectShortName">fr_rb[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fr_data_valid" type="logic">
+      <obj_property name="ElementShortName">fr_data_valid</obj_property>
+      <obj_property name="ObjectShortName">fr_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/resoureset_valid" type="logic">
+      <obj_property name="ElementShortName">resoureset_valid</obj_property>
+      <obj_property name="ObjectShortName">resoureset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/fre_hopping_valid" type="logic">
+      <obj_property name="ElementShortName">fre_hopping_valid</obj_property>
+      <obj_property name="ObjectShortName">fre_hopping_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/uci_ex_valid" type="logic">
+      <obj_property name="ElementShortName">uci_ex_valid</obj_property>
+      <obj_property name="ObjectShortName">uci_ex_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/slot_valid" type="logic">
+      <obj_property name="ElementShortName">slot_valid</obj_property>
+      <obj_property name="ObjectShortName">slot_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/symbol_valid1" type="logic">
+      <obj_property name="ElementShortName">symbol_valid1</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/symbol_valid2" type="logic">
+      <obj_property name="ElementShortName">symbol_valid2</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rb_valid1" type="logic">
+      <obj_property name="ElementShortName">rb_valid1</obj_property>
+      <obj_property name="ObjectShortName">rb_valid1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/rb_valid2" type="logic">
+      <obj_property name="ElementShortName">rb_valid2</obj_property>
+      <obj_property name="ObjectShortName">rb_valid2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/intra_valid" type="logic">
+      <obj_property name="ElementShortName">intra_valid</obj_property>
+      <obj_property name="ObjectShortName">intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/non_intra_valid" type="logic">
+      <obj_property name="ElementShortName">non_intra_valid</obj_property>
+      <obj_property name="ObjectShortName">non_intra_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/final_resource_set" type="logic">
+      <obj_property name="ElementShortName">final_resource_set</obj_property>
+      <obj_property name="ObjectShortName">final_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/edge_resource_set" type="logic">
+      <obj_property name="ElementShortName">edge_resource_set</obj_property>
+      <obj_property name="ObjectShortName">edge_resource_set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch1_integration/pucch1_i/demapping_0/inst/d_resource_set" type="logic">
+      <obj_property name="ElementShortName">d_resource_set</obj_property>
+      <obj_property name="ObjectShortName">d_resource_set</obj_property>
    </wvobject>
 </wave_config>

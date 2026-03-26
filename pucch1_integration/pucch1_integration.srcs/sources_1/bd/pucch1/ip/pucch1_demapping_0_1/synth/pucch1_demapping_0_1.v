@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:demapping:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 (* X_CORE_INFO = "demapping,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_demapping_0_1,demapping,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_demapping_0_1,demapping,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=demapping,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch1_demapping_0_1,demapping,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=demapping,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_demapping_0_1 (
