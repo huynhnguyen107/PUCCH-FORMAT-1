@@ -15,7 +15,6 @@
       "xlslice_0": "",
       "frame_sync_1": "",
       "ulcch_parameter_0": "",
-      "data_dmrs_selection_0": "",
       "de_spread_dmrs": "",
       "de_spread_uci": "",
       "cyclic_dmrs": {
@@ -58,7 +57,8 @@
       "mean_data_0": "",
       "payload_est_SINR_0": "",
       "sr_ack_detector_0": "",
-      "demapping_0": ""
+      "demapping_0": "",
+      "data_dmrs_selection_0": ""
     },
     "ports": {
       "clk": {
@@ -185,10 +185,6 @@
       "ulcch_parameter_0": {
         "vlnv": "xilinx.com:user:ulcch_parameter:1.0",
         "xci_name": "pucch1_ulcch_parameter_0_0"
-      },
-      "data_dmrs_selection_0": {
-        "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
-        "xci_name": "pucch1_data_dmrs_selection_0_0"
       },
       "de_spread_dmrs": {
         "vlnv": "xilinx.com:user:de_spread:1.0",
@@ -1046,6 +1042,10 @@
       "demapping_0": {
         "vlnv": "xilinx.com:user:demapping:1.0",
         "xci_name": "pucch1_demapping_0_1"
+      },
+      "data_dmrs_selection_0": {
+        "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
+        "xci_name": "pucch1_data_dmrs_selection_0_0"
       }
     },
     "nets": {
@@ -1056,7 +1056,6 @@
           "frame_sync_0/clk",
           "frame_sync_1/clk",
           "ulcch_parameter_0/clk",
-          "data_dmrs_selection_0/clk",
           "de_spread_dmrs/clk",
           "de_spread_uci/clk",
           "cyclic_dmrs/clk",
@@ -1071,7 +1070,8 @@
           "mean_data_0/clk",
           "payload_est_SINR_0/clk",
           "sr_ack_detector_0/clk",
-          "demapping_0/clk"
+          "demapping_0/clk",
+          "data_dmrs_selection_0/clk"
         ]
       },
       "rst_1": {
@@ -1081,7 +1081,6 @@
           "frame_sync_0/rst",
           "frame_sync_1/rst",
           "ulcch_parameter_0/rst",
-          "data_dmrs_selection_0/rst",
           "de_spread_dmrs/rst",
           "de_spread_uci/rst",
           "cyclic_dmrs/rst",
@@ -1096,7 +1095,8 @@
           "mean_data_0/rst",
           "payload_est_SINR_0/rst",
           "sr_ack_detector_0/rst",
-          "demapping_0/rst"
+          "demapping_0/rst",
+          "data_dmrs_selection_0/rst"
         ]
       },
       "trigger_05_1": {
@@ -1202,11 +1202,11 @@
       "ulcch_parameter_0_uci_symbol": {
         "ports": [
           "ulcch_parameter_0/uci_symbol",
-          "data_dmrs_selection_0/uci_nsymbols",
           "cyclic_dmrs/uci_nSymbs",
           "cyclic_uci/uci_nSymbs",
           "mean_data_0/uci_nsymbol",
-          "demapping_0/uci_nsymbols"
+          "demapping_0/uci_nsymbols",
+          "data_dmrs_selection_0/uci_nsymbols"
         ]
       },
       "ulcch_parameter_0_uci_frist_symbol": {
@@ -1232,7 +1232,6 @@
       "ulcch_parameter_0_pucch_valid": {
         "ports": [
           "ulcch_parameter_0/pucch_valid",
-          "data_dmrs_selection_0/uci_valid",
           "cyclic_dmrs/in_valid",
           "cyclic_uci/in_valid",
           "uci_wise_spreading_0/in_valid",
@@ -1242,7 +1241,8 @@
           "mean_data_0/in_valid",
           "payload_est_SINR_0/in_valid",
           "sr_ack_detector_0/in_valid",
-          "demapping_0/uci_valid"
+          "demapping_0/uci_valid",
+          "data_dmrs_selection_0/uci_valid"
         ]
       },
       "frame_sync_1_sym_idx": {

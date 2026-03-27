@@ -83,6 +83,9 @@ module data_dmrs_selection(
 				if (cnt_11==11)
 					valid_odd_even <= !valid_odd_even;
 			end
+			else if (cnt_nsymbols>= (n_dmrs+n_data)) begin
+				valid_odd_even <=0;
+			end
 			if (cnt_nsymbols< (n_dmrs+n_data))
 				cnt_nsymbols <= cnt_nsymbols + (cnt_11==11);
 			else

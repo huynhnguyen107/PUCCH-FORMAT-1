@@ -94,7 +94,7 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" \
   "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" \
-  "../../../bd/pucch1/ipshared/0c12/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" \
+  "../../../bd/pucch1/ipshared/6d81/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" \
   "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/sim/pucch1_data_dmrs_selection_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

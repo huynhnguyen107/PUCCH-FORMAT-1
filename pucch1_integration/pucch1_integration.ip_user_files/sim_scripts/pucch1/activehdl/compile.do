@@ -149,7 +149,7 @@ vlog -work fifo_generator_v13_2_5  -v2k5 \
 vlog -work xil_defaultlib  -v2k5 \
 "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_1/sim/data_dmrs_fifo_1.v" \
 "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/data_dmrs_selection.srcs/sources_1/ip/data_dmrs_fifo_0/sim/data_dmrs_fifo_0.v" \
-"../../../bd/pucch1/ipshared/0c12/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" \
+"../../../bd/pucch1/ipshared/6d81/data_dmrs_selection.srcs/sources_1/new/data_dmrs_selection.v" \
 "../../../bd/pucch1/ip/pucch1_data_dmrs_selection_0_0/sim/pucch1_data_dmrs_selection_0_0.v" \
 
 vcom -work xil_defaultlib -93 \

@@ -73,10 +73,10 @@ module tb( );
 			uci_valid <= 1;
 			uci_slot <= 0;
 			uci_first_symbol <= 0;
-			uci_m0 <= 1;
-			uci_nSymbs <= 12;
+			uci_m0 <= 0;
+			uci_nSymbs <= 14;
 			uci_grouphopping <= 0;
-			uci_intra_fr_hop <= 1;
+			uci_intra_fr_hop <= 0;
 			uci_NID <= 0;
 		end
 		for (i=0;i<1000;i=i+1) begin

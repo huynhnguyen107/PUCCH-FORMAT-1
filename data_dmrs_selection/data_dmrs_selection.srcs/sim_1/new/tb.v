@@ -52,12 +52,12 @@ module tb();
 		wait(!rst)
 		@(posedge clk) begin
 			uci_valid <=1;
-			uci_nsymbols <=14;
+			uci_nsymbols <=9;
 			resoureset_valid <=0;
 			ofdm_valid <=0;
 			ofdm <=0;
 		end
-		for (k=0;k<14;k=k+1) begin
+		for (k=0;k<9;k=k+1) begin
 			for (i=0;i<12;i=i+1) begin
 				@(posedge clk) begin
 					uci_valid <=0;
@@ -65,7 +65,39 @@ module tb();
 					resoureset_valid <=1;
 					ofdm_valid <=1;
 					ofdm[31:16] <=0;
-					ofdm[15:0] <=327*i;
+					ofdm[15:0] <=327*(i*k);
+				end
+			end
+			for (i=0;i<12;i=i+1) begin
+				@(posedge clk) begin
+					uci_valid <=0;
+					uci_nsymbols <=0;
+					resoureset_valid <=0;
+					ofdm_valid <=0;
+					ofdm[31:16] <=0;
+					ofdm[15:0] <=0;
+				end
+			end
+		end
+		for (i=0;i<1000;i=i+1) begin
+				@(posedge clk) begin
+					uci_valid <=0;
+					uci_nsymbols <=0;
+					resoureset_valid <=0;
+					ofdm_valid <=0;
+					ofdm[31:16] <=0;
+					ofdm[15:0] <=0;
+				end
+			end
+		for (k=0;k<9;k=k+1) begin
+			for (i=0;i<12;i=i+1) begin
+				@(posedge clk) begin
+					uci_valid <=0;
+					uci_nsymbols <=0;
+					resoureset_valid <=1;
+					ofdm_valid <=1;
+					ofdm[31:16] <=0;
+					ofdm[15:0] <=327*(i*k);
 				end
 			end
 			for (i=0;i<12;i=i+1) begin

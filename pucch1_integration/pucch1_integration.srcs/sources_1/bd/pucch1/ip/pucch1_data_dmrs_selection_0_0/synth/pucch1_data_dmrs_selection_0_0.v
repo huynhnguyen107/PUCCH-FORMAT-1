@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:data_dmrs_selection:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 (* X_CORE_INFO = "data_dmrs_selection,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_data_dmrs_selection_0_0,data_dmrs_selection,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_data_dmrs_selection_0_0,data_dmrs_selection,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=data_dmrs_selection,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch1_data_dmrs_selection_0_0,data_dmrs_selection,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=data_dmrs_selection,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_data_dmrs_selection_0_0 (
