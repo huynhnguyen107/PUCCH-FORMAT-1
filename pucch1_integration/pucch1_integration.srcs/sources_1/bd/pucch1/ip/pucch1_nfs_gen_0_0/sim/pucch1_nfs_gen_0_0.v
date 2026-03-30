@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:nfs_gen:1.0
-// IP Revision: 2
+// IP Revision: 5
 
 `timescale 1ns/1ps
 
@@ -58,6 +58,7 @@ module pucch1_nfs_gen_0_0 (
   clk,
   rst,
   in_valid,
+  in_uci_flag,
   uci_nSymbs,
   uci_intra_fr_hop,
   nfs_0,
@@ -68,18 +69,18 @@ module pucch1_nfs_gen_0_0 (
 input wire clk;
 input wire rst;
 input wire in_valid;
+input wire in_uci_flag;
 input wire [3 : 0] uci_nSymbs;
 input wire uci_intra_fr_hop;
 output wire [2 : 0] nfs_0;
 output wire [2 : 0] nfs_1;
 output wire nfs_valid;
 
-  nfs_gen #(
-    .MODE(1)
-  ) inst (
+  nfs_gen inst (
     .clk(clk),
     .rst(rst),
     .in_valid(in_valid),
+    .in_uci_flag(in_uci_flag),
     .uci_nSymbs(uci_nSymbs),
     .uci_intra_fr_hop(uci_intra_fr_hop),
     .nfs_0(nfs_0),

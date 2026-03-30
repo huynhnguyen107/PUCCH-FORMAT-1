@@ -19,29 +19,29 @@
       "de_spread_uci": "",
       "cyclic_dmrs": {
         "phase_gen_0": "",
-        "base_sequence_0": "",
-        "base_sequence_1": "",
-        "nfs_gen_0": "",
-        "ba_seq_control_0": "",
         "com_mul_cyclic_0": "",
         "mcs": "",
         "xlconstant_1": "",
         "xlconstant_2": "",
         "phase_gen_control_0": "",
-        "n_cs_gen_0": ""
+        "base_sequence_0": "",
+        "base_sequence_1": "",
+        "n_cs_gen_0": "",
+        "ba_seq_control_0": "",
+        "nfs_gen_0": ""
       },
       "cyclic_uci": {
         "phase_gen_0": "",
-        "base_sequence_0": "",
-        "base_sequence_1": "",
-        "nfs_gen_0": "",
-        "ba_seq_control_0": "",
         "com_mul_cyclic_0": "",
         "mcs": "",
         "xlconstant_1": "",
         "xlconstant_2": "",
         "phase_gen_control_0": "",
-        "n_cs_gen_0": ""
+        "base_sequence_0": "",
+        "base_sequence_1": "",
+        "n_cs_gen_0": "",
+        "ba_seq_control_0": "",
+        "nfs_gen_0": ""
       },
       "uci_wise_spreading_0": "",
       "uci_wise_spreading_1": "",
@@ -51,14 +51,14 @@
       "xlconcat_0": "",
       "xlconcat_1": "",
       "uci_occ": "",
-      "block_wise_spreading_uci": "",
-      "block_wise_spreading_dmrs": "",
       "ofdm_demodulation_0": "",
       "mean_data_0": "",
       "payload_est_SINR_0": "",
       "sr_ack_detector_0": "",
       "demapping_0": "",
-      "data_dmrs_selection_0": ""
+      "data_dmrs_selection_0": "",
+      "block_wise_spreading_uci": "",
+      "block_wise_spreading_dmrs": ""
     },
     "ports": {
       "clk": {
@@ -270,22 +270,6 @@
             "vlnv": "xilinx.com:user:phase_gen:1.0",
             "xci_name": "pucch1_phase_gen_0_0"
           },
-          "base_sequence_0": {
-            "vlnv": "xilinx.com:user:base_sequence:1.0",
-            "xci_name": "pucch1_base_sequence_0_0"
-          },
-          "base_sequence_1": {
-            "vlnv": "xilinx.com:user:base_sequence:1.0",
-            "xci_name": "pucch1_base_sequence_1_0"
-          },
-          "nfs_gen_0": {
-            "vlnv": "xilinx.com:user:nfs_gen:1.0",
-            "xci_name": "pucch1_nfs_gen_0_0"
-          },
-          "ba_seq_control_0": {
-            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
-            "xci_name": "pucch1_ba_seq_control_0_0"
-          },
           "com_mul_cyclic_0": {
             "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
             "xci_name": "pucch1_com_mul_cyclic_0_0"
@@ -330,9 +314,25 @@
             "vlnv": "xilinx.com:user:phase_gen_control:1.0",
             "xci_name": "pucch1_phase_gen_control_0_0"
           },
+          "base_sequence_0": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_0_0"
+          },
+          "base_sequence_1": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_1_0"
+          },
           "n_cs_gen_0": {
             "vlnv": "xilinx.com:user:n_cs_gen:1.0",
             "xci_name": "pucch1_n_cs_gen_0_0"
+          },
+          "ba_seq_control_0": {
+            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
+            "xci_name": "pucch1_ba_seq_control_0_0"
+          },
+          "nfs_gen_0": {
+            "vlnv": "xilinx.com:user:nfs_gen:1.0",
+            "xci_name": "pucch1_nfs_gen_0_0"
           }
         },
         "nets": {
@@ -340,37 +340,37 @@
             "ports": [
               "clk",
               "phase_gen_0/clk",
-              "nfs_gen_0/clk",
-              "ba_seq_control_0/clk",
-              "base_sequence_1/clk",
-              "base_sequence_0/clk",
               "com_mul_cyclic_0/clk",
               "phase_gen_control_0/clk",
-              "n_cs_gen_0/clk"
+              "base_sequence_0/clk",
+              "base_sequence_1/clk",
+              "n_cs_gen_0/clk",
+              "ba_seq_control_0/clk",
+              "nfs_gen_0/clk"
             ]
           },
           "rst_1": {
             "ports": [
               "rst",
               "phase_gen_0/rst",
-              "nfs_gen_0/rst",
-              "ba_seq_control_0/rst",
-              "base_sequence_1/rst",
-              "base_sequence_0/rst",
               "com_mul_cyclic_0/rst",
               "phase_gen_control_0/rst",
-              "n_cs_gen_0/rst"
+              "base_sequence_0/rst",
+              "base_sequence_1/rst",
+              "n_cs_gen_0/rst",
+              "ba_seq_control_0/rst",
+              "nfs_gen_0/rst"
             ]
           },
           "in_valid_1": {
             "ports": [
               "in_valid",
               "phase_gen_0/in_valid",
-              "nfs_gen_0/in_valid",
-              "base_sequence_1/in_valid",
-              "base_sequence_0/in_valid",
               "phase_gen_control_0/in_valid",
-              "n_cs_gen_0/in_valid"
+              "base_sequence_0/in_valid",
+              "base_sequence_1/in_valid",
+              "n_cs_gen_0/in_valid",
+              "nfs_gen_0/in_valid"
             ]
           },
           "uci_m0_1": {
@@ -382,31 +382,31 @@
           "uci_nSymbs_1": {
             "ports": [
               "uci_nSymbs",
-              "nfs_gen_0/uci_nSymbs",
               "phase_gen_control_0/uci_nSymbs",
-              "n_cs_gen_0/uci_nSymbs"
+              "n_cs_gen_0/uci_nSymbs",
+              "nfs_gen_0/uci_nSymbs"
             ]
           },
           "uci_intra_fr_hop_1": {
             "ports": [
               "uci_intra_fr_hop",
-              "nfs_gen_0/uci_intra_fr_hop",
-              "base_sequence_1/uci_nhop"
+              "base_sequence_1/uci_nhop",
+              "nfs_gen_0/uci_intra_fr_hop"
             ]
           },
           "uci_NID_1": {
             "ports": [
               "uci_NID",
-              "base_sequence_1/uci_nID",
               "base_sequence_0/uci_nID",
+              "base_sequence_1/uci_nID",
               "n_cs_gen_0/uci_NID"
             ]
           },
           "uci_slot_1": {
             "ports": [
               "uci_slot",
-              "base_sequence_1/uci_slot",
               "base_sequence_0/uci_slot",
+              "base_sequence_1/uci_slot",
               "n_cs_gen_0/uci_slot"
             ]
           },
@@ -450,7 +450,8 @@
             "ports": [
               "xlconstant_1/dout",
               "phase_gen_control_0/in_uci_flag",
-              "n_cs_gen_0/in_uci_flag"
+              "n_cs_gen_0/in_uci_flag",
+              "nfs_gen_0/in_uci_flag"
             ]
           },
           "uci_grouphopping_1": {
@@ -493,22 +494,22 @@
           "nfs_gen_0_nfs_0": {
             "ports": [
               "nfs_gen_0/nfs_0",
-              "ba_seq_control_0/nfs_0",
-              "nfs_0"
+              "nfs_0",
+              "ba_seq_control_0/nfs_0"
             ]
           },
           "nfs_gen_0_nfs_1": {
             "ports": [
               "nfs_gen_0/nfs_1",
-              "ba_seq_control_0/nfs_1",
-              "nfs_1"
+              "nfs_1",
+              "ba_seq_control_0/nfs_1"
             ]
           },
           "nfs_gen_0_nfs_valid": {
             "ports": [
               "nfs_gen_0/nfs_valid",
-              "ba_seq_control_0/nfs_valid",
-              "nfs_valid"
+              "nfs_valid",
+              "ba_seq_control_0/nfs_valid"
             ]
           },
           "phase_gen_control_0_start_en": {
@@ -637,22 +638,6 @@
             "vlnv": "xilinx.com:user:phase_gen:1.0",
             "xci_name": "pucch1_phase_gen_0_1"
           },
-          "base_sequence_0": {
-            "vlnv": "xilinx.com:user:base_sequence:1.0",
-            "xci_name": "pucch1_base_sequence_0_1"
-          },
-          "base_sequence_1": {
-            "vlnv": "xilinx.com:user:base_sequence:1.0",
-            "xci_name": "pucch1_base_sequence_1_1"
-          },
-          "nfs_gen_0": {
-            "vlnv": "xilinx.com:user:nfs_gen:1.0",
-            "xci_name": "pucch1_nfs_gen_0_1"
-          },
-          "ba_seq_control_0": {
-            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
-            "xci_name": "pucch1_ba_seq_control_0_1"
-          },
           "com_mul_cyclic_0": {
             "vlnv": "xilinx.com:user:com_mul_cyclic:1.0",
             "xci_name": "pucch1_com_mul_cyclic_0_1"
@@ -697,9 +682,25 @@
             "vlnv": "xilinx.com:user:phase_gen_control:1.0",
             "xci_name": "pucch1_phase_gen_control_0_1"
           },
+          "base_sequence_0": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_0_1"
+          },
+          "base_sequence_1": {
+            "vlnv": "xilinx.com:user:base_sequence:1.0",
+            "xci_name": "pucch1_base_sequence_1_1"
+          },
           "n_cs_gen_0": {
             "vlnv": "xilinx.com:user:n_cs_gen:1.0",
             "xci_name": "pucch1_n_cs_gen_0_1"
+          },
+          "ba_seq_control_0": {
+            "vlnv": "xilinx.com:user:ba_seq_control:1.0",
+            "xci_name": "pucch1_ba_seq_control_0_1"
+          },
+          "nfs_gen_0": {
+            "vlnv": "xilinx.com:user:nfs_gen:1.0",
+            "xci_name": "pucch1_nfs_gen_0_1"
           }
         },
         "nets": {
@@ -707,37 +708,37 @@
             "ports": [
               "clk",
               "phase_gen_0/clk",
-              "nfs_gen_0/clk",
-              "ba_seq_control_0/clk",
-              "base_sequence_1/clk",
-              "base_sequence_0/clk",
               "com_mul_cyclic_0/clk",
               "phase_gen_control_0/clk",
-              "n_cs_gen_0/clk"
+              "base_sequence_0/clk",
+              "base_sequence_1/clk",
+              "n_cs_gen_0/clk",
+              "ba_seq_control_0/clk",
+              "nfs_gen_0/clk"
             ]
           },
           "rst_1": {
             "ports": [
               "rst",
               "phase_gen_0/rst",
-              "nfs_gen_0/rst",
-              "ba_seq_control_0/rst",
-              "base_sequence_1/rst",
-              "base_sequence_0/rst",
               "com_mul_cyclic_0/rst",
               "phase_gen_control_0/rst",
-              "n_cs_gen_0/rst"
+              "base_sequence_0/rst",
+              "base_sequence_1/rst",
+              "n_cs_gen_0/rst",
+              "ba_seq_control_0/rst",
+              "nfs_gen_0/rst"
             ]
           },
           "in_valid_1": {
             "ports": [
               "in_valid",
               "phase_gen_0/in_valid",
-              "nfs_gen_0/in_valid",
-              "base_sequence_1/in_valid",
-              "base_sequence_0/in_valid",
               "phase_gen_control_0/in_valid",
-              "n_cs_gen_0/in_valid"
+              "base_sequence_0/in_valid",
+              "base_sequence_1/in_valid",
+              "n_cs_gen_0/in_valid",
+              "nfs_gen_0/in_valid"
             ]
           },
           "uci_m0_1": {
@@ -749,31 +750,31 @@
           "uci_nSymbs_1": {
             "ports": [
               "uci_nSymbs",
-              "nfs_gen_0/uci_nSymbs",
               "phase_gen_control_0/uci_nSymbs",
-              "n_cs_gen_0/uci_nSymbs"
+              "n_cs_gen_0/uci_nSymbs",
+              "nfs_gen_0/uci_nSymbs"
             ]
           },
           "uci_intra_fr_hop_1": {
             "ports": [
               "uci_intra_fr_hop",
-              "nfs_gen_0/uci_intra_fr_hop",
-              "base_sequence_1/uci_nhop"
+              "base_sequence_1/uci_nhop",
+              "nfs_gen_0/uci_intra_fr_hop"
             ]
           },
           "uci_NID_1": {
             "ports": [
               "uci_NID",
-              "base_sequence_1/uci_nID",
               "base_sequence_0/uci_nID",
+              "base_sequence_1/uci_nID",
               "n_cs_gen_0/uci_NID"
             ]
           },
           "uci_slot_1": {
             "ports": [
               "uci_slot",
-              "base_sequence_1/uci_slot",
               "base_sequence_0/uci_slot",
+              "base_sequence_1/uci_slot",
               "n_cs_gen_0/uci_slot"
             ]
           },
@@ -817,7 +818,8 @@
             "ports": [
               "xlconstant_1/dout",
               "phase_gen_control_0/in_uci_flag",
-              "n_cs_gen_0/in_uci_flag"
+              "n_cs_gen_0/in_uci_flag",
+              "nfs_gen_0/in_uci_flag"
             ]
           },
           "uci_grouphopping_1": {
@@ -860,22 +862,22 @@
           "nfs_gen_0_nfs_0": {
             "ports": [
               "nfs_gen_0/nfs_0",
-              "ba_seq_control_0/nfs_0",
-              "nfs_0"
+              "nfs_0",
+              "ba_seq_control_0/nfs_0"
             ]
           },
           "nfs_gen_0_nfs_1": {
             "ports": [
               "nfs_gen_0/nfs_1",
-              "ba_seq_control_0/nfs_1",
-              "nfs_1"
+              "nfs_1",
+              "ba_seq_control_0/nfs_1"
             ]
           },
           "nfs_gen_0_nfs_valid": {
             "ports": [
               "nfs_gen_0/nfs_valid",
-              "ba_seq_control_0/nfs_valid",
-              "nfs_valid"
+              "nfs_valid",
+              "ba_seq_control_0/nfs_valid"
             ]
           },
           "phase_gen_control_0_start_en": {
@@ -1010,14 +1012,6 @@
           }
         }
       },
-      "block_wise_spreading_uci": {
-        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
-        "xci_name": "pucch1_block_wise_spreading_0_0"
-      },
-      "block_wise_spreading_dmrs": {
-        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
-        "xci_name": "pucch1_block_wise_spreading_dmrs_0"
-      },
       "ofdm_demodulation_0": {
         "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
         "xci_name": "pucch1_ofdm_demodulation_0_0"
@@ -1046,6 +1040,14 @@
       "data_dmrs_selection_0": {
         "vlnv": "xilinx.com:user:data_dmrs_selection:1.0",
         "xci_name": "pucch1_data_dmrs_selection_0_0"
+      },
+      "block_wise_spreading_uci": {
+        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
+        "xci_name": "pucch1_block_wise_spreading_0_0"
+      },
+      "block_wise_spreading_dmrs": {
+        "vlnv": "xilinx.com:user:block_wise_spreading:1.0",
+        "xci_name": "pucch1_block_wise_spreading_dmrs_0"
       }
     },
     "nets": {
@@ -1064,14 +1066,14 @@
           "uci_wise_spreading_1/clk",
           "dmrs_wise_spreading_0/clk",
           "dmrs_wise_spreading_1/clk",
-          "block_wise_spreading_uci/clk",
-          "block_wise_spreading_dmrs/clk",
           "ofdm_demodulation_0/clk",
           "mean_data_0/clk",
           "payload_est_SINR_0/clk",
           "sr_ack_detector_0/clk",
           "demapping_0/clk",
-          "data_dmrs_selection_0/clk"
+          "data_dmrs_selection_0/clk",
+          "block_wise_spreading_uci/clk",
+          "block_wise_spreading_dmrs/clk"
         ]
       },
       "rst_1": {
@@ -1089,14 +1091,14 @@
           "uci_wise_spreading_1/rst",
           "dmrs_wise_spreading_0/rst",
           "dmrs_wise_spreading_1/rst",
-          "block_wise_spreading_uci/rst",
-          "block_wise_spreading_dmrs/rst",
           "ofdm_demodulation_0/rst",
           "mean_data_0/rst",
           "payload_est_SINR_0/rst",
           "sr_ack_detector_0/rst",
           "demapping_0/rst",
-          "data_dmrs_selection_0/rst"
+          "data_dmrs_selection_0/rst",
+          "block_wise_spreading_uci/rst",
+          "block_wise_spreading_dmrs/rst"
         ]
       },
       "trigger_05_1": {
@@ -1188,7 +1190,9 @@
           "ulcch_parameter_0/uci_intra_fre_hopping",
           "cyclic_dmrs/uci_intra_fr_hop",
           "cyclic_uci/uci_intra_fr_hop",
-          "demapping_0/uci_instra_fre_hop"
+          "demapping_0/uci_instra_fre_hop",
+          "block_wise_spreading_dmrs/uci_intra_fr_hop",
+          "block_wise_spreading_uci/uci_intra_fr_hop"
         ]
       },
       "ulcch_parameter_0_uci_slot_idx": {
@@ -1242,7 +1246,9 @@
           "payload_est_SINR_0/in_valid",
           "sr_ack_detector_0/in_valid",
           "demapping_0/uci_valid",
-          "data_dmrs_selection_0/uci_valid"
+          "data_dmrs_selection_0/uci_valid",
+          "block_wise_spreading_dmrs/in_valid",
+          "block_wise_spreading_uci/in_valid"
         ]
       },
       "frame_sync_1_sym_idx": {

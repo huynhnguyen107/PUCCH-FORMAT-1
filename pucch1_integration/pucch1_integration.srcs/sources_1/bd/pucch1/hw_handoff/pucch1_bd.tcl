@@ -252,7 +252,7 @@ proc create_hier_cell_cyclic_uci { parentCell nameHier } {
   connect_bd_net -net uci_nSymbs_1 [get_bd_pins uci_nSymbs] [get_bd_pins n_cs_gen_0/uci_nSymbs] [get_bd_pins nfs_gen_0/uci_nSymbs] [get_bd_pins phase_gen_control_0/uci_nSymbs]
   connect_bd_net -net uci_slot_1 [get_bd_pins uci_slot] [get_bd_pins base_sequence_0/uci_slot] [get_bd_pins base_sequence_1/uci_slot] [get_bd_pins n_cs_gen_0/uci_slot]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins mcs/dout] [get_bd_pins phase_gen_0/uci_mcs]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins nfs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins base_sequence_0/uci_nhop] [get_bd_pins xlconstant_2/dout]
 
   # Restore current instance
@@ -389,7 +389,7 @@ proc create_hier_cell_cyclic_dmrs { parentCell nameHier } {
   connect_bd_net -net uci_nSymbs_1 [get_bd_pins uci_nSymbs] [get_bd_pins n_cs_gen_0/uci_nSymbs] [get_bd_pins nfs_gen_0/uci_nSymbs] [get_bd_pins phase_gen_control_0/uci_nSymbs]
   connect_bd_net -net uci_slot_1 [get_bd_pins uci_slot] [get_bd_pins base_sequence_0/uci_slot] [get_bd_pins base_sequence_1/uci_slot] [get_bd_pins n_cs_gen_0/uci_slot]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins mcs/dout] [get_bd_pins phase_gen_0/uci_mcs]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_1/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins nfs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins base_sequence_0/uci_nhop] [get_bd_pins xlconstant_2/dout]
 
   # Restore current instance
@@ -633,10 +633,10 @@ proc create_root_design { parentCell } {
   connect_bd_net -net uci_occ_dout [get_bd_pins dmrs_wise_spreading_0/uci_OCC] [get_bd_pins dmrs_wise_spreading_1/uci_OCC] [get_bd_pins uci_occ/dout] [get_bd_pins uci_wise_spreading_0/uci_OCC] [get_bd_pins uci_wise_spreading_1/uci_OCC]
   connect_bd_net -net ulcch_parameter_0_group_hopping [get_bd_pins cyclic_dmrs/uci_grouphopping] [get_bd_pins cyclic_uci/uci_grouphopping] [get_bd_pins ulcch_parameter_0/group_hopping]
   connect_bd_net -net ulcch_parameter_0_hopping_ID [get_bd_pins cyclic_dmrs/uci_NID] [get_bd_pins cyclic_uci/uci_NID] [get_bd_pins ulcch_parameter_0/hopping_ID]
-  connect_bd_net -net ulcch_parameter_0_pucch_valid [get_bd_pins cyclic_dmrs/in_valid] [get_bd_pins cyclic_uci/in_valid] [get_bd_pins data_dmrs_selection_0/uci_valid] [get_bd_pins demapping_0/uci_valid] [get_bd_pins dmrs_wise_spreading_0/in_valid] [get_bd_pins dmrs_wise_spreading_1/in_valid] [get_bd_pins mean_data_0/in_valid] [get_bd_pins payload_est_SINR_0/in_valid] [get_bd_pins sr_ack_detector_0/in_valid] [get_bd_pins uci_wise_spreading_0/in_valid] [get_bd_pins uci_wise_spreading_1/in_valid] [get_bd_pins ulcch_parameter_0/pucch_valid]
+  connect_bd_net -net ulcch_parameter_0_pucch_valid [get_bd_pins block_wise_spreading_dmrs/in_valid] [get_bd_pins block_wise_spreading_uci/in_valid] [get_bd_pins cyclic_dmrs/in_valid] [get_bd_pins cyclic_uci/in_valid] [get_bd_pins data_dmrs_selection_0/uci_valid] [get_bd_pins demapping_0/uci_valid] [get_bd_pins dmrs_wise_spreading_0/in_valid] [get_bd_pins dmrs_wise_spreading_1/in_valid] [get_bd_pins mean_data_0/in_valid] [get_bd_pins payload_est_SINR_0/in_valid] [get_bd_pins sr_ack_detector_0/in_valid] [get_bd_pins uci_wise_spreading_0/in_valid] [get_bd_pins uci_wise_spreading_1/in_valid] [get_bd_pins ulcch_parameter_0/pucch_valid]
   connect_bd_net -net ulcch_parameter_0_uci_ack [get_bd_pins payload_est_SINR_0/uci_modulation] [get_bd_pins sr_ack_detector_0/uci_o_ack] [get_bd_pins ulcch_parameter_0/uci_ack]
   connect_bd_net -net ulcch_parameter_0_uci_frist_symbol [get_bd_pins cyclic_dmrs/uci_first_symbol] [get_bd_pins cyclic_uci/uci_first_symbol] [get_bd_pins demapping_0/uci_first_symbol_idx] [get_bd_pins ulcch_parameter_0/uci_frist_symbol]
-  connect_bd_net -net ulcch_parameter_0_uci_intra_fre_hopping [get_bd_pins cyclic_dmrs/uci_intra_fr_hop] [get_bd_pins cyclic_uci/uci_intra_fr_hop] [get_bd_pins demapping_0/uci_instra_fre_hop] [get_bd_pins ulcch_parameter_0/uci_intra_fre_hopping]
+  connect_bd_net -net ulcch_parameter_0_uci_intra_fre_hopping [get_bd_pins block_wise_spreading_dmrs/uci_intra_fr_hop] [get_bd_pins block_wise_spreading_uci/uci_intra_fr_hop] [get_bd_pins cyclic_dmrs/uci_intra_fr_hop] [get_bd_pins cyclic_uci/uci_intra_fr_hop] [get_bd_pins demapping_0/uci_instra_fre_hop] [get_bd_pins ulcch_parameter_0/uci_intra_fre_hopping]
   connect_bd_net -net ulcch_parameter_0_uci_m0 [get_bd_pins cyclic_dmrs/uci_m0] [get_bd_pins cyclic_uci/uci_m0] [get_bd_pins ulcch_parameter_0/uci_m0]
   connect_bd_net -net ulcch_parameter_0_uci_pbr_offset [get_bd_pins demapping_0/uci_prbsoffset] [get_bd_pins ulcch_parameter_0/uci_pbr_offset]
   connect_bd_net -net ulcch_parameter_0_uci_second_prb [get_bd_pins demapping_0/uci_secondhop_prb] [get_bd_pins ulcch_parameter_0/uci_second_prb]

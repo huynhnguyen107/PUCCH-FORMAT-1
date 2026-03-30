@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs/sources_1/new/nfs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nfs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

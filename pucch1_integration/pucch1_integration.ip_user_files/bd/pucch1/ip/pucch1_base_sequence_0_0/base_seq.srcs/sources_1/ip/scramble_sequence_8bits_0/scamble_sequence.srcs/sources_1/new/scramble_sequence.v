@@ -26,8 +26,8 @@ module scramble_sequence_8bits(
 	input in_valid,
 	input [30:0] ID,
 	input [30:0] markP,
-	output out_valid, //14 cycles
-	output [7:0] scramble// extend from markP to markP+14
+	output out_valid, 
+	output [7:0] scramble
     );
 	wire out_valid_16;
 	wire [30:0] x1_16;
@@ -39,7 +39,7 @@ module scramble_sequence_8bits(
 	reg [7:0] c;
 	reg [31:0] cnt;
 	reg [30:0] max_cnt;
-	reg scramble_valid;//extend more 14 cycles
+	reg scramble_valid;
 	//control
 	always @(posedge clk)
 		if (rst) begin
@@ -52,9 +52,9 @@ module scramble_sequence_8bits(
 				max_cnt <= markP;
 			end
 			
-			if (in_valid & (cnt <= max_cnt +13))
+			if (in_valid & (cnt <= max_cnt))
 				scramble_valid <= 1;
-			else if (cnt > max_cnt+13)
+			else if (cnt > max_cnt)
 				scramble_valid <= 0;
 			if (scramble_valid|in_valid)
 				cnt <= cnt +1;
@@ -92,7 +92,7 @@ module scramble_sequence_8bits(
 			
 		end
 		assign scramble = out_valid ? c :0;
-		assign out_valid = (cnt>= max_cnt+2)&(cnt<= max_cnt+2+13);
+		assign out_valid = (cnt== max_cnt+2);
 endmodule
 
 // find the x1 x2 at i=1600 first

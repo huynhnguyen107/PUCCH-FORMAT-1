@@ -48,16 +48,18 @@
 
 
 // IP VLNV: xilinx.com:user:block_wise_spreading:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "block_wise_spreading,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_block_wise_spreading_dmrs_0,block_wise_spreading,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_block_wise_spreading_dmrs_0,block_wise_spreading,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=block_wise_spreading,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch1_block_wise_spreading_dmrs_0,block_wise_spreading,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=block_wise_spreading,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_block_wise_spreading_dmrs_0 (
   clk,
   rst,
+  in_valid,
+  uci_intra_fr_hop,
   cyclic_valid,
   cyclic,
   wise_valid_0,
@@ -70,6 +72,8 @@ module pucch1_block_wise_spreading_dmrs_0 (
 
 input wire clk;
 input wire rst;
+input wire in_valid;
+input wire uci_intra_fr_hop;
 input wire cyclic_valid;
 input wire [31 : 0] cyclic;
 input wire wise_valid_0;
@@ -82,6 +86,8 @@ output wire [31 : 0] spreading;
   block_wise_spreading inst (
     .clk(clk),
     .rst(rst),
+    .in_valid(in_valid),
+    .uci_intra_fr_hop(uci_intra_fr_hop),
     .cyclic_valid(cyclic_valid),
     .cyclic(cyclic),
     .wise_valid_0(wise_valid_0),

@@ -1,6 +1,121 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 12:43:33 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyclic_gen_nfs_gen_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of cyclic_gen_nfs_gen_0_0 (xilinx.com:user:nfs_gen:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'cyclic_gen_nfs_gen_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'in_uci_flag'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'MODE' is no longer present on the upgraded IP 'cyclic_gen_nfs_gen_0_0', and cannot be set to '1'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:nfs_gen:1.0 -user_name cyclic_gen_nfs_gen_0_0
+set_property -dict "\
+  CONFIG.Component_Name {cyclic_gen_nfs_gen_0_0} " [get_ips cyclic_gen_nfs_gen_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:58:47 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyclic_gen_n_cs_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cyclic_gen_n_cs_gen_0_0 (xilinx.com:user:n_cs_gen:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 10:20:34 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyclic_gen_base_sequence_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cyclic_gen_base_sequence_0_1 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 10:20:34 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cyclic_gen_base_sequence_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of cyclic_gen_base_sequence_0_0 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Tue Mar 24 21:41:26 2026
 | Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

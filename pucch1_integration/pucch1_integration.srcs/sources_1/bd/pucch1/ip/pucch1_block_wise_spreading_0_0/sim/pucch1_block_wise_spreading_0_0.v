@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:block_wise_spreading:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -57,6 +57,8 @@
 module pucch1_block_wise_spreading_0_0 (
   clk,
   rst,
+  in_valid,
+  uci_intra_fr_hop,
   cyclic_valid,
   cyclic,
   wise_valid_0,
@@ -69,6 +71,8 @@ module pucch1_block_wise_spreading_0_0 (
 
 input wire clk;
 input wire rst;
+input wire in_valid;
+input wire uci_intra_fr_hop;
 input wire cyclic_valid;
 input wire [31 : 0] cyclic;
 input wire wise_valid_0;
@@ -81,6 +85,8 @@ output wire [31 : 0] spreading;
   block_wise_spreading inst (
     .clk(clk),
     .rst(rst),
+    .in_valid(in_valid),
+    .uci_intra_fr_hop(uci_intra_fr_hop),
     .cyclic_valid(cyclic_valid),
     .cyclic(cyclic),
     .wise_valid_0(wise_valid_0),

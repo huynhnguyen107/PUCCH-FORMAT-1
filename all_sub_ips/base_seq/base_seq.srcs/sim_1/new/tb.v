@@ -54,7 +54,7 @@ module tb( );
 			uci_slot <= 0;
 			uci_grouphopping <= 0;
 			uci_nID <= 0;
-			uci_nhop <= 0;
+			uci_nhop <= 1;
 		end
 			@(posedge clk) begin
 			in_valid <= 0;

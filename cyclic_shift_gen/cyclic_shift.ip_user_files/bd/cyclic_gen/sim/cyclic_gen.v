@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Mar 24 21:41:29 2026
+//Date        : Fri Mar 27 12:44:26 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target cyclic_gen.bd
 //Design      : cyclic_gen
@@ -135,6 +135,7 @@ module cyclic_gen
         .uci_slot(uci_slot_1));
   cyclic_gen_nfs_gen_0_0 nfs_gen_0
        (.clk(clk_1),
+        .in_uci_flag(xlconstant_0_dout),
         .in_valid(in_valid_1),
         .nfs_0(nfs_gen_0_nfs_0),
         .nfs_1(nfs_gen_0_nfs_1),

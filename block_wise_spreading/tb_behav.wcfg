@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000001fs"></ZoomEndTime>
-      <Cursor1Time time="999999fs"></Cursor1Time>
+      <ZoomStartTime time="29100fs"></ZoomStartTime>
+      <ZoomEndTime time="170301fs"></ZoomEndTime>
+      <Cursor1Time time="129300fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="623"></NameColumnWidth>
-      <ValueColumnWidth column_width="197"></ValueColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,6 +27,18 @@
    <wvobject fp_name="/tb/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/block_wise_spreading/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/block_wise_spreading/uci_intra_fr_hop" type="logic">
+      <obj_property name="ElementShortName">uci_intra_fr_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_intra_fr_hop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/block_wise_spreading/reg_intra_fr_hop" type="logic">
+      <obj_property name="ElementShortName">reg_intra_fr_hop</obj_property>
+      <obj_property name="ObjectShortName">reg_intra_fr_hop</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/cyclic_valid" type="logic">
       <obj_property name="ElementShortName">cyclic_valid</obj_property>

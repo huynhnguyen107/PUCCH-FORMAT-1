@@ -27,6 +27,8 @@ module ba_seq_control(
 	input [31:0] basequence_0,
 	input basequence_valid_1,
 	input [31:0] basequence_1,
+	input in_valid,
+	input uci_intra_fr_hop,
 	input [2:0] nfs_0,
 	input [2:0] nfs_1,
 	input nfs_valid,
@@ -34,6 +36,8 @@ module ba_seq_control(
 	output reg basequence_out_valid,
 	output reg [31:0] basequence_out
     );
+	//save uci_intra_fr_hop
+	reg reg_intra_fr_hop;
 	//save basequence to bram0 and bram1
 	wire [31:0] dout_a;
 	wire [31:0] dout_b;
@@ -98,14 +102,18 @@ module ba_seq_control(
 	//save nfs
 	always @(posedge clk) begin
 		if (rst) begin
+			reg_intra_fr_hop <= 0;
 			reg_nfs_0 <= 0;
 			reg_nfs_1 <= 0;
 			reg_total_nfs <= 0;
 		end
 		else begin
+			//save to reg
+			if (in_valid)
+				reg_intra_fr_hop <= uci_intra_fr_hop;
 			if (nfs_valid) begin
-				reg_nfs_0 <= nfs_0;
-				reg_nfs_1 <= nfs_1;
+				reg_nfs_0 <= reg_intra_fr_hop ? nfs_0 : nfs_0 -1;
+				reg_nfs_1 <= reg_intra_fr_hop ? nfs_1 : 1;
 			end
 			reg_total_nfs <= reg_nfs_0 +reg_nfs_1;
 		end
@@ -113,8 +121,6 @@ module ba_seq_control(
 	//start read basequence
 	always @(posedge clk) begin
 		if (rst) begin
-			reg_nfs_0 <= 0;
-			reg_nfs_1 <= 0;
 			start <= 0;
 			cnt <= 0;
 			cnt_7 <= 0;

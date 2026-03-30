@@ -29,6 +29,8 @@ module tb();
 	reg [31:0] basequence_0;
 	reg basequence_valid_1;
 	reg [31:0] basequence_1;
+	reg in_valid;
+	reg uci_intra_fr_hop;
 	reg [2:0] nfs_0;
 	reg [2:0] nfs_1;
 	reg nfs_valid;
@@ -37,7 +39,7 @@ module tb();
 	integer i=0;
 	// call instance
 	ba_seq_control ba_seq_control0 (clk, rst, basequence_valid_0, basequence_0, basequence_valid_1, 
-									basequence_1, nfs_0, nfs_1, nfs_valid, start_en, basequence_out_valid, basequence_out);
+									basequence_1, in_valid, uci_intra_fr_hop, nfs_0, nfs_1, nfs_valid, start_en, basequence_out_valid, basequence_out);
 	//create rst and initial all signals
 	initial begin
 		clk = 0;
@@ -46,6 +48,8 @@ module tb();
 		basequence_0 = 0;
 		basequence_valid_1 = 0;
 		basequence_1 = 0;
+		in_valid = 0;
+		uci_intra_fr_hop = 0;
 		nfs_0 = 0;
 		nfs_1 = 0;
 		nfs_valid = 0;
@@ -63,8 +67,10 @@ module tb();
 			basequence_0 <= 0;
 			basequence_valid_1 <= 0;
 			basequence_1 <= 0;
-			nfs_0 <= 3;
-			nfs_1 <= 4;
+			in_valid <= 1;
+			uci_intra_fr_hop <= 0;
+			nfs_0 <= 7;
+			nfs_1 <= 7;
 			nfs_valid <= 1;
 			start_en <= 0;
 		end
@@ -74,6 +80,8 @@ module tb();
 				basequence_0 <= i;
 				basequence_valid_1 <= 1;
 				basequence_1 <= i;
+				in_valid <= 0;
+				uci_intra_fr_hop <= 0;
 				nfs_0 <= 0;
 				nfs_1 <= 0;
 				nfs_valid <= 0;

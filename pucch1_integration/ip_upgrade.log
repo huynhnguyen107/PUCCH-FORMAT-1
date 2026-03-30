@@ -1,6 +1,388 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_nfs_gen_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of pucch1_nfs_gen_0_1 (xilinx.com:user:nfs_gen:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_nfs_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of pucch1_nfs_gen_0_0 (xilinx.com:user:nfs_gen:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_block_wise_spreading_dmrs_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of pucch1_block_wise_spreading_dmrs_0 (xilinx.com:user:block_wise_spreading:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'pucch1_block_wise_spreading_dmrs_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'in_valid'
+
+-Upgrade has added port 'uci_intra_fr_hop'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_block_wise_spreading_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of pucch1_block_wise_spreading_0_0 (xilinx.com:user:block_wise_spreading:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'pucch1_block_wise_spreading_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'in_valid'
+
+-Upgrade has added port 'uci_intra_fr_hop'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_ba_seq_control_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_ba_seq_control_0_1 (xilinx.com:user:ba_seq_control:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 18:30:05 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_ba_seq_control_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_ba_seq_control_0_0 (xilinx.com:user:ba_seq_control:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 12:39:52 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_nfs_gen_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of pucch1_nfs_gen_0_1 (xilinx.com:user:nfs_gen:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'pucch1_nfs_gen_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'in_uci_flag'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'MODE' is no longer present on the upgraded IP 'pucch1_nfs_gen_0_1', and cannot be set to '1'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:nfs_gen:1.0 -user_name pucch1_nfs_gen_0_1
+set_property -dict "\
+  CONFIG.Component_Name {pucch1_nfs_gen_0_1} " [get_ips pucch1_nfs_gen_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 12:39:52 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_nfs_gen_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of pucch1_nfs_gen_0_0 (xilinx.com:user:nfs_gen:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'pucch1_nfs_gen_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'in_uci_flag'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'MODE' is no longer present on the upgraded IP 'pucch1_nfs_gen_0_0', and cannot be set to '1'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:nfs_gen:1.0 -user_name pucch1_nfs_gen_0_0
+set_property -dict "\
+  CONFIG.Component_Name {pucch1_nfs_gen_0_0} " [get_ips pucch1_nfs_gen_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_n_cs_gen_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_n_cs_gen_0_1 (xilinx.com:user:n_cs_gen:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_n_cs_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_n_cs_gen_0_0 (xilinx.com:user:n_cs_gen:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_base_sequence_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_base_sequence_1_1 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_base_sequence_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_base_sequence_1_0 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_base_sequence_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_base_sequence_0_1 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Mar 27 11:40:11 2026
+| Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pucch1_base_sequence_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of pucch1_base_sequence_0_0 (xilinx.com:user:base_sequence:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Thu Mar 26 12:27:58 2026
 | Host         : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

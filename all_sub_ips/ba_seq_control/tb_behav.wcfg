@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="112900fs"></ZoomStartTime>
-      <ZoomEndTime time="176601fs"></ZoomEndTime>
-      <Cursor1Time time="150500fs"></Cursor1Time>
+      <ZoomStartTime time="43600fs"></ZoomStartTime>
+      <ZoomEndTime time="169501fs"></ZoomEndTime>
+      <Cursor1Time time="51500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="31" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -45,6 +45,14 @@
       <obj_property name="ElementShortName">basequence_1[31:0]</obj_property>
       <obj_property name="ObjectShortName">basequence_1[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ba_seq_control0/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ba_seq_control0/uci_intra_fr_hop" type="logic">
+      <obj_property name="ElementShortName">uci_intra_fr_hop</obj_property>
+      <obj_property name="ObjectShortName">uci_intra_fr_hop</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/nfs_0" type="array">
       <obj_property name="ElementShortName">nfs_0[2:0]</obj_property>

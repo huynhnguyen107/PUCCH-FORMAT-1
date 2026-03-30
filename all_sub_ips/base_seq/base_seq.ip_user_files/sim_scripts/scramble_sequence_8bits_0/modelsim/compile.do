@@ -14,8 +14,8 @@ vcom -work xpm -64 -93 \
 "D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 -incr \
-"../../../../base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
-"../../../../base_seq.srcs/sources_1/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v" \
+"../../../ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
+"../../../ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

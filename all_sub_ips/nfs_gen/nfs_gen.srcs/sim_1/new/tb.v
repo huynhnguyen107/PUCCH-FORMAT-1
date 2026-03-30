@@ -26,6 +26,7 @@ module tb(
     reg clk;
     reg rst;
     reg in_valid;
+    reg in_uci_flag;
     reg [3:0] uci_nSymbs;
     reg uci_intra_fr_hop;
 	wire [2:0] nfs_0;
@@ -33,13 +34,14 @@ module tb(
 	wire nfs_valid;
 	
 	//call instance
-    nfs_gen #(0) nfs_gen0 (clk, rst, in_valid, uci_nSymbs, uci_intra_fr_hop, nfs_0, nfs_1, nfs_valid);
+    nfs_gen nfs_gen0 (clk, rst, in_valid, in_uci_flag,  uci_nSymbs, uci_intra_fr_hop, nfs_0, nfs_1, nfs_valid);
 	
 	//intitial all signals and create rst
     initial begin
 		clk=0;
 		rst=1;
 		in_valid=0;
+		in_uci_flag=0;
 		uci_nSymbs=0;
 		uci_intra_fr_hop=0;
 		#10 rst=0;
@@ -51,11 +53,13 @@ module tb(
 		wait(!rst)
         @(posedge clk) begin
             in_valid <= 1;
-            uci_nSymbs <= 14;
+            in_uci_flag <= 1;
+            uci_nSymbs <= 4;
             uci_intra_fr_hop <= 0;
         end
 		@(posedge clk) begin
             in_valid <= 0;
+            in_uci_flag <= 0;
             uci_nSymbs <= 0;
             uci_intra_fr_hop <= 0;
         end

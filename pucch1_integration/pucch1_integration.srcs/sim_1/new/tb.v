@@ -46,14 +46,14 @@ module tb();
 	integer n;
 	//read uci_param
 	initial begin
-		$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case7/uci_param.mem", uci_param_mem);
+		$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case12/uci_param.mem", uci_param_mem);
 	end
 	// assign wire_pucch_parameter = (idx > 1) ? uci_param_mem[0] : 512'd0;
 	assign wire_pucch_parameter = uci_param_mem[0];
 	//read I, Q
 	initial begin
-	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case7/I.mem", I_mem);
-	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case7/Q.mem", Q_mem);
+	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case12/I.mem", I_mem);
+	$readmemh("D:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/TEST/case12/Q.mem", Q_mem);
 	end
 	assign ant_input = {8{i_imag_pucch_ofdm, i_real_pucch_ofdm}};
 	//call instance

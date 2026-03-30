@@ -13,6 +13,8 @@
 // 
 // Dependencies: N/A
 // 
+// 
+// 
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
@@ -22,6 +24,8 @@
 module tb();
 	reg clk;
 	reg rst;
+	reg in_valid;
+	reg uci_intra_fr_hop;
 	reg cyclic_valid;
 	reg [31:0] cyclic;
 	reg wise_valid_0;
@@ -32,11 +36,13 @@ module tb();
 	wire [31:0] spreading;
 	integer i=0;
 	//call instance
-	block_wise_spreading block_wise_spreading(clk, rst, cyclic_valid, cyclic, wise_valid_0, wise_0, wise_valid_1, wise_1, spreading_valid, spreading);
+	block_wise_spreading block_wise_spreading(clk, rst, in_valid, uci_intra_fr_hop, cyclic_valid, cyclic, wise_valid_0, wise_0, wise_valid_1, wise_1, spreading_valid, spreading);
 	// create rst and initial other signals
 	initial begin
 		rst=1;
 		clk=0;
+		in_valid=0;
+		uci_intra_fr_hop=0;
 		cyclic_valid=0;
 		cyclic=0;
 		wise_valid_0=0;
@@ -51,6 +57,8 @@ module tb();
 	initial begin
 		wait(!rst)
 		@(posedge clk) begin
+			in_valid <= 1;
+			uci_intra_fr_hop <= 0;
 			cyclic_valid <= 0;
 			cyclic <= 0;
 			wise_valid_0 <= 0;
@@ -58,7 +66,17 @@ module tb();
 			wise_valid_1 <= 0;
 			wise_1 <= 0;
 		end
-		for (i=0;i<43;i=i+1)
+		@(posedge clk) begin
+			in_valid <= 0;
+			uci_intra_fr_hop <= 0;
+			cyclic_valid <= 0;
+			cyclic <= 0;
+			wise_valid_0 <= 0;
+			wise_0 <= 0;
+			wise_valid_1 <= 0;
+			wise_1 <= 0;
+		end
+		for (i=0;i<42;i=i+1)
 			@(posedge clk) begin
 				cyclic_valid <= 1;
 				cyclic[31:16] <= 0;
@@ -66,15 +84,15 @@ module tb();
 				wise_valid_0 <= 1;
 				wise_0 [31:16] <= 0;
 				wise_0 [15:0] <= 32767;
-				wise_valid_1 <= 0;
+				wise_valid_1 <= 1;
 				wise_1 <= 0;
 			end
-		for (i=0;i<43;i=i+1)
+		for (i=0;i<42;i=i+1)
 			@(posedge clk) begin
 				cyclic_valid <= 1;
 				cyclic[31:16] <= 0;
 				cyclic[15:0] <= i*327;
-				wise_valid_0 <= 0;
+				wise_valid_0 <= 1;
 				wise_0 <= 0;
 				wise_valid_1 <= 1;
 				wise_1 [31:16] <= 0;

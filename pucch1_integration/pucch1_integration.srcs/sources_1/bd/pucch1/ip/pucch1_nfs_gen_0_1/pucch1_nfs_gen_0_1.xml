@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 25 18:44:40 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 27 22:38:19 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:62d81dbd</spirit:value>
+            <spirit:value>9:51f4e8a7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -32,7 +32,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:62d81dbd</spirit:value>
+            <spirit:value>9:51f4e8a7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -48,11 +48,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 25 18:44:56 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 27 22:38:34 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:62d81dbd</spirit:value>
+            <spirit:value>9:51f4e8a7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -67,11 +67,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 25 18:44:40 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 27 22:38:19 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8ea2ae71</spirit:value>
+            <spirit:value>9:a6ace1e7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -87,11 +87,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 25 18:44:56 UTC 2026</spirit:value>
+            <spirit:value>Fri Mar 27 22:38:34 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:8ea2ae71</spirit:value>
+            <spirit:value>9:a6ace1e7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -125,6 +125,19 @@
       </spirit:port>
       <spirit:port>
         <spirit:name>in_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>in_uci_flag</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -214,19 +227,12 @@
         </spirit:wire>
       </spirit:port>
     </spirit:ports>
-    <spirit:modelParameters>
-      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
-        <spirit:name>MODE</spirit:name>
-        <spirit:displayName>Mode</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MODE">1</spirit:value>
-      </spirit:modelParameter>
-    </spirit:modelParameters>
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/1390/sources_1/new/nfs_gen.v</spirit:name>
+        <spirit:name>../../ipshared/a31e/sources_1/new/nfs_gen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -241,7 +247,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/1390/sources_1/new/nfs_gen.v</spirit:name>
+        <spirit:name>../../ipshared/a31e/sources_1/new/nfs_gen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -257,11 +263,6 @@
   <spirit:description>nfs_gen_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
-      <spirit:name>MODE</spirit:name>
-      <spirit:displayName>Mode</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MODE">1</spirit:value>
-    </spirit:parameter>
-    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">pucch1_nfs_gen_0_1</spirit:value>
     </spirit:parameter>
@@ -270,7 +271,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>nfs_gen_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@18d3088a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5dccd22f_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
@@ -284,14 +285,56 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2fdf0090_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@19c9b95a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@532f4f14_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5f9f51_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a79a20_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e61eaef_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ae1158_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438e9830_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@345e5b4a_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eb0884d_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38d99082_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a54fd19_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79cef43_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762c1f29_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8e5db63_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6724f5a4_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a85589_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dd52c0_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a2d5c74_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e13b628_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@445fb1a0_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d698bc_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f3479f1_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@781e7724_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39f7d542_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb1236c_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f299270_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d702ea5_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db39bf7_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e5333a6_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bb01593_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44e027c5_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c40bc09_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2efa2543_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98adbe4_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b733572_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d322eff_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72b29f23_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515a6704_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f658cee_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27670d3a_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aa24e8c_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32931e1e_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aa0ad52_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54762414_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f7a70_ARCHIVE_LOCATION">d:/FPGA/Vivaldo Project/PUCCH-FORMAT-1/all_sub_ips/nfs_gen/nfs_gen.srcs</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fa6c0ba5"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="042df904"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="458625b5"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="932125cb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="22aafb2a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="f123426b"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="339c0914"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

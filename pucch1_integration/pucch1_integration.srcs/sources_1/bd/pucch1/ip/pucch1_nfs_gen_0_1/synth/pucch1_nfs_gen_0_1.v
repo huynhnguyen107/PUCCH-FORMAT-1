@@ -48,17 +48,18 @@
 
 
 // IP VLNV: xilinx.com:user:nfs_gen:1.0
-// IP Revision: 2
+// IP Revision: 5
 
 (* X_CORE_INFO = "nfs_gen,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch1_nfs_gen_0_1,nfs_gen,{}" *)
-(* CORE_GENERATION_INFO = "pucch1_nfs_gen_0_1,nfs_gen,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=nfs_gen,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,MODE=1}" *)
+(* CORE_GENERATION_INFO = "pucch1_nfs_gen_0_1,nfs_gen,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=nfs_gen,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch1_nfs_gen_0_1 (
   clk,
   rst,
   in_valid,
+  in_uci_flag,
   uci_nSymbs,
   uci_intra_fr_hop,
   nfs_0,
@@ -69,18 +70,18 @@ module pucch1_nfs_gen_0_1 (
 input wire clk;
 input wire rst;
 input wire in_valid;
+input wire in_uci_flag;
 input wire [3 : 0] uci_nSymbs;
 input wire uci_intra_fr_hop;
 output wire [2 : 0] nfs_0;
 output wire [2 : 0] nfs_1;
 output wire nfs_valid;
 
-  nfs_gen #(
-    .MODE(1)
-  ) inst (
+  nfs_gen inst (
     .clk(clk),
     .rst(rst),
     .in_valid(in_valid),
+    .in_uci_flag(in_uci_flag),
     .uci_nSymbs(uci_nSymbs),
     .uci_intra_fr_hop(uci_intra_fr_hop),
     .nfs_0(nfs_0),

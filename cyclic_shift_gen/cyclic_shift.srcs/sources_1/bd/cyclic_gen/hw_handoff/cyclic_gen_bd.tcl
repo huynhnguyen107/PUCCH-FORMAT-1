@@ -246,7 +246,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net uci_m0_1 [get_bd_ports uci_m0] [get_bd_pins phase_gen_0/uci_m0]
   connect_bd_net -net uci_nsymbols_1 [get_bd_ports uci_nsymbols] [get_bd_pins n_cs_gen_0/uci_nSymbs] [get_bd_pins nfs_gen_0/uci_nSymbs] [get_bd_pins phase_gen_control_0/uci_nSymbs]
   connect_bd_net -net uci_slot_1 [get_bd_ports uci_slot] [get_bd_pins base_sequence_0/uci_slot] [get_bd_pins base_sequence_1/uci_slot] [get_bd_pins n_cs_gen_0/uci_slot]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins n_cs_gen_0/in_uci_flag] [get_bd_pins nfs_gen_0/in_uci_flag] [get_bd_pins phase_gen_control_0/in_uci_flag] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins phase_gen_0/uci_mcs] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins base_sequence_1/uci_nhop] [get_bd_pins xlconstant_2/dout]
 
